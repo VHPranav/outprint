@@ -2,26 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Brand Foundation */
+    --background: #FFFFFF;
+    --foreground: #111111;
+
+    /* Card & Surfaces */
+    --card: #FFFFFF;
+    --card-foreground: #111111;
+    --popover: #FFFFFF;
+    --popover-foreground: #111111;
+
+    /* Primary Accent (Used strictly for primary CTAs & focal highlights) */
+    --primary: #111111;
+    --primary-foreground: #FFFFFF;
+    --primary-hover: #2A2A2A;
+
+    /* Secondary & Subtle Surfaces */
+    --secondary: #FFFFFF;
+    --secondary-foreground: #111111;
+    --secondary-hover: #F5F5F4;
+
+    /* Muted Text & Elements */
+    --muted: #F5F5F4;
+    --muted-foreground: #6B7280;
+
+    /* Accent & Interactive States */
+    --accent: #F5F5F4;
+    --accent-foreground: #111111;
+
+    /* Borders & Inputs */
+    --border: #E5E5E5;
+    --input: #E5E5E5;
+    --ring: #111111;
+
+    /* Base Corner Radius (fully rounded pill buttons) */
+    --radius: 0.625rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: light;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight text-neutral-950;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
+  /* Editorial DTC utilities */
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .border-subtle {
+    border-color: #E5E5E5;
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }

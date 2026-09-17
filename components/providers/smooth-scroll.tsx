@@ -1,12 +1,16 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export function SmoothScrollProvider({ children }: { children: React.ReactNode }) {
+    const lenisRef = useRef<Lenis | null>(null);
+    const pathname = usePathname();
+
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
@@ -15,6 +19,7 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
             smoothWheel: true,
             wheelMultiplier: 0.9,
         });
+        lenisRef.current = lenis;
 
         lenis.on('scroll', ScrollTrigger.update);
 
@@ -28,8 +33,18 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
         return () => {
             gsap.ticker.remove(updateTicker);
             lenis.destroy();
+            lenisRef.current = null;
         };
     }, []);
+
+    // The root layout (and this provider) stays mounted across client-side
+    // navigations, so Lenis's own scroll offset otherwise carries over from
+    // whatever page you were just on. Snap it — and the native scroll
+    // position it's meant to mirror — back to the top on every route change.
+    useEffect(() => {
+        lenisRef.current?.scrollTo(0, { immediate: true });
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     return <>{children}</>;
 }

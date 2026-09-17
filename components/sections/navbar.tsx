@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { ShoppingBag, MessageCircle, Menu, X } from "lucide-react";
-import { getCategoryTree } from "@/lib/catalog";
+import { getMegaMenuGroups } from "@/lib/nav-menu";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { useCartCount } from "@/lib/cart";
 import { CURRENCY } from "@/lib/currency";
@@ -21,7 +21,7 @@ function getWhatsAppHref(): string | null {
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const categories = React.useMemo(() => getCategoryTree(), []);
+  const menuGroups = React.useMemo(() => getMegaMenuGroups(), []);
   const whatsappHref = React.useMemo(() => getWhatsAppHref(), []);
   const cartCount = useCartCount();
 
@@ -35,7 +35,7 @@ export function Navbar() {
             </span>
           </Link>
 
-          <MegaMenu categories={categories} />
+          <MegaMenu groups={menuGroups} />
         </div>
 
         <div className="flex shrink-0 items-center gap-1 sm:gap-2">
@@ -83,7 +83,7 @@ export function Navbar() {
 
       {isMobileMenuOpen && (
         <MobileMenu
-          categories={categories}
+          groups={menuGroups}
           whatsappHref={whatsappHref}
           onClose={() => setIsMobileMenuOpen(false)}
         />

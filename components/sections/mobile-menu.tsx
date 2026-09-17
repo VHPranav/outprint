@@ -9,50 +9,63 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import type { CategoryNode } from "@/lib/catalog";
+import type { MegaMenuGroup } from "@/lib/nav-menu";
 import { CURRENCY } from "@/lib/currency";
 
 interface MobileMenuProps {
-  categories: CategoryNode[];
+  groups: MegaMenuGroup[];
   whatsappHref: string | null;
   onClose: () => void;
 }
 
-export function MobileMenu({ categories, whatsappHref, onClose }: MobileMenuProps) {
+export function MobileMenu({ groups, whatsappHref, onClose }: MobileMenuProps) {
   return (
     <div className="border-t border-[#E5E5E5] bg-white md:hidden">
       <div className="max-h-[calc(100vh-4rem)] overflow-y-auto px-6 py-4">
         <Accordion type="single" collapsible className="w-full">
-          {categories.map((category) => (
-            <AccordionItem key={category.id} value={category.id}>
-              {category.children.length > 0 ? (
-                <>
-                  <AccordionTrigger>{category.name}</AccordionTrigger>
-                  <AccordionContent>
-                    <ul className="space-y-1">
-                      {category.children.map((child) => (
-                        <li key={child.id}>
-                          <Link
-                            href={`/category/${child.slug}`}
-                            onClick={onClose}
-                            className="block rounded-lg px-2 py-2 text-sm text-neutral-600 hover:text-black"
-                          >
-                            {child.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </AccordionContent>
-                </>
-              ) : (
+          {groups.map((group) => (
+            <AccordionItem key={group.label} value={group.label}>
+              <AccordionTrigger>
                 <Link
-                  href={`/category/${category.slug}`}
+                  href={`/category/${group.slug}`}
                   onClick={onClose}
-                  className="block py-4 text-sm font-medium text-neutral-900"
+                  className="hover:underline"
                 >
-                  {category.name}
+                  {group.label}
                 </Link>
-              )}
+              </AccordionTrigger>
+              <AccordionContent>
+                <Accordion type="single" collapsible className="w-full">
+                  {group.headings.map((heading) => (
+                    <AccordionItem key={heading.id} value={heading.id} className="border-b-0">
+                      <AccordionTrigger className="py-2.5 text-sm font-medium text-neutral-800">
+                        <Link
+                          href={`/category/${heading.slug}`}
+                          onClick={onClose}
+                          className="hover:underline"
+                        >
+                          {heading.name}
+                        </Link>
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        <ul className="space-y-1 pl-3">
+                          {heading.products.map((p) => (
+                            <li key={p.slug}>
+                              <Link
+                                href={`/product/${p.slug}`}
+                                onClick={onClose}
+                                className="block rounded-lg px-2 py-1.5 text-sm text-neutral-600 hover:text-black"
+                              >
+                                {p.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>

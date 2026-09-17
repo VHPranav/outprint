@@ -94,9 +94,9 @@ const config: Config = {
         "3xl": "calc(var(--radius) + 12px)", // 22px
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"],
-        serif: ["var(--font-fraunces)", "serif"],
-        display: ["var(--font-fraunces)", "serif"],
+        sans: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        serif: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        display: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
         logo: ["var(--font-qwitcher-grypen)", "cursive"],
       },
       spacing: {

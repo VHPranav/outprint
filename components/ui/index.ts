@@ -12,7 +12,7 @@ export * from "./stepper";
 export * from "./upload-status";
 export * from "./breadcrumbs";
 export * from "./reveal";
-export * from "./bento-card";
+export * from "./carousel";
 export * from "./whatsapp-fab";
 export * from "./cookie-consent";
 export * from "./UnspokenFormation";

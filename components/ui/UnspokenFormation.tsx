@@ -540,7 +540,7 @@ export const TenthFormation: React.FC<TenthFormationProps> = ({
                             </div>
                         )}
 
-                        <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight text-[#111111] leading-[1.08] max-w-4xl mx-auto">
+                        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-semibold tracking-[-0.04em] text-[#111111] leading-[1.02] max-w-4xl mx-auto">
                             {title}
                         </h1>
 

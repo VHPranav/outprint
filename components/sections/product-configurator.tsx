@@ -446,12 +446,12 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
         </div>
         <div className="mt-3 flex items-baseline justify-between border-t border-white/10 pt-3">
           <span className="text-xs uppercase tracking-wider text-neutral-400">
-            Total for {quantity} pcs (incl. GST)
+            Total for {quantity} pcs (incl. VAT)
           </span>
           <span className="text-xl font-semibold">{formatCurrency(grandTotal)}</span>
         </div>
         <p className="mt-1.5 text-[11px] text-neutral-500">
-          Subtotal {formatCurrency(price.totalPrice)} + GST {formatCurrency(price.gstAmount)}
+          Subtotal {formatCurrency(price.totalPrice)} + VAT (5%) {formatCurrency(price.vatAmount ?? price.gstAmount)}
           {enhancementFee > 0 && ` + Resolution Enhancement ${formatCurrency(enhancementFee)}`}
         </p>
       </div>

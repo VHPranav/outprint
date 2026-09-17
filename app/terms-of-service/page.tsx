@@ -68,8 +68,8 @@ export default function TermsOfServicePage() {
 
       <LegalH2>Governing law</LegalH2>
       <LegalP>
-        These terms are governed by the laws of India, and disputes are subject to the courts of Mumbai,
-        Maharashtra.
+        These terms are governed by the applicable laws of the United Arab Emirates, and any disputes are
+        subject to the exclusive jurisdiction of the competent courts of Dubai, UAE.
       </LegalP>
 
       <LegalH2>Changes to these terms</LegalH2>

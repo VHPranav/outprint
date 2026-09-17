@@ -40,7 +40,7 @@ export function Navbar() {
 
         <div className="flex shrink-0 items-center gap-1 sm:gap-2">
           <span className="hidden items-center gap-1 pr-2 text-xs font-medium text-neutral-500 lg:flex">
-            {CURRENCY.symbol} {CURRENCY.code}
+            {CURRENCY.code} (UAE)
           </span>
 
           <SearchBar />

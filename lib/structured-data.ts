@@ -17,7 +17,7 @@ export function organizationJsonLd() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      areaServed: "IN",
+      areaServed: "AE",
       availableLanguage: ["en"],
     },
   };
@@ -58,7 +58,7 @@ export function productJsonLd(product: Product) {
     offers: {
       "@type": "Offer",
       url: `${SITE_URL}/product/${product.slug}`,
-      priceCurrency: "INR",
+      priceCurrency: "AED",
       price: unitPrice.toFixed(2),
       availability: "https://schema.org/InStock",
       itemCondition: "https://schema.org/NewCondition",

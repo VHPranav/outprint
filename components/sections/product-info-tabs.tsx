@@ -42,7 +42,7 @@ const howToOrderSteps = [
   {
     icon: Truck,
     title: "Delivered to your door",
-    description: "Pan-India shipping with tracking updates sent over WhatsApp.",
+    description: "Fast delivery across all Emirates with tracking updates sent over WhatsApp.",
   },
 ];
 

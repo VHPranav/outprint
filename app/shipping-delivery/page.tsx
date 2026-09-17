@@ -18,20 +18,24 @@ export default function ShippingDeliveryPage() {
       <LegalDisclaimer />
 
       <LegalH2>Coverage</LegalH2>
-      <LegalP>We ship pan-India. If you need delivery outside India, ask our team on WhatsApp before ordering.</LegalP>
+      <LegalP>
+        We ship across the United Arab Emirates, covering all 7 Emirates: Dubai, Abu Dhabi, Sharjah, Ajman,
+        Ras Al Khaimah, Fujairah, and Umm Al Quwain. For GCC or international shipments outside the UAE,
+        please message our team on WhatsApp before ordering.
+      </LegalP>
 
       <LegalH2>Production time</LegalH2>
       <LegalP>
-        Most orders are produced in 3–7 business days after you approve the digital proof, depending on the
+        Most orders are produced in 2–5 business days after you approve the digital proof, depending on the
         product and quantity — the estimate for your specific product is shown on its page (see &quot;Ships
-        in&quot;). Rush production is available on some products for an additional fee.
+        in&quot;). Same-day and express rush production is available on selected items.
       </LegalP>
 
       <LegalH2>Shipping time</LegalH2>
       <LegalP>
-        Once dispatched, standard delivery typically takes an additional 2–5 business days depending on your
-        location. Total time from order confirmation to delivery is usually production time plus shipping
-        time.
+        Once dispatched, delivery typically takes 1–2 business days across the UAE, with same-day express
+        courier options available within Dubai. Total time from order confirmation to delivery is production
+        time plus courier transit.
       </LegalP>
 
       <LegalH2>Tracking &amp; updates</LegalH2>

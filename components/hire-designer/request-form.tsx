@@ -283,7 +283,7 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
                 <Input
                   value={contact}
                   onChange={(e) => setContact(e.target.value)}
-                  placeholder="+91 98765 43210 or you@email.com"
+                  placeholder="+971 50 123 4567 or you@email.com"
                 />
               </div>
             </div>

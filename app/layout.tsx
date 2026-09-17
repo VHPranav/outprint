@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: `${SITE_NAME} — Bespoke Print & Packaging Studio`,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
-    locale: "en_IN",
+    locale: "en_AE",
   },
   twitter: {
     card: "summary_large_image",
@@ -58,6 +58,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${fraunces.variable} ${qwitcherGrypen.variable}`}>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/tas3jji.css" />
+      </head>
       <body className="min-h-screen bg-white text-[#111111] antialiased selection:bg-black/10 selection:text-black">
         <script
           type="application/ld+json"

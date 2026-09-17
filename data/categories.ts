@@ -46,7 +46,7 @@ export const categories: Category[] = [
     seo: {
       title: "Custom Stickers Online | Die-Cut & Sheet Stickers | Outprint",
       description:
-        "Order custom die-cut and sheet stickers in vinyl, holographic and matte finishes. Bulk pricing from 25 units, free digital proof, pan-India delivery.",
+        "Order custom die-cut and sheet stickers in vinyl, holographic and matte finishes. Bulk pricing from 25 units, free digital proof, UAE-wide delivery.",
     },
   },
   {
@@ -843,6 +843,32 @@ export const categories: Category[] = [
     seo: {
       title: "Custom Paper Bags | Outprint",
       description: "Standard glossy and brown kraft paper carry bags with twisted or flat handles, full-color printed. Bulk pricing from 25 units.",
+    },
+  },
+
+  // ── Invoice Books & Stamps (from printcraft.ae parity pass) ─────────
+  {
+    id: "cat-bp-invoice-books",
+    name: "Invoice Books",
+    slug: "invoice-books",
+    icon: "Receipt",
+    bannerImage: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=900&q=80",
+    parentId: "cat-business-prints",
+    seo: {
+      title: "Custom Invoice & NCR Bill Books | Outprint",
+      description: "Custom NCR carbonless bill books and receipt books in A4, A5 and A6, numbered and duplicate/triplicate sets.",
+    },
+  },
+  {
+    id: "cat-bp-stamps",
+    name: "Stamps",
+    slug: "stamps",
+    icon: "Stamp",
+    bannerImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=900&q=80",
+    parentId: "cat-business-prints",
+    seo: {
+      title: "Custom Self-Ink Stamps | Outprint",
+      description: "Custom self-ink rubber stamps for business use — signatures, approvals, dates and logos, thousands of clean impressions.",
     },
   },
 ];

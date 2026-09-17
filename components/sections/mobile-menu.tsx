@@ -75,7 +75,7 @@ export function MobileMenu({ groups, whatsappHref, onClose }: MobileMenuProps) {
             Currency
           </span>
           <span className="text-sm font-medium text-neutral-700">
-            {CURRENCY.symbol} {CURRENCY.code}
+            {CURRENCY.code} (UAE)
           </span>
         </div>
 

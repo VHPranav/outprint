@@ -37,7 +37,7 @@ export function LegalList({ children }: { children: React.ReactNode }) {
 export function LegalDisclaimer() {
   return (
     <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-relaxed text-amber-900">
-      This is template policy language, not legal advice. Have it reviewed by a lawyer familiar with Indian
+      This is template policy language, not legal advice. Have it reviewed by a lawyer familiar with UAE
       consumer protection and e-commerce rules before this business goes live.
     </div>
   );

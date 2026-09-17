@@ -7,7 +7,7 @@
 /** Print-quality threshold. True press-perfect is ~300dpi; 150 avoids flagging phone photos that will still print acceptably at typical sticker/label sizes. */
 export const PRINT_QUALITY_DPI = 150;
 
-export const RESOLUTION_ENHANCEMENT_PRICE = 99;
+export const RESOLUTION_ENHANCEMENT_PRICE = 15;
 
 export interface ResolutionCheck {
   isLowResolution: boolean;

@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { TenthFormation } from "@/components/ui/UnspokenFormation";
 
@@ -25,19 +26,30 @@ export function HeroSection({ onRequestSample }: HeroSectionProps) {
           Engineered print, luxury packaging, and archival stationery for modern brands.
         </p>
 
-        {/* Minimal Pill CTA */}
-        <div className="mt-8 flex items-center justify-center gap-3">
+        {/* Primary + Secondary CTA Row */}
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <Link
+            href="#categories"
+            className="group inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-[#111111] hover:bg-neutral-800 text-white font-medium text-sm transition-all shadow-sm hover:scale-105"
+          >
+            <span>Shop Now</span>
+            <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+          </Link>
+
           <button
             type="button"
             onClick={onRequestSample}
-            className="group inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-[#111111] hover:bg-neutral-800 text-white font-medium text-sm transition-all shadow-sm hover:scale-105"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-neutral-300 hover:border-neutral-400 bg-white text-[#111111] font-medium text-sm transition-all hover:scale-105"
           >
-            <span>Order Sample Box</span>
-            <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+            Order Sample Box
           </button>
         </div>
+
+        {/* Subtle e-commerce trust signals */}
+        <p className="mt-5 text-xs text-neutral-400 font-normal">
+          10,000+ products &middot; Express UAE delivery &middot; Design online free
+        </p>
       </div>
     </TenthFormation>
   );
 }
-

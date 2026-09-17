@@ -93,7 +93,6 @@ export const products: Product[] = [
     useCases: ["E-commerce & DTC", "Events & Weddings"],
     images: [
       "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Custom Vinyl Die-Cut Stickers | Outprint",
@@ -142,7 +141,7 @@ export const products: Product[] = [
       "Prismatic rainbow-refraction stickers with a 100% opaque spot-white backing so colors stay vivid against any surface.",
     useCases: ["E-commerce & DTC", "Events & Weddings"],
     images: [
-      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Holographic Die-Cut Stickers | Outprint",
@@ -279,7 +278,7 @@ export const products: Product[] = [
       "Waterproof, UV-stable vinyl labels built for bottles, outdoor gear, and anything that lives outside a climate-controlled shelf.",
     useCases: ["Beauty & Cosmetics", "Food & Beverage"],
     images: [
-      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Weatherproof Vinyl Labels | Outprint",
@@ -323,7 +322,7 @@ export const products: Product[] = [
       "Branded closure and shipping labels sized for mailers, pouches and retail boxes.",
     useCases: ["E-commerce & DTC", "Food & Beverage"],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Custom Packaging Labels | Outprint",
@@ -413,7 +412,7 @@ export const products: Product[] = [
       "Uncoated kraft mailer boxes with a natural, eco-forward finish — ideal for brands leaning into minimal, recyclable packaging.",
     useCases: ["E-commerce & DTC", "Fashion & Apparel"],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Kraft Mailer Boxes | Outprint",
@@ -455,7 +454,7 @@ export const products: Product[] = [
       "Two-piece rigid chipboard boxes with a magnetic or friction-fit lid — built for unboxing moments, not just shipping.",
     useCases: ["Fashion & Apparel", "Beauty & Cosmetics", "Events & Weddings"],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Custom Rigid Gift Boxes | Outprint",
@@ -2162,7 +2161,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Letterheads | Outprint",
@@ -2237,7 +2236,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Express Letterheads | Outprint",
@@ -2312,7 +2311,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Executive Letterheads | Outprint",
@@ -2387,7 +2386,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1649019489428-70f505daacd6?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "DL Custom Envelopes | Outprint",
@@ -2462,7 +2461,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1649019489428-70f505daacd6?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "C5 Custom Envelopes | Outprint",
@@ -2537,7 +2536,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1649019489428-70f505daacd6?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "C4 Custom Envelopes | Outprint",
@@ -2612,7 +2611,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "A5 Notepads | Outprint",
@@ -2682,7 +2681,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "A5 Wire-o Notebooks | Outprint",
@@ -2752,7 +2751,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1638636241638-aef5120c5153?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Certificates | Outprint",
@@ -2822,7 +2821,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1638636241638-aef5120c5153?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Premium Certificates | Outprint",
@@ -2897,7 +2896,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1785140629334-828efea50e09?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "A4 2-Pocket Folders | Outprint",
@@ -2973,7 +2972,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1785140629334-828efea50e09?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Custom Shape Folders | Outprint",
@@ -3059,7 +3058,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Flyers | Outprint",
@@ -3141,7 +3140,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Express Flyers | Outprint",
@@ -3218,7 +3217,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Gloss Laminated Flyers | Outprint",
@@ -3295,7 +3294,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Square Flyers | Outprint",
@@ -3372,7 +3371,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Brown Kraft Flyers | Outprint",
@@ -3449,7 +3448,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Waterproof Flyers | Outprint",
@@ -3524,7 +3523,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Desktop Calendars | Outprint",
@@ -3590,7 +3589,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Wall Calendars | Outprint",
@@ -3656,7 +3655,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Poster Calendars | Outprint",
@@ -3723,7 +3722,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Postcards | Outprint",
@@ -3790,7 +3789,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Photo Postcards | Outprint",
@@ -3857,7 +3856,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Square Postcards | Outprint",
@@ -3924,7 +3923,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1554894872-1a01c75f7513?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Greeting Cards | Outprint",
@@ -4001,7 +4000,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Trifold Menus | Outprint",
@@ -4073,7 +4072,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Trifold Pamphlets | Outprint",
@@ -4145,7 +4144,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Booklets | Outprint",
@@ -4217,7 +4216,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Catalogues | Outprint",
@@ -4288,7 +4287,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Brochures | Outprint",
@@ -4360,7 +4359,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Company Profiles | Outprint",
@@ -4430,7 +4429,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1614687959440-859988ca224b?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Door Hangers | Outprint",
@@ -4507,7 +4506,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Round Stickers | Outprint",
@@ -4754,7 +4753,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Paper Stickers | Outprint",
@@ -4843,7 +4842,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Posters | Outprint",
@@ -4932,7 +4931,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Coasters | Outprint",
@@ -5015,7 +5014,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Brown Kraft Coasters | Outprint",
@@ -5097,7 +5096,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Placemats | Outprint",
@@ -5162,7 +5161,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Food Wrappers | Outprint",
@@ -5232,7 +5231,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1771258062332-a715063fcb2f?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Table Tents | Outprint",
@@ -5308,7 +5307,7 @@ export const products: Product[] = [
       "E-commerce & DTC",
     ],
     images: [
-      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1669975106195-df79bd67e483?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Hang Tags | Outprint",
@@ -5384,7 +5383,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Bookmarks | Outprint",
@@ -5451,7 +5450,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Premium Bookmarks | Outprint",
@@ -5523,7 +5522,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1715520928476-cd350276d96e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Tickets/Vouchers | Outprint",
@@ -5919,7 +5918,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "5mm Foam Board Panel | Outprint",
@@ -5998,7 +5997,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "10mm Foam Board Panel | Outprint",
@@ -6169,7 +6168,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Large Posters | Outprint",
@@ -6249,7 +6248,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Rolled Canvas Print | Outprint",
@@ -6322,7 +6321,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Stretched Canvas Print | Outprint",
@@ -6400,7 +6399,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Classic Framed Canvas | Outprint",
@@ -6478,7 +6477,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1574299213979-ad327da06aeb?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Pop-Up Banner Hardcase (Straight) | Outprint",
@@ -6548,7 +6547,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Spring A-Board | Outprint",
@@ -6614,7 +6613,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1590415041359-c6dd3f511020?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Sail Flag | Outprint",
@@ -6698,7 +6697,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1558535284-3ade92aa58d4?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Custom Table Cloth | Outprint",
@@ -6772,7 +6771,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1611619899256-5e61d4c46df9?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Plastic Pens | Outprint",
@@ -6842,7 +6841,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1611619899256-5e61d4c46df9?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Metal Pens | Outprint",
@@ -6912,7 +6911,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Metal Business Card Case | Outprint",
@@ -6982,7 +6981,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "USB Card Sticks | Outprint",
@@ -7052,7 +7051,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Mouse Pads | Outprint",
@@ -7117,7 +7116,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1585995603413-eb35b5f4a50b?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Power Banks | Outprint",
@@ -7182,7 +7181,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1610632380989-680fe40816c6?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Coffee Mugs (Gloss Finish) | Outprint",
@@ -7261,7 +7260,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1575908539614-ff89490f4a78?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Metal Key Ring | Outprint",
@@ -7326,7 +7325,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1637070155805-e6fbee6ec2cf?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Plastic ID Cards | Outprint",
@@ -7386,7 +7385,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1516384100354-0e0bbc0d2e00?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Magnet Name Badges | Outprint",
@@ -7441,7 +7440,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "A5 PU Leather Notebooks | Outprint",
@@ -7511,7 +7510,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Cotton Tote Bags | Outprint",
@@ -7585,7 +7584,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Custom Water Bottles | Outprint",
@@ -7669,7 +7668,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1613243555988-441166d4d6fd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "PVC NFC Cards | Outprint",
@@ -7740,7 +7739,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Photo Strips | Outprint",
@@ -7811,7 +7810,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Photo Mini Books | Outprint",
@@ -7882,7 +7881,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1554894872-1a01c75f7513?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Photo Greeting Cards | Outprint",
@@ -7958,7 +7957,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Photo Stickers | Outprint",
@@ -8024,7 +8023,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Photo Calendars | Outprint",
@@ -8095,7 +8094,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Photo Canvas | Outprint",
@@ -8285,7 +8284,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Unisex Heavy Weight T-Shirt | Outprint",
@@ -8401,7 +8400,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Kids Light Weight T-Shirt | Outprint",
@@ -8633,7 +8632,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1626253934161-08cfea22e968?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Fast Food Boxes | Outprint",
@@ -8716,7 +8715,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1626253934161-08cfea22e968?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Bakery Food Boxes | Outprint",
@@ -9054,7 +9053,7 @@ export const products: Product[] = [
       "Beauty & Cosmetics",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1656543802898-41c8c46683a7?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Countertop Display Boxes | Outprint",
@@ -9132,7 +9131,7 @@ export const products: Product[] = [
       "E-commerce & DTC",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1656543802898-41c8c46683a7?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Hook Display Boxes | Outprint",
@@ -9211,7 +9210,7 @@ export const products: Product[] = [
       "Fashion & Apparel",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=900&q=80",
     ],
     seo: {
       title: "Standard Paper Bags | Outprint",
@@ -9357,5 +9356,628 @@ export const products: Product[] = [
       },
     ],
     basePricePerUnit: 1.1,
+  },
+
+  // ── Invoice Books, Stamps, Paper Cups & Paper Bag variants ───────────
+  {
+    id: "prod-custom-receipt-books",
+    slug: "custom-receipt-books",
+    name: "Custom Receipt Books",
+    categoryId: "cat-bp-invoice-books",
+    description: "A carbonless duplicate receipt book, numbered and perforated for easy tear-off, for retail and service billing.",
+    useCases: [
+      "Corporate & Office",
+      "Food & Beverage",
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80",
+    ],
+    seo: {
+      title: "Custom Receipt Books | Outprint",
+      description: "Custom carbonless duplicate receipt books, numbered and perforated. Bulk pricing from 10 to 250 books.",
+    },
+    optionGroups: [
+      {
+        type: "size",
+        presets: [
+          {
+            label: "5.5\" x 8.5\" Standard",
+            valueInInches: 5.5,
+          },
+        ],
+        allowCustomSize: false,
+      },
+      {
+        type: "quantity",
+        tiers: [
+          10,
+          25,
+          50,
+          100,
+          250,
+        ],
+      },
+      {
+        type: "material",
+        options: [
+          {
+            label: "2-Part Carbonless (Duplicate)",
+            image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "3-Part Carbonless (Triplicate)",
+            image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.35,
+          },
+        ],
+      },
+      {
+        type: "addons",
+        options: [
+          {
+            label: "Sequential Numbering",
+            description: "Unique incrementing number printed on each receipt.",
+            priceDelta: 1,
+          },
+          {
+            label: "Rush Production",
+            description: "Moves your order to the front of the press queue.",
+            priceDelta: 3,
+          },
+        ],
+      },
+    ],
+    basePricePerUnit: 8,
+  },
+  {
+    id: "prod-a6-custom-ncr-bill-books",
+    slug: "a6-custom-ncr-bill-books",
+    name: "A6 Custom NCR Bill Books",
+    categoryId: "cat-bp-invoice-books",
+    description: "A carbonless NCR bill book sized A6, numbered and bound for daily invoicing and delivery notes.",
+    useCases: [
+      "Corporate & Office",
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80",
+    ],
+    seo: {
+      title: "A6 Custom NCR Bill Books | Outprint",
+      description: "Custom A6 NCR carbonless bill books, numbered and bound. Bulk pricing from 10 to 250 books.",
+    },
+    optionGroups: [
+      {
+        type: "size",
+        presets: [
+          {
+            label: "A6 (4.1\" x 5.8\")",
+            valueInInches: 4.1,
+          },
+        ],
+        allowCustomSize: false,
+      },
+      {
+        type: "quantity",
+        tiers: [
+          10,
+          25,
+          50,
+          100,
+          250,
+        ],
+      },
+      {
+        type: "material",
+        options: [
+          {
+            label: "2-Part Carbonless (Duplicate)",
+            image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "3-Part Carbonless (Triplicate)",
+            image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.35,
+          },
+        ],
+      },
+      {
+        type: "addons",
+        options: [
+          {
+            label: "Sequential Numbering",
+            description: "Unique incrementing number printed on each page.",
+            priceDelta: 1,
+          },
+          {
+            label: "Rush Production",
+            description: "Moves your order to the front of the press queue.",
+            priceDelta: 3,
+          },
+        ],
+      },
+    ],
+    basePricePerUnit: 10,
+  },
+  {
+    id: "prod-a5-custom-ncr-bill-books",
+    slug: "a5-custom-ncr-bill-books",
+    name: "A5 Custom NCR Bill Books",
+    categoryId: "cat-bp-invoice-books",
+    description: "A carbonless NCR bill book sized A5, numbered and bound for daily invoicing and delivery notes.",
+    useCases: [
+      "Corporate & Office",
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80",
+    ],
+    seo: {
+      title: "A5 Custom NCR Bill Books | Outprint",
+      description: "Custom A5 NCR carbonless bill books, numbered and bound. Bulk pricing from 10 to 250 books.",
+    },
+    optionGroups: [
+      {
+        type: "size",
+        presets: [
+          {
+            label: "A5 (5.8\" x 8.3\")",
+            valueInInches: 5.8,
+          },
+        ],
+        allowCustomSize: false,
+      },
+      {
+        type: "quantity",
+        tiers: [
+          10,
+          25,
+          50,
+          100,
+          250,
+        ],
+      },
+      {
+        type: "material",
+        options: [
+          {
+            label: "2-Part Carbonless (Duplicate)",
+            image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "3-Part Carbonless (Triplicate)",
+            image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.35,
+          },
+        ],
+      },
+      {
+        type: "addons",
+        options: [
+          {
+            label: "Sequential Numbering",
+            description: "Unique incrementing number printed on each page.",
+            priceDelta: 1,
+          },
+          {
+            label: "Rush Production",
+            description: "Moves your order to the front of the press queue.",
+            priceDelta: 3,
+          },
+        ],
+      },
+    ],
+    basePricePerUnit: 14,
+  },
+  {
+    id: "prod-a4-custom-ncr-bill-books",
+    slug: "a4-custom-ncr-bill-books",
+    name: "A4 Custom NCR Bill Books",
+    categoryId: "cat-bp-invoice-books",
+    description: "A carbonless NCR bill book sized A4, numbered and bound for daily invoicing and delivery notes.",
+    useCases: [
+      "Corporate & Office",
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80",
+    ],
+    seo: {
+      title: "A4 Custom NCR Bill Books | Outprint",
+      description: "Custom A4 NCR carbonless bill books, numbered and bound. Bulk pricing from 10 to 250 books.",
+    },
+    optionGroups: [
+      {
+        type: "size",
+        presets: [
+          {
+            label: "A4 (8.3\" x 11.7\")",
+            valueInInches: 8.3,
+          },
+        ],
+        allowCustomSize: false,
+      },
+      {
+        type: "quantity",
+        tiers: [
+          10,
+          25,
+          50,
+          100,
+          250,
+        ],
+      },
+      {
+        type: "material",
+        options: [
+          {
+            label: "2-Part Carbonless (Duplicate)",
+            image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "3-Part Carbonless (Triplicate)",
+            image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.35,
+          },
+        ],
+      },
+      {
+        type: "addons",
+        options: [
+          {
+            label: "Sequential Numbering",
+            description: "Unique incrementing number printed on each page.",
+            priceDelta: 1,
+          },
+          {
+            label: "Rush Production",
+            description: "Moves your order to the front of the press queue.",
+            priceDelta: 3,
+          },
+        ],
+      },
+    ],
+    basePricePerUnit: 20,
+  },
+  {
+    id: "prod-self-ink-stamp",
+    slug: "self-ink-stamp",
+    name: "Self-Ink Stamp",
+    categoryId: "cat-bp-stamps",
+    description: "A pre-inked self-ink stamp for your logo, signature or approval mark — good for thousands of clean impressions before re-inking.",
+    useCases: [
+      "Corporate & Office",
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1611075551111-dfda5f9c6f02?auto=format&fit=crop&w=900&q=80",
+    ],
+    seo: {
+      title: "Self-Ink Stamp | Outprint",
+      description: "Custom self-ink business stamps in multiple sizes and ink colors. Bulk pricing from 1 to 50 stamps.",
+    },
+    optionGroups: [
+      {
+        type: "size",
+        presets: [
+          {
+            label: "38mm x 14mm Small",
+            valueInInches: 1.5,
+          },
+          {
+            label: "47mm x 18mm Medium",
+            valueInInches: 1.85,
+          },
+          {
+            label: "58mm x 22mm Large",
+            valueInInches: 2.3,
+          },
+        ],
+        allowCustomSize: false,
+      },
+      {
+        type: "quantity",
+        tiers: [
+          1,
+          5,
+          10,
+          25,
+          50,
+        ],
+      },
+      {
+        type: "material",
+        options: [
+          {
+            label: "Black Ink",
+            image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "Blue Ink",
+            image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "Red Ink",
+            image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+        ],
+      },
+      {
+        type: "addons",
+        options: [
+          {
+            label: "Extra Ink Refill",
+            description: "Includes a spare bottle of ink for re-inking the pad.",
+            priceDelta: 8,
+          },
+          {
+            label: "Rush Production",
+            description: "Moves your order to the front of the press queue.",
+            priceDelta: 15,
+          },
+        ],
+      },
+    ],
+    basePricePerUnit: 45,
+  },
+  {
+    id: "prod-custom-paper-cups",
+    slug: "custom-paper-cups",
+    name: "Custom Paper Cups",
+    categoryId: "cat-pp-hospitality",
+    description: "Double-wall or single-wall paper cups printed with your branding — for coffee, cold drinks or takeaway service.",
+    useCases: [
+      "Food & Beverage",
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1598908314732-07113901949e?auto=format&fit=crop&w=900&q=80",
+    ],
+    seo: {
+      title: "Custom Paper Cups | Outprint",
+      description: "Custom branded paper cups in 120ml to 240ml sizes, single or double-wall. Bulk pricing from 100 to 2500 units.",
+    },
+    optionGroups: [
+      {
+        type: "size",
+        presets: [
+          {
+            label: "120ml (4oz)",
+            valueInInches: 2.5,
+          },
+          {
+            label: "190ml (6.5oz)",
+            valueInInches: 3,
+          },
+          {
+            label: "240ml (8oz)",
+            valueInInches: 3.3,
+          },
+        ],
+        allowCustomSize: false,
+      },
+      {
+        type: "quantity",
+        tiers: [
+          100,
+          250,
+          500,
+          1000,
+          2500,
+        ],
+      },
+      {
+        type: "material",
+        options: [
+          {
+            label: "Single-Wall Paper",
+            image: "https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "Double-Wall Paper",
+            image: "https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.3,
+          },
+        ],
+      },
+      {
+        type: "addons",
+        options: [
+          {
+            label: "Matching Lids",
+            description: "Adds a printed or plain lid sized to match.",
+            priceDelta: 0.15,
+          },
+          {
+            label: "Rush Production",
+            description: "Moves your order to the front of the press queue.",
+            priceDelta: 0.2,
+          },
+        ],
+      },
+    ],
+    basePricePerUnit: 1.8,
+  },
+  {
+    id: "prod-ready-made-kraft-paper-bags",
+    slug: "ready-made-kraft-paper-bags",
+    name: "Ready-Made Kraft Paper Bags",
+    categoryId: "cat-pkg-paper-bags",
+    description: "In-stock plain kraft paper bags in a choice of colors, ready for immediate dispatch — no print setup or lead time.",
+    useCases: [
+      "E-commerce & DTC",
+      "Fashion & Apparel",
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+    ],
+    seo: {
+      title: "Ready-Made Kraft Paper Bags | Outprint",
+      description: "In-stock ready-made kraft paper bags in 5 colors, dispatched immediately with no custom print lead time. Bulk pricing from 25 units.",
+    },
+    optionGroups: [
+      {
+        type: "size",
+        presets: [
+          {
+            label: "8\" x 4\" x 10\"",
+            valueInInches: 8,
+          },
+          {
+            label: "10\" x 5\" x 13\"",
+            valueInInches: 10,
+          },
+          {
+            label: "12\" x 6\" x 15\"",
+            valueInInches: 12,
+          },
+        ],
+        allowCustomSize: false,
+      },
+      {
+        type: "quantity",
+        tiers: [
+          25,
+          50,
+          100,
+          250,
+          500,
+        ],
+      },
+      {
+        type: "material",
+        options: [
+          {
+            label: "Brown Kraft",
+            image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "Pink Kraft",
+            image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.05,
+          },
+          {
+            label: "Purple Kraft",
+            image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.05,
+          },
+          {
+            label: "Navy Blue Kraft",
+            image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.05,
+          },
+          {
+            label: "Black Kraft",
+            image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.05,
+          },
+        ],
+      },
+      {
+        type: "addons",
+        options: [
+          {
+            label: "Rush Production",
+            description: "Moves your order to the front of the press queue.",
+            priceDelta: 0.2,
+          },
+        ],
+      },
+    ],
+    basePricePerUnit: 3,
+  },
+  {
+    id: "prod-luxury-paper-bags",
+    slug: "luxury-paper-bags",
+    name: "Luxury Paper Bags",
+    categoryId: "cat-pkg-paper-bags",
+    description: "A premium shopping bag on heavyweight laminated stock with rope handles — for boutique retail, gifting and unboxing moments.",
+    useCases: [
+      "Fashion & Apparel",
+      "Beauty & Cosmetics",
+      "Events & Weddings",
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=900&q=80",
+    ],
+    seo: {
+      title: "Luxury Paper Bags | Outprint",
+      description: "Custom premium laminated shopping bags with rope handles for boutique retail and gifting. Bulk pricing from 25 to 500 units.",
+    },
+    optionGroups: [
+      {
+        type: "size",
+        presets: [
+          {
+            label: "8\" x 4\" x 10\"",
+            valueInInches: 8,
+          },
+          {
+            label: "10\" x 5\" x 13\"",
+            valueInInches: 10,
+          },
+          {
+            label: "12\" x 6\" x 15\"",
+            valueInInches: 12,
+          },
+        ],
+        allowCustomSize: true,
+      },
+      {
+        type: "quantity",
+        tiers: [
+          25,
+          50,
+          100,
+          250,
+          500,
+        ],
+      },
+      {
+        type: "material",
+        options: [
+          {
+            label: "Gloss Laminated Art Card",
+            image: "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "Matte Laminated Art Card",
+            image: "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.05,
+          },
+          {
+            label: "Soft-Touch Laminated Art Card",
+            image: "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1.2,
+          },
+        ],
+      },
+      {
+        type: "addons",
+        options: [
+          {
+            label: "Ribbon Handles",
+            description: "Upgrades from cotton rope to a satin ribbon handle.",
+            priceDelta: 0.4,
+          },
+          {
+            label: "Foil Stamped Logo",
+            description: "Metallic foil accent on the printed logo.",
+            priceDelta: 0.6,
+          },
+          {
+            label: "Rush Production",
+            description: "Moves your order to the front of the press queue.",
+            priceDelta: 0.5,
+          },
+        ],
+      },
+    ],
+    basePricePerUnit: 5.5,
   },
 ];

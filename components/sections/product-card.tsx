@@ -9,6 +9,8 @@ import { formatCurrency } from "@/lib/currency";
 interface ProductCardProps {
   product: Product;
   className?: string;
+  /** "white" (default) is the bordered catalog-grid card; "grey" is the borderless neutral tile used in homepage carousels. */
+  variant?: "white" | "grey";
 }
 
 /** Truncates to a clean word boundary instead of cutting mid-word. */
@@ -19,14 +21,22 @@ function truncate(text: string, maxLength: number): string {
   return `${clipped.slice(0, lastSpace > 0 ? lastSpace : maxLength)}…`;
 }
 
-export function ProductCard({ product, className }: ProductCardProps) {
+export function ProductCard({ product, className, variant = "white" }: ProductCardProps) {
   const category = categories.find((c) => c.id === product.categoryId);
   const { unitPrice, quantity } = getStartingOffer(product);
+  const variantClass =
+    variant === "grey"
+      ? "rounded-[28px] border-none bg-neutral-100"
+      : "rounded-2xl border border-[#E5E5E5] bg-white";
+  const gradientClass =
+    variant === "grey"
+      ? "from-neutral-100 via-neutral-100/60"
+      : "from-white via-white/60";
 
   return (
     <Link
       href={`/product/${product.slug}`}
-      className={`group flex flex-col overflow-hidden rounded-2xl border border-[#E5E5E5] bg-white transition-all hover:shadow-card-hover ${className ?? ""}`}
+      className={`group flex flex-col overflow-hidden transition-all hover:shadow-card-hover ${variantClass} ${className ?? ""}`}
     >
       <div className="relative aspect-square w-full overflow-hidden bg-[#FAFAF9]">
         <Image
@@ -35,6 +45,9 @@ export function ProductCard({ product, className }: ProductCardProps) {
           fill
           sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+        <div
+          className={`pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t ${gradientClass} to-transparent`}
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-200 group-hover:bg-black/35 group-hover:opacity-100">
           <span className="rounded-full bg-white px-4 py-2 text-xs font-medium text-black">

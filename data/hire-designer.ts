@@ -46,7 +46,7 @@ export const PRICING_TIERS: PricingTier[] = [
   {
     id: "basic",
     name: "Basic",
-    price: 1499,
+    price: 99,
     turnaround: "3–5 business days",
     tagline: "A single piece, done right.",
     features: ["1 initial concept", "1 round of revisions", "Print-ready file"],
@@ -54,7 +54,7 @@ export const PRICING_TIERS: PricingTier[] = [
   {
     id: "standard",
     name: "Standard",
-    price: 3999,
+    price: 249,
     turnaround: "2–3 business days",
     tagline: "For multi-piece sets & packaging.",
     features: ["3 initial concepts", "3 rounds of revisions", "Source files included", "Priority queue"],
@@ -63,7 +63,7 @@ export const PRICING_TIERS: PricingTier[] = [
   {
     id: "premium",
     name: "Premium",
-    price: 8999,
+    price: 499,
     turnaround: "24–48 hours",
     tagline: "Full brand exploration, senior designer.",
     features: [
@@ -129,5 +129,5 @@ export const DESIGNERS: DesignerProfile[] = [
 /** Shown on the confirmation screen after a request is prepared. */
 export const RESPONSE_TIME_HOURS = 2;
 
-export const RUSH_FEE = 799;
+export const RUSH_FEE = 49;
 export const RUSH_TURNAROUND = "Next business day";

@@ -4,12 +4,20 @@ import * as React from "react";
 import {
   Navbar,
   HeroSection,
-  TrustBar,
-  BestSellers,
   ShopByCategory,
-  ShopByIndustry,
-  HireDesignerBanner,
+  SameDayPrinting,
+  HowItWorks,
+  BusinessEssentials,
+  BestSellers,
+  ExploreCategories,
   Testimonials,
+  WhyChooseUs,
+  QuoteBanner,
+  HireDesignerBanner,
+  RecentlyViewed,
+  HandpickedForYou,
+  SupportBanner,
+  NewsletterBand,
   Footer,
   ProofModal,
 } from "@/components/sections";
@@ -39,12 +47,20 @@ export default function Home() {
 
       <main>
         <HeroSection onOpenProof={handleOpenProof} onRequestSample={handleRequestSample} />
-        <TrustBar />
-        <BestSellers />
         <ShopByCategory />
-        <ShopByIndustry />
-        <HireDesignerBanner />
+        <SameDayPrinting />
+        <HowItWorks />
+        <BusinessEssentials />
+        <BestSellers />
+        <ExploreCategories />
         <Testimonials />
+        <WhyChooseUs />
+        <QuoteBanner />
+        <HireDesignerBanner />
+        <RecentlyViewed />
+        <HandpickedForYou />
+        <SupportBanner />
+        <NewsletterBand />
       </main>
 
       <Footer />

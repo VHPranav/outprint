@@ -3,8 +3,8 @@
 // format the same way.
 
 export const CURRENCY = {
-  code: "INR",
-  symbol: "₹",
+  code: "AED",
+  symbol: "AED ",
 } as const;
 
 export function formatCurrency(amount: number): string {

@@ -53,6 +53,7 @@ export interface CartPayload {
   type: "cart";
   items: CartItem[];
   subtotal: number;
+  vatAmount?: number;
   gstAmount: number;
   grandTotal: number;
   customerName?: string;
@@ -163,7 +164,7 @@ function buildCartMessage(payload: CartPayload): string {
     section("🛒 Cart Items", itemLines),
     section("💰 Total", [
       line("Subtotal", formatCurrency(payload.subtotal)),
-      line("GST", formatCurrency(payload.gstAmount)),
+      line("VAT (5%)", formatCurrency(payload.vatAmount ?? payload.gstAmount)),
       line("Grand Total", formatCurrency(payload.grandTotal)),
     ]),
   ];

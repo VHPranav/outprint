@@ -11,6 +11,7 @@ import {
   ProductInfoTabs,
   ProductReviews,
   RelatedProducts,
+  RecordProductView,
 } from "@/components/sections";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { productJsonLd, breadcrumbJsonLd } from "@/lib/structured-data";
@@ -83,6 +84,7 @@ export default function ProductPage({ params }: ProductPageProps) {
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
+      <RecordProductView slug={product.slug} />
       <Navbar />
 
       <main className="mx-auto max-w-7xl px-6 pb-8 pt-24 sm:px-8 sm:pb-10 sm:pt-28">

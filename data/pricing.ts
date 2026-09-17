@@ -3,8 +3,10 @@
 
 import type { Product } from "./products";
 
-/** India GST rate applied to the order subtotal. */
-export const GST_RATE = 0.18;
+/** UAE VAT rate (5%) applied to the order subtotal. */
+export const VAT_RATE = 0.05;
+/** Alias for backwards compatibility with existing references. */
+export const GST_RATE = VAT_RATE;
 
 /** Quantity tier the discount curve is calibrated against (see Product.basePricePerUnit). */
 const BASE_QTY = 25;
@@ -32,6 +34,8 @@ export interface PriceSelections {
 export interface PriceBreakdown {
   unitPrice: number;
   totalPrice: number;
+  vatAmount: number;
+  /** Alias for vatAmount for backwards compatibility. */
   gstAmount: number;
 }
 
@@ -121,7 +125,7 @@ export function calculatePrice(product: Product, selections: PriceSelections): P
 
   const unitPrice = round2(rawUnitPrice);
   const totalPrice = round2(unitPrice * quantity);
-  const gstAmount = round2(totalPrice * GST_RATE);
+  const vatAmount = round2(totalPrice * VAT_RATE);
 
-  return { unitPrice, totalPrice, gstAmount };
+  return { unitPrice, totalPrice, vatAmount, gstAmount: vatAmount };
 }

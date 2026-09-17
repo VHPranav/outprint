@@ -6,13 +6,16 @@ import { formatCurrency } from "@/lib/currency";
 
 interface OrderSummaryProps {
   subtotal: number;
-  gstAmount: number;
+  vatAmount?: number;
+  gstAmount?: number;
   grandTotal: number;
   itemCount: number;
   onSendWhatsApp: () => void;
 }
 
-export function OrderSummary({ subtotal, gstAmount, grandTotal, itemCount, onSendWhatsApp }: OrderSummaryProps) {
+export function OrderSummary({ subtotal, vatAmount, gstAmount, grandTotal, itemCount, onSendWhatsApp }: OrderSummaryProps) {
+  const tax = vatAmount ?? gstAmount ?? 0;
+
   return (
     <div className="rounded-2xl border border-[#E5E5E5] bg-[#FAFAF9] p-6 lg:sticky lg:top-24">
       <h2 className="text-sm font-semibold text-neutral-900">Order Summary</h2>
@@ -23,8 +26,8 @@ export function OrderSummary({ subtotal, gstAmount, grandTotal, itemCount, onSen
           <dd className="font-medium text-neutral-900">{formatCurrency(subtotal)}</dd>
         </div>
         <div className="flex justify-between">
-          <dt className="text-neutral-500">GST (18%)</dt>
-          <dd className="font-medium text-neutral-900">{formatCurrency(gstAmount)}</dd>
+          <dt className="text-neutral-500">VAT (5%)</dt>
+          <dd className="font-medium text-neutral-900">{formatCurrency(tax)}</dd>
         </div>
       </dl>
 

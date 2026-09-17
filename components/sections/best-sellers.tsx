@@ -1,87 +1,52 @@
 import * as React from "react";
-import { getProductBySlug, getStartingOffer } from "@/lib/catalog";
-import { formatCurrency } from "@/lib/currency";
+import { getProductBySlug } from "@/lib/catalog";
 import { Reveal } from "@/components/ui/reveal";
-import { BentoCard } from "@/components/ui/bento-card";
+import { Carousel } from "@/components/ui/carousel";
+import { ProductCard } from "./product-card";
 
 // Hand-picked for variety across categories until real sales data exists.
-// Order matters: the first two are the large hero tiles, the rest fill the row below.
 const BEST_SELLER_SLUGS = [
   "vinyl-die-cut-stickers",
+  "holographic-die-cut-stickers",
+  "weatherproof-vinyl-labels",
+  "corrugated-mailer-boxes",
   "rigid-gift-boxes",
   "premium-suede-business-cards",
+  "letterpress-cotton-business-cards",
   "vinyl-outdoor-banners",
-  "weatherproof-vinyl-labels",
+  "coffee-mugs-gloss-finish",
+  "unisex-heavy-weight-t-shirt",
 ];
-
-const BEST_SELLER_IMAGES: Record<string, string> = {
-  "vinyl-die-cut-stickers": "/images/27.webp",
-  "rigid-gift-boxes": "/images/29.webp",
-  "premium-suede-business-cards": "/images/22.webp",
-  "vinyl-outdoor-banners": "/images/26.webp",
-  "weatherproof-vinyl-labels": "/images/30.webp",
-};
 
 export function BestSellers() {
   const products = BEST_SELLER_SLUGS.map(getProductBySlug).filter(
     (product): product is NonNullable<typeof product> => Boolean(product)
   );
-  const [heroA, heroB, ...rest] = products;
 
   return (
-    <section className="py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-6 sm:px-8">
-        <Reveal className="mb-10 flex items-end justify-between gap-4">
-          <div>
-            <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight text-[#111111]">
-              Best sellers
-            </h2>
-            <p className="mt-2 text-sm text-neutral-500">
-              The stickers, labels and boxes our customers reorder most.
-            </p>
-          </div>
+    <section className="bg-black py-16 sm:py-20">
+      <div className="mx-auto w-[90%] max-w-[1600px]">
+        <Reveal className="mb-8 max-w-2xl">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white">
+            Our Best Seller Products
+          </h2>
+          <p className="mt-2 text-sm sm:text-base text-white/70">
+            The stickers, labels and boxes our customers reorder most.
+          </p>
         </Reveal>
 
-        <div className="flex flex-col gap-5">
-          {heroA && heroB && (
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-              {[heroA, heroB].map((product, i) => {
-                const { unitPrice, quantity } = getStartingOffer(product);
-                return (
-                  <BentoCard
-                    key={product.id}
-                    href={`/product/${product.slug}`}
-                    title={product.name}
-                    subtitle={`From ${formatCurrency(unitPrice)} for ${quantity} pcs`}
-                    image={BEST_SELLER_IMAGES[product.slug] || product.images[0]}
-                    variant="grey"
-                    large
-                    delay={0.05 + i * 0.05}
-                  />
-                );
-              })}
-            </div>
-          )}
-
-          {rest.length > 0 && (
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-              {rest.map((product, i) => {
-                const { unitPrice, quantity } = getStartingOffer(product);
-                return (
-                  <BentoCard
-                    key={product.id}
-                    href={`/product/${product.slug}`}
-                    title={product.name}
-                    subtitle={`From ${formatCurrency(unitPrice)} for ${quantity} pcs`}
-                    image={BEST_SELLER_IMAGES[product.slug] || product.images[0]}
-                    variant="grey"
-                    delay={0.15 + i * 0.05}
-                  />
-                );
-              })}
-            </div>
-          )}
-        </div>
+        <Reveal delay={0.1}>
+          <Carousel ariaLabel="Best seller products" trackClassName="gap-5 px-1 py-1">
+            {products.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                variant="grey"
+                className="w-64 shrink-0 snap-start sm:w-72"
+              />
+            ))}
+          </Carousel>
+        </Reveal>
       </div>
     </section>
   );

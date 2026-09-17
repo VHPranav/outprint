@@ -1,11 +1,12 @@
 import * as React from "react";
 import Link from "next/link";
 import { Palette, ArrowRight } from "lucide-react";
+import { Reveal } from "@/components/ui/reveal";
 
 export function HireDesignerBanner() {
   return (
     <section className="bg-black py-20 text-white sm:py-28">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 text-center sm:px-8">
+      <Reveal className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 text-center sm:px-8">
         <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white">
           <Palette className="h-5 w-5" />
         </span>
@@ -23,7 +24,7 @@ export function HireDesignerBanner() {
           Hire a Designer
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
         </Link>
-      </div>
+      </Reveal>
     </section>
   );
 }

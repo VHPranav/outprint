@@ -30,9 +30,16 @@ export interface DesignRequestPayload {
   type: "design-request";
   customerName: string;
   contact: string;
+  /** What they're designing — a category name, or "Not sure yet". */
+  category?: string;
+  /** The specific product the request started from (e.g. arrived via a product page's "Hire a Designer" tile). */
+  productContext?: string;
   projectDescription: string;
+  styleTags?: string[];
   referenceFileUrls?: string[];
-  budgetTier: string;
+  packageTier: string;
+  turnaround: string;
+  price: number;
 }
 
 export interface CartItem {
@@ -45,6 +52,8 @@ export interface CartItem {
 export interface CartPayload {
   type: "cart";
   items: CartItem[];
+  subtotal: number;
+  gstAmount: number;
   grandTotal: number;
   customerName?: string;
 }
@@ -104,17 +113,26 @@ function buildProductOrderMessage(payload: ProductOrderPayload): string {
 
 function buildDesignRequestMessage(payload: DesignRequestPayload): string {
   const sections = [
-    "Hi Outprint! I'd like to request a custom design.",
+    "Hi Outprint! I'd like to hire a designer for a new project.",
     section("🙋 Contact", [
       line("Name", payload.customerName),
       line("Contact", payload.contact),
     ]),
-    section("📝 Project Description", [payload.projectDescription]),
+    section("🗂️ Project", [
+      line("Category", payload.category),
+      line("Related product", payload.productContext),
+      line("Style", payload.styleTags?.length ? payload.styleTags.join(", ") : undefined),
+    ]),
+    section("📝 Brief", [payload.projectDescription]),
     section(
       "🔗 Reference Files",
       payload.referenceFileUrls?.length ? payload.referenceFileUrls : [null]
     ),
-    section("💵 Budget", [line("Tier", payload.budgetTier)]),
+    section("📦 Package", [
+      line("Tier", payload.packageTier),
+      line("Turnaround", payload.turnaround),
+      line("Price", formatCurrency(payload.price)),
+    ]),
   ];
 
   return sections.filter(Boolean).join("\n\n");
@@ -143,7 +161,11 @@ function buildCartMessage(payload: CartPayload): string {
     "Hi Outprint! I'd like to place an order for multiple items:",
     section("👤 Contact", [line("Name", payload.customerName)]),
     section("🛒 Cart Items", itemLines),
-    section("💰 Grand Total", [formatCurrency(payload.grandTotal)]),
+    section("💰 Total", [
+      line("Subtotal", formatCurrency(payload.subtotal)),
+      line("GST", formatCurrency(payload.gstAmount)),
+      line("Grand Total", formatCurrency(payload.grandTotal)),
+    ]),
   ];
 
   return sections.filter(Boolean).join("\n\n");

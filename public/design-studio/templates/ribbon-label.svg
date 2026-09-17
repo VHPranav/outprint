@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#FFFFFF"/>
+  <polygon points="60,150 30,195 60,240" fill="#111111"/>
+  <polygon points="340,150 370,195 340,240" fill="#111111"/>
+  <rect x="60" y="150" width="280" height="90" fill="#111111"/>
+  <text x="200" y="188" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#FFFFFF">PREMIUM</text>
+  <text x="200" y="216" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#FFFFFF">QUALITY GUARANTEED</text>
+</svg>

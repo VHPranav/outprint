@@ -19,10 +19,10 @@ const companyLinks = [
 ];
 
 const supportLinks = [
-  { label: "Shipping & Delivery", href: "#" },
-  { label: "Returns & Reprints", href: "#" },
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms of Service", href: "#" },
+  { label: "Shipping & Delivery", href: "/shipping-delivery" },
+  { label: "Returns & Reprints", href: "/returns-reprints" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-of-service" },
 ];
 
 function getWhatsAppHref(): string | null {

@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Search, X } from "lucide-react";
 import { searchProducts } from "@/lib/catalog";
 import { getStartingPrice } from "@/lib/catalog";
@@ -81,12 +82,9 @@ export function SearchBar() {
                         onClick={close}
                         className="flex items-center gap-3 rounded-xl p-2 transition-colors hover:bg-[#FAFAF9]"
                       >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={product.images[0]}
-                          alt={product.name}
-                          className="h-12 w-12 shrink-0 rounded-lg object-cover"
-                        />
+                        <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg">
+                          <Image src={product.images[0]} alt={product.name} fill sizes="48px" className="object-cover" />
+                        </div>
                         <div className="min-w-0 flex-1">
                           <p className="truncate text-sm font-medium text-neutral-900">
                             {product.name}

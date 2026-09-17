@@ -1,6 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { Utensils, Shirt, Sparkles, ShoppingBag, PartyPopper, Building2 } from "lucide-react";
+import { Reveal } from "@/components/ui/reveal";
 
 const industries = [
   {
@@ -45,16 +46,16 @@ export function ShopByIndustry() {
   return (
     <section className="py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
-        <div className="mb-10 max-w-xl">
+        <Reveal className="mb-10 max-w-xl">
           <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight text-[#111111]">
             Shop by industry
           </h2>
           <p className="mt-2 text-sm text-neutral-500">
             Not sure where to start? Browse by what you&apos;re actually building.
           </p>
-        </div>
+        </Reveal>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <Reveal delay={0.1} className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {industries.map(({ label, description, icon: Icon, href }) => (
             <Link
               key={label}
@@ -70,7 +71,7 @@ export function ShopByIndustry() {
               </div>
             </Link>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );

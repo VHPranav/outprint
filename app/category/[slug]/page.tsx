@@ -10,6 +10,8 @@ import {
 } from "@/lib/catalog";
 import { Navbar, Footer, SubcategoryTiles, CategoryProductGrid } from "@/components/sections";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { breadcrumbJsonLd } from "@/lib/structured-data";
+import { SITE_URL } from "@/lib/site-config";
 
 interface CategoryPageProps {
   params: { slug: string };
@@ -23,11 +25,30 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const category = getCategoryBySlug(params.slug);
   if (!category) return {};
 
+  const title = category.seo?.title ?? `${category.name} | Outprint`;
+  const description =
+    category.seo?.description ??
+    `Shop custom ${category.name.toLowerCase()} at Outprint — bulk pricing, free digital proof, pan-India delivery.`;
+
   return {
-    title: category.seo?.title ?? `${category.name} | Outprint`,
-    description:
-      category.seo?.description ??
-      `Shop custom ${category.name.toLowerCase()} at Outprint — bulk pricing, free digital proof, pan-India delivery.`,
+    title,
+    description,
+    alternates: {
+      canonical: `${SITE_URL}/category/${category.slug}`,
+    },
+    openGraph: {
+      type: "website",
+      title,
+      description,
+      url: `${SITE_URL}/category/${category.slug}`,
+      images: [{ url: category.bannerImage }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [category.bannerImage],
+    },
   };
 }
 
@@ -44,11 +65,21 @@ export default function CategoryPage({ params }: CategoryPageProps) {
     href: `/category/${c.slug}`,
   }));
 
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: "Home", url: SITE_URL },
+    ...ancestors.map((c) => ({ name: c.name, url: `${SITE_URL}/category/${c.slug}` })),
+  ]);
+
   return (
     <div className="min-h-screen bg-white text-[#111111]">
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <Navbar />
 
-      <main className="mx-auto max-w-7xl px-6 py-10 sm:px-8 sm:py-14">
+      <main className="mx-auto max-w-7xl px-6 pb-10 pt-24 sm:px-8 sm:pb-14 sm:pt-32">
         <Breadcrumbs items={breadcrumbItems} className="mb-6" />
 
         <div className="mb-10 max-w-2xl">

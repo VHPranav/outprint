@@ -4,6 +4,7 @@
 // count and any future cart page all read/write this same storage key.
 
 import * as React from "react";
+import { getQuantityMultiplier, round2 } from "@/data/pricing";
 
 const CART_STORAGE_KEY = "outprint_cart";
 const CART_UPDATED_EVENT = "outprint:cart-updated";
@@ -69,14 +70,38 @@ export function clearCart(): void {
   saveCart([]);
 }
 
-/** Reactive cart item count, kept in sync across components and browser tabs. */
-export function useCartCount(): number {
-  const [count, setCount] = React.useState(0);
+/**
+ * Adjusts a line's quantity by `delta` and rescales its unit price along the
+ * same bulk-discount curve used at add-to-cart time (see data/pricing.ts) —
+ * dividing out the multiplier baked in at the old quantity and reapplying it
+ * at the new one, so a jump from 25 to 100 units reflects the same discount
+ * the product page would have shown.
+ *
+ * Takes a delta (not an absolute target) and re-reads the current quantity
+ * from storage on every call, rather than trusting a quantity value the
+ * caller computed from possibly-stale React state — so two quick clicks in
+ * a row (before a re-render lands) both actually apply instead of the
+ * second one clobbering the first.
+ */
+export function adjustCartItemQuantity(id: string, delta: number): void {
+  const items = getCart().map((item) => {
+    if (item.id !== id) return item;
+    const safeQuantity = Math.max(1, item.quantity + delta);
+    const baseUnitPrice = item.unitPrice / getQuantityMultiplier(item.quantity);
+    const unitPrice = round2(baseUnitPrice * getQuantityMultiplier(safeQuantity));
+    return { ...item, quantity: safeQuantity, unitPrice, totalPrice: round2(unitPrice * safeQuantity) };
+  });
+  saveCart(items);
+}
+
+/** Reactive cart contents, kept in sync across components and browser tabs. */
+export function useCart(): CartItem[] {
+  const [items, setItems] = React.useState<CartItem[]>([]);
 
   React.useEffect(() => {
-    setCount(getCartCount());
+    setItems(getCart());
 
-    const handleUpdate = () => setCount(getCartCount());
+    const handleUpdate = () => setItems(getCart());
     window.addEventListener(CART_UPDATED_EVENT, handleUpdate);
     window.addEventListener("storage", handleUpdate);
 
@@ -86,5 +111,10 @@ export function useCartCount(): number {
     };
   }, []);
 
-  return count;
+  return items;
+}
+
+/** Reactive cart item count, kept in sync across components and browser tabs. */
+export function useCartCount(): number {
+  return useCart().reduce((sum, item) => sum + item.quantity, 0);
 }

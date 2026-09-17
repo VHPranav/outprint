@@ -1,8 +1,15 @@
 import type { MetadataRoute } from "next";
 import { categories } from "@/data/categories";
 import { products } from "@/data/products";
+import { SITE_URL } from "@/lib/site-config";
 
-const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://outprint.co").replace(/\/$/, "");
+const STATIC_PAGES = [
+  "/hire-a-designer",
+  "/privacy-policy",
+  "/terms-of-service",
+  "/shipping-delivery",
+  "/returns-reprints",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const homeEntry: MetadataRoute.Sitemap[number] = {
@@ -27,5 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [homeEntry, ...categoryEntries, ...productEntries];
+  const staticEntries: MetadataRoute.Sitemap = STATIC_PAGES.map((path) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.4,
+  }));
+
+  return [homeEntry, ...categoryEntries, ...productEntries, ...staticEntries];
 }

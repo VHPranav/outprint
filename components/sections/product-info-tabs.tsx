@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { Palette, UploadCloud, MessageCircle, PackageCheck, Truck } from "lucide-react";
 import type {
   Product,
@@ -135,13 +136,15 @@ export function ProductInfoTabs({ product }: ProductInfoTabsProps) {
       <TabsContent value="gallery" className="pt-6">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {product.images.map((image, index) => (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              key={image + index}
-              src={image}
-              alt={`${product.name} gallery image ${index + 1}`}
-              className="aspect-square w-full rounded-xl border border-[#E5E5E5] object-cover"
-            />
+            <div key={image + index} className="relative aspect-square w-full overflow-hidden rounded-xl border border-[#E5E5E5]">
+              <Image
+                src={image}
+                alt={`${product.name} gallery image ${index + 1}`}
+                fill
+                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
+                className="object-cover"
+              />
+            </div>
           ))}
         </div>
       </TabsContent>

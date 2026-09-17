@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import type { CategoryNode } from "@/lib/catalog";
 
 interface MegaMenuProps {
@@ -37,13 +38,14 @@ export function MegaMenu({ categories }: MegaMenuProps) {
                 {category.promoTile && (
                   <Link
                     href={category.promoTile.href}
-                    className="group/tile relative block overflow-hidden rounded-xl"
+                    className="group/tile relative block h-32 w-full overflow-hidden rounded-xl"
                   >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={category.promoTile.image}
                       alt={category.promoTile.label}
-                      className="h-32 w-full object-cover transition-transform duration-300 group-hover/tile:scale-105"
+                      fill
+                      sizes="280px"
+                      className="object-cover transition-transform duration-300 group-hover/tile:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                     <span className="absolute bottom-2 left-2 right-2 text-xs font-medium leading-snug text-white">

@@ -7,6 +7,8 @@
 export interface AttachedDesign {
   url: string;
   fileName: string;
+  /** Customer opted into the paid manual upscale/cleanup add-on from the upload flow's low-resolution warning. */
+  resolutionEnhancement?: boolean;
 }
 
 function storageKey(productSlug: string): string {

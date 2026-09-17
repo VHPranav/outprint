@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import {
   LayoutTemplate,
@@ -13,6 +14,7 @@ import {
   ShoppingBag,
   MessageCircle,
   FileText,
+  Sparkles,
   X,
   Check,
 } from "lucide-react";
@@ -28,28 +30,25 @@ import { calculatePrice, type PriceSelections } from "@/data/pricing";
 import { formatCurrency } from "@/lib/currency";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { addToCart, type CartItem } from "@/lib/cart";
-import { uploadFile, UploadError } from "@/lib/upload";
 import {
   getAttachedDesign,
   saveAttachedDesign,
   clearAttachedDesign,
   type AttachedDesign,
 } from "@/lib/design-attachment";
+import { RESOLUTION_ENHANCEMENT_PRICE } from "@/lib/resolution-check";
 import { toInches, LENGTH_UNITS, type LengthUnit } from "@/lib/units";
+import { resolveDesignSize } from "@/lib/design-size";
+import { getCategoryAncestors } from "@/lib/catalog";
+import { isImageUrl } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Modal } from "@/components/ui/modal";
-import { UploadStatus, type UploadState } from "@/components/ui/upload-status";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 import { toast } from "@/components/ui/toast";
 
 interface ProductConfiguratorProps {
   product: Product;
-}
-
-function isImageUrl(url: string): boolean {
-  return /\.(png|jpe?g|gif|webp|svg)(\?.*)?$/i.test(url);
 }
 
 function pillClasses(active: boolean): string {
@@ -89,20 +88,17 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
   const [selectedMaterial, setSelectedMaterial] = React.useState(materialGroup?.options[0]?.label);
   const [selectedAddons, setSelectedAddons] = React.useState<string[]>([]);
   const [attachedDesign, setAttachedDesign] = React.useState<AttachedDesign | null>(null);
-  const [isUploadOpen, setIsUploadOpen] = React.useState(false);
-  const [uploadState, setUploadState] = React.useState<UploadState>("idle");
-  const [uploadProgress, setUploadProgress] = React.useState(0);
-  const [uploadError, setUploadError] = React.useState<string | undefined>();
-  const [pendingFile, setPendingFile] = React.useState<File | null>(null);
-  const fileInputRef = React.useRef<HTMLInputElement>(null);
 
   // Restore a design attached earlier (this session), or one handed back via
-  // a query param — the re-entry point future flows (templates, design
-  // studio, hire-a-designer) would redirect to once they're built.
+  // a query param by the upload, templates, or design studio flow.
   React.useEffect(() => {
     const queryUrl = searchParams.get("designUrl");
     if (queryUrl) {
-      const design = { url: queryUrl, fileName: searchParams.get("designName") ?? "Design file" };
+      const design: AttachedDesign = {
+        url: queryUrl,
+        fileName: searchParams.get("designName") ?? "Design file",
+        resolutionEnhancement: searchParams.get("enhancement") === "1",
+      };
       setAttachedDesign(design);
       saveAttachedDesign(product.slug, design);
       return;
@@ -140,6 +136,11 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
 
   const price = React.useMemo(() => calculatePrice(product, selections), [product, selections]);
 
+  // A flat one-time fee (not per-unit) for the manual upscale/cleanup add-on
+  // offered by the upload flow when the artwork's resolution runs low.
+  const enhancementFee = attachedDesign?.resolutionEnhancement ? RESOLUTION_ENHANCEMENT_PRICE : 0;
+  const grandTotal = price.totalPrice + price.gstAmount + enhancementFee;
+
   const tierPrices = React.useMemo(() => {
     if (!quantityGroup) return [];
     return quantityGroup.tiers.map((tier) => ({
@@ -152,39 +153,6 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
     setSelectedAddons((current) =>
       current.includes(label) ? current.filter((a) => a !== label) : [...current, label]
     );
-  }
-
-  function openFilePicker() {
-    setUploadState("idle");
-    setUploadError(undefined);
-    fileInputRef.current?.click();
-  }
-
-  async function runUpload(file: File) {
-    setPendingFile(file);
-    setUploadState("uploading");
-    setUploadProgress(0);
-    setUploadError(undefined);
-
-    try {
-      const result = await uploadFile(file, {
-        onProgress: (event) => setUploadProgress(event.percent),
-      });
-      setUploadState("success");
-      const design: AttachedDesign = { url: result.url, fileName: file.name };
-      setAttachedDesign(design);
-      saveAttachedDesign(product.slug, design);
-      setTimeout(() => setIsUploadOpen(false), 700);
-    } catch (error) {
-      setUploadState("error");
-      setUploadError(error instanceof UploadError ? error.message : "Upload failed. Please try again.");
-    }
-  }
-
-  function handleFileChange(event: React.ChangeEvent<HTMLInputElement>) {
-    const file = event.target.files?.[0];
-    event.target.value = "";
-    if (file) runUpload(file);
   }
 
   function handleRemoveDesign() {
@@ -206,8 +174,13 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
           addons: selectedAddons,
         },
         unitPrice: price.unitPrice,
-        totalPrice: price.totalPrice,
+        totalPrice: price.totalPrice + enhancementFee,
         designFileUrl: attachedDesign.url,
+        notes: attachedDesign.resolutionEnhancement
+          ? `Resolution Enhancement requested (+${formatCurrency(
+              RESOLUTION_ENHANCEMENT_PRICE
+            )}) — uploaded artwork is lower resolution than recommended for the selected size; please clean up/upscale before production.`
+          : undefined,
       });
       window.open(link, "_blank", "noopener,noreferrer");
     } catch (error) {
@@ -226,7 +199,7 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
       image: product.images[0],
       quantity,
       unitPrice: price.unitPrice,
-      totalPrice: price.totalPrice,
+      totalPrice: price.totalPrice + enhancementFee,
       selections: {
         shape: selectedShape,
         size: sizeDisplayLabel,
@@ -239,15 +212,42 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
     toast.success("Added to cart", { description: `${product.name} — ${quantity} pcs` });
   }
 
-  const designStudioHref = `/design-studio?product=${product.slug}${
-    sizeDisplayLabel ? `&size=${encodeURIComponent(sizeDisplayLabel)}` : ""
-  }`;
-  const hireDesignerHref = `/hire-a-designer?product=${product.slug}&productName=${encodeURIComponent(
-    product.name
-  )}`;
+  const designSize = React.useMemo(() => {
+    if (isCustomSize) {
+      const width = parseFloat(customWidth);
+      const height = parseFloat(customHeight);
+      if (Number.isNaN(width) || Number.isNaN(height)) return undefined;
+      return { width: toInches(width, unit), height: toInches(height, unit) };
+    }
+    return resolveDesignSize(product, { sizeLabel: selectedSizeLabel });
+  }, [isCustomSize, customWidth, customHeight, unit, product, selectedSizeLabel]);
+
+  // Carries the current shape/size selection into any flow that needs to
+  // size its own canvas or resolution check the same way (design studio,
+  // templates gallery, artwork upload).
+  const sizeQueryString = React.useMemo(() => {
+    const params = new URLSearchParams();
+    if (designSize) {
+      params.set("widthIn", designSize.width.toFixed(3));
+      params.set("heightIn", designSize.height.toFixed(3));
+    }
+    if (selectedShape) params.set("shape", selectedShape);
+    if (sizeDisplayLabel) params.set("sizeLabel", sizeDisplayLabel);
+    return params.toString();
+  }, [designSize, selectedShape, sizeDisplayLabel]);
+
+  const designStudioHref = `/design-studio/${product.slug}${sizeQueryString ? `?${sizeQueryString}` : ""}`;
+  const templatesHref = `/product/${product.slug}/templates${sizeQueryString ? `?${sizeQueryString}` : ""}`;
+  const uploadHref = `/product/${product.slug}/upload${sizeQueryString ? `?${sizeQueryString}` : ""}`;
+  const hireDesignerHref = React.useMemo(() => {
+    const params = new URLSearchParams({ product: product.slug, productName: product.name });
+    const topCategory = getCategoryAncestors(product.categoryId)[0];
+    if (topCategory) params.set("category", topCategory.name);
+    return `/hire-a-designer?${params.toString()}`;
+  }, [product.slug, product.name, product.categoryId]);
 
   return (
-    <div className="space-y-8 lg:sticky lg:top-20 lg:max-h-[calc(100vh-5.5rem)] lg:overflow-y-auto lg:pr-1">
+    <div className="space-y-8">
       {/* 1. Name, description, badges */}
       <div>
         <h1 className="font-serif text-3xl font-normal tracking-tight text-[#111111] sm:text-4xl">
@@ -387,12 +387,9 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
                   selectedMaterial === option.label ? "border-black" : "border-transparent hover:border-neutral-200"
                 }`}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={option.image}
-                  alt={option.label}
-                  className="h-14 w-14 rounded-lg object-cover"
-                />
+                <div className="relative h-14 w-14 overflow-hidden rounded-lg">
+                  <Image src={option.image} alt={option.label} fill sizes="56px" className="object-cover" />
+                </div>
                 <span className="text-center text-[11px] leading-tight text-neutral-700">
                   {option.label}
                 </span>
@@ -451,12 +448,11 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
           <span className="text-xs uppercase tracking-wider text-neutral-400">
             Total for {quantity} pcs (incl. GST)
           </span>
-          <span className="text-xl font-semibold">
-            {formatCurrency(price.totalPrice + price.gstAmount)}
-          </span>
+          <span className="text-xl font-semibold">{formatCurrency(grandTotal)}</span>
         </div>
         <p className="mt-1.5 text-[11px] text-neutral-500">
           Subtotal {formatCurrency(price.totalPrice)} + GST {formatCurrency(price.gstAmount)}
+          {enhancementFee > 0 && ` + Resolution Enhancement ${formatCurrency(enhancementFee)}`}
         </p>
       </div>
 
@@ -465,7 +461,7 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
         <h3 className="mb-3 text-sm font-semibold text-neutral-900">How do you want to start?</h3>
         <div className="grid grid-cols-2 gap-3">
           <Link
-            href={`/product/${product.slug}/templates`}
+            href={templatesHref}
             className="flex flex-col gap-2 rounded-xl border border-[#E5E5E5] p-4 transition-colors hover:border-black"
           >
             <LayoutTemplate className="h-5 w-5 text-neutral-700" />
@@ -478,14 +474,13 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
             <PencilRuler className="h-5 w-5 text-neutral-700" />
             <span className="text-sm font-medium text-neutral-900">Design It Yourself</span>
           </Link>
-          <button
-            type="button"
-            onClick={() => setIsUploadOpen(true)}
-            className="flex flex-col gap-2 rounded-xl border border-[#E5E5E5] p-4 text-left transition-colors hover:border-black"
+          <Link
+            href={uploadHref}
+            className="flex flex-col gap-2 rounded-xl border border-[#E5E5E5] p-4 transition-colors hover:border-black"
           >
             <UploadCloud className="h-5 w-5 text-neutral-700" />
             <span className="text-sm font-medium text-neutral-900">Upload Your Artwork</span>
-          </button>
+          </Link>
           <Link
             href={hireDesignerHref}
             className="flex flex-col gap-2 rounded-xl border border-[#E5E5E5] p-4 transition-colors hover:border-black"
@@ -515,6 +510,12 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-medium text-neutral-900">{attachedDesign.fileName}</p>
               <p className="text-xs text-neutral-500">Design attached</p>
+              {attachedDesign.resolutionEnhancement && (
+                <p className="mt-1 flex items-center gap-1 text-xs font-medium text-amber-700">
+                  <Sparkles className="h-3 w-3" />
+                  Resolution Enhancement requested (+{formatCurrency(RESOLUTION_ENHANCEMENT_PRICE)})
+                </p>
+              )}
             </div>
             <button
               type="button"
@@ -554,41 +555,6 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
         <ShoppingBag className="mr-2 h-4 w-4" />
         Add to Cart
       </Button>
-
-      {/* Upload modal */}
-      <input
-        ref={fileInputRef}
-        type="file"
-        accept="image/*,.pdf,.ai,.eps"
-        className="hidden"
-        onChange={handleFileChange}
-      />
-      <Modal
-        open={isUploadOpen}
-        onOpenChange={setIsUploadOpen}
-        title="Upload Your Artwork"
-        description="PNG, JPG, PDF or AI files. We'll run a free digital proof before printing."
-      >
-        {uploadState === "idle" ? (
-          <button
-            type="button"
-            onClick={openFilePicker}
-            className="flex w-full flex-col items-center gap-2 rounded-xl border-2 border-dashed border-[#E5E5E5] p-10 text-center transition-colors hover:border-neutral-400"
-          >
-            <UploadCloud className="h-8 w-8 text-neutral-400" />
-            <span className="text-sm font-medium text-neutral-700">Click to choose a file</span>
-            <span className="text-xs text-neutral-400">Max 25MB</span>
-          </button>
-        ) : (
-          <UploadStatus
-            state={uploadState}
-            fileName={pendingFile?.name}
-            progress={uploadProgress}
-            errorMessage={uploadError}
-            onRetry={openFilePicker}
-          />
-        )}
-      </Modal>
     </div>
   );
 }

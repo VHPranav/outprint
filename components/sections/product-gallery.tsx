@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 
 interface ProductGalleryProps {
   images: string[];
@@ -13,12 +14,14 @@ export function ProductGallery({ images, productName }: ProductGalleryProps) {
 
   return (
     <div className="lg:sticky lg:top-20">
-      <div className="aspect-square w-full overflow-hidden rounded-2xl border border-[#E5E5E5] bg-[#FAFAF9]">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-[#E5E5E5] bg-[#FAFAF9]">
+        <Image
           src={activeImage}
           alt={productName}
-          className="h-full w-full object-cover"
+          fill
+          priority
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          className="object-cover"
         />
       </div>
 
@@ -30,15 +33,16 @@ export function ProductGallery({ images, productName }: ProductGalleryProps) {
               type="button"
               onClick={() => setActiveIndex(index)}
               aria-label={`Show image ${index + 1}`}
-              className={`h-20 w-20 shrink-0 overflow-hidden rounded-xl border-2 transition-colors ${
+              className={`relative h-20 w-20 shrink-0 overflow-hidden rounded-xl border-2 transition-colors ${
                 index === activeIndex ? "border-black" : "border-transparent"
               }`}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={image}
                 alt={`${productName} view ${index + 1}`}
-                className="h-full w-full object-cover"
+                fill
+                sizes="80px"
+                className="object-cover"
               />
             </button>
           ))}

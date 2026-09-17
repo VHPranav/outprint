@@ -13,6 +13,8 @@ import {
   RelatedProducts,
 } from "@/components/sections";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { productJsonLd, breadcrumbJsonLd } from "@/lib/structured-data";
+import { SITE_URL } from "@/lib/site-config";
 
 interface ProductPageProps {
   params: { slug: string };
@@ -29,6 +31,22 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   return {
     title: product.seo.title,
     description: product.seo.description,
+    alternates: {
+      canonical: `${SITE_URL}/product/${product.slug}`,
+    },
+    openGraph: {
+      type: "website",
+      title: product.seo.title,
+      description: product.seo.description,
+      url: `${SITE_URL}/product/${product.slug}`,
+      images: product.images.map((image) => ({ url: image })),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.seo.title,
+      description: product.seo.description,
+      images: product.images,
+    },
   };
 }
 
@@ -47,11 +65,27 @@ export default function ProductPage({ params }: ProductPageProps) {
     .filter((p) => p.id !== product.id)
     .slice(0, 6);
 
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: "Home", url: SITE_URL },
+    ...ancestors.map((category) => ({ name: category.name, url: `${SITE_URL}/category/${category.slug}` })),
+    { name: product.name, url: `${SITE_URL}/product/${product.slug}` },
+  ]);
+
   return (
     <div className="min-h-screen bg-white text-[#111111]">
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd(product)) }}
+      />
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <Navbar />
 
-      <main className="mx-auto max-w-7xl px-6 py-8 sm:px-8 sm:py-10">
+      <main className="mx-auto max-w-7xl px-6 pb-8 pt-24 sm:px-8 sm:pb-10 sm:pt-28">
         <Breadcrumbs items={breadcrumbItems} className="mb-6" />
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-start lg:gap-14">

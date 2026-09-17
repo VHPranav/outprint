@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, Fraunces, Qwitcher_Grypen } from "next/font/google";
 import { Toaster } from "@/components/ui/toast";
+import { WhatsAppFab } from "@/components/ui/whatsapp-fab";
+import { CookieConsent } from "@/components/ui/cookie-consent";
 import { SmoothScrollProvider } from "@/components/providers/smooth-scroll";
+import { organizationJsonLd } from "@/lib/structured-data";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
 import "./globals.css";
 
 const inter = Inter({
@@ -25,9 +29,26 @@ const qwitcherGrypen = Qwitcher_Grypen({
 });
 
 export const metadata: Metadata = {
-  title: "Outprint — Bespoke Print & Packaging Studio",
-  description:
-    "Architectural-grade custom print-on-demand for modern brands: die-cut stickers, embossed packaging, tactile business cards, and marketing collateral.",
+  metadataBase: new URL(SITE_URL),
+  // Every page across the site sets its own full "X | Outprint" title
+  // string rather than relying on a template, so this default only ever
+  // shows up for the handful of routes (like this layout's own fallback)
+  // that don't set one.
+  title: `${SITE_NAME} — Bespoke Print & Packaging Studio`,
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} — Bespoke Print & Packaging Studio`,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_NAME} — Bespoke Print & Packaging Studio`,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
@@ -38,9 +59,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${fraunces.variable} ${qwitcherGrypen.variable}`}>
       <body className="min-h-screen bg-white text-[#111111] antialiased selection:bg-black/10 selection:text-black">
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
+        />
         <SmoothScrollProvider>
           {children}
         </SmoothScrollProvider>
+        <WhatsAppFab />
+        <CookieConsent />
         <Toaster position="bottom-right" />
       </body>
     </html>

@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Star } from "lucide-react";
+import { Reveal } from "@/components/ui/reveal";
 
 const testimonials = [
   {
@@ -33,13 +34,13 @@ export function Testimonials() {
   return (
     <section className="bg-[#FAFAF9] py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
-        <div className="mb-10 max-w-xl">
+        <Reveal className="mb-10 max-w-xl">
           <h2 className="font-serif text-3xl sm:text-4xl font-normal tracking-tight text-[#111111]">
             What customers say
           </h2>
-        </div>
+        </Reveal>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+        <Reveal delay={0.1} className="grid grid-cols-1 gap-5 sm:grid-cols-3">
           {testimonials.map((testimonial) => (
             <figure
               key={testimonial.name}
@@ -64,7 +65,7 @@ export function Testimonials() {
               </figcaption>
             </figure>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );

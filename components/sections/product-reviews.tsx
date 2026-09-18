@@ -51,7 +51,7 @@ export function ProductReviews() {
           <div key={review.name} className="rounded-2xl border border-[#E5E5E5] p-5">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-black text-xs font-semibold text-white">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-black text-xs font-medium text-white">
                   {initials(review.name)}
                 </span>
                 <div>

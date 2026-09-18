@@ -219,7 +219,7 @@ export const FourthFormation: React.FC<FourthFormationProps> = ({
                     children
                 ) : (
                     <div className="pointer-events-none select-none">
-                        <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold uppercase tracking-tighter text-[#111111] drop-shadow-sm">
+                        <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium uppercase tracking-tighter text-[#111111] drop-shadow-sm">
                             {title}
                         </h2>
                         <p className="mt-2 text-xs sm:text-sm md:text-base font-medium uppercase tracking-[0.25em] text-neutral-500">

@@ -8,7 +8,7 @@ export function DesignerGrid() {
     <section className="bg-[#FAFAF9] py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-6 sm:px-8">
         <Reveal className="mb-12 max-w-2xl">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#0B5D3B]">The studio</span>
+          <span className="text-xs font-medium uppercase tracking-wider text-[#0B5D3B]">The studio</span>
           <h2 className="mt-2 font-serif text-3xl font-normal tracking-tight text-[#111111] sm:text-4xl">
             Meet a few of the people you might work with.
           </h2>
@@ -38,7 +38,7 @@ export function DesignerGrid() {
                   <Image src={designer.photo} alt={designer.name} fill sizes="44px" className="object-cover" />
                 </div>
                 <div className="min-w-0">
-                  <p className="truncate text-sm font-semibold text-neutral-900">{designer.name}</p>
+                  <p className="truncate text-sm font-medium text-neutral-900">{designer.name}</p>
                   <div className="mt-1 flex flex-wrap gap-1">
                     {designer.specialties.map((tag) => (
                       <Badge key={tag} variant="muted" size="sm">

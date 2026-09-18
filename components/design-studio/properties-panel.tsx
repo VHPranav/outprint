@@ -62,7 +62,7 @@ export function PropertiesPanel({ selected, onUpdate }: PropertiesPanelProps) {
       {selected.isText && (
         <>
           <div>
-            <label className="mb-1.5 block text-[11px] font-semibold uppercase tracking-wider text-neutral-500">
+            <label className="mb-1.5 block text-[11px] font-medium uppercase tracking-wider text-neutral-500">
               Font
             </label>
             <Select
@@ -83,7 +83,7 @@ export function PropertiesPanel({ selected, onUpdate }: PropertiesPanelProps) {
           </div>
 
           <div>
-            <label className="mb-1.5 block text-[11px] font-semibold uppercase tracking-wider text-neutral-500">
+            <label className="mb-1.5 block text-[11px] font-medium uppercase tracking-wider text-neutral-500">
               Size
             </label>
             <input
@@ -117,7 +117,7 @@ export function PropertiesPanel({ selected, onUpdate }: PropertiesPanelProps) {
           </div>
 
           <div>
-            <label className="mb-1.5 block text-[11px] font-semibold uppercase tracking-wider text-neutral-500">
+            <label className="mb-1.5 block text-[11px] font-medium uppercase tracking-wider text-neutral-500">
               Alignment
             </label>
             <div className="flex items-center gap-2">
@@ -143,7 +143,7 @@ export function PropertiesPanel({ selected, onUpdate }: PropertiesPanelProps) {
 
       {!selected.isImage && (
         <div>
-          <label className="mb-1.5 block text-[11px] font-semibold uppercase tracking-wider text-neutral-500">
+          <label className="mb-1.5 block text-[11px] font-medium uppercase tracking-wider text-neutral-500">
             {selected.isText ? "Text Color" : "Fill"}
           </label>
           <div className="flex items-center gap-2.5">
@@ -160,7 +160,7 @@ export function PropertiesPanel({ selected, onUpdate }: PropertiesPanelProps) {
 
       {selected.isShape && (
         <div>
-          <label className="mb-1.5 block text-[11px] font-semibold uppercase tracking-wider text-neutral-500">
+          <label className="mb-1.5 block text-[11px] font-medium uppercase tracking-wider text-neutral-500">
             Border
           </label>
           <div className="flex items-center gap-2.5">
@@ -183,7 +183,7 @@ export function PropertiesPanel({ selected, onUpdate }: PropertiesPanelProps) {
       )}
 
       <div>
-        <label className="mb-1.5 block text-[11px] font-semibold uppercase tracking-wider text-neutral-500">
+        <label className="mb-1.5 block text-[11px] font-medium uppercase tracking-wider text-neutral-500">
           Opacity
         </label>
         <input

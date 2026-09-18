@@ -56,6 +56,10 @@ const config: Config = {
           DEFAULT: "var(--popover)",
           foreground: "var(--popover-foreground)",
         },
+        // Homepage theme: one mild blue + white, black buttons
+        brand: {
+          blue: "#B8D9F2",
+        },
         // Dedicated Outprint Brand Tokens
         emerald: {
           50: "#F2F9F5",
@@ -94,9 +98,9 @@ const config: Config = {
         "3xl": "calc(var(--radius) + 12px)", // 22px
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
-        serif: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
-        display: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        sans: ["var(--font-poppins)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        serif: ["var(--font-poppins)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        display: ["var(--font-poppins)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
         logo: ["var(--font-qwitcher-grypen)", "cursive"],
       },
       spacing: {

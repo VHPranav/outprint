@@ -11,7 +11,7 @@ interface OrderSummaryProps {
 export function OrderSummary({ itemCount, onSendWhatsApp }: OrderSummaryProps) {
   return (
     <div className="rounded-2xl border border-[#E5E5E5] bg-[#FAFAF9] p-6 lg:sticky lg:top-24">
-      <h2 className="text-sm font-semibold text-neutral-900">Quote Summary</h2>
+      <h2 className="text-sm font-medium text-neutral-900">Quote Summary</h2>
 
       <p className="mt-2 text-sm text-neutral-500">
         {itemCount} {itemCount === 1 ? "item" : "items"} ready to send

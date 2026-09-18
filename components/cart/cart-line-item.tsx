@@ -36,7 +36,7 @@ export function CartLineItem({ item, onAdjustQuantity, onRemove }: CartLineItemP
           <div className="min-w-0">
             <Link
               href={`/product/${item.slug}`}
-              className="block truncate text-sm font-semibold text-neutral-900 hover:underline"
+              className="block truncate text-sm font-medium text-neutral-900 hover:underline"
             >
               {item.productName}
             </Link>

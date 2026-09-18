@@ -7,8 +7,8 @@ interface PanelTextProps {
 }
 
 const PRESETS: { key: "heading" | "subheading" | "body"; label: string; sizeClass: string }[] = [
-  { key: "heading", label: "Add a heading", sizeClass: "text-xl font-bold" },
-  { key: "subheading", label: "Add a subheading", sizeClass: "text-base font-semibold" },
+  { key: "heading", label: "Add a heading", sizeClass: "text-xl font-medium" },
+  { key: "subheading", label: "Add a subheading", sizeClass: "text-base font-medium" },
   { key: "body", label: "Add body text", sizeClass: "text-sm font-normal" },
 ];
 

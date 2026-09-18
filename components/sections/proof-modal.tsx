@@ -46,7 +46,7 @@ export function ProofModal({ open, onOpenChange }: ProofModalProps) {
         <div className="rounded-xl border border-[#E5E5E5] bg-[#FAFAF9] p-4 space-y-3">
           <div className="flex items-center justify-between text-xs">
             <span className="text-neutral-500 font-medium">Color Calibration</span>
-            <span className="text-[#0B5D3B] font-semibold flex items-center">
+            <span className="text-[#0B5D3B] font-medium flex items-center">
               <CheckCircle2 className="w-3.5 h-3.5 mr-1" />
               Fogra51 (PSO Coated v3)
             </span>

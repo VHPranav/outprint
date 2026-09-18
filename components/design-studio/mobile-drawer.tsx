@@ -71,7 +71,7 @@ export function MobileDrawer({ controller, family }: MobileDrawerProps) {
           <div className="space-y-6">
             <PropertiesPanel selected={controller.selected} onUpdate={controller.updateSelected} />
             <div className="border-t border-[#F0F0EE] pt-4">
-              <h3 className="mb-3 text-sm font-semibold text-neutral-900">Layers</h3>
+              <h3 className="mb-3 text-sm font-medium text-neutral-900">Layers</h3>
               <LayersPanel
                 layers={controller.layers}
                 onSelect={controller.selectLayer}

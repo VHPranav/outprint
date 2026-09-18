@@ -83,6 +83,7 @@ export interface FontOption {
 
 /** Brand fonts first (resolved from the app's next/font CSS vars at runtime), then safe system fonts. */
 export const FONT_OPTIONS: FontOption[] = [
+  { label: "Sans (Poppins)", cssVar: "--font-poppins", fallback: "Arial, sans-serif" },
   { label: "Sans (Inter)", cssVar: "--font-inter", fallback: "Arial, sans-serif" },
   { label: "Serif (Fraunces)", cssVar: "--font-fraunces", fallback: "Georgia, serif" },
   { label: "Arial", fallback: "Arial, Helvetica, sans-serif" },

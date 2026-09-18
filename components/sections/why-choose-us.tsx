@@ -21,7 +21,7 @@ export function WhyChooseUs() {
                 <Icon className="h-5 w-5" strokeWidth={1.75} />
               </span>
               <div>
-                <p className="text-sm font-semibold text-neutral-900">{feature.title}</p>
+                <p className="text-sm font-medium text-neutral-900">{feature.title}</p>
                 <p className="text-xs text-neutral-500">{feature.description}</p>
               </div>
             </Reveal>

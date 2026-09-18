@@ -60,7 +60,7 @@ export function ProductCard({
         <div className="flex flex-1 flex-col pt-3.5 sm:pt-4">
           {category && (
             <span
-              className={`text-[11px] font-semibold uppercase tracking-wider ${
+              className={`text-[11px] font-medium uppercase tracking-wider ${
                 isDark ? "text-neutral-400" : "text-neutral-400"
               }`}
             >
@@ -68,7 +68,7 @@ export function ProductCard({
             </span>
           )}
           <h3
-            className={`mt-1 text-base sm:text-lg font-semibold leading-snug transition-colors ${
+            className={`mt-1 text-base sm:text-lg font-medium leading-snug transition-colors ${
               isDark
                 ? "text-white group-hover:text-neutral-200"
                 : "text-neutral-900 group-hover:text-black"
@@ -88,7 +88,7 @@ export function ProductCard({
               isDark ? "text-neutral-300" : "text-neutral-600"
             }`}
           >
-            MOQ <span className={`font-semibold ${isDark ? "text-white" : "text-black"}`}>{minQuantity}</span> pcs
+            MOQ <span className={`font-medium ${isDark ? "text-white" : "text-black"}`}>{minQuantity}</span> pcs
           </p>
         </div>
       </Link>
@@ -120,18 +120,18 @@ export function ProductCard({
       </div>
       <div className="flex flex-1 flex-col p-4">
         {category && (
-          <span className="text-[10px] font-semibold uppercase tracking-wider text-neutral-400">
+          <span className="text-[10px] font-medium uppercase tracking-wider text-neutral-400">
             {category.name}
           </span>
         )}
-        <h3 className="mt-1 text-base font-semibold leading-snug text-neutral-900">
+        <h3 className="mt-1 text-base font-medium leading-snug text-neutral-900">
           {product.name}
         </h3>
         <p className="mt-1 text-xs leading-relaxed text-neutral-500">
           {truncate(product.description, 70)}
         </p>
         <p className="mt-auto pt-4 text-sm text-neutral-600">
-          MOQ <span className="font-semibold text-black">{minQuantity}</span> pcs
+          MOQ <span className="font-medium text-black">{minQuantity}</span> pcs
         </p>
       </div>
     </Link>

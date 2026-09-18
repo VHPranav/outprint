@@ -82,6 +82,11 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-sans tracking-tight text-neutral-950;
   }
+
+  /* Site type uses only Poppins 400 (body) and 500 (emphasis). */
+  b, strong, th {
+    font-weight: 500;
+  }
 }
 
 @layer utilities {

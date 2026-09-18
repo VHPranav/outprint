@@ -12,7 +12,7 @@ export function RelatedProducts({ products }: RelatedProductsProps) {
 
   return (
     <section className="py-8">
-      <h2 className="mb-6 text-2xl sm:text-3xl font-semibold tracking-tight text-[#111111]">
+      <h2 className="mb-6 text-2xl sm:text-3xl font-medium tracking-tight text-[#111111]">
         You may also like
       </h2>
       <div className="no-scrollbar flex gap-5 overflow-x-auto scroll-smooth pb-2 snap-x snap-mandatory">

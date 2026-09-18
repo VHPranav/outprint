@@ -42,7 +42,7 @@ export const Stepper: React.FC<StepperProps> = ({
               <div className="flex flex-col items-center mr-4">
                 <div
                   className={cn(
-                    "flex h-9 w-9 items-center justify-center rounded-full text-xs font-semibold transition-all duration-200 border",
+                    "flex h-9 w-9 items-center justify-center rounded-full text-xs font-medium transition-all duration-200 border",
                     isCompleted &&
                       "bg-[#0B5D3B] text-white border-[#0B5D3B]",
                     isCurrent &&
@@ -67,7 +67,7 @@ export const Stepper: React.FC<StepperProps> = ({
                 <p
                   className={cn(
                     "text-sm font-medium transition-colors",
-                    isCurrent ? "text-neutral-950 font-semibold" : "text-neutral-700"
+                    isCurrent ? "text-neutral-950 font-medium" : "text-neutral-700"
                   )}
                 >
                   {step.title}
@@ -108,7 +108,7 @@ export const Stepper: React.FC<StepperProps> = ({
                     isCompleted &&
                       "bg-[#0B5D3B] text-white border-[#0B5D3B]",
                     isCurrent &&
-                      "bg-white text-[#0B5D3B] border-[#0B5D3B] ring-4 ring-[#0B5D3B]/10 shadow-subtle font-semibold",
+                      "bg-white text-[#0B5D3B] border-[#0B5D3B] ring-4 ring-[#0B5D3B]/10 shadow-subtle font-medium",
                     !isCompleted &&
                       !isCurrent &&
                       "bg-[#FAFAF9] text-neutral-400 border-[#E5E5E5]"
@@ -121,7 +121,7 @@ export const Stepper: React.FC<StepperProps> = ({
                     className={cn(
                       "text-xs sm:text-[13px] font-medium transition-colors whitespace-nowrap",
                       isCurrent
-                        ? "text-neutral-950 font-semibold"
+                        ? "text-neutral-950 font-medium"
                         : isCompleted
                         ? "text-neutral-700"
                         : "text-neutral-400"

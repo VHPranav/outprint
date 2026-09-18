@@ -70,7 +70,7 @@ export function Navbar() {
           >
             <ShoppingBag className="h-[18px] w-[18px]" />
             {cartCount > 0 && (
-              <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-black px-1 text-[10px] font-semibold text-white">
+              <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-black px-1 text-[10px] font-medium text-white">
                 {cartCount > 99 ? "99+" : cartCount}
               </span>
             )}

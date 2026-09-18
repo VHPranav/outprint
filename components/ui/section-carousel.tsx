@@ -77,7 +77,7 @@ export function SectionCarousel({
         <Reveal className="mb-10 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <h2
-              className={`text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight ${
+              className={`text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight ${
                 isDark ? "text-white" : "text-[#111111]"
               }`}
             >

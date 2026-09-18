@@ -26,7 +26,7 @@ export function WhatsAppFab() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
-      className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#0B5D3B] text-white shadow-elevated transition-transform hover:scale-105 active:scale-95 sm:bottom-6 sm:right-6"
+      className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-black text-white shadow-elevated transition-transform hover:scale-105 active:scale-95 sm:bottom-6 sm:right-6"
     >
       <MessageCircle className="h-6 w-6" strokeWidth={2} />
       <span className="sr-only">Chat with us on WhatsApp</span>

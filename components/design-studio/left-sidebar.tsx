@@ -70,7 +70,7 @@ export function LeftSidebar({ activeTab, onTabChange, controller, family }: Left
 
       {activeTab && (
         <div className="w-[300px] shrink-0 overflow-y-auto border-r border-[#E5E5E5] bg-white p-4">
-          <h2 className="mb-3 text-sm font-semibold text-neutral-900">
+          <h2 className="mb-3 text-sm font-medium text-neutral-900">
             {RAIL_ITEMS.find((i) => i.tab === activeTab)?.label}
           </h2>
           <StudioPanelContent tab={activeTab} controller={controller} family={family} />

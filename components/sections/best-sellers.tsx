@@ -1,22 +1,18 @@
-"use client";
-
 import * as React from "react";
 import { getProductBySlug } from "@/lib/catalog";
-import { SectionCarousel, CAROUSEL_CARD_CLASS } from "@/components/ui/section-carousel";
-import { ProductCard } from "./product-card";
+import { Reveal } from "@/components/ui/reveal";
+import { HomeSectionTitle, ProductTile, TILE_GRID_CLASS } from "./home-tiles";
 
 // Hand-picked for variety across categories until real sales data exists.
 const BEST_SELLER_SLUGS = [
   "vinyl-die-cut-stickers",
-  "holographic-die-cut-stickers",
-  "weatherproof-vinyl-labels",
   "corrugated-mailer-boxes",
   "rigid-gift-boxes",
   "premium-suede-business-cards",
-  "letterpress-cotton-business-cards",
-  "vinyl-outdoor-banners",
   "coffee-mugs-gloss-finish",
   "unisex-heavy-weight-t-shirt",
+  "holographic-die-cut-stickers",
+  "weatherproof-vinyl-labels",
 ];
 
 export function BestSellers() {
@@ -25,22 +21,17 @@ export function BestSellers() {
   );
 
   return (
-    <SectionCarousel
-      title="Our Best Seller Products"
-      subtitle="The stickers, labels and boxes our customers reorder most."
-      theme="dark"
-      ariaLabel="Best seller products"
-      sectionClassName="bg-black py-16 sm:py-24"
-    >
-      {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-          variant="grey"
-          theme="dark"
-          className={CAROUSEL_CARD_CLASS}
-        />
-      ))}
-    </SectionCarousel>
+    <section className="bg-brand-blue py-14 sm:py-20">
+      <div className="mx-auto w-[90%] max-w-[1400px]">
+        <Reveal>
+          <HomeSectionTitle title="Our Best Seller Products" />
+        </Reveal>
+        <Reveal delay={0.1} className={TILE_GRID_CLASS}>
+          {products.map((product) => (
+            <ProductTile key={product.id} product={product} variant="card" />
+          ))}
+        </Reveal>
+      </div>
+    </section>
   );
 }

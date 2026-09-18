@@ -219,7 +219,7 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
       {/* 2. Shape */}
       {shapeGroup && (
         <div>
-          <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-neutral-500">
             Shape
           </label>
           <div className="flex flex-wrap gap-2">
@@ -240,7 +240,7 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
       {/* 3. Size */}
       {sizeGroup && (
         <div>
-          <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-neutral-500">
             Size
           </label>
           <div className="flex flex-wrap gap-2">
@@ -309,7 +309,7 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
       {/* 4. Quantity */}
       {quantityGroup && (
         <div>
-          <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-neutral-500">
             Quantity
           </label>
           <Select value={String(quantity)} onValueChange={(value) => setQuantity(Number(value))}>
@@ -330,7 +330,7 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
       {/* 5. Material */}
       {materialGroup && (
         <div>
-          <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-neutral-500">
             Material
           </label>
           <div className="grid grid-cols-4 gap-3">
@@ -343,8 +343,9 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
                   selectedMaterial === option.label ? "border-black" : "border-transparent hover:border-neutral-200"
                 }`}
               >
-                <div className="relative h-14 w-14 overflow-hidden rounded-lg">
-                  <Image src={option.image} alt={option.label} fill sizes="56px" className="object-cover" />
+                {/* The seed data only has generic stock swatches, so show the product's own photo. */}
+                <div className="relative h-16 w-16 overflow-hidden rounded-lg bg-neutral-100">
+                  <Image src={product.images[0]} alt={option.label} fill sizes="64px" className="object-cover" />
                 </div>
                 <span className="text-center text-[11px] leading-tight text-neutral-700">
                   {option.label}
@@ -358,7 +359,7 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
       {/* 6. Add-ons */}
       {addonsGroup && (
         <div>
-          <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-neutral-500">
             Add-ons
           </label>
           <div className="space-y-2">
@@ -393,7 +394,7 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
 
       {/* 8. How do you want to start? */}
       <div>
-        <h3 className="mb-3 text-sm font-semibold text-neutral-900">How do you want to start?</h3>
+        <h3 className="mb-3 text-sm font-medium text-neutral-900">How do you want to start?</h3>
         <div className="grid grid-cols-2 gap-3">
           <Link
             href={templatesHref}

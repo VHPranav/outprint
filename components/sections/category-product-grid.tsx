@@ -24,9 +24,11 @@ function getProductMaterials(product: Product): string[] {
 
 interface CategoryProductGridProps {
   products: Product[];
+  /** With a left sidebar the grid is narrower, so it uses fewer columns. */
+  hasSidebar?: boolean;
 }
 
-export function CategoryProductGrid({ products }: CategoryProductGridProps) {
+export function CategoryProductGrid({ products, hasSidebar = false }: CategoryProductGridProps) {
   const [material, setMaterial] = React.useState(ALL);
   const [useCase, setUseCase] = React.useState(ALL);
 
@@ -60,7 +62,7 @@ export function CategoryProductGrid({ products }: CategoryProductGridProps) {
   return (
     <div>
       <div className="mb-8 flex flex-wrap items-end gap-4 rounded-2xl border border-[#E5E5E5] bg-[#FAFAF9] p-4">
-        <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+        <div className="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-neutral-500">
           <SlidersHorizontal className="h-3.5 w-3.5" />
           Filters
         </div>
@@ -124,7 +126,11 @@ export function CategoryProductGrid({ products }: CategoryProductGridProps) {
           </Button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div
+          className={`grid grid-cols-1 gap-8 sm:grid-cols-2 ${
+            hasSidebar ? "xl:grid-cols-3" : "lg:grid-cols-3 xl:grid-cols-4"
+          }`}
+        >
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

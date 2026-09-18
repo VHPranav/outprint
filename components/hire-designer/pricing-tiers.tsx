@@ -12,7 +12,7 @@ export function PricingTiers({ requestHrefFor }: PricingTiersProps) {
   return (
     <section className="mx-auto max-w-6xl px-6 sm:px-8">
       <Reveal className="mb-12 max-w-2xl">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B5D3B]">Packages</span>
+        <span className="text-xs font-medium uppercase tracking-wider text-[#0B5D3B]">Packages</span>
         <h2 className="mt-2 font-serif text-3xl font-normal tracking-tight text-[#111111] sm:text-4xl">
           Pick a scope. We quote it on WhatsApp.
         </h2>
@@ -32,7 +32,7 @@ export function PricingTiers({ requestHrefFor }: PricingTiersProps) {
             )}
           >
             {tier.highlighted && (
-              <span className="absolute -top-3 left-7 rounded-full bg-[#0B5D3B] px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">
+              <span className="absolute -top-3 left-7 rounded-full bg-[#0B5D3B] px-3 py-1 text-[10px] font-medium uppercase tracking-wider text-white">
                 Most popular
               </span>
             )}

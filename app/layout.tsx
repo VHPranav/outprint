@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces, Qwitcher_Grypen } from "next/font/google";
+import { Poppins, Inter, Fraunces, Qwitcher_Grypen } from "next/font/google";
 import { Toaster } from "@/components/ui/toast";
 import { WhatsAppFab } from "@/components/ui/whatsapp-fab";
 import { CookieConsent } from "@/components/ui/cookie-consent";
@@ -8,6 +8,15 @@ import { organizationJsonLd } from "@/lib/structured-data";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
 import "./globals.css";
 
+// Site-wide UI font (see fontFamily in tailwind.config.ts).
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+// Inter and Fraunces stay loaded only as selectable text fonts in the design studio.
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -66,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${fraunces.variable} ${qwitcherGrypen.variable}`}>
+    <html lang="en" className={`${poppins.variable} ${inter.variable} ${fraunces.variable} ${qwitcherGrypen.variable}`}>
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/tas3jji.css" />
       </head>

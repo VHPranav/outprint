@@ -8,7 +8,7 @@ import {
   getProductsByCategory,
   getCategoryAncestors,
 } from "@/lib/catalog";
-import { Navbar, Footer, SubcategoryTiles, CategoryProductGrid } from "@/components/sections";
+import { Navbar, Footer, CategorySidebar, CategoryProductGrid } from "@/components/sections";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { breadcrumbJsonLd } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/site-config";
@@ -60,6 +60,12 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   const products = getProductsByCategory(category.slug);
   const ancestors = getCategoryAncestors(category.slug);
 
+  // Sidebar shows this category's subcategories; inside a leaf category it shows
+  // its siblings instead, with the current one highlighted.
+  const parent = ancestors.length > 1 ? ancestors[ancestors.length - 2] : undefined;
+  const sidebarItems = subcategories.length > 0 ? subcategories : parent ? getSubcategories(parent.id) : [];
+  const sidebarHeading = subcategories.length > 0 ? `Browse ${category.name}` : parent ? `More in ${parent.name}` : "";
+
   const breadcrumbItems = ancestors.map((c) => ({
     label: c.name,
     href: `/category/${c.slug}`,
@@ -93,16 +99,15 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           )}
         </div>
 
-        {subcategories.length > 0 && (
-          <div className="mb-14">
-            <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider text-neutral-400">
-              Browse {category.name}
-            </h2>
-            <SubcategoryTiles subcategories={subcategories} />
-          </div>
-        )}
-
-        <CategoryProductGrid products={products} />
+        <div className={sidebarItems.length > 0 ? "lg:grid lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-10" : ""}>
+          <CategorySidebar
+            heading={sidebarHeading}
+            items={sidebarItems}
+            activeId={subcategories.length > 0 ? undefined : category.id}
+            parent={parent}
+          />
+          <CategoryProductGrid products={products} hasSidebar={sidebarItems.length > 0} />
+        </div>
       </main>
 
       <Footer />

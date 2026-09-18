@@ -1,9 +1,7 @@
-"use client";
-
 import * as React from "react";
 import { getProductBySlug } from "@/lib/catalog";
-import { SectionCarousel, CAROUSEL_CARD_CLASS } from "@/components/ui/section-carousel";
-import { ProductCard } from "./product-card";
+import { Reveal } from "@/components/ui/reveal";
+import { HomeSectionTitle, ProductTile, TILE_GRID_CLASS } from "./home-tiles";
 
 // Curated set — gifting, hospitality and personalized items.
 const HANDPICKED_SLUGS = [
@@ -23,20 +21,17 @@ export function HandpickedForYou() {
   );
 
   return (
-    <SectionCarousel
-      title="Handpicked For You"
-      subtitle="Gifting, hospitality and personalized favorites."
-      ariaLabel="Handpicked for you products"
-      sectionClassName="bg-white py-16 sm:py-24"
-    >
-      {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-          variant="grey"
-          className={CAROUSEL_CARD_CLASS}
-        />
-      ))}
-    </SectionCarousel>
+    <section className="bg-white pb-14 pt-4 sm:pb-20">
+      <div className="mx-auto w-[90%] max-w-[1400px]">
+        <Reveal>
+          <HomeSectionTitle title="Handpicked For You" />
+        </Reveal>
+        <Reveal delay={0.1} className={TILE_GRID_CLASS}>
+          {products.map((product) => (
+            <ProductTile key={product.id} product={product} />
+          ))}
+        </Reveal>
+      </div>
+    </section>
   );
 }

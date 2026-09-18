@@ -13,7 +13,7 @@ export function HowItWorks() {
   return (
     <section className="mx-auto max-w-6xl px-6 sm:px-8">
       <Reveal className="mb-12 max-w-2xl">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B5D3B]">How it works</span>
+        <span className="text-xs font-medium uppercase tracking-wider text-[#0B5D3B]">How it works</span>
         <h2 className="mt-2 font-serif text-3xl font-normal tracking-tight text-[#111111] sm:text-4xl">
           From idea to print, with a real person in the loop.
         </h2>
@@ -30,7 +30,7 @@ export function HowItWorks() {
               <span className="mt-4 block font-serif text-2xl text-neutral-300">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-1 text-base font-semibold text-neutral-900">{step.title}</h3>
+              <h3 className="mt-1 text-base font-medium text-neutral-900">{step.title}</h3>
               <p className="mt-1.5 text-sm leading-relaxed text-neutral-600">{step.description}</p>
             </Reveal>
           );

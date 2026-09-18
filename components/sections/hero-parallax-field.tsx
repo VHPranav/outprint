@@ -209,7 +209,7 @@ function CardBody({ card }: { card: CardConfig }) {
               : "bottom-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent"
           )}
         >
-          <span className="font-sans font-semibold text-[15px] leading-snug text-white drop-shadow-sm">
+          <span className="font-sans font-medium text-[15px] leading-snug text-white drop-shadow-sm">
             {card.headline}
           </span>
           {card.cta ? (

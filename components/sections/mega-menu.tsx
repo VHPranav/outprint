@@ -46,7 +46,7 @@ function MegaMenuPanel({ group }: MegaMenuPanelProps) {
     >
       {/* Column 1 — sub-categories */}
       <div>
-        <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-neutral-400">
+        <p className="mb-3 text-xs font-medium uppercase tracking-wider text-neutral-400">
           Shop by category
         </p>
         <ul className={`max-h-[380px] space-y-0.5 overflow-y-auto pr-1 ${THEMED_SCROLL}`}>
@@ -76,7 +76,7 @@ function MegaMenuPanel({ group }: MegaMenuPanelProps) {
       <div className="border-l border-neutral-100 pl-8">
         {activeHeading && (
           <>
-            <p className="text-sm font-semibold text-black">{activeHeading.name}</p>
+            <p className="text-sm font-medium text-black">{activeHeading.name}</p>
             {activeHeading.description && (
               <p className="mt-0.5 line-clamp-2 text-xs text-neutral-500">{activeHeading.description}</p>
             )}
@@ -168,7 +168,7 @@ export function MegaMenu({ groups }: MegaMenuProps) {
               cancelClose();
               setOpenLabel(group.label);
             }}
-            className={`inline-flex items-center rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
+            className={`inline-flex items-center rounded-full px-3.5 py-2 text-sm font-medium leading-tight transition-colors ${
               openLabel === group.label
                 ? "bg-neutral-100 text-black"
                 : "text-neutral-700 hover:bg-neutral-100 hover:text-black"

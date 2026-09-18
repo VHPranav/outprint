@@ -50,7 +50,7 @@ const NAV_GROUPS: NavGroupConfig[] = [
   },
 ];
 
-/** Deterministic placeholder image pool — swap for real photography later. */
+/** Deterministic placeholder image pool — only a fallback for categories that contain no products. */
 const PLACEHOLDER_IMAGE_COUNT = 35;
 function placeholderImage(seed: string): string {
   let hash = 0;
@@ -100,11 +100,12 @@ function buildHeading(category: Category, extraCategoryIds: string[] = []): Mega
     name: category.name,
     slug: category.slug,
     description: category.seo?.description ?? "",
-    image: placeholderImage(category.id),
+    // Preview uses real product photography: a representative product for the category.
+    image: products[0]?.images[0] ?? placeholderImage(category.id),
     products: products.map((p) => ({
       name: p.name,
       slug: p.slug,
-      image: placeholderImage(p.id),
+      image: p.images[0] ?? placeholderImage(p.id),
     })),
   };
 }
@@ -125,7 +126,7 @@ export function getMegaMenuGroups(): MegaMenuGroup[] {
     return {
       label: config.label,
       slug: primary.slug,
-      image: placeholderImage(primary.id),
+      image: headings[0]?.image ?? placeholderImage(primary.id),
       headings,
     };
   });

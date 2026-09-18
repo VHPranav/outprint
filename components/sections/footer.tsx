@@ -39,7 +39,7 @@ export function Footer() {
   const whatsappHref = getWhatsAppHref();
 
   return (
-    <footer className="border-t border-[#E5E5E5] bg-[#FAFAF9]">
+    <footer className="border-t border-neutral-200 bg-white text-neutral-900">
       <div className="mx-auto max-w-6xl px-6 py-16 sm:px-8">
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-4">
           <div className="col-span-2 sm:col-span-1">
@@ -52,7 +52,7 @@ export function Footer() {
                 className="h-8 w-auto object-contain sm:h-9"
               />
             </Link>
-            <p className="mt-3 max-w-[220px] text-sm leading-relaxed text-neutral-500">
+            <p className="mt-3 max-w-[220px] text-sm leading-relaxed text-neutral-700">
               Bespoke print & packaging, engineered for the modern digital era.
             </p>
             <div className="mt-5 flex items-center gap-3">
@@ -61,7 +61,7 @@ export function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-neutral-600 transition-colors hover:border-black hover:text-black"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-black/20 text-neutral-800 transition-colors hover:border-black hover:text-black"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
@@ -70,13 +70,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-neutral-400">Shop</h3>
+            <h3 className="text-xs font-medium uppercase tracking-wider text-neutral-900">Shop</h3>
             <ul className="mt-4 space-y-2.5">
               {topLevelCategories.map((category) => (
                 <li key={category.id}>
                   <Link
                     href={`/category/${category.slug}`}
-                    className="text-sm text-neutral-600 hover:text-black transition-colors"
+                    className="text-sm text-neutral-700 hover:text-black transition-colors"
                   >
                     {category.name}
                   </Link>
@@ -86,21 +86,21 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-neutral-400">Company</h3>
+            <h3 className="text-xs font-medium uppercase tracking-wider text-neutral-900">Company</h3>
             <ul className="mt-4 space-y-2.5">
               {companyLinks.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-neutral-600 hover:text-black transition-colors">
+                  <Link href={link.href} className="text-sm text-neutral-700 hover:text-black transition-colors">
                     {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
-            <h3 className="mt-6 text-xs font-semibold uppercase tracking-wider text-neutral-400">Support</h3>
+            <h3 className="mt-6 text-xs font-medium uppercase tracking-wider text-neutral-900">Support</h3>
             <ul className="mt-4 space-y-2.5">
               {supportLinks.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-neutral-600 hover:text-black transition-colors">
+                  <Link href={link.href} className="text-sm text-neutral-700 hover:text-black transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -109,14 +109,14 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-neutral-400">Contact</h3>
-            <ul className="mt-4 space-y-3 text-sm text-neutral-600">
+            <h3 className="text-xs font-medium uppercase tracking-wider text-neutral-900">Contact</h3>
+            <ul className="mt-4 space-y-3 text-sm text-neutral-700">
               <li className="flex items-start gap-2.5">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-neutral-400" />
-                <span>Dubai, United Arab Emirates</span>
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-neutral-700" />
+                <span>United Arab Emirates</span>
               </li>
               <li className="flex items-start gap-2.5">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-neutral-400" />
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-neutral-700" />
                 <span>hello@outprint.co</span>
               </li>
             </ul>
@@ -134,7 +134,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-[#E5E5E5] pt-8 text-xs text-neutral-400 sm:flex-row">
+        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-black/10 pt-8 text-xs text-neutral-600 sm:flex-row">
           <span>© {new Date().getFullYear()} Outprint Studio Inc. All rights reserved.</span>
           <span>FSC® C104284 · ISO 12647-2</span>
         </div>

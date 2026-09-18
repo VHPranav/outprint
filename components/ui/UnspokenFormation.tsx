@@ -534,18 +534,18 @@ export const TenthFormation: React.FC<TenthFormationProps> = ({
                 ) : (
                     <>
                         {badge && (
-                            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-100/90 text-neutral-800 text-xs font-semibold uppercase tracking-wider border border-neutral-200 backdrop-blur-sm shadow-sm mb-6">
+                            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-100/90 text-neutral-800 text-xs font-medium uppercase tracking-wider border border-neutral-200 backdrop-blur-sm shadow-sm mb-6">
                                 <Sparkles className="w-3.5 h-3.5 text-[#0B5D3B]" />
                                 <span>{badge}</span>
                             </div>
                         )}
 
-                        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-semibold tracking-[-0.04em] text-[#111111] leading-[1.02] max-w-4xl mx-auto">
+                        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-medium tracking-[-0.04em] text-[#111111] leading-[1.02] max-w-4xl mx-auto">
                             {title}
                         </h1>
 
                         {description && (
-                            <p className="mt-6 text-base sm:text-lg md:text-xl text-neutral-600 font-sans max-w-2xl mx-auto leading-relaxed text-balance font-light">
+                            <p className="mt-6 text-base sm:text-lg md:text-xl text-neutral-600 font-sans max-w-2xl mx-auto leading-relaxed text-balance font-normal">
                                 {description}
                             </p>
                         )}
@@ -555,7 +555,7 @@ export const TenthFormation: React.FC<TenthFormationProps> = ({
                                 <button
                                     type="button"
                                     onClick={onButtonClick}
-                                    className="group inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#0B5D3B] text-white font-semibold text-sm sm:text-base shadow-[0_4px_16px_rgba(11,93,59,0.35)] hover:bg-[#084C30] hover:scale-105 transition-all duration-200"
+                                    className="group inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#0B5D3B] text-white font-medium text-sm sm:text-base shadow-[0_4px_16px_rgba(11,93,59,0.35)] hover:bg-[#084C30] hover:scale-105 transition-all duration-200"
                                 >
                                     <span>{buttonText}</span>
                                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
@@ -566,7 +566,7 @@ export const TenthFormation: React.FC<TenthFormationProps> = ({
                                 <button
                                     type="button"
                                     onClick={onSecondaryButtonClick}
-                                    className="group inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white hover:bg-neutral-50 text-neutral-900 font-semibold text-sm sm:text-base border border-neutral-300 shadow-sm hover:scale-105 transition-all duration-200"
+                                    className="group inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-white hover:bg-neutral-50 text-neutral-900 font-medium text-sm sm:text-base border border-neutral-300 shadow-sm hover:scale-105 transition-all duration-200"
                                 >
                                     <span>{secondaryButtonText}</span>
                                 </button>

@@ -148,7 +148,7 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
               </p>
             </div>
             <div>
-              <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+              <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-neutral-500">
                 Your brief
               </label>
               <Textarea
@@ -158,13 +158,13 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
               />
             </div>
             <div>
-              <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+              <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-neutral-500">
                 Reference images or logo
               </label>
               <ReferenceUploads files={references} onChange={setReferences} />
             </div>
             <div>
-              <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+              <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-neutral-500">
                 Style preference
               </label>
               <div className="flex flex-wrap gap-2">
@@ -213,7 +213,7 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
                     )}
                   >
                     <span className="flex items-center justify-between">
-                      <span className="text-sm font-semibold text-neutral-900">{option.name}</span>
+                      <span className="text-sm font-medium text-neutral-900">{option.name}</span>
                       {active && (
                         <span className="flex h-5 w-5 items-center justify-center rounded-full bg-black text-white">
                           <Check className="h-3 w-3" />
@@ -265,13 +265,13 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
-                <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-neutral-500">
                   Name
                 </label>
                 <Input value={name} onChange={(e) => setName(e.target.value)} placeholder="Your name" />
               </div>
               <div>
-                <label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                <label className="mb-2 block text-xs font-medium uppercase tracking-wider text-neutral-500">
                   Phone or email
                 </label>
                 <Input
@@ -283,7 +283,7 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
             </div>
 
             <div className="rounded-2xl bg-[#FAFAF9] p-5">
-              <h3 className="text-xs font-semibold uppercase tracking-wider text-neutral-500">Review</h3>
+              <h3 className="text-xs font-medium uppercase tracking-wider text-neutral-500">Review</h3>
               <dl className="mt-3 space-y-2 text-sm">
                 <div className="flex justify-between gap-4">
                   <dt className="text-neutral-500">Designing</dt>

@@ -122,7 +122,7 @@ export function ProductInfoTabs({ product }: ProductInfoTabsProps) {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {howToOrderSteps.map((step, index) => (
             <div key={step.title}>
-              <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-black text-xs font-semibold text-white">
+              <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-black text-xs font-medium text-white">
                 {index + 1}
               </div>
               <step.icon className="mb-2 h-5 w-5 text-neutral-700" />

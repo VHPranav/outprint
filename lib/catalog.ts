@@ -45,6 +45,16 @@ export function getCategoryBySlug(slug: string): Category | undefined {
   return categories.find((category) => category.slug === slug);
 }
 
+/**
+ * Image for a category tile: a real product photo from the category (or its
+ * sub-categories), falling back to the category's banner placeholder when it
+ * has no products yet. Several banner placeholders are shared stock photos,
+ * so product photography reads better and stays consistent with the catalog.
+ */
+export function getCategoryImage(category: Category): string {
+  return getProductsByCategory(category.id)[0]?.images[0] ?? category.bannerImage;
+}
+
 /** Direct children of a category (not grandchildren) — used for sub-category tile grids. */
 export function getSubcategories(categoryIdOrSlug: string): Category[] {
   const category = findCategory(categoryIdOrSlug);

@@ -25,18 +25,18 @@ export default function TermsOfServicePage() {
 
       <LegalH2>What this site does</LegalH2>
       <LegalP>
-        Outprint lets you configure custom print and packaging products, attach artwork, and get instant
-        indicative pricing. No payment is collected on this site. Submitting a configuration opens a WhatsApp
-        message to our team, who confirm final pricing, specifications and payment with you directly before
+        Outprint lets you configure custom print and packaging products and attach artwork. No pricing is
+        shown and no payment is collected on this site. Submitting a configuration opens a WhatsApp message
+        to our team, who provide pricing, confirm specifications, and take payment with you directly before
         any production begins.
       </LegalP>
 
       <LegalH2>Quotes &amp; pricing</LegalH2>
       <LegalP>
-        Prices shown on the site are indicative, calculated from the options you select. They are not a final
-        invoice. Final price, taxes, and shipping are confirmed by our team over WhatsApp before your order is
-        accepted, and may vary from the on-site estimate — for example if custom sizing, uploaded artwork, or
-        the resolution-enhancement service require adjustment.
+        All pricing is provided by our team over WhatsApp after reviewing your configuration — nothing is
+        calculated or shown on the site. Your quote is not final until our team confirms specifications,
+        taxes, and shipping with you directly, for example if custom sizing, uploaded artwork, or the
+        resolution-enhancement service require adjustment.
       </LegalP>
 
       <LegalH2>Artwork &amp; intellectual property</LegalH2>

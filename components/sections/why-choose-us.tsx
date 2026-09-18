@@ -1,10 +1,10 @@
 import * as React from "react";
-import { Timer, BadgeDollarSign, ShieldCheck, Headset } from "lucide-react";
+import { Timer, MessageCircle, ShieldCheck, Headset } from "lucide-react";
 import { Reveal } from "@/components/ui/reveal";
 
 const FEATURES = [
   { icon: Timer, title: "Fast Turnaround", description: "Print. Pack. Done." },
-  { icon: BadgeDollarSign, title: "Affordable Prices", description: "Low prices, high value." },
+  { icon: MessageCircle, title: "WhatsApp Quotes", description: "Fast, personal quotes." },
   { icon: ShieldCheck, title: "Superb Quality", description: "Quality you can trust." },
   { icon: Headset, title: "Best Support", description: "Always here to help." },
 ];

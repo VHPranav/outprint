@@ -3,7 +3,6 @@
 // the schema shapes only need to be right in one place.
 
 import type { Product } from "@/data/products";
-import { getStartingOffer } from "@/lib/catalog";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
 
 export function organizationJsonLd() {
@@ -42,8 +41,6 @@ export function breadcrumbJsonLd(items: BreadcrumbEntry[]) {
 }
 
 export function productJsonLd(product: Product) {
-  const { unitPrice } = getStartingOffer(product);
-
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -54,14 +51,6 @@ export function productJsonLd(product: Product) {
     brand: {
       "@type": "Brand",
       name: SITE_NAME,
-    },
-    offers: {
-      "@type": "Offer",
-      url: `${SITE_URL}/product/${product.slug}`,
-      priceCurrency: "AED",
-      price: unitPrice.toFixed(2),
-      availability: "https://schema.org/InStock",
-      itemCondition: "https://schema.org/NewCondition",
     },
   };
 }

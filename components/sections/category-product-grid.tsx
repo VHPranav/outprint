@@ -3,8 +3,6 @@
 import * as React from "react";
 import { SlidersHorizontal, X } from "lucide-react";
 import type { Product, MaterialOptionGroup } from "@/data/products";
-import { getStartingOffer } from "@/lib/catalog";
-import { formatCurrency } from "@/lib/currency";
 import {
   Select,
   SelectTrigger,
@@ -12,7 +10,6 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ProductCard } from "./product-card";
 
@@ -32,21 +29,6 @@ interface CategoryProductGridProps {
 export function CategoryProductGrid({ products }: CategoryProductGridProps) {
   const [material, setMaterial] = React.useState(ALL);
   const [useCase, setUseCase] = React.useState(ALL);
-  const [priceMin, setPriceMin] = React.useState("");
-  const [priceMax, setPriceMax] = React.useState("");
-
-  const offers = React.useMemo(
-    () => new Map(products.map((product) => [product.id, getStartingOffer(product)])),
-    [products]
-  );
-
-  const priceBounds = React.useMemo(() => {
-    const prices = products.map((product) => offers.get(product.id)!.unitPrice);
-    return {
-      min: prices.length ? Math.min(...prices) : 0,
-      max: prices.length ? Math.max(...prices) : 0,
-    };
-  }, [products, offers]);
 
   const materialOptions = React.useMemo(() => {
     const labels = new Set<string>();
@@ -61,28 +43,18 @@ export function CategoryProductGrid({ products }: CategoryProductGridProps) {
   }, [products]);
 
   const filteredProducts = React.useMemo(() => {
-    const min = priceMin.trim() ? Number(priceMin) : null;
-    const max = priceMax.trim() ? Number(priceMax) : null;
-
     return products.filter((product) => {
       if (material !== ALL && !getProductMaterials(product).includes(material)) return false;
       if (useCase !== ALL && !product.useCases?.includes(useCase)) return false;
-
-      const price = offers.get(product.id)!.unitPrice;
-      if (min !== null && !Number.isNaN(min) && price < min) return false;
-      if (max !== null && !Number.isNaN(max) && price > max) return false;
-
       return true;
     });
-  }, [products, material, useCase, priceMin, priceMax, offers]);
+  }, [products, material, useCase]);
 
-  const hasActiveFilters = material !== ALL || useCase !== ALL || priceMin !== "" || priceMax !== "";
+  const hasActiveFilters = material !== ALL || useCase !== ALL;
 
   function resetFilters() {
     setMaterial(ALL);
     setUseCase(ALL);
-    setPriceMin("");
-    setPriceMax("");
   }
 
   return (
@@ -128,26 +100,6 @@ export function CategoryProductGrid({ products }: CategoryProductGridProps) {
             </Select>
           </div>
         )}
-
-        <div className="flex items-center gap-2">
-          <Input
-            type="number"
-            inputMode="decimal"
-            placeholder={`Min ${formatCurrency(priceBounds.min)}`}
-            value={priceMin}
-            onChange={(e) => setPriceMin(e.target.value)}
-            className="h-10 w-28 bg-white"
-          />
-          <span className="text-neutral-400">–</span>
-          <Input
-            type="number"
-            inputMode="decimal"
-            placeholder={`Max ${formatCurrency(priceBounds.max)}`}
-            value={priceMax}
-            onChange={(e) => setPriceMax(e.target.value)}
-            className="h-10 w-28 bg-white"
-          />
-        </div>
 
         {hasActiveFilters && (
           <Button variant="ghost" size="sm" onClick={resetFilters} className="ml-auto">

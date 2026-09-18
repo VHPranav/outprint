@@ -27,9 +27,8 @@ export default function PrivacyPolicyPage() {
       <LegalH2>Information we collect</LegalH2>
       <LegalList>
         <li>
-          <strong>Configuration &amp; cart data</strong> — the product options, quantities and prices you
-          select. This is stored only in your browser&apos;s local storage on your own device, not on our
-          servers.
+          <strong>Configuration &amp; cart data</strong> — the product options and quantities you select.
+          This is stored only in your browser&apos;s local storage on your own device, not on our servers.
         </li>
         <li>
           <strong>Uploaded artwork &amp; references</strong> — images, logos or reference files you upload

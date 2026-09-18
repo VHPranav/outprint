@@ -3,8 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/data/products";
 import { categories } from "@/data/categories";
-import { getStartingOffer } from "@/lib/catalog";
-import { formatCurrency } from "@/lib/currency";
+import { getMinQuantity } from "@/lib/catalog";
 
 interface ProductCardProps {
   product: Product;
@@ -29,7 +28,7 @@ export function ProductCard({
   theme = "light",
 }: ProductCardProps) {
   const category = categories.find((c) => c.id === product.categoryId);
-  const { unitPrice, quantity } = getStartingOffer(product);
+  const minQuantity = getMinQuantity(product);
   const isDark = theme === "dark";
 
   // Clean borderless style matching reference screenshot
@@ -89,11 +88,7 @@ export function ProductCard({
               isDark ? "text-neutral-300" : "text-neutral-600"
             }`}
           >
-            From{" "}
-            <span className={`font-semibold ${isDark ? "text-white" : "text-black"}`}>
-              {formatCurrency(unitPrice)}
-            </span>{" "}
-            for {quantity} pcs
+            MOQ <span className={`font-semibold ${isDark ? "text-white" : "text-black"}`}>{minQuantity}</span> pcs
           </p>
         </div>
       </Link>
@@ -136,8 +131,7 @@ export function ProductCard({
           {truncate(product.description, 70)}
         </p>
         <p className="mt-auto pt-4 text-sm text-neutral-600">
-          From <span className="font-semibold text-black">{formatCurrency(unitPrice)}</span> for{" "}
-          {quantity} pcs
+          MOQ <span className="font-semibold text-black">{minQuantity}</span> pcs
         </p>
       </div>
     </Link>

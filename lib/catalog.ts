@@ -3,7 +3,6 @@
 
 import { categories, type Category } from "@/data/categories";
 import { products, type Product, type QuantityOptionGroup } from "@/data/products";
-import { calculatePrice } from "@/data/pricing";
 
 export interface CategoryNode extends Category {
   children: CategoryNode[];
@@ -109,24 +108,12 @@ export function getProductsByCategory(
   return products.filter((product) => categoryIds.has(product.categoryId));
 }
 
-export interface StartingOffer {
-  unitPrice: number;
-  quantity: number;
-}
-
-/** Cheapest available offer for a product: smallest quantity tier, base size & material, no addons. */
-export function getStartingOffer(product: Product): StartingOffer {
+/** Smallest orderable quantity (MOQ) for a product, or 1 if it has no quantity tiers. */
+export function getMinQuantity(product: Product): number {
   const quantityGroup = product.optionGroups.find(
     (group): group is QuantityOptionGroup => group.type === "quantity"
   );
-  const quantity = quantityGroup ? Math.min(...quantityGroup.tiers) : 1;
-  const { unitPrice } = calculatePrice(product, { quantity });
-  return { unitPrice, quantity };
-}
-
-/** Cheapest available unit price for a product. See getStartingOffer if you also need the quantity it's priced at. */
-export function getStartingPrice(product: Product): number {
-  return getStartingOffer(product).unitPrice;
+  return quantityGroup ? Math.min(...quantityGroup.tiers) : 1;
 }
 
 /** Case-insensitive substring search over product name/description. Empty query returns no results. */

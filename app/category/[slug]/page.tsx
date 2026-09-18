@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const title = category.seo?.title ?? `${category.name} | Outprint`;
   const description =
     category.seo?.description ??
-    `Shop custom ${category.name.toLowerCase()} at Outprint — bulk pricing, free digital proof, fast delivery across UAE.`;
+    `Shop custom ${category.name.toLowerCase()} at Outprint — bulk order discounts, free digital proof, fast delivery across UAE.`;
 
   return {
     title,

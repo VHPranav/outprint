@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Check } from "lucide-react";
 import { PRICING_TIERS } from "@/data/hire-designer";
-import { formatCurrency } from "@/lib/currency";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/ui/reveal";
 
@@ -13,9 +12,9 @@ export function PricingTiers({ requestHrefFor }: PricingTiersProps) {
   return (
     <section className="mx-auto max-w-6xl px-6 sm:px-8">
       <Reveal className="mb-12 max-w-2xl">
-        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B5D3B]">Pricing</span>
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#0B5D3B]">Packages</span>
         <h2 className="mt-2 font-serif text-3xl font-normal tracking-tight text-[#111111] sm:text-4xl">
-          One flat design fee. No surprise invoices.
+          Pick a scope. We quote it on WhatsApp.
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-neutral-600">
           Every tier ends the same way — a print-ready file and a straight line into production.
@@ -40,10 +39,7 @@ export function PricingTiers({ requestHrefFor }: PricingTiersProps) {
             <h3 className="font-serif text-2xl text-neutral-900">{tier.name}</h3>
             <p className="mt-1 text-sm text-neutral-500">{tier.tagline}</p>
 
-            <div className="mt-5 flex items-baseline gap-1">
-              <span className="font-serif text-4xl text-neutral-900">{formatCurrency(tier.price)}</span>
-            </div>
-            <p className="mt-1 text-xs font-medium uppercase tracking-wider text-neutral-500">
+            <p className="mt-5 text-xs font-medium uppercase tracking-wider text-neutral-500">
               {tier.turnaround}
             </p>
 

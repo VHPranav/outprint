@@ -88,7 +88,7 @@ export default function HireDesignerPage({ searchParams }: HireDesignerPageProps
 
         <section className="bg-black py-20 text-white sm:py-28">
           <div className="mx-auto flex max-w-3xl flex-col items-center gap-5 px-6 text-center sm:px-8">
-            <h2 className="font-serif text-3xl font-normal tracking-tight sm:text-4xl">
+            <h2 className="font-serif text-3xl font-normal tracking-tight text-white sm:text-4xl">
               Ready to hand this off?
             </h2>
             <p className="max-w-lg text-sm text-neutral-400 sm:text-base">

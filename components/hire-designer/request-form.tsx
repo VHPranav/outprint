@@ -3,9 +3,8 @@
 import * as React from "react";
 import { Check, Zap } from "lucide-react";
 import { categories } from "@/data/categories";
-import { PRICING_TIERS, STYLE_TAGS, RUSH_FEE, RUSH_TURNAROUND, type StyleTag } from "@/data/hire-designer";
+import { PRICING_TIERS, STYLE_TAGS, RUSH_TURNAROUND, type StyleTag } from "@/data/hire-designer";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
-import { formatCurrency } from "@/lib/currency";
 import { cn } from "@/lib/utils";
 import { Stepper, type StepItem } from "@/components/ui/stepper";
 import { Button } from "@/components/ui/button";
@@ -54,7 +53,6 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
 
   const selectedTier = PRICING_TIERS.find((t) => t.id === tier) ?? PRICING_TIERS[0];
   const effectiveTurnaround = wantsRush ? RUSH_TURNAROUND : selectedTier.turnaround;
-  const effectivePrice = selectedTier.price + (wantsRush ? RUSH_FEE : 0);
 
   const canAdvance = step === 0 ? !!category : step === 1 ? brief.trim().length > 0 : true;
   const canSubmit = name.trim().length > 0 && contact.trim().length > 0;
@@ -90,7 +88,6 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
         referenceFileUrls: references.filter((f) => f.status === "success" && f.url).map((f) => f.url!),
         packageTier: selectedTier.name,
         turnaround: effectiveTurnaround,
-        price: effectivePrice,
       });
       window.open(link, "_blank", "noopener,noreferrer");
       setWaLink(link);
@@ -223,10 +220,8 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
                         </span>
                       )}
                     </span>
-                    <span className="mt-1 font-serif text-xl text-neutral-900">
-                      {formatCurrency(option.price)}
-                    </span>
-                    <span className="mt-0.5 text-xs text-neutral-500">{option.turnaround}</span>
+                    <span className="mt-1 text-xs text-neutral-500">{option.tagline}</span>
+                    <span className="mt-0.5 text-xs font-medium text-neutral-700">{option.turnaround}</span>
                   </button>
                 );
               })}
@@ -254,7 +249,6 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
                   Rush it to {RUSH_TURNAROUND.toLowerCase()}.
                 </span>
               </span>
-              <span className="shrink-0 text-xs font-medium text-neutral-700">+{formatCurrency(RUSH_FEE)}</span>
             </button>
           </div>
         )}
@@ -315,9 +309,7 @@ export function RequestForm({ initialCategory, initialProductName, initialTier }
                 )}
                 <div className="flex justify-between gap-4 border-t border-[#E5E5E5] pt-2">
                   <dt className="text-neutral-500">Package</dt>
-                  <dd className="text-right font-medium text-neutral-900">
-                    {selectedTier.name} — {formatCurrency(effectivePrice)}
-                  </dd>
+                  <dd className="text-right font-medium text-neutral-900">{selectedTier.name}</dd>
                 </div>
                 <div className="flex justify-between gap-4">
                   <dt className="text-neutral-500">Turnaround</dt>

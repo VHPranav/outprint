@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Minus, Plus, X, FileText, PencilLine } from "lucide-react";
 import type { CartItem } from "@/lib/cart";
-import { formatCurrency } from "@/lib/currency";
 import { isImageUrl } from "@/lib/utils";
 
 interface CartLineItemProps {
@@ -71,43 +70,36 @@ export function CartLineItem({ item, onAdjustQuantity, onRemove }: CartLineItemP
           </div>
         )}
 
-        <div className="mt-auto flex flex-wrap items-end justify-between gap-3 pt-3">
-          <div className="flex items-center gap-3">
-            <div className="flex items-center overflow-hidden rounded-full border border-[#E5E5E5]">
-              <button
-                type="button"
-                onClick={() => onAdjustQuantity(item.id, -1)}
-                disabled={item.quantity <= 1}
-                aria-label="Decrease quantity"
-                className="flex h-8 w-8 items-center justify-center text-neutral-600 hover:bg-neutral-100 disabled:pointer-events-none disabled:opacity-30"
-              >
-                <Minus className="h-3.5 w-3.5" />
-              </button>
-              <span className="w-10 text-center text-sm font-medium tabular-nums text-neutral-900">
-                {item.quantity}
-              </span>
-              <button
-                type="button"
-                onClick={() => onAdjustQuantity(item.id, 1)}
-                aria-label="Increase quantity"
-                className="flex h-8 w-8 items-center justify-center text-neutral-600 hover:bg-neutral-100"
-              >
-                <Plus className="h-3.5 w-3.5" />
-              </button>
-            </div>
-            <Link
-              href={`/product/${item.slug}`}
-              className="flex items-center gap-1 text-xs font-medium text-neutral-500 hover:text-black"
+        <div className="mt-auto flex flex-wrap items-center gap-3 pt-3">
+          <div className="flex items-center overflow-hidden rounded-full border border-[#E5E5E5]">
+            <button
+              type="button"
+              onClick={() => onAdjustQuantity(item.id, -1)}
+              disabled={item.quantity <= 1}
+              aria-label="Decrease quantity"
+              className="flex h-8 w-8 items-center justify-center text-neutral-600 hover:bg-neutral-100 disabled:pointer-events-none disabled:opacity-30"
             >
-              <PencilLine className="h-3 w-3" />
-              Edit options
-            </Link>
+              <Minus className="h-3.5 w-3.5" />
+            </button>
+            <span className="w-10 text-center text-sm font-medium tabular-nums text-neutral-900">
+              {item.quantity}
+            </span>
+            <button
+              type="button"
+              onClick={() => onAdjustQuantity(item.id, 1)}
+              aria-label="Increase quantity"
+              className="flex h-8 w-8 items-center justify-center text-neutral-600 hover:bg-neutral-100"
+            >
+              <Plus className="h-3.5 w-3.5" />
+            </button>
           </div>
-
-          <div className="text-right">
-            <p className="text-xs text-neutral-400">{formatCurrency(item.unitPrice)} / pc</p>
-            <p className="text-sm font-semibold text-neutral-900">{formatCurrency(item.totalPrice)}</p>
-          </div>
+          <Link
+            href={`/product/${item.slug}`}
+            className="flex items-center gap-1 text-xs font-medium text-neutral-500 hover:text-black"
+          >
+            <PencilLine className="h-3 w-3" />
+            Edit options
+          </Link>
         </div>
       </div>
     </div>

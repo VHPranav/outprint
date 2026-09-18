@@ -46,7 +46,7 @@ export const categories: Category[] = [
     seo: {
       title: "Custom Stickers Online | Die-Cut & Sheet Stickers | Outprint",
       description:
-        "Order custom die-cut and sheet stickers in vinyl, holographic and matte finishes. Bulk pricing from 25 units, free digital proof, UAE-wide delivery.",
+        "Order custom die-cut and sheet stickers in vinyl, holographic and matte finishes. Bulk order discounts from 25 units, free digital proof, UAE-wide delivery.",
     },
   },
   {
@@ -60,7 +60,7 @@ export const categories: Category[] = [
     seo: {
       title: "Custom Die-Cut Stickers | Outprint",
       description:
-        "Weatherproof die-cut stickers cut precisely to your artwork's outline, in vinyl and holographic finishes. Bulk pricing, free proof.",
+        "Weatherproof die-cut stickers cut precisely to your artwork's outline, in vinyl and holographic finishes. Bulk order discounts, free proof.",
     },
   },
   {
@@ -144,7 +144,7 @@ export const categories: Category[] = [
     seo: {
       title: "Custom Product Labels | Outprint",
       description:
-        "Matte and glossy product labels for candles, cosmetics and packaged goods, with bulk pricing to 5000 units.",
+        "Matte and glossy product labels for candles, cosmetics and packaged goods, with bulk order discounts to 5000 units.",
     },
   },
   {
@@ -194,7 +194,7 @@ export const categories: Category[] = [
     seo: {
       title: "Custom Boxes & Packaging | Outprint",
       description:
-        "Custom-printed mailer boxes and rigid gift boxes for e-commerce shipping and premium unboxing. Bulk pricing from 25 units.",
+        "Custom-printed mailer boxes and rigid gift boxes for e-commerce shipping and premium unboxing. Bulk order discounts from 25 units.",
     },
   },
   {
@@ -222,7 +222,7 @@ export const categories: Category[] = [
     seo: {
       title: "Custom Corrugated Mailer Boxes | Outprint",
       description:
-        "Custom-printed corrugated mailer boxes with tuck-lock closure. Sturdy, lightweight, bulk pricing from 25 units.",
+        "Custom-printed corrugated mailer boxes with tuck-lock closure. Sturdy, lightweight, bulk order discounts from 25 units.",
     },
   },
   {
@@ -258,7 +258,7 @@ export const categories: Category[] = [
     seo: {
       title: "Custom Business Cards | Outprint",
       description:
-        "Standard matte, premium suede and letterpress cotton business cards. Fast turnaround, bulk pricing from 100 cards.",
+        "Standard matte, premium suede and letterpress cotton business cards. Fast turnaround, bulk order discounts from 100 cards.",
     },
   },
   {
@@ -369,7 +369,7 @@ export const categories: Category[] = [
     },
     seo: {
       title: "Business Prints | Business Cards, Letterheads & Stationery | Outprint",
-      description: "Order business cards, letterheads, envelopes, notepads, certificates and presentation folders for your company. Bulk pricing, free digital proof.",
+      description: "Order business cards, letterheads, envelopes, notepads, certificates and presentation folders for your company. Bulk order discounts, free digital proof.",
     },
   },
   {
@@ -381,7 +381,7 @@ export const categories: Category[] = [
     parentId: "cat-business-prints",
     seo: {
       title: "Custom Business Cards | Outprint",
-      description: "Standard, textured, foil and die-cut business cards in every finish — matte, gloss, silk, velvet, kraft and more. Bulk pricing from 100 cards.",
+      description: "Standard, textured, foil and die-cut business cards in every finish — matte, gloss, silk, velvet, kraft and more. Bulk order discounts from 100 cards.",
     },
   },
   {
@@ -405,7 +405,7 @@ export const categories: Category[] = [
     parentId: "cat-business-prints",
     seo: {
       title: "Custom Envelopes | DL, C5 & C4 | Outprint",
-      description: "Branded DL, C5 and C4 envelopes with optional window cut and full-color printing. Bulk pricing from 100 units.",
+      description: "Branded DL, C5 and C4 envelopes with optional window cut and full-color printing. Bulk order discounts from 100 units.",
     },
   },
   {
@@ -458,7 +458,7 @@ export const categories: Category[] = [
     },
     seo: {
       title: "Promo Prints | Flyers, Posters, Brochures & Merch | Outprint",
-      description: "Order flyers, calendars, postcards, brochures, posters, stickers and hospitality print for your next campaign or event. Bulk pricing, fast turnaround.",
+      description: "Order flyers, calendars, postcards, brochures, posters, stickers and hospitality print for your next campaign or event. Bulk order discounts, fast turnaround.",
     },
   },
   {
@@ -470,7 +470,7 @@ export const categories: Category[] = [
     parentId: "cat-promo-prints",
     seo: {
       title: "Custom Flyers | Outprint",
-      description: "A6, A5 and A4 flyers in 150gsm to 350gsm stock, gloss laminated, kraft or waterproof. Bulk pricing from 100 to 10,000 units.",
+      description: "A6, A5 and A4 flyers in 150gsm to 350gsm stock, gloss laminated, kraft or waterproof. Bulk order discounts from 100 to 10,000 units.",
     },
   },
   {
@@ -482,7 +482,7 @@ export const categories: Category[] = [
     parentId: "cat-promo-prints",
     seo: {
       title: "Custom Calendars | Outprint",
-      description: "Desktop tent, wall and poster calendars printed with your branding — a corporate gifting staple. Bulk pricing from 25 units.",
+      description: "Desktop tent, wall and poster calendars printed with your branding — a corporate gifting staple. Bulk order discounts from 25 units.",
     },
   },
   {
@@ -494,7 +494,7 @@ export const categories: Category[] = [
     parentId: "cat-promo-prints",
     seo: {
       title: "Custom Postcards | Outprint",
-      description: "Standard, photo-finish and square postcards for direct mail and event handouts. Bulk pricing from 100 to 5000 units.",
+      description: "Standard, photo-finish and square postcards for direct mail and event handouts. Bulk order discounts from 100 to 5000 units.",
     },
   },
   {
@@ -506,7 +506,7 @@ export const categories: Category[] = [
     parentId: "cat-promo-prints",
     seo: {
       title: "Custom Greeting Cards | Outprint",
-      description: "Folded greeting cards with matching envelopes for corporate and personal occasions. Bulk pricing from 25 to 1000 units.",
+      description: "Folded greeting cards with matching envelopes for corporate and personal occasions. Bulk order discounts from 25 to 1000 units.",
     },
   },
   {
@@ -518,7 +518,7 @@ export const categories: Category[] = [
     parentId: "cat-promo-prints",
     seo: {
       title: "Custom Menus, Brochures & Booklets | Outprint",
-      description: "Trifold menus and pamphlets, saddle-stitched booklets, catalogues, brochures and company profiles. Bulk pricing from 25 units.",
+      description: "Trifold menus and pamphlets, saddle-stitched booklets, catalogues, brochures and company profiles. Bulk order discounts from 25 units.",
     },
   },
   {
@@ -542,7 +542,7 @@ export const categories: Category[] = [
     parentId: "cat-promo-prints",
     seo: {
       title: "Custom Promo Stickers | Round, Square & Kiss-Cut | Outprint",
-      description: "Round, square, kiss-cut and paper stickers for campaigns and giveaways. Bulk pricing from 25 to 2500 units.",
+      description: "Round, square, kiss-cut and paper stickers for campaigns and giveaways. Bulk order discounts from 25 to 2500 units.",
     },
   },
   {
@@ -554,7 +554,7 @@ export const categories: Category[] = [
     parentId: "cat-promo-prints",
     seo: {
       title: "Custom Posters | Outprint",
-      description: "Large-format posters in matte, gloss or waterproof synthetic stock, from A3 up to A0. Bulk pricing from 10 to 500 units.",
+      description: "Large-format posters in matte, gloss or waterproof synthetic stock, from A3 up to A0. Bulk order discounts from 10 to 500 units.",
     },
   },
   {
@@ -566,7 +566,7 @@ export const categories: Category[] = [
     parentId: "cat-promo-prints",
     seo: {
       title: "Custom Coasters, Placemats & Table Print | Outprint",
-      description: "Coasters, placemats, food wrappers and table tents for cafes, bars and restaurants. Bulk pricing from 100 units.",
+      description: "Coasters, placemats, food wrappers and table tents for cafes, bars and restaurants. Bulk order discounts from 100 units.",
     },
   },
   {
@@ -578,7 +578,7 @@ export const categories: Category[] = [
     parentId: "cat-promo-prints",
     seo: {
       title: "Custom Hang Tags & Bookmarks | Outprint",
-      description: "Retail hang tags and standard or premium bookmarks, full-color printed on quality cardstock. Bulk pricing from 100 units.",
+      description: "Retail hang tags and standard or premium bookmarks, full-color printed on quality cardstock. Bulk order discounts from 100 units.",
     },
   },
   {
@@ -590,7 +590,7 @@ export const categories: Category[] = [
     parentId: "cat-promo-prints",
     seo: {
       title: "Custom Tickets & Vouchers | Outprint",
-      description: "Event tickets and gift vouchers with optional sequential numbering and perforation. Bulk pricing from 100 units.",
+      description: "Event tickets and gift vouchers with optional sequential numbering and perforation. Bulk order discounts from 100 units.",
     },
   },
 
@@ -609,7 +609,7 @@ export const categories: Category[] = [
     },
     seo: {
       title: "Large Format Printing | Banners, Canvas & Display Stands | Outprint",
-      description: "Roll-up banners, backdrop banners, foam board panels, large stickers, canvas prints and display stands. Custom cm sizing, small-run friendly pricing.",
+      description: "Roll-up banners, backdrop banners, foam board panels, large stickers, canvas prints and display stands. Custom cm sizing, small-run friendly.",
     },
   },
   {
@@ -698,7 +698,7 @@ export const categories: Category[] = [
     },
     seo: {
       title: "Corporate & Photo Gifts | Branded Merchandise | Outprint",
-      description: "Branded pens, mugs, power banks, notebooks and NFC cards, plus personalized photo gifts. Bulk pricing from 25 units.",
+      description: "Branded pens, mugs, power banks, notebooks and NFC cards, plus personalized photo gifts. Bulk order discounts from 25 units.",
     },
   },
   {
@@ -741,7 +741,7 @@ export const categories: Category[] = [
     },
     seo: {
       title: "Custom T-Shirt Printing | Outprint",
-      description: "Custom round neck and polo t-shirts for teams, events and merch drops. 6-8 colors, S to XXL, bulk pricing from 10 units.",
+      description: "Custom round neck and polo t-shirts for teams, events and merch drops. 6-8 colors, S to XXL, bulk order discounts from 10 units.",
     },
   },
   {
@@ -753,7 +753,7 @@ export const categories: Category[] = [
     parentId: "cat-tshirt-prints",
     seo: {
       title: "Custom Round Neck T-Shirts | Outprint",
-      description: "Unisex and kids round neck t-shirts in light and heavy weight cotton, printed full color. Bulk pricing from 10 units.",
+      description: "Unisex and kids round neck t-shirts in light and heavy weight cotton, printed full color. Bulk order discounts from 10 units.",
     },
   },
   {
@@ -765,7 +765,7 @@ export const categories: Category[] = [
     parentId: "cat-tshirt-prints",
     seo: {
       title: "Custom Polo T-Shirts | Outprint",
-      description: "Collared pique-knit polo shirts for corporate uniforms and staff wear, embroidered or printed. Bulk pricing from 10 units.",
+      description: "Collared pique-knit polo shirts for corporate uniforms and staff wear, embroidered or printed. Bulk order discounts from 10 units.",
     },
   },
   {
@@ -794,7 +794,7 @@ export const categories: Category[] = [
     parentId: "cat-packaging",
     seo: {
       title: "Custom Food Boxes | Outprint",
-      description: "Fast food and bakery boxes in grease-resistant white duplex or kraft board, full-color printed. Bulk pricing from 25 units.",
+      description: "Fast food and bakery boxes in grease-resistant white duplex or kraft board, full-color printed. Bulk order discounts from 25 units.",
     },
   },
   {
@@ -842,7 +842,7 @@ export const categories: Category[] = [
     parentId: "cat-packaging",
     seo: {
       title: "Custom Paper Bags | Outprint",
-      description: "Standard glossy and brown kraft paper carry bags with twisted or flat handles, full-color printed. Bulk pricing from 25 units.",
+      description: "Standard glossy and brown kraft paper carry bags with twisted or flat handles, full-color printed. Bulk order discounts from 25 units.",
     },
   },
 

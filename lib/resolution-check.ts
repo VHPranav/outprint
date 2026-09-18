@@ -1,13 +1,11 @@
 // Client-side heuristic for the artwork upload flow: flags a raster image
 // whose pixel dimensions are thin for the selected print size, so we can
-// offer a paid "we'll clean it up manually" add-on before the file ships to
+// offer a "we'll clean it up manually" add-on before the file ships to
 // production. Not a substitute for a real pre-press check — just an early,
 // honest heads-up for the customer.
 
 /** Print-quality threshold. True press-perfect is ~300dpi; 150 avoids flagging phone photos that will still print acceptably at typical sticker/label sizes. */
 export const PRINT_QUALITY_DPI = 150;
-
-export const RESOLUTION_ENHANCEMENT_PRICE = 15;
 
 export interface ResolutionCheck {
   isLowResolution: boolean;

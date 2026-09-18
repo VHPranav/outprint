@@ -1,9 +1,8 @@
 // Shared "submit to us" utility. Every flow that hands off to a human on
 // WhatsApp (product configurator, hire-a-designer form, cart) builds a
 // payload describing what happened and turns it into a wa.me deep link here
-// — so the message format only needs to be right in one place.
-
-import { formatCurrency } from "./currency";
+// — so the message format only needs to be right in one place. No pricing is
+// calculated or sent — every quote is given by the team over WhatsApp.
 
 const BUSINESS_NUMBER_ENV = "NEXT_PUBLIC_WHATSAPP_NUMBER";
 
@@ -19,8 +18,6 @@ export interface ProductOrderPayload {
   type: "product-order";
   productName: string;
   selections: ProductOrderSelections;
-  unitPrice: number;
-  totalPrice: number;
   designFileUrl?: string;
   customerName?: string;
   notes?: string;
@@ -39,23 +36,17 @@ export interface DesignRequestPayload {
   referenceFileUrls?: string[];
   packageTier: string;
   turnaround: string;
-  price: number;
 }
 
 export interface CartItem {
   productName: string;
   selections: ProductOrderSelections;
-  totalPrice: number;
   designFileUrl?: string;
 }
 
 export interface CartPayload {
   type: "cart";
   items: CartItem[];
-  subtotal: number;
-  vatAmount?: number;
-  gstAmount: number;
-  grandTotal: number;
   customerName?: string;
 }
 
@@ -95,14 +86,10 @@ function formatSelectionLines(selections: ProductOrderSelections): Array<string 
 
 function buildProductOrderMessage(payload: ProductOrderPayload): string {
   const sections = [
-    "Hi Outprint! I'd like to order:",
+    "Hi Outprint! I'd like a quote for:",
     section("📦 Order Details", [
       line("Product", payload.productName),
       ...formatSelectionLines(payload.selections),
-    ]),
-    section("💰 Pricing", [
-      line("Unit Price", formatCurrency(payload.unitPrice)),
-      line("Total", formatCurrency(payload.totalPrice)),
     ]),
     section("🎨 Design File", [line("Link", payload.designFileUrl)]),
     section("👤 Contact", [line("Name", payload.customerName)]),
@@ -132,7 +119,6 @@ function buildDesignRequestMessage(payload: DesignRequestPayload): string {
     section("📦 Package", [
       line("Tier", payload.packageTier),
       line("Turnaround", payload.turnaround),
-      line("Price", formatCurrency(payload.price)),
     ]),
   ];
 
@@ -153,20 +139,13 @@ function buildCartMessage(payload: CartPayload): string {
 
     const fileLine = item.designFileUrl ? `\n   Design file: ${item.designFileUrl}` : "";
 
-    return `${index + 1}. ${item.productName}\n   ${details}\n   Subtotal: ${formatCurrency(
-      item.totalPrice
-    )}${fileLine}`;
+    return `${index + 1}. ${item.productName}\n   ${details}${fileLine}`;
   });
 
   const sections = [
-    "Hi Outprint! I'd like to place an order for multiple items:",
+    "Hi Outprint! I'd like a quote for multiple items:",
     section("👤 Contact", [line("Name", payload.customerName)]),
     section("🛒 Cart Items", itemLines),
-    section("💰 Total", [
-      line("Subtotal", formatCurrency(payload.subtotal)),
-      line("VAT (5%)", formatCurrency(payload.vatAmount ?? payload.gstAmount)),
-      line("Grand Total", formatCurrency(payload.grandTotal)),
-    ]),
   ];
 
   return sections.filter(Boolean).join("\n\n");

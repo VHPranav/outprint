@@ -9,10 +9,8 @@ import { uploadFile, UploadError } from "@/lib/upload";
 import {
   checkImageResolution,
   readImageDimensions,
-  RESOLUTION_ENHANCEMENT_PRICE,
   type ResolutionCheck,
 } from "@/lib/resolution-check";
-import { formatCurrency } from "@/lib/currency";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { UploadStatus, type UploadState } from "@/components/ui/upload-status";
@@ -275,9 +273,6 @@ export function UploadArtworkFlow({ product }: UploadArtworkFlowProps) {
                   <span className="block text-xs text-neutral-500">
                     Our team will manually clean up and upscale your artwork before printing.
                   </span>
-                </span>
-                <span className="shrink-0 text-xs font-medium text-neutral-700">
-                  +{formatCurrency(RESOLUTION_ENHANCEMENT_PRICE)}
                 </span>
               </button>
             </div>

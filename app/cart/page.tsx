@@ -1,23 +1,17 @@
 "use client";
 
-import * as React from "react";
 import { Lock } from "lucide-react";
 import { Navbar, Footer } from "@/components/sections";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { toast } from "@/components/ui/toast";
 import { useCart, removeFromCart, adjustCartItemQuantity } from "@/lib/cart";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
-import { VAT_RATE, round2 } from "@/data/pricing";
 import { CartLineItem } from "@/components/cart/cart-line-item";
 import { OrderSummary } from "@/components/cart/order-summary";
 import { EmptyCart } from "@/components/cart/empty-cart";
 
 export default function CartPage() {
   const items = useCart();
-
-  const subtotal = React.useMemo(() => round2(items.reduce((sum, item) => sum + item.totalPrice, 0)), [items]);
-  const vatAmount = React.useMemo(() => round2(subtotal * VAT_RATE), [subtotal]);
-  const grandTotal = round2(subtotal + vatAmount);
 
   function handleSendWhatsApp() {
     try {
@@ -26,12 +20,8 @@ export default function CartPage() {
         items: items.map((item) => ({
           productName: item.productName,
           selections: { ...item.selections, quantity: item.quantity },
-          totalPrice: item.totalPrice,
           designFileUrl: item.designFileUrl,
         })),
-        subtotal,
-        gstAmount: vatAmount,
-        grandTotal,
       });
       window.open(link, "_blank", "noopener,noreferrer");
     } catch (error) {
@@ -75,13 +65,7 @@ export default function CartPage() {
               ))}
             </div>
 
-            <OrderSummary
-              subtotal={subtotal}
-              vatAmount={vatAmount}
-              grandTotal={grandTotal}
-              itemCount={items.length}
-              onSendWhatsApp={handleSendWhatsApp}
-            />
+            <OrderSummary itemCount={items.length} onSendWhatsApp={handleSendWhatsApp} />
           </div>
         )}
       </main>

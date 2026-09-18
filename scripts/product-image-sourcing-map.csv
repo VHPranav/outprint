@@ -1,0 +1,136 @@
+id,product_name,category,subcategory,slug,primary_query,secondary_query,visual_notes,target_filename
+001,Custom Vinyl Die-Cut Stickers,Stickers,Die-Cut Stickers,vinyl-die-cut-stickers,vinyl die cut sticker mockup,custom vinyl decal closeup,Look for a die-cut shaped sticker peeling off backing paper,vinyl-die-cut-stickers.webp
+002,Holographic Die-Cut Stickers,Stickers,Die-Cut Stickers,holographic-die-cut-stickers,holographic sticker rainbow,holographic vinyl decal,Needs visible rainbow/prismatic shimmer effect,holographic-die-cut-stickers.webp
+003,Custom Sticker Sheets,Stickers,Sticker Sheets,custom-sticker-sheets,sticker sheet flat lay,kiss cut sticker sheet,"Multiple small stickers on one sheet, flat lay shot",custom-sticker-sheets.webp
+004,Matte Product Labels,Labels,Product Labels,matte-product-labels,matte product label jar,cosmetic bottle label mockup,Candle jar or cosmetic bottle with plain label,matte-product-labels.webp
+005,Weatherproof Vinyl Labels,Labels,Product Labels,weatherproof-vinyl-labels,waterproof label bottle outdoor,vinyl label water droplets,Emphasize water-resistant/outdoor context,weatherproof-vinyl-labels.webp
+006,Custom Packaging Labels,Labels,Packaging Labels,custom-packaging-labels,packaging label box closeup,shipping label mailer box,Label applied to a shipping box or pouch,custom-packaging-labels.webp
+007,Corrugated Mailer Boxes,Boxes & Packaging,Mailer Boxes,corrugated-mailer-boxes,corrugated mailer box open,cardboard shipping box ecommerce,"Tuck-lock corrugated box, open flap",corrugated-mailer-boxes.webp
+008,Kraft Mailer Boxes,Boxes & Packaging,Mailer Boxes,kraft-mailer-boxes,kraft mailer box brown,eco packaging box brown,Plain uncoated kraft brown box,kraft-mailer-boxes.webp
+009,Rigid Gift Boxes,Boxes & Packaging,Rigid Boxes,rigid-gift-boxes,rigid gift box lid,luxury gift box unboxing,"Two-piece box with lid off, premium unboxing feel",rigid-gift-boxes.webp
+010,Standard Matte Business Cards,Business Cards,Standard Cards,standard-matte-business-cards,matte business card mockup,business card stack table,"Plain matte finish, stack or single card mockup",standard-matte-business-cards.webp
+011,Premium Suede Business Cards,Business Cards,Premium Cards,premium-suede-business-cards,soft touch business card mockup,velvet business card closeup,"Thick card, soft-touch texture visible",premium-suede-business-cards.webp
+012,Letterpress Cotton Business Cards,Business Cards,Premium Cards,letterpress-cotton-business-cards,letterpress business card deboss,cotton paper business card,Deboss/emboss texture visible under light,letterpress-cotton-business-cards.webp
+013,Vinyl Outdoor Banners,Banners & Signage,Vinyl Banners,vinyl-outdoor-banners,vinyl banner storefront outdoor,grommet banner display,Large outdoor vinyl banner with grommets,vinyl-outdoor-banners.webp
+014,Mesh Windproof Banners,Banners & Signage,Mesh Banners,mesh-windproof-banners,mesh banner fence outdoor,perforated vinyl banner fence,"Fence-mounted mesh banner, visible perforation",mesh-windproof-banners.webp
+015,Retractable Banner Stands,Banners & Signage,,retractable-banner-stands,roll up banner stand exhibition,retractable banner display booth,Standing roll-up banner at an event/booth,retractable-banner-stands.webp
+016,Standard Business Cards,Business Prints,Business Cards,standard-business-cards,business card mockup desk,simple business card stack,Everyday matte/gloss card,standard-business-cards.webp
+017,Express Business Cards,Business Prints,Business Cards,express-business-cards,business card mockup fast,business card stack closeup,"Same as standard, generic professional card",express-business-cards.webp
+018,Velvet Laminated Cards,Business Prints,Business Cards,velvet-laminated-cards,soft touch laminated business card,velvet finish card closeup,"Soft-touch film finish, fingerprint-resistant look",velvet-laminated-cards.webp
+019,Textured Business Cards,Business Prints,Business Cards,textured-business-cards,textured linen business card,cotton textured card closeup,Visible linen/cotton texture on card surface,textured-business-cards.webp
+020,Pearl Shimmer Cards,Business Prints,Business Cards,pearl-shimmer-cards,pearlescent shimmer card,metallic shimmer business card,"Card catching light, subtle shimmer",pearl-shimmer-cards.webp
+021,Smooth White Business Cards,Business Prints,Business Cards,smooth-white-business-cards,white business card blank,uncoated white card mockup,"Plain uncoated white card, pen-writable look",smooth-white-business-cards.webp
+022,Brown Kraft Business Cards,Business Prints,Business Cards,brown-kraft-business-cards,kraft paper business card,brown recycled business card,Natural brown kraft stock,brown-kraft-business-cards.webp
+023,Waterproof Cards,Business Prints,Business Cards,waterproof-cards,waterproof plastic business card,synthetic business card water,"Water droplet on card surface, plastic feel",waterproof-cards.webp
+024,Eco-Friendly Cards,Business Prints,Business Cards,eco-friendly-cards,recycled paper business card,seed paper card plant,Recycled or plantable seed-paper look,eco-friendly-cards.webp
+025,Spot UV Business Cards,Business Prints,Business Cards,spot-uv-business-cards,spot uv business card logo,glossy raised logo card,Glossy raised coating visible over logo,spot-uv-business-cards.webp
+026,White Ink Black Cards,Business Prints,Business Cards,white-ink-black-cards,black business card white ink,black card high contrast,Solid black card with white printed text,white-ink-black-cards.webp
+027,Gold Foil Black Cards,Business Prints,Business Cards,gold-foil-black-cards,gold foil business card black,luxury foil stamped card,Metallic gold foil on black card stock,gold-foil-black-cards.webp
+028,Double Pasted Cards,Business Prints,Business Cards,double-pasted-cards,thick business card edge,double layer business card,Card edge showing extra thickness,double-pasted-cards.webp
+029,Triplex Business Cards,Business Prints,Business Cards,triplex-business-cards,colored edge business card,triplex card colored core,Card edge showing bold colored core layer,triplex-business-cards.webp
+030,Square Business Cards,Business Prints,Business Cards,square-business-cards,square business card mockup,square card design,"Square-shaped card, not rectangle",square-business-cards.webp
+031,Circle Business Cards,Business Prints,Business Cards,circle-business-cards,round business card mockup,circular card design,Fully round die-cut card,circle-business-cards.webp
+032,Oval Shaped Business Cards,Business Prints,Business Cards,oval-shaped-business-cards,oval business card mockup,oval shaped card design,Softened oval die-cut card,oval-shaped-business-cards.webp
+033,Any Shape (Die-cut) Business Cards,Business Prints,Business Cards,any-shape-die-cut-business-cards,die cut shaped business card,custom shape card design,"Unusual custom outline, not a rectangle",any-shape-die-cut-business-cards.webp
+034,Standard Letterheads,Business Prints,Letterheads,standard-letterheads,letterhead paper mockup,company letterhead template,Blank letterhead sheet with logo header,standard-letterheads.webp
+035,Express Letterheads,Business Prints,Letterheads,express-letterheads,letterhead document mockup,business letterhead paper,Same letterhead paper mockup,express-letterheads.webp
+036,Executive Letterheads,Business Prints,Letterheads,executive-letterheads,premium letterhead foil,embossed letterhead paper,"Thicker premium paper, foil/emboss header",executive-letterheads.webp
+037,DL Custom Envelopes,Business Prints,Envelopes,dl-custom-envelopes,DL envelope mockup,business envelope closeup,Long DL-size envelope,dl-custom-envelopes.webp
+038,C5 Custom Envelopes,Business Prints,Envelopes,c5-custom-envelopes,C5 envelope mockup,paper envelope closeup,Mid-size C5 envelope,c5-custom-envelopes.webp
+039,C4 Custom Envelopes,Business Prints,Envelopes,c4-custom-envelopes,C4 large envelope mockup,A4 envelope closeup,Large A4-sized envelope,c4-custom-envelopes.webp
+040,A5 Notepads,Business Prints,Notepads & Notebooks,a5-notepads,notepad mockup desk,glue bound notepad closeup,Small glue-bound notepad on desk,a5-notepads.webp
+041,A5 Wire-o Notebooks,Business Prints,Notepads & Notebooks,a5-wire-o-notebooks,wire bound notebook mockup,spiral notebook closeup,Wire-o/spiral binding visible,a5-wire-o-notebooks.webp
+042,Standard Certificates,Business Prints,Certificates,standard-certificates,certificate template border,award certificate paper,Decorative border certificate sheet,standard-certificates.webp
+043,Premium Certificates,Business Prints,Certificates,premium-certificates,certificate gold seal,award certificate foil,Certificate with gold/silver foil seal,premium-certificates.webp
+044,A4 2-Pocket Folders,Business Prints,Presentation Folders,a4-2-pocket-folders,presentation folder mockup,two pocket folder open,Open folder showing two interior pockets,a4-2-pocket-folders.webp
+045,Custom Shape Folders,Business Prints,Presentation Folders,custom-shape-folders,die cut presentation folder,custom shape folder design,Folder with a non-rectangular die-cut edge,custom-shape-folders.webp
+128,Custom Receipt Books,Business Prints,Invoice Books,custom-receipt-books,receipt book carbonless,duplicate receipt pad,Perforated carbonless receipt book,custom-receipt-books.webp
+129,A6 Custom NCR Bill Books,Business Prints,Invoice Books,a6-custom-ncr-bill-books,NCR bill book small,carbonless invoice pad,Small bound NCR bill book,a6-custom-ncr-bill-books.webp
+130,A5 Custom NCR Bill Books,Business Prints,Invoice Books,a5-custom-ncr-bill-books,NCR bill book A5,carbonless invoice book,Mid-size bound NCR bill book,a5-custom-ncr-bill-books.webp
+131,A4 Custom NCR Bill Books,Business Prints,Invoice Books,a4-custom-ncr-bill-books,NCR bill book large,invoice book A4,Large bound NCR bill book,a4-custom-ncr-bill-books.webp
+132,Self-Ink Stamp,Business Prints,Stamps,self-ink-stamp,self inking rubber stamp,office rubber stamp closeup,"Handheld self-ink stamp, ink impression visible",self-ink-stamp.webp
+046,Standard Flyers,Promo Prints,Flyers,standard-flyers,flyer mockup A5,promotional flyer paper,"Single flyer, gloss paper",standard-flyers.webp
+047,Express Flyers,Promo Prints,Flyers,express-flyers,flyer print stack,promo flyer paper,"Same flyer, maybe stack of many",express-flyers.webp
+048,Gloss Laminated Flyers,Promo Prints,Flyers,gloss-laminated-flyers,glossy laminated flyer,shiny flyer print,Visible gloss laminate shine,gloss-laminated-flyers.webp
+049,Square Flyers,Promo Prints,Flyers,square-flyers,square flyer mockup,square promo card,Square-format flyer,square-flyers.webp
+050,Brown Kraft Flyers,Promo Prints,Flyers,brown-kraft-flyers,kraft paper flyer,brown paper promo flyer,Kraft brown stock flyer,brown-kraft-flyers.webp
+051,Waterproof Flyers,Promo Prints,Flyers,waterproof-flyers,waterproof flyer outdoor,synthetic paper flyer,Flyer outdoors or near water,waterproof-flyers.webp
+052,Desktop Calendars,Promo Prints,Calendars,desktop-calendars,desk calendar mockup,tent calendar desk,Small wire-bound tent calendar on desk,desktop-calendars.webp
+053,Wall Calendars,Promo Prints,Calendars,wall-calendars,wall calendar mockup,hanging calendar wire bound,Wall-mounted 12-month calendar,wall-calendars.webp
+054,Poster Calendars,Promo Prints,Calendars,poster-calendars,poster calendar single sheet,yearly wall poster calendar,Single flat sheet with all months,poster-calendars.webp
+055,Standard Postcards,Promo Prints,Postcards,standard-postcards,postcard mockup gloss,4x6 postcard print,Simple gloss postcard,standard-postcards.webp
+056,Photo Postcards,Promo Prints,Postcards,photo-postcards,photo postcard print,photo paper postcard,Photo-quality finish postcard,photo-postcards.webp
+057,Square Postcards,Promo Prints,Postcards,square-postcards,square postcard mockup,square print card,Square-format postcard,square-postcards.webp
+058,Standard Greeting Cards,Promo Prints,Greeting Cards,standard-greeting-cards,greeting card envelope mockup,folded card with envelope,Folded card next to matching envelope,standard-greeting-cards.webp
+059,Trifold Menus,Promo Prints,Menus & Brochures,trifold-menus,restaurant menu trifold,laminated menu table,Trifold laminated menu on a table,trifold-menus.webp
+060,Trifold Pamphlets,Promo Prints,Menus & Brochures,trifold-pamphlets,trifold brochure mockup,pamphlet flat lay,Unlaminated trifold pamphlet,trifold-pamphlets.webp
+061,Standard Booklets,Promo Prints,Menus & Brochures,standard-booklets,saddle stitched booklet mockup,stapled booklet pages,Small stapled/saddle-stitched booklet,standard-booklets.webp
+062,Standard Catalogues,Promo Prints,Menus & Brochures,standard-catalogues,product catalogue mockup,perfect bound catalogue,Thicker bound catalogue,standard-catalogues.webp
+063,Standard Brochures,Promo Prints,Menus & Brochures,standard-brochures,bifold brochure mockup,brochure flat lay,Simple bifold brochure,standard-brochures.webp
+064,Company Profiles,Promo Prints,Menus & Brochures,company-profiles,company profile booklet,corporate brochure bound,Premium bound corporate document,company-profiles.webp
+065,Door Hangers,Promo Prints,Door Hangers,door-hangers,door hanger mockup,door knob hanger print,Hanger on a doorknob,door-hangers.webp
+066,Round Stickers,Promo Prints,Stickers & Labels,round-stickers,round sticker mockup,circle die cut sticker,Simple circular sticker,round-stickers.webp
+067,Square Stickers,Promo Prints,Stickers & Labels,square-stickers,square sticker mockup,square die cut decal,Simple square sticker,square-stickers.webp
+068,Any Shape (Kiss-cut) Stickers,Promo Prints,Stickers & Labels,any-shape-kiss-cut-stickers,kiss cut sticker backing,custom shape sticker peel,Sticker peeling from backing sheet,any-shape-kiss-cut-stickers.webp
+069,Paper Stickers,Promo Prints,Stickers & Labels,paper-stickers,paper sticker mockup,matte paper decal,Non-vinyl paper sticker,paper-stickers.webp
+070,Standard Posters,Promo Prints,Posters,standard-posters,poster print mockup wall,large poster display,Poster mounted or leaning on wall,standard-posters.webp
+071,Standard Coasters,Promo Prints,Hospitality,standard-coasters,drink coaster mockup,round coaster table,Coaster under a glass/cup,standard-coasters.webp
+072,Brown Kraft Coasters,Promo Prints,Hospitality,brown-kraft-coasters,kraft coaster cafe,rustic coaster wood table,"Kraft-brown coaster, cafe setting",brown-kraft-coasters.webp
+073,Standard Placemats,Promo Prints,Hospitality,standard-placemats,paper placemat table setting,restaurant placemat print,Placemat under a table setting,standard-placemats.webp
+074,Food Wrappers,Promo Prints,Hospitality,food-wrappers,burger wrapper paper,greaseproof food wrap,Branded wrap around a burger/sandwich,food-wrappers.webp
+075,Table Tents,Promo Prints,Hospitality,table-tents,table tent card restaurant,folded table card standing,Free-standing folded card on a table,table-tents.webp
+133,Custom Paper Cups,Promo Prints,Hospitality,custom-paper-cups,paper coffee cup mockup,branded takeaway cup,Coffee cup with plain surface for branding,custom-paper-cups.webp
+076,Standard Hang Tags,Promo Prints,Tags & Bookmarks,standard-hang-tags,garment hang tag mockup,clothing tag string,Tag hanging from a garment with string,standard-hang-tags.webp
+077,Standard Bookmarks,Promo Prints,Tags & Bookmarks,standard-bookmarks,bookmark mockup book,paper bookmark closeup,Bookmark inside/beside a book,standard-bookmarks.webp
+078,Premium Bookmarks,Promo Prints,Tags & Bookmarks,premium-bookmarks,foil bookmark mockup,laminated bookmark closeup,Bookmark with a foil/laminate accent,premium-bookmarks.webp
+079,Standard Tickets/Vouchers,Promo Prints,Tickets & Vouchers,standard-tickets-vouchers,event ticket mockup,gift voucher card,Ticket with perforated tear-off edge,standard-tickets-vouchers.webp
+080,Roll-Up Banner 85x200cm,Large Prints,Roll-up Banners,roll-up-banner-85x200cm,roll up banner stand indoor,retractable banner display,Standard aluminum-base roll-up banner,roll-up-banner-85x200cm.webp
+081,Premium Roll-Up Banner,Large Prints,Roll-up Banners,premium-roll-up-banner,premium roll up banner trade show,wide base banner stand,Heavier-duty wide-base banner stand,premium-roll-up-banner.webp
+082,Custom Printed Banners,Large Prints,Backdrop Banners,custom-printed-banners,large vinyl banner display,custom printed banner storefront,General-purpose large vinyl banner,custom-printed-banners.webp
+083,Backdrop Banner,Large Prints,Backdrop Banners,backdrop-banner,step and repeat backdrop,photo booth backdrop banner,Photo-op backdrop with stand,backdrop-banner.webp
+084,5mm Foam Board Panel,Large Prints,Foam Board Panels,5mm-foam-board-panel,foam board sign panel,lightweight display board,Rigid lightweight panel leaning or mounted,5mm-foam-board-panel.webp
+085,10mm Foam Board Panel,Large Prints,Foam Board Panels,10mm-foam-board-panel,thick foam board panel,rigid display panel sign,"Thicker foam panel, similar shot",10mm-foam-board-panel.webp
+086,Large Stickers,Large Prints,Large Format,large-stickers,large wall decal vinyl,window vinyl decal large,Oversized decal on wall/window/vehicle,large-stickers.webp
+087,Large Posters,Large Prints,Large Format,large-posters,large format poster exhibition,big poster print display,Big poster at trade show/retail window,large-posters.webp
+088,Rolled Canvas Print,Large Prints,Canvas Prints,rolled-canvas-print,rolled canvas print tube,canvas print unrolled,Canvas rolled or partially unrolled,rolled-canvas-print.webp
+089,Stretched Canvas Print,Large Prints,Canvas Prints,stretched-canvas-print,stretched canvas wall art,gallery wrap canvas print,"Canvas on stretcher bars, hung on wall",stretched-canvas-print.webp
+090,Classic Framed Canvas,Large Prints,Canvas Prints,classic-framed-canvas,framed canvas print wall,wooden framed canvas art,Canvas print with an outer wooden frame,classic-framed-canvas.webp
+091,Pop-Up Banner Hardcase (Straight),Large Prints,Display Stands,pop-up-banner-hardcase-straight,pop up display trade show,tension fabric display stand,Curved/straight pop-up fabric display at a booth,pop-up-banner-hardcase-straight.webp
+092,Spring A-Board,Large Prints,Display Stands,spring-a-board,A-frame sidewalk sign,pavement sign board street,A-frame sign on a sidewalk/storefront,spring-a-board.webp
+093,Sail Flag,Large Prints,Display Stands,sail-flag,feather flag outdoor event,sail flag banner pole,Tall feather-shaped flag outdoors,sail-flag.webp
+094,Custom Table Cloth,Large Prints,Display Stands,custom-table-cloth,branded table cloth trade show,event table throw print,Table covered with a printed cloth at an event,custom-table-cloth.webp
+095,Plastic Pens,Gift Prints,Corporate Gifts,plastic-pens,branded plastic pen closeup,promotional pen white background,"Simple plastic pen, plain background",plastic-pens.webp
+096,Metal Pens,Gift Prints,Corporate Gifts,metal-pens,metal ballpoint pen closeup,luxury pen gunmetal,Metal-barrel pen closeup,metal-pens.webp
+097,Metal Business Card Case,Gift Prints,Corporate Gifts,metal-business-card-case,metal card case closeup,business card holder metal,Slim metal case with cards,metal-business-card-case.webp
+098,USB Card Sticks,Gift Prints,Corporate Gifts,usb-card-sticks,credit card usb drive,card shaped flash drive,Flat card-shaped USB drive,usb-card-sticks.webp
+099,Mouse Pads,Gift Prints,Corporate Gifts,mouse-pads,mouse pad desk closeup,branded mouse pad desk,Mouse pad on a desk with mouse,mouse-pads.webp
+100,Power Banks,Gift Prints,Corporate Gifts,power-banks,portable power bank closeup,usb power bank white background,Power bank on plain background,power-banks.webp
+101,Coffee Mugs (Gloss Finish),Gift Prints,Corporate Gifts,coffee-mugs-gloss-finish,ceramic mug white background,glossy coffee mug closeup,"Plain ceramic mug, clean background",coffee-mugs-gloss-finish.webp
+102,Metal Key Ring,Gift Prints,Corporate Gifts,metal-key-ring,metal keychain closeup,branded keyring tag,Metal keychain with tag,metal-key-ring.webp
+103,Plastic ID Cards,Gift Prints,Corporate Gifts,plastic-id-cards,PVC id card lanyard,employee id card closeup,"ID card, maybe on a lanyard",plastic-id-cards.webp
+104,Magnet Name Badges,Gift Prints,Corporate Gifts,magnet-name-badges,name badge magnetic closeup,employee name tag badge,Name badge closeup,magnet-name-badges.webp
+105,A5 PU Leather Notebooks,Gift Prints,Corporate Gifts,a5-pu-leather-notebooks,leather notebook cover closeup,PU leather journal desk,Leather-bound notebook on a desk,a5-pu-leather-notebooks.webp
+106,Cotton Tote Bags,Gift Prints,Corporate Gifts,cotton-tote-bags,cotton tote bag mockup,canvas tote bag flat lay,Plain canvas tote bag,cotton-tote-bags.webp
+107,Custom Water Bottles,Gift Prints,Corporate Gifts,custom-water-bottles,steel water bottle closeup,insulated bottle white background,"Metal water bottle, clean background",custom-water-bottles.webp
+108,PVC NFC Cards,Gift Prints,Corporate Gifts,pvc-nfc-cards,nfc smart card tap,contactless card phone tap,Card being tapped to a phone,pvc-nfc-cards.webp
+109,Photo Strips,Gift Prints,Photo Gifts,photo-strips,photo booth strip mockup,polaroid photo strip,Vertical photobooth-style photo strip,photo-strips.webp
+110,Photo Mini Books,Gift Prints,Photo Gifts,photo-mini-books,mini photo book flip,small photo album pocket,Small flip-through photo book,photo-mini-books.webp
+111,Photo Greeting Cards,Gift Prints,Photo Gifts,photo-greeting-cards,photo greeting card personalized,folded photo card envelope,Folded card with a photo on front,photo-greeting-cards.webp
+112,Photo Stickers,Gift Prints,Photo Gifts,photo-stickers,photo sticker personalized,custom photo decal,Sticker with a printed photo,photo-stickers.webp
+113,Photo Calendars,Gift Prints,Photo Gifts,photo-calendars,personalized photo calendar wall,custom photo wall calendar,Wall calendar built around personal photos,photo-calendars.webp
+114,Photo Canvas,Gift Prints,Photo Gifts,photo-canvas,photo canvas print wall,personalized canvas wall art,"Personal photo stretched on canvas, hung",photo-canvas.webp
+115,Unisex Light Weight T-Shirt,T-shirt Prints,Round Neck T-Shirts,unisex-light-weight-t-shirt,plain t-shirt flat lay,cotton tshirt mockup,Flat-lay or hanging plain t-shirt,unisex-light-weight-t-shirt.webp
+116,Unisex Heavy Weight T-Shirt,T-shirt Prints,Round Neck T-Shirts,unisex-heavy-weight-t-shirt,heavyweight cotton tshirt,thick tshirt fabric closeup,"Same t-shirt, slightly thicker-looking fabric",unisex-heavy-weight-t-shirt.webp
+117,Kids Light Weight T-Shirt,T-shirt Prints,Round Neck T-Shirts,kids-light-weight-t-shirt,kids t-shirt flat lay,children tshirt mockup,"Smaller t-shirt, kids sizing",kids-light-weight-t-shirt.webp
+118,Polo Shirts,T-shirt Prints,Polo T-Shirts,polo-shirts,polo shirt mockup flat lay,collared polo tshirt,Collared pique-knit polo shirt,polo-shirts.webp
+119,Fast Food Boxes,Packaging,Food Boxes,fast-food-boxes,fast food box burger,takeaway food box open,Single-compartment food box,fast-food-boxes.webp
+120,Bakery Food Boxes,Packaging,Food Boxes,bakery-food-boxes,bakery box window cake,pastry box with window,Cake/pastry box with a clear window,bakery-food-boxes.webp
+121,Retail Product Box,Packaging,Product Boxes,retail-product-box,retail product box mockup,product packaging box shelf,Rectangular retail box on a shelf/table,retail-product-box.webp
+122,Shape Product Box,Packaging,Product Boxes,shape-product-box,die cut product box shape,custom shape packaging box,Non-rectangular die-cut box,shape-product-box.webp
+123,Glued Mailer Wallets,Packaging,Mailer Wallets,glued-mailer-wallets,rigid mailer wallet envelope,book mailer box flat,Rigid wallet-style flat mailer,glued-mailer-wallets.webp
+124,Countertop Display Boxes,Packaging,Display Boxes,countertop-display-boxes,counter display box retail,point of sale display box,Display box holding units upright at checkout,countertop-display-boxes.webp
+125,Hook Display Boxes,Packaging,Display Boxes,hook-display-boxes,hanging display box peg,retail hook packaging box,Box hanging on a pegboard hook,hook-display-boxes.webp
+126,Standard Paper Bags,Packaging,Paper Bags,standard-paper-bags,glossy paper carry bag,shopping bag twisted handle,Glossy retail carry bag with handles,standard-paper-bags.webp
+127,Brown Kraft Paper Bags,Packaging,Paper Bags,brown-kraft-paper-bags,kraft paper bag handle,brown shopping bag cafe,Natural kraft carry bag,brown-kraft-paper-bags.webp
+134,Ready-Made Kraft Paper Bags,Packaging,Paper Bags,ready-made-kraft-paper-bags,plain kraft paper bag,brown paper bag stack,"Plain in-stock kraft bags, maybe a stack",ready-made-kraft-paper-bags.webp
+135,Luxury Paper Bags,Packaging,Paper Bags,luxury-paper-bags,luxury shopping bag rope handle,boutique gift bag premium,Premium bag with rope handles,luxury-paper-bags.webp

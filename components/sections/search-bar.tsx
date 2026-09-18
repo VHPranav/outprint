@@ -5,8 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Search, X } from "lucide-react";
 import { searchProducts } from "@/lib/catalog";
-import { getStartingPrice } from "@/lib/catalog";
-import { formatCurrency } from "@/lib/currency";
 
 export function SearchBar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -88,9 +86,6 @@ export function SearchBar() {
                         <div className="min-w-0 flex-1">
                           <p className="truncate text-sm font-medium text-neutral-900">
                             {product.name}
-                          </p>
-                          <p className="text-xs text-neutral-500">
-                            From {formatCurrency(getStartingPrice(product))}
                           </p>
                         </div>
                       </Link>

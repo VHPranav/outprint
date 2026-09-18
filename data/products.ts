@@ -69,6 +69,8 @@ export interface Product {
   /** Customer verticals this product is commonly ordered for; drives the "use-case" filter on /category/[slug]. */
   useCases?: string[];
   images: string[];
+  /** True when `images` is a labeled "photo sourcing pending" placeholder, not real product photography. */
+  needsManualSourcing?: boolean;
   seo: ProductSEO;
   optionGroups: OptionGroup[];
   /**
@@ -92,12 +94,12 @@ export const products: Product[] = [
       "Weatherproof vinyl stickers cut precisely to your artwork's outline. UV-laminated for 5+ years of outdoor durability, dishwasher and scratch safe.",
     useCases: ["E-commerce & DTC", "Events & Weddings"],
     images: [
-      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/vinyl-die-cut-stickers.webp",
     ],
     seo: {
       title: "Custom Vinyl Die-Cut Stickers | Outprint",
       description:
-        "Order weatherproof custom vinyl die-cut stickers cut to any shape. Bulk pricing from 25 to 2500 units, matte, glossy and holographic finishes.",
+        "Order weatherproof custom vinyl die-cut stickers cut to any shape. Bulk order discounts from 25 to 2500 units, matte, glossy and holographic finishes.",
     },
     optionGroups: [
       { type: "shape", options: ["Circle", "Square", "Rectangle", "Custom Shape"] },
@@ -141,12 +143,12 @@ export const products: Product[] = [
       "Prismatic rainbow-refraction stickers with a 100% opaque spot-white backing so colors stay vivid against any surface.",
     useCases: ["E-commerce & DTC", "Events & Weddings"],
     images: [
-      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/holographic-die-cut-stickers.webp",
     ],
     seo: {
       title: "Holographic Die-Cut Stickers | Outprint",
       description:
-        "Custom holographic die-cut stickers with prismatic rainbow refraction and opaque white backing. Free proof, bulk pricing.",
+        "Custom holographic die-cut stickers with prismatic rainbow refraction and opaque white backing. Free proof, bulk order discounts.",
     },
     optionGroups: [
       { type: "shape", options: ["Circle", "Square", "Rectangle", "Custom Shape"] },
@@ -187,7 +189,7 @@ export const products: Product[] = [
       "Multiple designs kiss-cut onto a single sheet — perfect for sticker packs, product inserts, and con merch.",
     useCases: ["E-commerce & DTC", "Events & Weddings"],
     images: [
-      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/custom-sticker-sheets.webp",
     ],
     seo: {
       title: "Custom Sticker Sheets | Outprint",
@@ -231,7 +233,7 @@ export const products: Product[] = [
       "Clean matte-finish labels for candles, cosmetics, and packaged goods. Available on rolls or sheets.",
     useCases: ["Beauty & Cosmetics", "Food & Beverage"],
     images: [
-      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
+      "/images/products/matte-product-labels.webp",
     ],
     seo: {
       title: "Matte Product Labels | Outprint",
@@ -278,12 +280,12 @@ export const products: Product[] = [
       "Waterproof, UV-stable vinyl labels built for bottles, outdoor gear, and anything that lives outside a climate-controlled shelf.",
     useCases: ["Beauty & Cosmetics", "Food & Beverage"],
     images: [
-      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
+      "/images/products/weatherproof-vinyl-labels.webp",
     ],
     seo: {
       title: "Weatherproof Vinyl Labels | Outprint",
       description:
-        "UV-stable, waterproof vinyl labels for outdoor and cold-chain products. Freezer-safe adhesive, bulk pricing available.",
+        "UV-stable, waterproof vinyl labels for outdoor and cold-chain products. Freezer-safe adhesive, bulk order discounts available.",
     },
     optionGroups: [
       {
@@ -322,12 +324,12 @@ export const products: Product[] = [
       "Branded closure and shipping labels sized for mailers, pouches and retail boxes.",
     useCases: ["E-commerce & DTC", "Food & Beverage"],
     images: [
-      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80",
+      "/images/products/custom-packaging-labels.webp",
     ],
     seo: {
       title: "Custom Packaging Labels | Outprint",
       description:
-        "Custom branded packaging and shipping labels for mailers, pouches and retail boxes with bulk pricing tiers.",
+        "Custom branded packaging and shipping labels for mailers, pouches and retail boxes with bulk order discounts tiers.",
     },
     optionGroups: [
       { type: "shape", options: ["Rectangle", "Square"] },
@@ -368,12 +370,12 @@ export const products: Product[] = [
       "Custom-printed corrugated mailers with a tuck-lock closure — sturdy enough for e-commerce shipping, light enough to keep freight costs down.",
     useCases: ["E-commerce & DTC"],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "/images/products/corrugated-mailer-boxes.webp",
     ],
     seo: {
       title: "Custom Corrugated Mailer Boxes | Outprint",
       description:
-        "Custom-printed corrugated mailer boxes with tuck-lock closure. Sized for e-commerce shipping, bulk pricing from 25 units.",
+        "Custom-printed corrugated mailer boxes with tuck-lock closure. Sized for e-commerce shipping, bulk order discounts from 25 units.",
     },
     optionGroups: [
       {
@@ -412,12 +414,12 @@ export const products: Product[] = [
       "Uncoated kraft mailer boxes with a natural, eco-forward finish — ideal for brands leaning into minimal, recyclable packaging.",
     useCases: ["E-commerce & DTC", "Fashion & Apparel"],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "/images/products/kraft-mailer-boxes.webp",
     ],
     seo: {
       title: "Kraft Mailer Boxes | Outprint",
       description:
-        "Recyclable kraft mailer boxes with natural uncoated finish. Custom sizes, one-color or full-color print, bulk pricing.",
+        "Recyclable kraft mailer boxes with natural uncoated finish. Custom sizes, one-color or full-color print, bulk order discounts.",
     },
     optionGroups: [
       {
@@ -454,7 +456,7 @@ export const products: Product[] = [
       "Two-piece rigid chipboard boxes with a magnetic or friction-fit lid — built for unboxing moments, not just shipping.",
     useCases: ["Fashion & Apparel", "Beauty & Cosmetics", "Events & Weddings"],
     images: [
-      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80",
+      "/images/products/rigid-gift-boxes.webp",
     ],
     seo: {
       title: "Custom Rigid Gift Boxes | Outprint",
@@ -500,12 +502,12 @@ export const products: Product[] = [
       "Everyday 14pt matte business cards — smudge-resistant, quick turnaround, and priced for ordering in volume.",
     useCases: ["Corporate & Office"],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-matte-business-cards.webp",
     ],
     seo: {
       title: "Standard Matte Business Cards | Outprint",
       description:
-        "Order standard 14pt matte business cards with fast turnaround. Bulk pricing from 100 to 5000 cards.",
+        "Order standard 14pt matte business cards with fast turnaround. Bulk order discounts from 100 to 5000 cards.",
     },
     optionGroups: [
       { type: "shape", options: ["Standard Rectangle", "Rounded Corners"] },
@@ -541,12 +543,12 @@ export const products: Product[] = [
       "32pt ultra-thick cards laminated in a soft-touch suede finish, with a colored edge for a tactile first impression.",
     useCases: ["Corporate & Office", "Fashion & Apparel"],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/premium-suede-business-cards.webp",
     ],
     seo: {
       title: "Premium Suede Business Cards | Outprint",
       description:
-        "32pt suede-laminated business cards with colored edge paint and foil stamping options. Premium bulk pricing.",
+        "32pt suede-laminated business cards with colored edge paint and foil stamping options. Premium bulk order discounts.",
     },
     optionGroups: [
       { type: "shape", options: ["Standard Rectangle", "Square"] },
@@ -585,12 +587,12 @@ export const products: Product[] = [
       "600gsm cotton stock, deep-impression letterpress or blind deboss — the same archival cotton used for our stationery line.",
     useCases: ["Corporate & Office", "Events & Weddings"],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/letterpress-cotton-business-cards.webp",
     ],
     seo: {
       title: "Letterpress Cotton Business Cards | Outprint",
       description:
-        "600gsm cotton letterpress business cards with deep-impression deboss. Colorplan stock options, small-batch bulk pricing.",
+        "600gsm cotton letterpress business cards with deep-impression deboss. Colorplan stock options, small-batch bulk order discounts.",
     },
     optionGroups: [
       {
@@ -628,7 +630,7 @@ export const products: Product[] = [
       "13oz scrim vinyl banners with reinforced hems and brass grommets — built for storefronts, events, and job sites.",
     useCases: ["Corporate & Office", "Events & Weddings"],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "/images/products/vinyl-outdoor-banners.webp",
     ],
     seo: {
       title: "Custom Vinyl Outdoor Banners | Outprint",
@@ -673,8 +675,9 @@ export const products: Product[] = [
       "Perforated mesh vinyl lets wind pass through instead of catching your banner — the standard for fence lines and high-wind sites.",
     useCases: ["Events & Weddings", "Corporate & Office"],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "/images/products/mesh-windproof-banners.webp",
     ],
+    needsManualSourcing: true,
     seo: {
       title: "Mesh Windproof Banners | Outprint",
       description:
@@ -715,8 +718,9 @@ export const products: Product[] = [
       "Roll-up banner stand with an aluminum base, carry bag, and a replaceable printed graphic — setup in under a minute.",
     useCases: ["Corporate & Office", "Events & Weddings"],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "/images/products/retractable-banner-stands.webp",
     ],
+    needsManualSourcing: true,
     seo: {
       title: "Retractable Banner Stands | Outprint",
       description:
@@ -761,11 +765,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-business-cards.webp",
     ],
     seo: {
       title: "Standard Business Cards | Outprint",
-      description: "Everyday 14pt cards in matte or gloss — smudge-resistant, quick turnaround, and priced for ordering in volume. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Everyday 14pt cards in matte or gloss — smudge-resistant, quick turnaround, and priced for ordering in volume. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -849,11 +853,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/express-business-cards.webp",
     ],
     seo: {
       title: "Express Business Cards | Outprint",
-      description: "Same-day proofing and 24-hour production on our core matte and gloss stocks, for launches that can't wait. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Same-day proofing and 24-hour production on our core matte and gloss stocks, for launches that can't wait. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -927,11 +931,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/velvet-laminated-cards.webp",
     ],
     seo: {
       title: "Velvet Laminated Cards | Outprint",
-      description: "16pt stock laminated in a soft-touch velvet film — a tactile, fingerprint-resistant finish that reads premium instantly. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "16pt stock laminated in a soft-touch velvet film — a tactile, fingerprint-resistant finish that reads premium instantly. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1010,11 +1014,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/textured-business-cards.webp",
     ],
     seo: {
       title: "Textured Business Cards | Outprint",
-      description: "Linen, cotton or hammer-textured stock adds a tactile finish you can feel before you read a word. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Linen, cotton or hammer-textured stock adds a tactile finish you can feel before you read a word. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1093,11 +1097,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/pearl-shimmer-cards.webp",
     ],
     seo: {
       title: "Pearl Shimmer Cards | Outprint",
-      description: "Pearlescent shimmer stock that catches the light at an angle — a subtle upgrade over flat matte or gloss. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Pearlescent shimmer stock that catches the light at an angle — a subtle upgrade over flat matte or gloss. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1176,11 +1180,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/smooth-white-business-cards.webp",
     ],
     seo: {
       title: "Smooth White Business Cards | Outprint",
-      description: "Uncoated smooth white stock that takes pen ink cleanly — popular for cards meant to be written on. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Uncoated smooth white stock that takes pen ink cleanly — popular for cards meant to be written on. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1254,11 +1258,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/brown-kraft-business-cards.webp",
     ],
     seo: {
       title: "Brown Kraft Business Cards | Outprint",
-      description: "Uncoated kraft stock with visible natural fibers — an earthy, eco-forward look for craft and hospitality brands. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Uncoated kraft stock with visible natural fibers — an earthy, eco-forward look for craft and hospitality brands. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1332,11 +1336,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/waterproof-cards.webp",
     ],
     seo: {
       title: "Waterproof Cards | Outprint",
-      description: "Synthetic polypropylene stock that survives a spill, a pool day, or a stint in a wallet through the wash. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Synthetic polypropylene stock that survives a spill, a pool day, or a stint in a wallet through the wash. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1410,11 +1414,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/eco-friendly-cards.webp",
     ],
     seo: {
       title: "Eco-Friendly Cards | Outprint",
-      description: "100% recycled matte stock, or plantable seed paper that grows into wildflowers once the card's done its job. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "100% recycled matte stock, or plantable seed paper that grows into wildflowers once the card's done its job. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1483,11 +1487,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/spot-uv-business-cards.webp",
     ],
     seo: {
       title: "Spot UV Business Cards | Outprint",
-      description: "Matte or silk base stock with a glossy raised coating over your logo or type for contrast without color. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Matte or silk base stock with a glossy raised coating over your logo or type for contrast without color. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1561,11 +1565,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/white-ink-black-cards.webp",
     ],
     seo: {
       title: "White Ink Black Cards | Outprint",
-      description: "Solid black stock printed with opaque white ink — a stark, high-contrast look that stands out in any card holder. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Solid black stock printed with opaque white ink — a stark, high-contrast look that stands out in any card holder. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1634,11 +1638,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/gold-foil-black-cards.webp",
     ],
     seo: {
       title: "Gold Foil Black Cards | Outprint",
-      description: "Black stock finished with a metallic foil stamp — gold, rose gold or silver — for a luxury first impression. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Black stock finished with a metallic foil stamp — gold, rose gold or silver — for a luxury first impression. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1712,11 +1716,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/double-pasted-cards.webp",
     ],
     seo: {
       title: "Double Pasted Cards | Outprint",
-      description: "Two sheets glued face-to-face for extra rigidity and heft, without the cost of a full triplex build. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Two sheets glued face-to-face for extra rigidity and heft, without the cost of a full triplex build. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1790,11 +1794,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/triplex-business-cards.webp",
     ],
     seo: {
       title: "Triplex Business Cards | Outprint",
-      description: "Three laminated layers with a bold colored core visible at the edge — our thickest, most substantial card build. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Three laminated layers with a bold colored core visible at the edge — our thickest, most substantial card build. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1868,11 +1872,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/square-business-cards.webp",
     ],
     seo: {
       title: "Square Business Cards | Outprint",
-      description: "A square die-cut card that stands out in a stack of standard rectangles, on the same 14pt-16pt stocks. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "A square die-cut card that stands out in a stack of standard rectangles, on the same 14pt-16pt stocks. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -1939,11 +1943,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/circle-business-cards.webp",
     ],
     seo: {
       title: "Circle Business Cards | Outprint",
-      description: "A fully round die-cut card — a distinctive shape for logos and brands built around a circular mark. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "A fully round die-cut card — a distinctive shape for logos and brands built around a circular mark. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -2010,11 +2014,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/oval-shaped-business-cards.webp",
     ],
     seo: {
       title: "Oval Shaped Business Cards | Outprint",
-      description: "A softened oval die-cut for a card that still reads as familiar but never gets lost in a card holder. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "A softened oval die-cut for a card that still reads as familiar but never gets lost in a card holder. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -2081,11 +2085,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/any-shape-die-cut-business-cards.webp",
     ],
     seo: {
       title: "Any Shape (Die-cut) Business Cards | Outprint",
-      description: "Fully custom die-cut business cards in any outline. Bulk pricing from 100 to 5000 cards, free digital proof.",
+      description: "Fully custom die-cut business cards in any outline. Bulk order discounts from 100 to 5000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -2161,11 +2165,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-letterheads.webp",
     ],
     seo: {
       title: "Standard Letterheads | Outprint",
-      description: "80gsm-100gsm bond paper letterheads, single or full-color printed to your template. Bulk pricing from 100 to 2500 sheets.",
+      description: "80gsm-100gsm bond paper letterheads, single or full-color printed to your template. Bulk order discounts from 100 to 2500 sheets.",
     },
     optionGroups: [
       {
@@ -2236,11 +2240,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/express-letterheads.webp",
     ],
     seo: {
       title: "Express Letterheads | Outprint",
-      description: "Same bond-paper letterheads with a 24-hour turnaround for urgent print runs. Bulk pricing from 100 to 2500 sheets.",
+      description: "Same bond-paper letterheads with a 24-hour turnaround for urgent print runs. Bulk order discounts from 100 to 2500 sheets.",
     },
     optionGroups: [
       {
@@ -2311,11 +2315,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/executive-letterheads.webp",
     ],
     seo: {
       title: "Executive Letterheads | Outprint",
-      description: "120gsm-160gsm premium uncoated stock, built for foil or embossed letterhead headers. Bulk pricing from 100 to 2500 sheets.",
+      description: "120gsm-160gsm premium uncoated stock, built for foil or embossed letterhead headers. Bulk order discounts from 100 to 2500 sheets.",
     },
     optionGroups: [
       {
@@ -2386,11 +2390,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1649019489428-70f505daacd6?auto=format&fit=crop&w=900&q=80",
+      "/images/products/dl-custom-envelopes.webp",
     ],
     seo: {
       title: "DL Custom Envelopes | Outprint",
-      description: "110mm x 220mm DL envelopes, the standard size for a folded A4 letter. Optional window cut, full-color print, bulk pricing from 100 units.",
+      description: "110mm x 220mm DL envelopes, the standard size for a folded A4 letter. Optional window cut, full-color print, bulk order discounts from 100 units.",
     },
     optionGroups: [
       {
@@ -2461,11 +2465,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1649019489428-70f505daacd6?auto=format&fit=crop&w=900&q=80",
+      "/images/products/c5-custom-envelopes.webp",
     ],
     seo: {
       title: "C5 Custom Envelopes | Outprint",
-      description: "162mm x 229mm C5 envelopes, sized for an A4 sheet folded once. Optional window cut, full-color print, bulk pricing from 100 units.",
+      description: "162mm x 229mm C5 envelopes, sized for an A4 sheet folded once. Optional window cut, full-color print, bulk order discounts from 100 units.",
     },
     optionGroups: [
       {
@@ -2536,11 +2540,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1649019489428-70f505daacd6?auto=format&fit=crop&w=900&q=80",
+      "/images/products/c4-custom-envelopes.webp",
     ],
     seo: {
       title: "C4 Custom Envelopes | Outprint",
-      description: "229mm x 324mm C4 envelopes, sized for an unfolded A4 sheet. Optional window cut, full-color print, bulk pricing from 100 units.",
+      description: "229mm x 324mm C4 envelopes, sized for an unfolded A4 sheet. Optional window cut, full-color print, bulk order discounts from 100 units.",
     },
     optionGroups: [
       {
@@ -2611,11 +2615,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80",
+      "/images/products/a5-notepads.webp",
     ],
     seo: {
       title: "A5 Notepads | Outprint",
-      description: "50-sheet A5 notepads, glue-bound at the top, with your logo and ruled or grid layout printed on every sheet. Bulk pricing from 25 to 500 notepads.",
+      description: "50-sheet A5 notepads, glue-bound at the top, with your logo and ruled or grid layout printed on every sheet. Bulk order discounts from 25 to 500 notepads.",
     },
     optionGroups: [
       {
@@ -2681,11 +2685,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80",
+      "/images/products/a5-wire-o-notebooks.webp",
     ],
     seo: {
       title: "A5 Wire-o Notebooks | Outprint",
-      description: "Wire-o bound A5 notebooks with a printed soft or hard cover — lies flat for writing, and holds up to daily use. Bulk pricing from 25 to 500 notepads.",
+      description: "Wire-o bound A5 notebooks with a printed soft or hard cover — lies flat for writing, and holds up to daily use. Bulk order discounts from 25 to 500 notepads.",
     },
     optionGroups: [
       {
@@ -2751,11 +2755,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1638636241638-aef5120c5153?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-certificates.webp",
     ],
     seo: {
       title: "Standard Certificates | Outprint",
-      description: "160gsm-220gsm cardstock certificates with a decorative border, printed in full color. Bulk pricing from 25 to 1000 certificates.",
+      description: "160gsm-220gsm cardstock certificates with a decorative border, printed in full color. Bulk order discounts from 25 to 1000 certificates.",
     },
     optionGroups: [
       {
@@ -2821,11 +2825,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1638636241638-aef5120c5153?auto=format&fit=crop&w=900&q=80",
+      "/images/products/premium-certificates.webp",
     ],
     seo: {
       title: "Premium Certificates | Outprint",
-      description: "Textured cover-weight stock with a gold or silver foil seal for award and achievement certificates. Bulk pricing from 25 to 1000 certificates.",
+      description: "Textured cover-weight stock with a gold or silver foil seal for award and achievement certificates. Bulk order discounts from 25 to 1000 certificates.",
     },
     optionGroups: [
       {
@@ -2896,11 +2900,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1785140629334-828efea50e09?auto=format&fit=crop&w=900&q=80",
+      "/images/products/a4-2-pocket-folders.webp",
     ],
     seo: {
       title: "A4 2-Pocket Folders | Outprint",
-      description: "A4 two-pocket presentation folders on 300gsm-350gsm board, full-color printed. Bulk pricing from 25 to 1000 folders.",
+      description: "A4 two-pocket presentation folders on 300gsm-350gsm board, full-color printed. Bulk order discounts from 25 to 1000 folders.",
     },
     optionGroups: [
       {
@@ -2972,11 +2976,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1785140629334-828efea50e09?auto=format&fit=crop&w=900&q=80",
+      "/images/products/custom-shape-folders.webp",
     ],
     seo: {
       title: "Custom Shape Folders | Outprint",
-      description: "Custom die-cut shape presentation folders on heavy board, full-color printed. Bulk pricing from 25 to 1000 folders.",
+      description: "Custom die-cut shape presentation folders on heavy board, full-color printed. Bulk order discounts from 25 to 1000 folders.",
     },
     optionGroups: [
       {
@@ -3058,11 +3062,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-flyers.webp",
     ],
     seo: {
       title: "Standard Flyers | Outprint",
-      description: "150gsm-250gsm gloss art paper flyers for everyday promotions, priced for high-volume distribution. Bulk pricing from 100 to 10,000 flyers, free digital proof.",
+      description: "150gsm-250gsm gloss art paper flyers for everyday promotions, priced for high-volume distribution. Bulk order discounts from 100 to 10,000 flyers, free digital proof.",
     },
     optionGroups: [
       {
@@ -3140,11 +3144,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/express-flyers.webp",
     ],
     seo: {
       title: "Express Flyers | Outprint",
-      description: "The same gloss art paper flyer, produced and dispatched within 24 hours. Bulk pricing from 100 to 10,000 flyers, free digital proof.",
+      description: "The same gloss art paper flyer, produced and dispatched within 24 hours. Bulk order discounts from 100 to 10,000 flyers, free digital proof.",
     },
     optionGroups: [
       {
@@ -3217,11 +3221,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/gloss-laminated-flyers.webp",
     ],
     seo: {
       title: "Gloss Laminated Flyers | Outprint",
-      description: "300gsm-350gsm stock finished with a gloss laminate film for extra durability and shine. Bulk pricing from 100 to 10,000 flyers, free digital proof.",
+      description: "300gsm-350gsm stock finished with a gloss laminate film for extra durability and shine. Bulk order discounts from 100 to 10,000 flyers, free digital proof.",
     },
     optionGroups: [
       {
@@ -3294,11 +3298,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/square-flyers.webp",
     ],
     seo: {
       title: "Square Flyers | Outprint",
-      description: "A square-format flyer that breaks from the standard A-size rack — popular for menus and social handouts. Bulk pricing from 100 to 10,000 flyers, free digital proof.",
+      description: "A square-format flyer that breaks from the standard A-size rack — popular for menus and social handouts. Bulk order discounts from 100 to 10,000 flyers, free digital proof.",
     },
     optionGroups: [
       {
@@ -3371,11 +3375,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/brown-kraft-flyers.webp",
     ],
     seo: {
       title: "Brown Kraft Flyers | Outprint",
-      description: "Uncoated kraft stock flyers for an earthy, hand-made look that still holds crisp full-color print. Bulk pricing from 100 to 10,000 flyers, free digital proof.",
+      description: "Uncoated kraft stock flyers for an earthy, hand-made look that still holds crisp full-color print. Bulk order discounts from 100 to 10,000 flyers, free digital proof.",
     },
     optionGroups: [
       {
@@ -3448,11 +3452,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/waterproof-flyers.webp",
     ],
     seo: {
       title: "Waterproof Flyers | Outprint",
-      description: "Synthetic waterproof stock built for outdoor handouts, boats and anything that meets rain or spray. Bulk pricing from 100 to 10,000 flyers, free digital proof.",
+      description: "Synthetic waterproof stock built for outdoor handouts, boats and anything that meets rain or spray. Bulk order discounts from 100 to 10,000 flyers, free digital proof.",
     },
     optionGroups: [
       {
@@ -3523,11 +3527,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/desktop-calendars.webp",
     ],
     seo: {
       title: "Desktop Calendars | Outprint",
-      description: "A compact wire-bound tent calendar that sits on any desk, printed with 12 monthly spreads. Bulk pricing from 25 to 1000 units, custom branding on every month.",
+      description: "A compact wire-bound tent calendar that sits on any desk, printed with 12 monthly spreads. Bulk order discounts from 25 to 1000 units, custom branding on every month.",
     },
     optionGroups: [
       {
@@ -3589,11 +3593,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/wall-calendars.webp",
     ],
     seo: {
       title: "Wall Calendars | Outprint",
-      description: "A 12-month wire-o bound wall calendar with a hanging hole, one spread per month. Bulk pricing from 25 to 1000 units, custom branding on every month.",
+      description: "A 12-month wire-o bound wall calendar with a hanging hole, one spread per month. Bulk order discounts from 25 to 1000 units, custom branding on every month.",
     },
     optionGroups: [
       {
@@ -3655,11 +3659,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/poster-calendars.webp",
     ],
     seo: {
       title: "Poster Calendars | Outprint",
-      description: "A single large-format sheet with all 12 months laid out at once — no binding, just pin and go. Bulk pricing from 25 to 1000 units, custom branding on every month.",
+      description: "A single large-format sheet with all 12 months laid out at once — no binding, just pin and go. Bulk order discounts from 25 to 1000 units, custom branding on every month.",
     },
     optionGroups: [
       {
@@ -3722,11 +3726,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-postcards.webp",
     ],
     seo: {
       title: "Standard Postcards | Outprint",
-      description: "4in x 6in gloss postcards for direct mail, promotions and event invites. Bulk pricing from 100 to 5000 postcards.",
+      description: "4in x 6in gloss postcards for direct mail, promotions and event invites. Bulk order discounts from 100 to 5000 postcards.",
     },
     optionGroups: [
       {
@@ -3789,11 +3793,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/photo-postcards.webp",
     ],
     seo: {
       title: "Photo Postcards | Outprint",
-      description: "Photo-paper finish postcards that reproduce images with the depth of a real photo print. Bulk pricing from 100 to 5000 postcards.",
+      description: "Photo-paper finish postcards that reproduce images with the depth of a real photo print. Bulk order discounts from 100 to 5000 postcards.",
     },
     optionGroups: [
       {
@@ -3856,11 +3860,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/square-postcards.webp",
     ],
     seo: {
       title: "Square Postcards | Outprint",
-      description: "A square-format postcard for a distinctive mailer or Instagram-ready handout. Bulk pricing from 100 to 5000 postcards.",
+      description: "A square-format postcard for a distinctive mailer or Instagram-ready handout. Bulk order discounts from 100 to 5000 postcards.",
     },
     optionGroups: [
       {
@@ -3923,11 +3927,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1554894872-1a01c75f7513?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-greeting-cards.webp",
     ],
     seo: {
       title: "Standard Greeting Cards | Outprint",
-      description: "Custom folded greeting cards with matching envelopes. Bulk pricing from 25 to 1000 cards, free digital proof.",
+      description: "Custom folded greeting cards with matching envelopes. Bulk order discounts from 25 to 1000 cards, free digital proof.",
     },
     optionGroups: [
       {
@@ -4000,11 +4004,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/trifold-menus.webp",
     ],
     seo: {
       title: "Trifold Menus | Outprint",
-      description: "A laminated trifold A4 menu built to survive daily handling on a restaurant table. Bulk pricing from 25 to 1000 units.",
+      description: "A laminated trifold A4 menu built to survive daily handling on a restaurant table. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -4072,11 +4076,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/trifold-pamphlets.webp",
     ],
     seo: {
       title: "Trifold Pamphlets | Outprint",
-      description: "An unlaminated trifold pamphlet for marketing collateral, rack cards and info handouts. Bulk pricing from 100 to 5000 units.",
+      description: "An unlaminated trifold pamphlet for marketing collateral, rack cards and info handouts. Bulk order discounts from 100 to 5000 units.",
     },
     optionGroups: [
       {
@@ -4144,11 +4148,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-booklets.webp",
     ],
     seo: {
       title: "Standard Booklets | Outprint",
-      description: "An 8-page saddle-stitched booklet with a self-cover, for programs, guides and product overviews. Bulk pricing from 25 to 1000 units.",
+      description: "An 8-page saddle-stitched booklet with a self-cover, for programs, guides and product overviews. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -4216,11 +4220,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-catalogues.webp",
     ],
     seo: {
       title: "Standard Catalogues | Outprint",
-      description: "A multi-page perfect-bound or saddle-stitched catalogue for a full product range. Bulk pricing from 25 to 500 units.",
+      description: "A multi-page perfect-bound or saddle-stitched catalogue for a full product range. Bulk order discounts from 25 to 500 units.",
     },
     optionGroups: [
       {
@@ -4287,11 +4291,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-brochures.webp",
     ],
     seo: {
       title: "Standard Brochures | Outprint",
-      description: "A bifold A4 brochure for a single product line or service overview. Bulk pricing from 100 to 5000 units.",
+      description: "A bifold A4 brochure for a single product line or service overview. Bulk order discounts from 100 to 5000 units.",
     },
     optionGroups: [
       {
@@ -4359,11 +4363,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/company-profiles.webp",
     ],
     seo: {
       title: "Company Profiles | Outprint",
-      description: "A premium bound document on quality stock with a heavier cover — the print leave-behind for a pitch meeting. Bulk pricing from 25 to 500 units.",
+      description: "A premium bound document on quality stock with a heavier cover — the print leave-behind for a pitch meeting. Bulk order discounts from 25 to 500 units.",
     },
     optionGroups: [
       {
@@ -4429,11 +4433,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1614687959440-859988ca224b?auto=format&fit=crop&w=900&q=80",
+      "/images/products/door-hangers.webp",
     ],
     seo: {
       title: "Door Hangers | Outprint",
-      description: "Custom die-cut door hangers with slotted handle. Bulk pricing from 100 to 5000 units.",
+      description: "Custom die-cut door hangers with slotted handle. Bulk order discounts from 100 to 5000 units.",
     },
     optionGroups: [
       {
@@ -4506,11 +4510,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80",
+      "/images/products/round-stickers.webp",
     ],
     seo: {
       title: "Round Stickers | Outprint",
-      description: "Custom round stickers in matte or glossy vinyl. Bulk pricing from 25 to 2500 units, free digital proof.",
+      description: "Custom round stickers in matte or glossy vinyl. Bulk order discounts from 25 to 2500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -4582,11 +4586,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/square-stickers.webp",
     ],
     seo: {
       title: "Square Stickers | Outprint",
-      description: "Custom square stickers in matte or glossy vinyl. Bulk pricing from 25 to 2500 units, free digital proof.",
+      description: "Custom square stickers in matte or glossy vinyl. Bulk order discounts from 25 to 2500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -4658,11 +4662,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80",
+      "/images/products/any-shape-kiss-cut-stickers.webp",
     ],
     seo: {
       title: "Any Shape (Kiss-cut) Stickers | Outprint",
-      description: "Custom kiss-cut stickers in any shape, matte, glossy or holographic. Bulk pricing from 25 to 2500 units.",
+      description: "Custom kiss-cut stickers in any shape, matte, glossy or holographic. Bulk order discounts from 25 to 2500 units.",
     },
     optionGroups: [
       {
@@ -4753,11 +4757,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80",
+      "/images/products/paper-stickers.webp",
     ],
     seo: {
       title: "Paper Stickers | Outprint",
-      description: "Custom paper stickers in matte, glossy or kraft finish. Bulk pricing from 25 to 2500 units.",
+      description: "Custom paper stickers in matte, glossy or kraft finish. Bulk order discounts from 25 to 2500 units.",
     },
     optionGroups: [
       {
@@ -4842,11 +4846,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-posters.webp",
     ],
     seo: {
       title: "Standard Posters | Outprint",
-      description: "Custom large-format posters, A3 to A0, matte or gloss finish. Bulk pricing from 10 to 500 units.",
+      description: "Custom large-format posters, A3 to A0, matte or gloss finish. Bulk order discounts from 10 to 500 units.",
     },
     optionGroups: [
       {
@@ -4931,11 +4935,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-coasters.webp",
     ],
     seo: {
       title: "Standard Coasters | Outprint",
-      description: "Custom pulpboard coasters, round or square. Bulk pricing from 100 to 5000 units.",
+      description: "Custom pulpboard coasters, round or square. Bulk order discounts from 100 to 5000 units.",
     },
     optionGroups: [
       {
@@ -5014,11 +5018,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/brown-kraft-coasters.webp",
     ],
     seo: {
       title: "Brown Kraft Coasters | Outprint",
-      description: "Custom brown kraft coasters, round or square. Bulk pricing from 100 to 5000 units.",
+      description: "Custom brown kraft coasters, round or square. Bulk order discounts from 100 to 5000 units.",
     },
     optionGroups: [
       {
@@ -5096,11 +5100,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-placemats.webp",
     ],
     seo: {
       title: "Standard Placemats | Outprint",
-      description: "Custom paper placemats for restaurants and cafes. Bulk pricing from 100 to 2500 units.",
+      description: "Custom paper placemats for restaurants and cafes. Bulk order discounts from 100 to 2500 units.",
     },
     optionGroups: [
       {
@@ -5161,11 +5165,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "/images/products/food-wrappers.webp",
     ],
     seo: {
       title: "Food Wrappers | Outprint",
-      description: "Custom branded greaseproof food wrapping sheets. Bulk pricing from 250 to 5000 units.",
+      description: "Custom branded greaseproof food wrapping sheets. Bulk order discounts from 250 to 5000 units.",
     },
     optionGroups: [
       {
@@ -5231,11 +5235,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1771258062332-a715063fcb2f?auto=format&fit=crop&w=900&q=80",
+      "/images/products/table-tents.webp",
     ],
     seo: {
       title: "Table Tents | Outprint",
-      description: "Custom folded table tent cards for restaurants and events. Bulk pricing from 25 to 1000 units.",
+      description: "Custom folded table tent cards for restaurants and events. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -5307,11 +5311,11 @@ export const products: Product[] = [
       "E-commerce & DTC",
     ],
     images: [
-      "https://images.unsplash.com/photo-1669975106195-df79bd67e483?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-hang-tags.webp",
     ],
     seo: {
       title: "Standard Hang Tags | Outprint",
-      description: "Custom retail hang tags with string hole. Bulk pricing from 100 to 5000 units.",
+      description: "Custom retail hang tags with string hole. Bulk order discounts from 100 to 5000 units.",
     },
     optionGroups: [
       {
@@ -5383,11 +5387,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-bookmarks.webp",
     ],
     seo: {
       title: "Standard Bookmarks | Outprint",
-      description: "Custom bookmarks in matte or gloss finish. Bulk pricing from 100 to 5000 units.",
+      description: "Custom bookmarks in matte or gloss finish. Bulk order discounts from 100 to 5000 units.",
     },
     optionGroups: [
       {
@@ -5450,11 +5454,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/premium-bookmarks.webp",
     ],
     seo: {
       title: "Premium Bookmarks | Outprint",
-      description: "Custom premium bookmarks with lamination and foil options. Bulk pricing from 100 to 5000 units.",
+      description: "Custom premium bookmarks with lamination and foil options. Bulk order discounts from 100 to 5000 units.",
     },
     optionGroups: [
       {
@@ -5522,11 +5526,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1715520928476-cd350276d96e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-tickets-vouchers.webp",
     ],
     seo: {
       title: "Standard Tickets/Vouchers | Outprint",
-      description: "Custom event tickets and gift vouchers with numbering and perforation. Bulk pricing from 100 to 5000 units.",
+      description: "Custom event tickets and gift vouchers with numbering and perforation. Bulk order discounts from 100 to 5000 units.",
     },
     optionGroups: [
       {
@@ -5605,11 +5609,12 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "/images/products/roll-up-banner-85x200cm.webp",
     ],
+    needsManualSourcing: true,
     seo: {
       title: "Roll-Up Banner 85x200cm | Outprint",
-      description: "Custom 85cm x 200cm retractable roll-up banner with aluminum base. Small-run pricing from 1 to 25 units.",
+      description: "Custom 85cm x 200cm retractable roll-up banner with aluminum base. Small-run orders from 1 to 25 units.",
     },
     optionGroups: [
       {
@@ -5681,11 +5686,12 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "/images/products/premium-roll-up-banner.webp",
     ],
+    needsManualSourcing: true,
     seo: {
       title: "Premium Roll-Up Banner | Outprint",
-      description: "Premium wide-base retractable roll-up banner, single or double-sided. Small-run pricing from 1 to 25 units.",
+      description: "Premium wide-base retractable roll-up banner, single or double-sided. Small-run orders from 1 to 25 units.",
     },
     optionGroups: [
       {
@@ -5756,11 +5762,12 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "/images/products/custom-printed-banners.webp",
     ],
+    needsManualSourcing: true,
     seo: {
       title: "Custom Printed Banners | Outprint",
-      description: "Custom-sized printed vinyl banners in cm dimensions, grommets and pole pockets available. Small-run pricing from 1 to 10 units.",
+      description: "Custom-sized printed vinyl banners in cm dimensions, grommets and pole pockets available. Small-run orders from 1 to 10 units.",
     },
     optionGroups: [
       {
@@ -5839,11 +5846,12 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80",
+      "/images/products/backdrop-banner.webp",
     ],
+    needsManualSourcing: true,
     seo: {
       title: "Backdrop Banner | Outprint",
-      description: "Custom step-and-repeat photo backdrop banners in fabric or vinyl. Small-run pricing from 1 to 10 units.",
+      description: "Custom step-and-repeat photo backdrop banners in fabric or vinyl. Small-run orders from 1 to 10 units.",
     },
     optionGroups: [
       {
@@ -5918,11 +5926,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80",
+      "/images/products/5mm-foam-board-panel.webp",
     ],
     seo: {
       title: "5mm Foam Board Panel | Outprint",
-      description: "Custom 5mm foam board panels, matte or gloss laminate. Small-run pricing from 1 to 25 panels.",
+      description: "Custom 5mm foam board panels, matte or gloss laminate. Small-run orders from 1 to 25 panels.",
     },
     optionGroups: [
       {
@@ -5997,11 +6005,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80",
+      "/images/products/10mm-foam-board-panel.webp",
     ],
     seo: {
       title: "10mm Foam Board Panel | Outprint",
-      description: "Custom 10mm rigid foam board panels, matte or gloss laminate. Small-run pricing from 1 to 25 panels.",
+      description: "Custom 10mm rigid foam board panels, matte or gloss laminate. Small-run orders from 1 to 25 panels.",
     },
     optionGroups: [
       {
@@ -6076,11 +6084,11 @@ export const products: Product[] = [
       "E-commerce & DTC",
     ],
     images: [
-      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/large-stickers.webp",
     ],
     seo: {
       title: "Large Stickers | Outprint",
-      description: "Custom large-format stickers up to 100cm, matte, glossy or removable wall-safe vinyl. Small-run pricing from 1 to 25 units.",
+      description: "Custom large-format stickers up to 100cm, matte, glossy or removable wall-safe vinyl. Small-run orders from 1 to 25 units.",
     },
     optionGroups: [
       {
@@ -6168,11 +6176,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80",
+      "/images/products/large-posters.webp",
     ],
     seo: {
       title: "Large Posters | Outprint",
-      description: "Custom large-format posters up to 150cm x 200cm, matte, gloss or waterproof synthetic. Small-run pricing from 1 to 25 units.",
+      description: "Custom large-format posters up to 150cm x 200cm, matte, gloss or waterproof synthetic. Small-run orders from 1 to 25 units.",
     },
     optionGroups: [
       {
@@ -6248,11 +6256,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80",
+      "/images/products/rolled-canvas-print.webp",
     ],
     seo: {
       title: "Rolled Canvas Print | Outprint",
-      description: "Custom rolled canvas prints, matte or gloss finish, shipped unframed. Small-run pricing from 1 to 10 units.",
+      description: "Custom rolled canvas prints, matte or gloss finish, shipped unframed. Small-run orders from 1 to 10 units.",
     },
     optionGroups: [
       {
@@ -6321,11 +6329,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80",
+      "/images/products/stretched-canvas-print.webp",
     ],
     seo: {
       title: "Stretched Canvas Print | Outprint",
-      description: "Custom canvas prints stretched on a wooden frame, gallery-wrapped and ready to hang. Small-run pricing from 1 to 10 units.",
+      description: "Custom canvas prints stretched on a wooden frame, gallery-wrapped and ready to hang. Small-run orders from 1 to 10 units.",
     },
     optionGroups: [
       {
@@ -6399,11 +6407,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80",
+      "/images/products/classic-framed-canvas.webp",
     ],
     seo: {
       title: "Classic Framed Canvas | Outprint",
-      description: "Custom stretched canvas prints finished with an outer wooden frame. Small-run pricing from 1 to 10 units.",
+      description: "Custom stretched canvas prints finished with an outer wooden frame. Small-run orders from 1 to 10 units.",
     },
     optionGroups: [
       {
@@ -6477,11 +6485,12 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1574299213979-ad327da06aeb?auto=format&fit=crop&w=900&q=80",
+      "/images/products/pop-up-banner-hardcase-straight.webp",
     ],
+    needsManualSourcing: true,
     seo: {
       title: "Pop-Up Banner Hardcase (Straight) | Outprint",
-      description: "Straight-profile pop-up trade show display with wheeled hardcase. Small-run pricing from 1 to 10 units.",
+      description: "Straight-profile pop-up trade show display with wheeled hardcase. Small-run orders from 1 to 10 units.",
     },
     optionGroups: [
       {
@@ -6547,11 +6556,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80",
+      "/images/products/spring-a-board.webp",
     ],
     seo: {
       title: "Spring A-Board | Outprint",
-      description: "Weatherproof spring A-board pavement signs with printed insert. Small-run pricing from 1 to 25 units.",
+      description: "Weatherproof spring A-board pavement signs with printed insert. Small-run orders from 1 to 25 units.",
     },
     optionGroups: [
       {
@@ -6613,11 +6622,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1590415041359-c6dd3f511020?auto=format&fit=crop&w=900&q=80",
+      "/images/products/sail-flag.webp",
     ],
     seo: {
       title: "Sail Flag | Outprint",
-      description: "Custom outdoor sail flags with pole and base, single or double-sided. Small-run pricing from 1 to 25 units.",
+      description: "Custom outdoor sail flags with pole and base, single or double-sided. Small-run orders from 1 to 25 units.",
     },
     optionGroups: [
       {
@@ -6697,11 +6706,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1558535284-3ade92aa58d4?auto=format&fit=crop&w=900&q=80",
+      "/images/products/custom-table-cloth.webp",
     ],
     seo: {
       title: "Custom Table Cloth | Outprint",
-      description: "Custom printed table cloths and fitted covers for trade show tables. Small-run pricing from 1 to 25 units.",
+      description: "Custom printed table cloths and fitted covers for trade show tables. Small-run orders from 1 to 25 units.",
     },
     optionGroups: [
       {
@@ -6771,11 +6780,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1611619899256-5e61d4c46df9?auto=format&fit=crop&w=900&q=80",
+      "/images/products/plastic-pens.webp",
     ],
     seo: {
       title: "Plastic Pens | Outprint",
-      description: "Branded plastic ballpoint pens — the most economical corporate giveaway, printed with your logo. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "Branded plastic ballpoint pens — the most economical corporate giveaway, printed with your logo. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -6841,11 +6850,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1611619899256-5e61d4c46df9?auto=format&fit=crop&w=900&q=80",
+      "/images/products/metal-pens.webp",
     ],
     seo: {
       title: "Metal Pens | Outprint",
-      description: "A heavier metal-barrel ballpoint pen with a satin or gunmetal finish, for a gift that feels more substantial. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A heavier metal-barrel ballpoint pen with a satin or gunmetal finish, for a gift that feels more substantial. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -6911,11 +6920,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/metal-business-card-case.webp",
     ],
     seo: {
       title: "Metal Business Card Case | Outprint",
-      description: "A slim metal case that holds a stack of business cards protected in a jacket or bag pocket. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A slim metal case that holds a stack of business cards protected in a jacket or bag pocket. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -6981,11 +6990,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80",
+      "/images/products/usb-card-sticks.webp",
     ],
     seo: {
       title: "USB Card Sticks | Outprint",
-      description: "A credit-card-shaped USB flash drive that snaps out a full-size connector, printed edge-to-edge with your branding. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A credit-card-shaped USB flash drive that snaps out a full-size connector, printed edge-to-edge with your branding. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7051,11 +7060,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80",
+      "/images/products/mouse-pads.webp",
     ],
     seo: {
       title: "Mouse Pads | Outprint",
-      description: "A full-color printed mouse pad with a cloth top and non-slip rubber base. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A full-color printed mouse pad with a cloth top and non-slip rubber base. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7116,11 +7125,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1585995603413-eb35b5f4a50b?auto=format&fit=crop&w=900&q=80",
+      "/images/products/power-banks.webp",
     ],
     seo: {
       title: "Power Banks | Outprint",
-      description: "A portable USB power bank printed with your logo — a high-utility gift that keeps your brand in daily use. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A portable USB power bank printed with your logo — a high-utility gift that keeps your brand in daily use. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7181,11 +7190,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1610632380989-680fe40816c6?auto=format&fit=crop&w=900&q=80",
+      "/images/products/coffee-mugs-gloss-finish.webp",
     ],
     seo: {
       title: "Coffee Mugs (Gloss Finish) | Outprint",
-      description: "A ceramic coffee mug in a bright gloss finish, full-color wrap printed and dishwasher safe. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A ceramic coffee mug in a bright gloss finish, full-color wrap printed and dishwasher safe. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7260,11 +7269,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1575908539614-ff89490f4a78?auto=format&fit=crop&w=900&q=80",
+      "/images/products/metal-key-ring.webp",
     ],
     seo: {
       title: "Metal Key Ring | Outprint",
-      description: "A durable metal keychain with your logo laser-etched or printed onto the tag. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A durable metal keychain with your logo laser-etched or printed onto the tag. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7325,11 +7334,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1637070155805-e6fbee6ec2cf?auto=format&fit=crop&w=900&q=80",
+      "/images/products/plastic-id-cards.webp",
     ],
     seo: {
       title: "Plastic ID Cards | Outprint",
-      description: "Printed PVC identity cards for staff, events or membership programs. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "Printed PVC identity cards for staff, events or membership programs. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7385,11 +7394,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1516384100354-0e0bbc0d2e00?auto=format&fit=crop&w=900&q=80",
+      "/images/products/magnet-name-badges.webp",
     ],
     seo: {
       title: "Magnet Name Badges | Outprint",
-      description: "A no-pinhole magnetic name badge that clips through fabric without damaging it. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A no-pinhole magnetic name badge that clips through fabric without damaging it. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7440,11 +7449,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80",
+      "/images/products/a5-pu-leather-notebooks.webp",
     ],
     seo: {
       title: "A5 PU Leather Notebooks | Outprint",
-      description: "An A5 notebook bound in soft PU leather with a debossed or foiled logo on the cover. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "An A5 notebook bound in soft PU leather with a debossed or foiled logo on the cover. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7510,11 +7519,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=80",
+      "/images/products/cotton-tote-bags.webp",
     ],
     seo: {
       title: "Cotton Tote Bags | Outprint",
-      description: "A sturdy cotton canvas tote screen-printed with your logo — a practical, reusable giveaway. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A sturdy cotton canvas tote screen-printed with your logo — a practical, reusable giveaway. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7584,11 +7593,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=80",
+      "/images/products/custom-water-bottles.webp",
     ],
     seo: {
       title: "Custom Water Bottles | Outprint",
-      description: "An insulated stainless steel or aluminum water bottle, laser-etched or printed with your branding. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "An insulated stainless steel or aluminum water bottle, laser-etched or printed with your branding. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7668,11 +7677,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1613243555988-441166d4d6fd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/pvc-nfc-cards.webp",
     ],
     seo: {
       title: "PVC NFC Cards | Outprint",
-      description: "A tap-to-share smart PVC card with an embedded NFC chip, programmed to open your link, profile or menu. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A tap-to-share smart PVC card with an embedded NFC chip, programmed to open your link, profile or menu. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7739,11 +7748,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80",
+      "/images/products/photo-strips.webp",
     ],
     seo: {
       title: "Photo Strips | Outprint",
-      description: "Photobooth-style photo strips printed on glossy or matte photo paper — a popular wedding and event favor. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "Photobooth-style photo strips printed on glossy or matte photo paper — a popular wedding and event favor. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7810,11 +7819,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80",
+      "/images/products/photo-mini-books.webp",
     ],
     seo: {
       title: "Photo Mini Books | Outprint",
-      description: "A small flip-through photo book with a soft or hard cover, perfect as a pocket-sized keepsake. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A small flip-through photo book with a soft or hard cover, perfect as a pocket-sized keepsake. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7881,11 +7890,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1554894872-1a01c75f7513?auto=format&fit=crop&w=900&q=80",
+      "/images/products/photo-greeting-cards.webp",
     ],
     seo: {
       title: "Photo Greeting Cards | Outprint",
-      description: "A folded greeting card personalized with your photo on the front, with a matching envelope included. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A folded greeting card personalized with your photo on the front, with a matching envelope included. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -7957,11 +7966,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80",
+      "/images/products/photo-stickers.webp",
     ],
     seo: {
       title: "Photo Stickers | Outprint",
-      description: "Personalized photo stickers on glossy or matte vinyl — great for favors, scrapbooking and packaging. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "Personalized photo stickers on glossy or matte vinyl — great for favors, scrapbooking and packaging. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -8023,11 +8032,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/photo-calendars.webp",
     ],
     seo: {
       title: "Photo Calendars | Outprint",
-      description: "A personalized wall calendar built around your own photos, one image per monthly spread. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "A personalized wall calendar built around your own photos, one image per monthly spread. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -8094,11 +8103,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80",
+      "/images/products/photo-canvas.webp",
     ],
     seo: {
       title: "Photo Canvas | Outprint",
-      description: "Your favorite photo printed on canvas and stretched on a wooden frame, ready to hang. Bulk pricing from 25 to 500 units, free digital proof.",
+      description: "Your favorite photo printed on canvas and stretched on a wooden frame, ready to hang. Bulk order discounts from 25 to 500 units, free digital proof.",
     },
     optionGroups: [
       {
@@ -8167,11 +8176,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+      "/images/products/unisex-light-weight-t-shirt.webp",
     ],
     seo: {
       title: "Unisex Light Weight T-Shirt | Outprint",
-      description: "Custom printed 160gsm unisex t-shirts in 7 colors, S to XXL. Bulk pricing from 10 to 250 units.",
+      description: "Custom printed 160gsm unisex t-shirts in 7 colors, S to XXL. Bulk order discounts from 10 to 250 units.",
     },
     optionGroups: [
       {
@@ -8284,11 +8293,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=80",
+      "/images/products/unisex-heavy-weight-t-shirt.webp",
     ],
     seo: {
       title: "Unisex Heavy Weight T-Shirt | Outprint",
-      description: "Custom printed 220gsm heavyweight unisex t-shirts in 7 colors, S to XXL. Bulk pricing from 10 to 250 units.",
+      description: "Custom printed 220gsm heavyweight unisex t-shirts in 7 colors, S to XXL. Bulk order discounts from 10 to 250 units.",
     },
     optionGroups: [
       {
@@ -8400,11 +8409,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=80",
+      "/images/products/kids-light-weight-t-shirt.webp",
     ],
     seo: {
       title: "Kids Light Weight T-Shirt | Outprint",
-      description: "Custom printed 160gsm kids t-shirts in 7 colors, ages 2-3 to 10-11 years. Bulk pricing from 10 to 250 units.",
+      description: "Custom printed 160gsm kids t-shirts in 7 colors, ages 2-3 to 10-11 years. Bulk order discounts from 10 to 250 units.",
     },
     optionGroups: [
       {
@@ -8516,11 +8525,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=80",
+      "/images/products/polo-shirts.webp",
     ],
     seo: {
       title: "Polo Shirts | Outprint",
-      description: "Custom printed or embroidered pique-knit polo shirts in 7 colors, S to XXL. Bulk pricing from 10 to 250 units.",
+      description: "Custom printed or embroidered pique-knit polo shirts in 7 colors, S to XXL. Bulk order discounts from 10 to 250 units.",
     },
     optionGroups: [
       {
@@ -8632,11 +8641,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1626253934161-08cfea22e968?auto=format&fit=crop&w=900&q=80",
+      "/images/products/fast-food-boxes.webp",
     ],
     seo: {
       title: "Fast Food Boxes | Outprint",
-      description: "Custom fast food boxes in white duplex or kraft board, grease-resistant coating available. Bulk pricing from 25 to 1000 units.",
+      description: "Custom fast food boxes in white duplex or kraft board, grease-resistant coating available. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -8715,11 +8724,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1626253934161-08cfea22e968?auto=format&fit=crop&w=900&q=80",
+      "/images/products/bakery-food-boxes.webp",
     ],
     seo: {
       title: "Bakery Food Boxes | Outprint",
-      description: "Custom bakery and cake boxes in white duplex or kraft board, optional window cut. Bulk pricing from 25 to 1000 units.",
+      description: "Custom bakery and cake boxes in white duplex or kraft board, optional window cut. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -8799,11 +8808,11 @@ export const products: Product[] = [
       "Beauty & Cosmetics",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "/images/products/retail-product-box.webp",
     ],
     seo: {
       title: "Retail Product Box | Outprint",
-      description: "Custom retail product boxes in corrugated, kraft or white duplex board. Bulk pricing from 25 to 1000 units.",
+      description: "Custom retail product boxes in corrugated, kraft or white duplex board. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -8883,11 +8892,11 @@ export const products: Product[] = [
       "Beauty & Cosmetics",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "/images/products/shape-product-box.webp",
     ],
     seo: {
       title: "Shape Product Box | Outprint",
-      description: "Custom die-cut shape product boxes — pillow, hexagon or fully custom outline. Bulk pricing from 25 to 1000 units.",
+      description: "Custom die-cut shape product boxes — pillow, hexagon or fully custom outline. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -8969,11 +8978,11 @@ export const products: Product[] = [
       "E-commerce & DTC",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80",
+      "/images/products/glued-mailer-wallets.webp",
     ],
     seo: {
       title: "Glued Mailer Wallets | Outprint",
-      description: "Custom glued mailer wallets in corrugated or duplex board. Bulk pricing from 25 to 1000 units.",
+      description: "Custom glued mailer wallets in corrugated or duplex board. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -9053,11 +9062,11 @@ export const products: Product[] = [
       "Beauty & Cosmetics",
     ],
     images: [
-      "https://images.unsplash.com/photo-1656543802898-41c8c46683a7?auto=format&fit=crop&w=900&q=80",
+      "/images/products/countertop-display-boxes.webp",
     ],
     seo: {
       title: "Countertop Display Boxes | Outprint",
-      description: "Custom countertop point-of-sale display boxes, corrugated or litho-laminated board. Bulk pricing from 25 to 1000 units.",
+      description: "Custom countertop point-of-sale display boxes, corrugated or litho-laminated board. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -9131,11 +9140,11 @@ export const products: Product[] = [
       "E-commerce & DTC",
     ],
     images: [
-      "https://images.unsplash.com/photo-1656543802898-41c8c46683a7?auto=format&fit=crop&w=900&q=80",
+      "/images/products/hook-display-boxes.webp",
     ],
     seo: {
       title: "Hook Display Boxes | Outprint",
-      description: "Custom peg-hook display boxes with die-cut hang hole. Bulk pricing from 25 to 1000 units.",
+      description: "Custom peg-hook display boxes with die-cut hang hole. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -9210,11 +9219,11 @@ export const products: Product[] = [
       "Fashion & Apparel",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=900&q=80",
+      "/images/products/standard-paper-bags.webp",
     ],
     seo: {
       title: "Standard Paper Bags | Outprint",
-      description: "Custom glossy laminated paper carry bags with twisted handles. Bulk pricing from 25 to 1000 units.",
+      description: "Custom glossy laminated paper carry bags with twisted handles. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -9289,11 +9298,11 @@ export const products: Product[] = [
       "E-commerce & DTC",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "/images/products/brown-kraft-paper-bags.webp",
     ],
     seo: {
       title: "Brown Kraft Paper Bags | Outprint",
-      description: "Custom brown kraft paper carry bags with flat or twisted handles. Bulk pricing from 25 to 1000 units.",
+      description: "Custom brown kraft paper carry bags with flat or twisted handles. Bulk order discounts from 25 to 1000 units.",
     },
     optionGroups: [
       {
@@ -9370,11 +9379,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80",
+      "/images/products/custom-receipt-books.webp",
     ],
     seo: {
       title: "Custom Receipt Books | Outprint",
-      description: "Custom carbonless duplicate receipt books, numbered and perforated. Bulk pricing from 10 to 250 books.",
+      description: "Custom carbonless duplicate receipt books, numbered and perforated. Bulk order discounts from 10 to 250 books.",
     },
     optionGroups: [
       {
@@ -9440,11 +9449,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80",
+      "/images/products/a6-custom-ncr-bill-books.webp",
     ],
     seo: {
       title: "A6 Custom NCR Bill Books | Outprint",
-      description: "Custom A6 NCR carbonless bill books, numbered and bound. Bulk pricing from 10 to 250 books.",
+      description: "Custom A6 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
     },
     optionGroups: [
       {
@@ -9510,11 +9519,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80",
+      "/images/products/a5-custom-ncr-bill-books.webp",
     ],
     seo: {
       title: "A5 Custom NCR Bill Books | Outprint",
-      description: "Custom A5 NCR carbonless bill books, numbered and bound. Bulk pricing from 10 to 250 books.",
+      description: "Custom A5 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
     },
     optionGroups: [
       {
@@ -9580,11 +9589,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80",
+      "/images/products/a4-custom-ncr-bill-books.webp",
     ],
     seo: {
       title: "A4 Custom NCR Bill Books | Outprint",
-      description: "Custom A4 NCR carbonless bill books, numbered and bound. Bulk pricing from 10 to 250 books.",
+      description: "Custom A4 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
     },
     optionGroups: [
       {
@@ -9650,11 +9659,11 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "https://images.unsplash.com/photo-1611075551111-dfda5f9c6f02?auto=format&fit=crop&w=900&q=80",
+      "/images/products/self-ink-stamp.webp",
     ],
     seo: {
       title: "Self-Ink Stamp | Outprint",
-      description: "Custom self-ink business stamps in multiple sizes and ink colors. Bulk pricing from 1 to 50 stamps.",
+      description: "Custom self-ink business stamps in multiple sizes and ink colors. Bulk order discounts from 1 to 50 stamps.",
     },
     optionGroups: [
       {
@@ -9733,11 +9742,11 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "https://images.unsplash.com/photo-1598908314732-07113901949e?auto=format&fit=crop&w=900&q=80",
+      "/images/products/custom-paper-cups.webp",
     ],
     seo: {
       title: "Custom Paper Cups | Outprint",
-      description: "Custom branded paper cups in 120ml to 240ml sizes, single or double-wall. Bulk pricing from 100 to 2500 units.",
+      description: "Custom branded paper cups in 120ml to 240ml sizes, single or double-wall. Bulk order discounts from 100 to 2500 units.",
     },
     optionGroups: [
       {
@@ -9812,11 +9821,11 @@ export const products: Product[] = [
       "Fashion & Apparel",
     ],
     images: [
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80",
+      "/images/products/ready-made-kraft-paper-bags.webp",
     ],
     seo: {
       title: "Ready-Made Kraft Paper Bags | Outprint",
-      description: "In-stock ready-made kraft paper bags in 5 colors, dispatched immediately with no custom print lead time. Bulk pricing from 25 units.",
+      description: "In-stock ready-made kraft paper bags in 5 colors, dispatched immediately with no custom print lead time. Bulk order discounts from 25 units.",
     },
     optionGroups: [
       {
@@ -9902,11 +9911,11 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=900&q=80",
+      "/images/products/luxury-paper-bags.webp",
     ],
     seo: {
       title: "Luxury Paper Bags | Outprint",
-      description: "Custom premium laminated shopping bags with rope handles for boutique retail and gifting. Bulk pricing from 25 to 500 units.",
+      description: "Custom premium laminated shopping bags with rope handles for boutique retail and gifting. Bulk order discounts from 25 to 500 units.",
     },
     optionGroups: [
       {

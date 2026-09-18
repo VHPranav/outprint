@@ -1,0 +1,2297 @@
+[
+  {
+    "index": 1,
+    "id": "prod-vinyl-diecut-stickers",
+    "slug": "vinyl-die-cut-stickers",
+    "name": "Custom Vinyl Die-Cut Stickers",
+    "rootCategory": "Stickers",
+    "categoryPath": "Stickers > Die-Cut Stickers > Vinyl Die-Cut",
+    "description": "Weatherproof vinyl stickers cut precisely to your artwork's outline. UV-laminated for 5+ years of outdoor durability, dishwasher and scratch safe.",
+    "basePrice": 0.85,
+    "useCases": "E-commerce & DTC, Events & Weddings",
+    "suggestedFilename": "vinyl-die-cut-stickers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 2,
+    "id": "prod-holographic-diecut-stickers",
+    "slug": "holographic-die-cut-stickers",
+    "name": "Holographic Die-Cut Stickers",
+    "rootCategory": "Stickers",
+    "categoryPath": "Stickers > Die-Cut Stickers > Holographic Die-Cut",
+    "description": "Prismatic rainbow-refraction stickers with a 100% opaque spot-white backing so colors stay vivid against any surface.",
+    "basePrice": 1.15,
+    "useCases": "E-commerce & DTC, Events & Weddings",
+    "suggestedFilename": "holographic-die-cut-stickers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 3,
+    "id": "prod-sticker-sheets",
+    "slug": "custom-sticker-sheets",
+    "name": "Custom Sticker Sheets",
+    "rootCategory": "Stickers",
+    "categoryPath": "Stickers > Sticker Sheets",
+    "description": "Multiple designs kiss-cut onto a single sheet — perfect for sticker packs, product inserts, and con merch.",
+    "basePrice": 2.4,
+    "useCases": "E-commerce & DTC, Events & Weddings",
+    "suggestedFilename": "custom-sticker-sheets.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 4,
+    "id": "prod-matte-product-labels",
+    "slug": "matte-product-labels",
+    "name": "Matte Product Labels",
+    "rootCategory": "Labels",
+    "categoryPath": "Labels > Product Labels",
+    "description": "Clean matte-finish labels for candles, cosmetics, and packaged goods. Available on rolls or sheets.",
+    "basePrice": 0.32,
+    "useCases": "Beauty & Cosmetics, Food & Beverage",
+    "suggestedFilename": "matte-product-labels.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 5,
+    "id": "prod-weatherproof-labels",
+    "slug": "weatherproof-vinyl-labels",
+    "name": "Weatherproof Vinyl Labels",
+    "rootCategory": "Labels",
+    "categoryPath": "Labels > Product Labels > Weatherproof Labels",
+    "description": "Waterproof, UV-stable vinyl labels built for bottles, outdoor gear, and anything that lives outside a climate-controlled shelf.",
+    "basePrice": 0.48,
+    "useCases": "Beauty & Cosmetics, Food & Beverage",
+    "suggestedFilename": "weatherproof-vinyl-labels.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 6,
+    "id": "prod-packaging-labels",
+    "slug": "custom-packaging-labels",
+    "name": "Custom Packaging Labels",
+    "rootCategory": "Labels",
+    "categoryPath": "Labels > Packaging Labels",
+    "description": "Branded closure and shipping labels sized for mailers, pouches and retail boxes.",
+    "basePrice": 0.28,
+    "useCases": "E-commerce & DTC, Food & Beverage",
+    "suggestedFilename": "custom-packaging-labels.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 7,
+    "id": "prod-corrugated-mailer-boxes",
+    "slug": "corrugated-mailer-boxes",
+    "name": "Corrugated Mailer Boxes",
+    "rootCategory": "Boxes & Packaging",
+    "categoryPath": "Boxes & Packaging > Mailer Boxes > Corrugated Mailers",
+    "description": "Custom-printed corrugated mailers with a tuck-lock closure — sturdy enough for e-commerce shipping, light enough to keep freight costs down.",
+    "basePrice": 1.9,
+    "useCases": "E-commerce & DTC",
+    "suggestedFilename": "corrugated-mailer-boxes.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 8,
+    "id": "prod-kraft-mailer-boxes",
+    "slug": "kraft-mailer-boxes",
+    "name": "Kraft Mailer Boxes",
+    "rootCategory": "Boxes & Packaging",
+    "categoryPath": "Boxes & Packaging > Mailer Boxes",
+    "description": "Uncoated kraft mailer boxes with a natural, eco-forward finish — ideal for brands leaning into minimal, recyclable packaging.",
+    "basePrice": 1.6,
+    "useCases": "E-commerce & DTC, Fashion & Apparel",
+    "suggestedFilename": "kraft-mailer-boxes.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 9,
+    "id": "prod-rigid-gift-boxes",
+    "slug": "rigid-gift-boxes",
+    "name": "Rigid Gift Boxes",
+    "rootCategory": "Boxes & Packaging",
+    "categoryPath": "Boxes & Packaging > Rigid Boxes",
+    "description": "Two-piece rigid chipboard boxes with a magnetic or friction-fit lid — built for unboxing moments, not just shipping.",
+    "basePrice": 4.2,
+    "useCases": "Fashion & Apparel, Beauty & Cosmetics, Events & Weddings",
+    "suggestedFilename": "rigid-gift-boxes.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 10,
+    "id": "prod-standard-matte-cards",
+    "slug": "standard-matte-business-cards",
+    "name": "Standard Matte Business Cards",
+    "rootCategory": "Business Cards",
+    "categoryPath": "Business Cards > Standard Cards",
+    "description": "Everyday 14pt matte business cards — smudge-resistant, quick turnaround, and priced for ordering in volume.",
+    "basePrice": 0.18,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "standard-matte-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 11,
+    "id": "prod-premium-suede-cards",
+    "slug": "premium-suede-business-cards",
+    "name": "Premium Suede Business Cards",
+    "rootCategory": "Business Cards",
+    "categoryPath": "Business Cards > Premium Cards",
+    "description": "32pt ultra-thick cards laminated in a soft-touch suede finish, with a colored edge for a tactile first impression.",
+    "basePrice": 0.65,
+    "useCases": "Corporate & Office, Fashion & Apparel",
+    "suggestedFilename": "premium-suede-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 12,
+    "id": "prod-letterpress-cotton-cards",
+    "slug": "letterpress-cotton-business-cards",
+    "name": "Letterpress Cotton Business Cards",
+    "rootCategory": "Business Cards",
+    "categoryPath": "Business Cards > Premium Cards > Letterpress Cards",
+    "description": "600gsm cotton stock, deep-impression letterpress or blind deboss — the same archival cotton used for our stationery line.",
+    "basePrice": 1.4,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "letterpress-cotton-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 13,
+    "id": "prod-vinyl-outdoor-banners",
+    "slug": "vinyl-outdoor-banners",
+    "name": "Vinyl Outdoor Banners",
+    "rootCategory": "Banners & Signage",
+    "categoryPath": "Banners & Signage > Vinyl Banners",
+    "description": "13oz scrim vinyl banners with reinforced hems and brass grommets — built for storefronts, events, and job sites.",
+    "basePrice": 18,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "vinyl-outdoor-banners.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 14,
+    "id": "prod-mesh-windproof-banners",
+    "slug": "mesh-windproof-banners",
+    "name": "Mesh Windproof Banners",
+    "rootCategory": "Banners & Signage",
+    "categoryPath": "Banners & Signage > Mesh Banners",
+    "description": "Perforated mesh vinyl lets wind pass through instead of catching your banner — the standard for fence lines and high-wind sites.",
+    "basePrice": 24,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "mesh-windproof-banners.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 15,
+    "id": "prod-retractable-banner-stands",
+    "slug": "retractable-banner-stands",
+    "name": "Retractable Banner Stands",
+    "rootCategory": "Banners & Signage",
+    "categoryPath": "Banners & Signage",
+    "description": "Roll-up banner stand with an aluminum base, carry bag, and a replaceable printed graphic — setup in under a minute.",
+    "basePrice": 65,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "retractable-banner-stands.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 16,
+    "id": "prod-standard-business-cards",
+    "slug": "standard-business-cards",
+    "name": "Standard Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Everyday 14pt cards in matte or gloss — smudge-resistant, quick turnaround, and priced for ordering in volume.",
+    "basePrice": 0.16,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "standard-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 17,
+    "id": "prod-express-business-cards",
+    "slug": "express-business-cards",
+    "name": "Express Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Same-day proofing and 24-hour production on our core matte and gloss stocks, for launches that can't wait.",
+    "basePrice": 0.24,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "express-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 18,
+    "id": "prod-velvet-laminated-cards",
+    "slug": "velvet-laminated-cards",
+    "name": "Velvet Laminated Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "16pt stock laminated in a soft-touch velvet film — a tactile, fingerprint-resistant finish that reads premium instantly.",
+    "basePrice": 0.55,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "velvet-laminated-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 19,
+    "id": "prod-textured-business-cards",
+    "slug": "textured-business-cards",
+    "name": "Textured Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Linen, cotton or hammer-textured stock adds a tactile finish you can feel before you read a word.",
+    "basePrice": 0.45,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "textured-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 20,
+    "id": "prod-pearl-shimmer-cards",
+    "slug": "pearl-shimmer-cards",
+    "name": "Pearl Shimmer Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Pearlescent shimmer stock that catches the light at an angle — a subtle upgrade over flat matte or gloss.",
+    "basePrice": 0.5,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "pearl-shimmer-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 21,
+    "id": "prod-smooth-white-business-cards",
+    "slug": "smooth-white-business-cards",
+    "name": "Smooth White Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Uncoated smooth white stock that takes pen ink cleanly — popular for cards meant to be written on.",
+    "basePrice": 0.2,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "smooth-white-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 22,
+    "id": "prod-brown-kraft-business-cards",
+    "slug": "brown-kraft-business-cards",
+    "name": "Brown Kraft Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Uncoated kraft stock with visible natural fibers — an earthy, eco-forward look for craft and hospitality brands.",
+    "basePrice": 0.22,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "brown-kraft-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 23,
+    "id": "prod-waterproof-cards",
+    "slug": "waterproof-cards",
+    "name": "Waterproof Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Synthetic polypropylene stock that survives a spill, a pool day, or a stint in a wallet through the wash.",
+    "basePrice": 0.48,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "waterproof-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 24,
+    "id": "prod-eco-friendly-cards",
+    "slug": "eco-friendly-cards",
+    "name": "Eco-Friendly Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "100% recycled matte stock, or plantable seed paper that grows into wildflowers once the card's done its job.",
+    "basePrice": 0.24,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "eco-friendly-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 25,
+    "id": "prod-spot-uv-business-cards",
+    "slug": "spot-uv-business-cards",
+    "name": "Spot UV Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Matte or silk base stock with a glossy raised coating over your logo or type for contrast without color.",
+    "basePrice": 0.42,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "spot-uv-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 26,
+    "id": "prod-white-ink-black-cards",
+    "slug": "white-ink-black-cards",
+    "name": "White Ink Black Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Solid black stock printed with opaque white ink — a stark, high-contrast look that stands out in any card holder.",
+    "basePrice": 0.5,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "white-ink-black-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 27,
+    "id": "prod-gold-foil-black-cards",
+    "slug": "gold-foil-black-cards",
+    "name": "Gold Foil Black Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Black stock finished with a metallic foil stamp — gold, rose gold or silver — for a luxury first impression.",
+    "basePrice": 0.75,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "gold-foil-black-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 28,
+    "id": "prod-double-pasted-cards",
+    "slug": "double-pasted-cards",
+    "name": "Double Pasted Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Two sheets glued face-to-face for extra rigidity and heft, without the cost of a full triplex build.",
+    "basePrice": 0.35,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "double-pasted-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 29,
+    "id": "prod-triplex-business-cards",
+    "slug": "triplex-business-cards",
+    "name": "Triplex Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Three laminated layers with a bold colored core visible at the edge — our thickest, most substantial card build.",
+    "basePrice": 0.6,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "triplex-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 30,
+    "id": "prod-square-business-cards",
+    "slug": "square-business-cards",
+    "name": "Square Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "A square die-cut card that stands out in a stack of standard rectangles, on the same 14pt-16pt stocks.",
+    "basePrice": 0.28,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "square-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 31,
+    "id": "prod-circle-business-cards",
+    "slug": "circle-business-cards",
+    "name": "Circle Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "A fully round die-cut card — a distinctive shape for logos and brands built around a circular mark.",
+    "basePrice": 0.3,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "circle-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 32,
+    "id": "prod-oval-shaped-business-cards",
+    "slug": "oval-shaped-business-cards",
+    "name": "Oval Shaped Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "A softened oval die-cut for a card that still reads as familiar but never gets lost in a card holder.",
+    "basePrice": 0.3,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "oval-shaped-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 33,
+    "id": "prod-any-shape-die-cut-business-cards",
+    "slug": "any-shape-die-cut-business-cards",
+    "name": "Any Shape (Die-cut) Business Cards",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Business Cards",
+    "description": "Fully custom die-cut outline traced to your artwork — arches, tabs, notches or a shape entirely your own.",
+    "basePrice": 0.45,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "any-shape-die-cut-business-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 34,
+    "id": "prod-standard-letterheads",
+    "slug": "standard-letterheads",
+    "name": "Standard Letterheads",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Letterheads",
+    "description": "80gsm-100gsm bond paper letterheads, single or full-color printed to your template.",
+    "basePrice": 3.5,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "standard-letterheads.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 35,
+    "id": "prod-express-letterheads",
+    "slug": "express-letterheads",
+    "name": "Express Letterheads",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Letterheads",
+    "description": "Same bond-paper letterheads with a 24-hour turnaround for urgent print runs.",
+    "basePrice": 5,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "express-letterheads.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 36,
+    "id": "prod-executive-letterheads",
+    "slug": "executive-letterheads",
+    "name": "Executive Letterheads",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Letterheads",
+    "description": "120gsm-160gsm premium uncoated stock, built for foil or embossed letterhead headers.",
+    "basePrice": 7,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "executive-letterheads.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 37,
+    "id": "prod-dl-custom-envelopes",
+    "slug": "dl-custom-envelopes",
+    "name": "DL Custom Envelopes",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Envelopes",
+    "description": "110mm x 220mm DL envelopes, the standard size for a folded A4 letter.",
+    "basePrice": 0.35,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "dl-custom-envelopes.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1649019489428-70f505daacd6?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 38,
+    "id": "prod-c5-custom-envelopes",
+    "slug": "c5-custom-envelopes",
+    "name": "C5 Custom Envelopes",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Envelopes",
+    "description": "162mm x 229mm C5 envelopes, sized for an A4 sheet folded once.",
+    "basePrice": 0.55,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "c5-custom-envelopes.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1649019489428-70f505daacd6?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 39,
+    "id": "prod-c4-custom-envelopes",
+    "slug": "c4-custom-envelopes",
+    "name": "C4 Custom Envelopes",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Envelopes",
+    "description": "229mm x 324mm C4 envelopes, sized for an unfolded A4 sheet.",
+    "basePrice": 0.85,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "c4-custom-envelopes.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1649019489428-70f505daacd6?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 40,
+    "id": "prod-a5-notepads",
+    "slug": "a5-notepads",
+    "name": "A5 Notepads",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Notepads & Notebooks",
+    "description": "50-sheet A5 notepads, glue-bound at the top, with your logo and ruled or grid layout printed on every sheet.",
+    "basePrice": 32,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "a5-notepads.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 41,
+    "id": "prod-a5-wire-o-notebooks",
+    "slug": "a5-wire-o-notebooks",
+    "name": "A5 Wire-o Notebooks",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Notepads & Notebooks",
+    "description": "Wire-o bound A5 notebooks with a printed soft or hard cover — lies flat for writing, and holds up to daily use.",
+    "basePrice": 58,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "a5-wire-o-notebooks.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 42,
+    "id": "prod-standard-certificates",
+    "slug": "standard-certificates",
+    "name": "Standard Certificates",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Certificates",
+    "description": "160gsm-220gsm cardstock certificates with a decorative border, printed in full color.",
+    "basePrice": 1.2,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "standard-certificates.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1638636241638-aef5120c5153?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 43,
+    "id": "prod-premium-certificates",
+    "slug": "premium-certificates",
+    "name": "Premium Certificates",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Certificates",
+    "description": "Textured cover-weight stock with a gold or silver foil seal for award and achievement certificates.",
+    "basePrice": 2.5,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "premium-certificates.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1638636241638-aef5120c5153?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 44,
+    "id": "prod-a4-2-pocket-folders",
+    "slug": "a4-2-pocket-folders",
+    "name": "A4 2-Pocket Folders",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Presentation Folders",
+    "description": "Standard A4 presentation folder with two interior pockets and a business card slit, on heavy printed board.",
+    "basePrice": 3.5,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "a4-2-pocket-folders.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1785140629334-828efea50e09?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 45,
+    "id": "prod-custom-shape-folders",
+    "slug": "custom-shape-folders",
+    "name": "Custom Shape Folders",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Presentation Folders",
+    "description": "Die-cut presentation folder in a shape unique to your brand, beyond the standard rectangle.",
+    "basePrice": 5.5,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "custom-shape-folders.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1785140629334-828efea50e09?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 46,
+    "id": "prod-standard-flyers",
+    "slug": "standard-flyers",
+    "name": "Standard Flyers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Flyers",
+    "description": "150gsm-250gsm gloss art paper flyers for everyday promotions, priced for high-volume distribution.",
+    "basePrice": 1.2,
+    "useCases": "Corporate & Office, Events & Weddings, Food & Beverage",
+    "suggestedFilename": "standard-flyers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 47,
+    "id": "prod-express-flyers",
+    "slug": "express-flyers",
+    "name": "Express Flyers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Flyers",
+    "description": "The same gloss art paper flyer, produced and dispatched within 24 hours.",
+    "basePrice": 1.8,
+    "useCases": "Corporate & Office, Events & Weddings, Food & Beverage",
+    "suggestedFilename": "express-flyers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 48,
+    "id": "prod-gloss-laminated-flyers",
+    "slug": "gloss-laminated-flyers",
+    "name": "Gloss Laminated Flyers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Flyers",
+    "description": "300gsm-350gsm stock finished with a gloss laminate film for extra durability and shine.",
+    "basePrice": 1.7,
+    "useCases": "Corporate & Office, Events & Weddings, Food & Beverage",
+    "suggestedFilename": "gloss-laminated-flyers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 49,
+    "id": "prod-square-flyers",
+    "slug": "square-flyers",
+    "name": "Square Flyers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Flyers",
+    "description": "A square-format flyer that breaks from the standard A-size rack — popular for menus and social handouts.",
+    "basePrice": 1.6,
+    "useCases": "Corporate & Office, Events & Weddings, Food & Beverage",
+    "suggestedFilename": "square-flyers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 50,
+    "id": "prod-brown-kraft-flyers",
+    "slug": "brown-kraft-flyers",
+    "name": "Brown Kraft Flyers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Flyers",
+    "description": "Uncoated kraft stock flyers for an earthy, hand-made look that still holds crisp full-color print.",
+    "basePrice": 1.5,
+    "useCases": "Corporate & Office, Events & Weddings, Food & Beverage",
+    "suggestedFilename": "brown-kraft-flyers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 51,
+    "id": "prod-waterproof-flyers",
+    "slug": "waterproof-flyers",
+    "name": "Waterproof Flyers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Flyers",
+    "description": "Synthetic waterproof stock built for outdoor handouts, boats and anything that meets rain or spray.",
+    "basePrice": 2.2,
+    "useCases": "Corporate & Office, Events & Weddings, Food & Beverage",
+    "suggestedFilename": "waterproof-flyers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 52,
+    "id": "prod-desktop-calendars",
+    "slug": "desktop-calendars",
+    "name": "Desktop Calendars",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Calendars",
+    "description": "A compact wire-bound tent calendar that sits on any desk, printed with 12 monthly spreads.",
+    "basePrice": 8,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "desktop-calendars.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 53,
+    "id": "prod-wall-calendars",
+    "slug": "wall-calendars",
+    "name": "Wall Calendars",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Calendars",
+    "description": "A 12-month wire-o bound wall calendar with a hanging hole, one spread per month.",
+    "basePrice": 14,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "wall-calendars.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 54,
+    "id": "prod-poster-calendars",
+    "slug": "poster-calendars",
+    "name": "Poster Calendars",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Calendars",
+    "description": "A single large-format sheet with all 12 months laid out at once — no binding, just pin and go.",
+    "basePrice": 10,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "poster-calendars.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 55,
+    "id": "prod-standard-postcards",
+    "slug": "standard-postcards",
+    "name": "Standard Postcards",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Postcards",
+    "description": "4in x 6in gloss postcards for direct mail, promotions and event invites.",
+    "basePrice": 0.25,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "standard-postcards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 56,
+    "id": "prod-photo-postcards",
+    "slug": "photo-postcards",
+    "name": "Photo Postcards",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Postcards",
+    "description": "Photo-paper finish postcards that reproduce images with the depth of a real photo print.",
+    "basePrice": 0.4,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "photo-postcards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 57,
+    "id": "prod-square-postcards",
+    "slug": "square-postcards",
+    "name": "Square Postcards",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Postcards",
+    "description": "A square-format postcard for a distinctive mailer or Instagram-ready handout.",
+    "basePrice": 0.35,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "square-postcards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 58,
+    "id": "prod-standard-greeting-cards",
+    "slug": "standard-greeting-cards",
+    "name": "Standard Greeting Cards",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Greeting Cards",
+    "description": "A folded 5in x 7in greeting card printed inside and out, with a matching blank envelope included.",
+    "basePrice": 2.5,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "standard-greeting-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1554894872-1a01c75f7513?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 59,
+    "id": "prod-trifold-menus",
+    "slug": "trifold-menus",
+    "name": "Trifold Menus",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Menus & Brochures",
+    "description": "A laminated trifold A4 menu built to survive daily handling on a restaurant table.",
+    "basePrice": 3.5,
+    "useCases": "Corporate & Office, Food & Beverage",
+    "suggestedFilename": "trifold-menus.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 60,
+    "id": "prod-trifold-pamphlets",
+    "slug": "trifold-pamphlets",
+    "name": "Trifold Pamphlets",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Menus & Brochures",
+    "description": "An unlaminated trifold pamphlet for marketing collateral, rack cards and info handouts.",
+    "basePrice": 1,
+    "useCases": "Corporate & Office, Food & Beverage",
+    "suggestedFilename": "trifold-pamphlets.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 61,
+    "id": "prod-standard-booklets",
+    "slug": "standard-booklets",
+    "name": "Standard Booklets",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Menus & Brochures",
+    "description": "An 8-page saddle-stitched booklet with a self-cover, for programs, guides and product overviews.",
+    "basePrice": 12,
+    "useCases": "Corporate & Office, Food & Beverage",
+    "suggestedFilename": "standard-booklets.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 62,
+    "id": "prod-standard-catalogues",
+    "slug": "standard-catalogues",
+    "name": "Standard Catalogues",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Menus & Brochures",
+    "description": "A multi-page perfect-bound or saddle-stitched catalogue for a full product range.",
+    "basePrice": 18,
+    "useCases": "Corporate & Office, Food & Beverage",
+    "suggestedFilename": "standard-catalogues.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 63,
+    "id": "prod-standard-brochures",
+    "slug": "standard-brochures",
+    "name": "Standard Brochures",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Menus & Brochures",
+    "description": "A bifold A4 brochure for a single product line or service overview.",
+    "basePrice": 2.2,
+    "useCases": "Corporate & Office, Food & Beverage",
+    "suggestedFilename": "standard-brochures.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 64,
+    "id": "prod-company-profiles",
+    "slug": "company-profiles",
+    "name": "Company Profiles",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Menus & Brochures",
+    "description": "A premium bound document on quality stock with a heavier cover — the print leave-behind for a pitch meeting.",
+    "basePrice": 22,
+    "useCases": "Corporate & Office, Food & Beverage",
+    "suggestedFilename": "company-profiles.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 65,
+    "id": "prod-door-hangers",
+    "slug": "door-hangers",
+    "name": "Door Hangers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Door Hangers",
+    "description": "A die-cut door hanger with a slotted handle sized for a standard doorknob, printed full color both sides.",
+    "basePrice": 1.4,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "door-hangers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1614687959440-859988ca224b?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 66,
+    "id": "prod-round-stickers",
+    "slug": "round-stickers",
+    "name": "Round Stickers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Stickers & Labels",
+    "description": "A simple circular sticker cut to a clean round edge — the fastest, most affordable die-cut shape.",
+    "basePrice": 0.55,
+    "useCases": "E-commerce & DTC, Events & Weddings",
+    "suggestedFilename": "round-stickers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 67,
+    "id": "prod-square-stickers",
+    "slug": "square-stickers",
+    "name": "Square Stickers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Stickers & Labels",
+    "description": "A clean square-cut sticker, ideal for grid layouts, product packs and uniform branding.",
+    "basePrice": 0.55,
+    "useCases": "E-commerce & DTC, Events & Weddings",
+    "suggestedFilename": "square-stickers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 68,
+    "id": "prod-any-shape-kiss-cut-stickers",
+    "slug": "any-shape-kiss-cut-stickers",
+    "name": "Any Shape (Kiss-cut) Stickers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Stickers & Labels",
+    "description": "Kiss-cut to your artwork's outline on a peel-away backing sheet — the outline shows, the backing stays whole.",
+    "basePrice": 0.9,
+    "useCases": "E-commerce & DTC, Events & Weddings",
+    "suggestedFilename": "any-shape-kiss-cut-stickers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 69,
+    "id": "prod-paper-stickers",
+    "slug": "paper-stickers",
+    "name": "Paper Stickers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Stickers & Labels",
+    "description": "Uncoated or gloss paper stickers for indoor use — a budget-friendly alternative to vinyl for short-run campaigns.",
+    "basePrice": 0.45,
+    "useCases": "E-commerce & DTC, Events & Weddings",
+    "suggestedFilename": "paper-stickers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 70,
+    "id": "prod-standard-posters",
+    "slug": "standard-posters",
+    "name": "Standard Posters",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Posters",
+    "description": "Large-format posters in matte or gloss finish, sized from A3 up to A0 for windows, walls and event signage.",
+    "basePrice": 3.5,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "standard-posters.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 71,
+    "id": "prod-standard-coasters",
+    "slug": "standard-coasters",
+    "name": "Standard Coasters",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Hospitality",
+    "description": "Round or square absorbent pulpboard coasters, full-color printed on one or both sides.",
+    "basePrice": 0.6,
+    "useCases": "Food & Beverage, Events & Weddings",
+    "suggestedFilename": "standard-coasters.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 72,
+    "id": "prod-brown-kraft-coasters",
+    "slug": "brown-kraft-coasters",
+    "name": "Brown Kraft Coasters",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Hospitality",
+    "description": "Uncoated kraft coaster board for a rustic, cafe-style look that still holds crisp one or two-color print.",
+    "basePrice": 0.65,
+    "useCases": "Food & Beverage, Events & Weddings",
+    "suggestedFilename": "brown-kraft-coasters.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 73,
+    "id": "prod-standard-placemats",
+    "slug": "standard-placemats",
+    "name": "Standard Placemats",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Hospitality",
+    "description": "Disposable paper placemats sized for a standard table setting, full-color printed with menu highlights or ads.",
+    "basePrice": 0.9,
+    "useCases": "Food & Beverage",
+    "suggestedFilename": "standard-placemats.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 74,
+    "id": "prod-food-wrappers",
+    "slug": "food-wrappers",
+    "name": "Food Wrappers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Hospitality",
+    "description": "Greaseproof food wrap sheets printed with your branding, for burgers, sandwiches and bakery items.",
+    "basePrice": 0.5,
+    "useCases": "Food & Beverage",
+    "suggestedFilename": "food-wrappers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 75,
+    "id": "prod-table-tents",
+    "slug": "table-tents",
+    "name": "Table Tents",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Hospitality",
+    "description": "A folded, free-standing table tent card for menu specials, promotions or table numbers.",
+    "basePrice": 3,
+    "useCases": "Food & Beverage, Events & Weddings",
+    "suggestedFilename": "table-tents.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1771258062332-a715063fcb2f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 76,
+    "id": "prod-standard-hang-tags",
+    "slug": "standard-hang-tags",
+    "name": "Standard Hang Tags",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Tags & Bookmarks",
+    "description": "Retail garment hang tags on sturdy cardstock, punched with a string hole and ready to attach.",
+    "basePrice": 0.35,
+    "useCases": "Fashion & Apparel, E-commerce & DTC",
+    "suggestedFilename": "standard-hang-tags.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1669975106195-df79bd67e483?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 77,
+    "id": "prod-standard-bookmarks",
+    "slug": "standard-bookmarks",
+    "name": "Standard Bookmarks",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Tags & Bookmarks",
+    "description": "A simple full-color bookmark on matte or gloss cardstock — a low-cost giveaway for stores and events.",
+    "basePrice": 0.4,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "standard-bookmarks.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 78,
+    "id": "prod-premium-bookmarks",
+    "slug": "premium-bookmarks",
+    "name": "Premium Bookmarks",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Tags & Bookmarks",
+    "description": "A laminated or foil-accented bookmark on heavier stock, for gifting and premium retail giveaways.",
+    "basePrice": 0.75,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "premium-bookmarks.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 79,
+    "id": "prod-standard-tickets-vouchers",
+    "slug": "standard-tickets-vouchers",
+    "name": "Standard Tickets/Vouchers",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Tickets & Vouchers",
+    "description": "Event tickets or gift vouchers on secure cardstock, with optional sequential numbering and a tear-off perforation.",
+    "basePrice": 0.5,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "standard-tickets-vouchers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1715520928476-cd350276d96e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 80,
+    "id": "prod-roll-up-banner-85x200cm",
+    "slug": "roll-up-banner-85x200cm",
+    "name": "Roll-Up Banner 85x200cm",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Roll-up Banners",
+    "description": "An economical retractable roll-up banner on a standard aluminum base — the everyday size for storefronts, booths and reception areas.",
+    "basePrice": 52,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "roll-up-banner-85x200cm.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 81,
+    "id": "prod-premium-roll-up-banner",
+    "slug": "premium-roll-up-banner",
+    "name": "Premium Roll-Up Banner",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Roll-up Banners",
+    "description": "A wider, heavier-duty base with double-sided printing available — built for daily setup and teardown at trade shows.",
+    "basePrice": 88,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "premium-roll-up-banner.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 82,
+    "id": "prod-custom-printed-banners",
+    "slug": "custom-printed-banners",
+    "name": "Custom Printed Banners",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Backdrop Banners",
+    "description": "A general-purpose large-format vinyl banner made to your exact cm dimensions — for storefronts, launches and indoor or outdoor display.",
+    "basePrice": 22,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "custom-printed-banners.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 83,
+    "id": "prod-backdrop-banner",
+    "slug": "backdrop-banner",
+    "name": "Backdrop Banner",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Backdrop Banners",
+    "description": "A step-and-repeat or photo-op backdrop in wrinkle-resistant fabric or vinyl, sized for a full-body photo background.",
+    "basePrice": 48,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "backdrop-banner.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 84,
+    "id": "prod-5mm-foam-board-panel",
+    "slug": "5mm-foam-board-panel",
+    "name": "5mm Foam Board Panel",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Foam Board Panels",
+    "description": "A lightweight 5mm rigid foam board panel, printed and laminated — easy to hang, easy to carry.",
+    "basePrice": 16,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "5mm-foam-board-panel.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 85,
+    "id": "prod-10mm-foam-board-panel",
+    "slug": "10mm-foam-board-panel",
+    "name": "10mm Foam Board Panel",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Foam Board Panels",
+    "description": "A thicker, stiffer 10mm foam board panel for larger displays that need to resist warping.",
+    "basePrice": 26,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "10mm-foam-board-panel.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 86,
+    "id": "prod-large-stickers",
+    "slug": "large-stickers",
+    "name": "Large Stickers",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Large Format",
+    "description": "Oversized die-cut or square decals for walls, windows and vehicles — printed on removable or permanent vinyl.",
+    "basePrice": 9,
+    "useCases": "Corporate & Office, E-commerce & DTC",
+    "suggestedFilename": "large-stickers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 87,
+    "id": "prod-large-posters",
+    "slug": "large-posters",
+    "name": "Large Posters",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Large Format",
+    "description": "Exhibition-grade large-format posters up to 2 meters, for trade shows, retail windows and gallery display.",
+    "basePrice": 15,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "large-posters.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 88,
+    "id": "prod-rolled-canvas-print",
+    "slug": "rolled-canvas-print",
+    "name": "Rolled Canvas Print",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Canvas Prints",
+    "description": "Your image printed on canvas and shipped rolled, unframed — the flexible option for framing later or shipping abroad.",
+    "basePrice": 12,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "rolled-canvas-print.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 89,
+    "id": "prod-stretched-canvas-print",
+    "slug": "stretched-canvas-print",
+    "name": "Stretched Canvas Print",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Canvas Prints",
+    "description": "Canvas stretched taut over a solid wooden frame with gallery-wrapped edges — ready to hang straight out of the box.",
+    "basePrice": 28,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "stretched-canvas-print.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 90,
+    "id": "prod-classic-framed-canvas",
+    "slug": "classic-framed-canvas",
+    "name": "Classic Framed Canvas",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Canvas Prints",
+    "description": "A stretched canvas print finished with an additional outer wooden frame, for a traditional gallery presentation.",
+    "basePrice": 48,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "classic-framed-canvas.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 91,
+    "id": "prod-pop-up-banner-hardcase-straight",
+    "slug": "pop-up-banner-hardcase-straight",
+    "name": "Pop-Up Banner Hardcase (Straight)",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Display Stands",
+    "description": "A tension-fabric pop-up display system with a straight profile, packed into its own wheeled hardcase for trade show travel.",
+    "basePrice": 185,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "pop-up-banner-hardcase-straight.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1574299213979-ad327da06aeb?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 92,
+    "id": "prod-spring-a-board",
+    "slug": "spring-a-board",
+    "name": "Spring A-Board",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Display Stands",
+    "description": "A weatherproof spring-hinged A-frame pavement sign that folds flat for storage between uses.",
+    "basePrice": 68,
+    "useCases": "Corporate & Office, Food & Beverage",
+    "suggestedFilename": "spring-a-board.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1561998338-13ad7883b20f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 93,
+    "id": "prod-sail-flag",
+    "slug": "sail-flag",
+    "name": "Sail Flag",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Display Stands",
+    "description": "A feather-shaped sail flag on a pole and cross base, printed full color for outdoor visibility at events and forecourts.",
+    "basePrice": 75,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "sail-flag.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1590415041359-c6dd3f511020?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 94,
+    "id": "prod-custom-table-cloth",
+    "slug": "custom-table-cloth",
+    "name": "Custom Table Cloth",
+    "rootCategory": "Large Prints",
+    "categoryPath": "Large Prints > Display Stands",
+    "description": "A fitted or full-drop table throw printed edge-to-edge with your branding, sized for standard trade show tables.",
+    "basePrice": 58,
+    "useCases": "Corporate & Office, Events & Weddings",
+    "suggestedFilename": "custom-table-cloth.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1558535284-3ade92aa58d4?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 95,
+    "id": "prod-plastic-pens",
+    "slug": "plastic-pens",
+    "name": "Plastic Pens",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "Branded plastic ballpoint pens — the most economical corporate giveaway, printed with your logo.",
+    "basePrice": 8,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "plastic-pens.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1611619899256-5e61d4c46df9?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 96,
+    "id": "prod-metal-pens",
+    "slug": "metal-pens",
+    "name": "Metal Pens",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "A heavier metal-barrel ballpoint pen with a satin or gunmetal finish, for a gift that feels more substantial.",
+    "basePrice": 35,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "metal-pens.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1611619899256-5e61d4c46df9?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 97,
+    "id": "prod-metal-business-card-case",
+    "slug": "metal-business-card-case",
+    "name": "Metal Business Card Case",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "A slim metal case that holds a stack of business cards protected in a jacket or bag pocket.",
+    "basePrice": 45,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "metal-business-card-case.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 98,
+    "id": "prod-usb-card-sticks",
+    "slug": "usb-card-sticks",
+    "name": "USB Card Sticks",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "A credit-card-shaped USB flash drive that snaps out a full-size connector, printed edge-to-edge with your branding.",
+    "basePrice": 180,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "usb-card-sticks.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 99,
+    "id": "prod-mouse-pads",
+    "slug": "mouse-pads",
+    "name": "Mouse Pads",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "A full-color printed mouse pad with a cloth top and non-slip rubber base.",
+    "basePrice": 25,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "mouse-pads.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 100,
+    "id": "prod-power-banks",
+    "slug": "power-banks",
+    "name": "Power Banks",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "A portable USB power bank printed with your logo — a high-utility gift that keeps your brand in daily use.",
+    "basePrice": 350,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "power-banks.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1585995603413-eb35b5f4a50b?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 101,
+    "id": "prod-coffee-mugs-gloss-finish",
+    "slug": "coffee-mugs-gloss-finish",
+    "name": "Coffee Mugs (Gloss Finish)",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "A ceramic coffee mug in a bright gloss finish, full-color wrap printed and dishwasher safe.",
+    "basePrice": 55,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "coffee-mugs-gloss-finish.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1610632380989-680fe40816c6?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 102,
+    "id": "prod-metal-key-ring",
+    "slug": "metal-key-ring",
+    "name": "Metal Key Ring",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "A durable metal keychain with your logo laser-etched or printed onto the tag.",
+    "basePrice": 18,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "metal-key-ring.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1575908539614-ff89490f4a78?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 103,
+    "id": "prod-plastic-id-cards",
+    "slug": "plastic-id-cards",
+    "name": "Plastic ID Cards",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "Printed PVC identity cards for staff, events or membership programs.",
+    "basePrice": 6,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "plastic-id-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1637070155805-e6fbee6ec2cf?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 104,
+    "id": "prod-magnet-name-badges",
+    "slug": "magnet-name-badges",
+    "name": "Magnet Name Badges",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "A no-pinhole magnetic name badge that clips through fabric without damaging it.",
+    "basePrice": 14,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "magnet-name-badges.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1516384100354-0e0bbc0d2e00?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 105,
+    "id": "prod-a5-pu-leather-notebooks",
+    "slug": "a5-pu-leather-notebooks",
+    "name": "A5 PU Leather Notebooks",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "An A5 notebook bound in soft PU leather with a debossed or foiled logo on the cover.",
+    "basePrice": 85,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "a5-pu-leather-notebooks.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 106,
+    "id": "prod-cotton-tote-bags",
+    "slug": "cotton-tote-bags",
+    "name": "Cotton Tote Bags",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "A sturdy cotton canvas tote screen-printed with your logo — a practical, reusable giveaway.",
+    "basePrice": 28,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "cotton-tote-bags.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 107,
+    "id": "prod-custom-water-bottles",
+    "slug": "custom-water-bottles",
+    "name": "Custom Water Bottles",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "An insulated stainless steel or aluminum water bottle, laser-etched or printed with your branding.",
+    "basePrice": 65,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "custom-water-bottles.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 108,
+    "id": "prod-pvc-nfc-cards",
+    "slug": "pvc-nfc-cards",
+    "name": "PVC NFC Cards",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Corporate Gifts",
+    "description": "A tap-to-share smart PVC card with an embedded NFC chip, programmed to open your link, profile or menu.",
+    "basePrice": 95,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "pvc-nfc-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1613243555988-441166d4d6fd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 109,
+    "id": "prod-photo-strips",
+    "slug": "photo-strips",
+    "name": "Photo Strips",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Photo Gifts",
+    "description": "Photobooth-style photo strips printed on glossy or matte photo paper — a popular wedding and event favor.",
+    "basePrice": 6,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "photo-strips.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1742415888176-7de4e0b250cd?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 110,
+    "id": "prod-photo-mini-books",
+    "slug": "photo-mini-books",
+    "name": "Photo Mini Books",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Photo Gifts",
+    "description": "A small flip-through photo book with a soft or hard cover, perfect as a pocket-sized keepsake.",
+    "basePrice": 110,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "photo-mini-books.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1677064061401-f77f966ff8a1?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 111,
+    "id": "prod-photo-greeting-cards",
+    "slug": "photo-greeting-cards",
+    "name": "Photo Greeting Cards",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Photo Gifts",
+    "description": "A folded greeting card personalized with your photo on the front, with a matching envelope included.",
+    "basePrice": 15,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "photo-greeting-cards.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1554894872-1a01c75f7513?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 112,
+    "id": "prod-photo-stickers",
+    "slug": "photo-stickers",
+    "name": "Photo Stickers",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Photo Gifts",
+    "description": "Personalized photo stickers on glossy or matte vinyl — great for favors, scrapbooking and packaging.",
+    "basePrice": 4,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "photo-stickers.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1618172193622-ae2d025f4032?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 113,
+    "id": "prod-photo-calendars",
+    "slug": "photo-calendars",
+    "name": "Photo Calendars",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Photo Gifts",
+    "description": "A personalized wall calendar built around your own photos, one image per monthly spread.",
+    "basePrice": 18,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "photo-calendars.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1535981767287-35259dbf7d0e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 114,
+    "id": "prod-photo-canvas",
+    "slug": "photo-canvas",
+    "name": "Photo Canvas",
+    "rootCategory": "Gift Prints",
+    "categoryPath": "Gift Prints > Photo Gifts",
+    "description": "Your favorite photo printed on canvas and stretched on a wooden frame, ready to hang.",
+    "basePrice": 65,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "photo-canvas.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1608232034071-c604ddc8470a?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 115,
+    "id": "prod-unisex-light-weight-t-shirt",
+    "slug": "unisex-light-weight-t-shirt",
+    "name": "Unisex Light Weight T-Shirt",
+    "rootCategory": "T-shirt Prints",
+    "categoryPath": "T-shirt Prints > Round Neck T-Shirts",
+    "description": "A breathable 160gsm single-jersey cotton tee in a unisex fit — the everyday choice for event merch and team wear.",
+    "basePrice": 120,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "unisex-light-weight-t-shirt.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 116,
+    "id": "prod-unisex-heavy-weight-t-shirt",
+    "slug": "unisex-heavy-weight-t-shirt",
+    "name": "Unisex Heavy Weight T-Shirt",
+    "rootCategory": "T-shirt Prints",
+    "categoryPath": "T-shirt Prints > Round Neck T-Shirts",
+    "description": "A substantial 220gsm cotton tee with a thicker handfeel and better shape retention through repeated washes.",
+    "basePrice": 165,
+    "useCases": "Events & Weddings, Corporate & Office",
+    "suggestedFilename": "unisex-heavy-weight-t-shirt.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 117,
+    "id": "prod-kids-light-weight-t-shirt",
+    "slug": "kids-light-weight-t-shirt",
+    "name": "Kids Light Weight T-Shirt",
+    "rootCategory": "T-shirt Prints",
+    "categoryPath": "T-shirt Prints > Round Neck T-Shirts",
+    "description": "The same soft 160gsm cotton tee cut for kids, sized by age from 2-3 years up to 10-11 years.",
+    "basePrice": 95,
+    "useCases": "Events & Weddings",
+    "suggestedFilename": "kids-light-weight-t-shirt.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 118,
+    "id": "prod-polo-shirts",
+    "slug": "polo-shirts",
+    "name": "Polo Shirts",
+    "rootCategory": "T-shirt Prints",
+    "categoryPath": "T-shirt Prints > Polo T-Shirts",
+    "description": "A collared pique-knit polo in a structured unisex fit — the standard for staff uniforms and corporate dress codes.",
+    "basePrice": 220,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "polo-shirts.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 119,
+    "id": "prod-fast-food-boxes",
+    "slug": "fast-food-boxes",
+    "name": "Fast Food Boxes",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Food Boxes",
+    "description": "A single-compartment grease-resistant box for burgers, fries and takeaway meals, printed full color.",
+    "basePrice": 2.2,
+    "useCases": "Food & Beverage",
+    "suggestedFilename": "fast-food-boxes.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1626253934161-08cfea22e968?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 120,
+    "id": "prod-bakery-food-boxes",
+    "slug": "bakery-food-boxes",
+    "name": "Bakery Food Boxes",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Food Boxes",
+    "description": "A cake and pastry box sized to protect delicate bakes in transit, with an optional clear window.",
+    "basePrice": 3.2,
+    "useCases": "Food & Beverage",
+    "suggestedFilename": "bakery-food-boxes.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1626253934161-08cfea22e968?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 121,
+    "id": "prod-retail-product-box",
+    "slug": "retail-product-box",
+    "name": "Retail Product Box",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Product Boxes",
+    "description": "A standard rectangular retail box for shipping and shelf display, printed full color on your choice of board.",
+    "basePrice": 2.6,
+    "useCases": "E-commerce & DTC, Beauty & Cosmetics",
+    "suggestedFilename": "retail-product-box.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 122,
+    "id": "prod-shape-product-box",
+    "slug": "shape-product-box",
+    "name": "Shape Product Box",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Product Boxes",
+    "description": "A die-cut product box in a shape beyond the standard rectangle — pillow, hexagon or a custom outline of your own.",
+    "basePrice": 3.8,
+    "useCases": "E-commerce & DTC, Beauty & Cosmetics",
+    "suggestedFilename": "shape-product-box.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 123,
+    "id": "prod-glued-mailer-wallets",
+    "slug": "glued-mailer-wallets",
+    "name": "Glued Mailer Wallets",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Mailer Wallets",
+    "description": "A rigid glued wallet-style mailer that opens like an envelope — built for books, prints and flat items that need a stiff mailer, not a folding box.",
+    "basePrice": 3,
+    "useCases": "E-commerce & DTC",
+    "suggestedFilename": "glued-mailer-wallets.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1607166452427-7e4477079cb9?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 124,
+    "id": "prod-countertop-display-boxes",
+    "slug": "countertop-display-boxes",
+    "name": "Countertop Display Boxes",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Display Boxes",
+    "description": "A point-of-sale display box that holds multiple retail units upright on a checkout counter, litho-laminated for shelf-ready print quality.",
+    "basePrice": 6.5,
+    "useCases": "E-commerce & DTC, Beauty & Cosmetics",
+    "suggestedFilename": "countertop-display-boxes.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1656543802898-41c8c46683a7?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 125,
+    "id": "prod-hook-display-boxes",
+    "slug": "hook-display-boxes",
+    "name": "Hook Display Boxes",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Display Boxes",
+    "description": "A peg-board ready display box with a die-cut hang hole, for retail aisles and impulse-buy end caps.",
+    "basePrice": 4.5,
+    "useCases": "E-commerce & DTC",
+    "suggestedFilename": "hook-display-boxes.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1656543802898-41c8c46683a7?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 126,
+    "id": "prod-standard-paper-bags",
+    "slug": "standard-paper-bags",
+    "name": "Standard Paper Bags",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Paper Bags",
+    "description": "A glossy laminated paper carry bag with twisted handles, printed full color for retail checkout and gifting.",
+    "basePrice": 1.2,
+    "useCases": "E-commerce & DTC, Fashion & Apparel",
+    "suggestedFilename": "standard-paper-bags.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 127,
+    "id": "prod-brown-kraft-paper-bags",
+    "slug": "brown-kraft-paper-bags",
+    "name": "Brown Kraft Paper Bags",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Paper Bags",
+    "description": "An uncoated natural kraft carry bag with flat or twisted handles — an eco-forward look for cafes and craft retail.",
+    "basePrice": 1.1,
+    "useCases": "Food & Beverage, E-commerce & DTC",
+    "suggestedFilename": "brown-kraft-paper-bags.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 128,
+    "id": "prod-custom-receipt-books",
+    "slug": "custom-receipt-books",
+    "name": "Custom Receipt Books",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Invoice Books",
+    "description": "A carbonless duplicate receipt book, numbered and perforated for easy tear-off, for retail and service billing.",
+    "basePrice": 8,
+    "useCases": "Corporate & Office, Food & Beverage",
+    "suggestedFilename": "custom-receipt-books.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 129,
+    "id": "prod-a6-custom-ncr-bill-books",
+    "slug": "a6-custom-ncr-bill-books",
+    "name": "A6 Custom NCR Bill Books",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Invoice Books",
+    "description": "A carbonless NCR bill book sized A6, numbered and bound for daily invoicing and delivery notes.",
+    "basePrice": 10,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "a6-custom-ncr-bill-books.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 130,
+    "id": "prod-a5-custom-ncr-bill-books",
+    "slug": "a5-custom-ncr-bill-books",
+    "name": "A5 Custom NCR Bill Books",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Invoice Books",
+    "description": "A carbonless NCR bill book sized A5, numbered and bound for daily invoicing and delivery notes.",
+    "basePrice": 14,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "a5-custom-ncr-bill-books.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 131,
+    "id": "prod-a4-custom-ncr-bill-books",
+    "slug": "a4-custom-ncr-bill-books",
+    "name": "A4 Custom NCR Bill Books",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Invoice Books",
+    "description": "A carbonless NCR bill book sized A4, numbered and bound for daily invoicing and delivery notes.",
+    "basePrice": 20,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "a4-custom-ncr-bill-books.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1572645098182-5e28a03f1b60?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 132,
+    "id": "prod-self-ink-stamp",
+    "slug": "self-ink-stamp",
+    "name": "Self-Ink Stamp",
+    "rootCategory": "Business Prints",
+    "categoryPath": "Business Prints > Stamps",
+    "description": "A pre-inked self-ink stamp for your logo, signature or approval mark — good for thousands of clean impressions before re-inking.",
+    "basePrice": 45,
+    "useCases": "Corporate & Office",
+    "suggestedFilename": "self-ink-stamp.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1611075551111-dfda5f9c6f02?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 133,
+    "id": "prod-custom-paper-cups",
+    "slug": "custom-paper-cups",
+    "name": "Custom Paper Cups",
+    "rootCategory": "Promo Prints",
+    "categoryPath": "Promo Prints > Hospitality",
+    "description": "Double-wall or single-wall paper cups printed with your branding — for coffee, cold drinks or takeaway service.",
+    "basePrice": 1.8,
+    "useCases": "Food & Beverage",
+    "suggestedFilename": "custom-paper-cups.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1598908314732-07113901949e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 134,
+    "id": "prod-ready-made-kraft-paper-bags",
+    "slug": "ready-made-kraft-paper-bags",
+    "name": "Ready-Made Kraft Paper Bags",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Paper Bags",
+    "description": "In-stock plain kraft paper bags in a choice of colors, ready for immediate dispatch — no print setup or lead time.",
+    "basePrice": 3,
+    "useCases": "E-commerce & DTC, Fashion & Apparel",
+    "suggestedFilename": "ready-made-kraft-paper-bags.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  },
+  {
+    "index": 135,
+    "id": "prod-luxury-paper-bags",
+    "slug": "luxury-paper-bags",
+    "name": "Luxury Paper Bags",
+    "rootCategory": "Packaging",
+    "categoryPath": "Packaging > Paper Bags",
+    "description": "A premium shopping bag on heavyweight laminated stock with rope handles — for boutique retail, gifting and unboxing moments.",
+    "basePrice": 5.5,
+    "useCases": "Fashion & Apparel, Beauty & Cosmetics, Events & Weddings",
+    "suggestedFilename": "luxury-paper-bags.webp",
+    "currentImages": [
+      "https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=900&q=80"
+    ],
+    "hasLocalImage": false,
+    "hasUnsplash": true
+  }
+]

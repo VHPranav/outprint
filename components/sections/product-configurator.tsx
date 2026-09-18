@@ -26,8 +26,6 @@ import type {
   MaterialOptionGroup,
   AddonsOptionGroup,
 } from "@/data/products";
-import { calculatePrice, type PriceSelections } from "@/data/pricing";
-import { formatCurrency } from "@/lib/currency";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { addToCart, type CartItem } from "@/lib/cart";
 import {
@@ -36,7 +34,6 @@ import {
   clearAttachedDesign,
   type AttachedDesign,
 } from "@/lib/design-attachment";
-import { RESOLUTION_ENHANCEMENT_PRICE } from "@/lib/resolution-check";
 import { toInches, LENGTH_UNITS, type LengthUnit } from "@/lib/units";
 import { resolveDesignSize } from "@/lib/design-size";
 import { getCategoryAncestors } from "@/lib/catalog";
@@ -108,46 +105,11 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [product.slug]);
 
-  const customSizeInInches = React.useMemo(() => {
-    if (!isCustomSize) return undefined;
-    const width = parseFloat(customWidth);
-    const height = parseFloat(customHeight);
-    if (Number.isNaN(width) || Number.isNaN(height)) return undefined;
-    return toInches(Math.max(width, height), unit);
-  }, [isCustomSize, customWidth, customHeight, unit]);
-
   const sizeDisplayLabel = isCustomSize
     ? customWidth && customHeight
       ? `${customWidth}${unit} x ${customHeight}${unit} (custom)`
       : undefined
     : selectedSizeLabel;
-
-  const selections: PriceSelections = React.useMemo(
-    () => ({
-      shape: selectedShape,
-      sizeLabel: isCustomSize ? undefined : selectedSizeLabel,
-      customSizeInInches,
-      quantity,
-      materialLabel: selectedMaterial,
-      addonLabels: selectedAddons,
-    }),
-    [selectedShape, isCustomSize, selectedSizeLabel, customSizeInInches, quantity, selectedMaterial, selectedAddons]
-  );
-
-  const price = React.useMemo(() => calculatePrice(product, selections), [product, selections]);
-
-  // A flat one-time fee (not per-unit) for the manual upscale/cleanup add-on
-  // offered by the upload flow when the artwork's resolution runs low.
-  const enhancementFee = attachedDesign?.resolutionEnhancement ? RESOLUTION_ENHANCEMENT_PRICE : 0;
-  const grandTotal = price.totalPrice + price.gstAmount + enhancementFee;
-
-  const tierPrices = React.useMemo(() => {
-    if (!quantityGroup) return [];
-    return quantityGroup.tiers.map((tier) => ({
-      tier,
-      unitPrice: calculatePrice(product, { ...selections, quantity: tier }).unitPrice,
-    }));
-  }, [quantityGroup, product, selections]);
 
   function toggleAddon(label: string) {
     setSelectedAddons((current) =>
@@ -173,13 +135,9 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
           material: selectedMaterial,
           addons: selectedAddons,
         },
-        unitPrice: price.unitPrice,
-        totalPrice: price.totalPrice + enhancementFee,
         designFileUrl: attachedDesign.url,
         notes: attachedDesign.resolutionEnhancement
-          ? `Resolution Enhancement requested (+${formatCurrency(
-              RESOLUTION_ENHANCEMENT_PRICE
-            )}) — uploaded artwork is lower resolution than recommended for the selected size; please clean up/upscale before production.`
+          ? `Resolution Enhancement requested — uploaded artwork is lower resolution than recommended for the selected size; please clean up/upscale before production.`
           : undefined,
       });
       window.open(link, "_blank", "noopener,noreferrer");
@@ -198,8 +156,6 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
       productName: product.name,
       image: product.images[0],
       quantity,
-      unitPrice: price.unitPrice,
-      totalPrice: price.totalPrice + enhancementFee,
       selections: {
         shape: selectedShape,
         size: sizeDisplayLabel,
@@ -361,9 +317,9 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              {tierPrices.map(({ tier, unitPrice }) => (
+              {quantityGroup.tiers.map((tier) => (
                 <SelectItem key={tier} value={String(tier)}>
-                  {tier} pcs — {formatCurrency(unitPrice)}/pc
+                  {tier} pcs
                 </SelectItem>
               ))}
             </SelectContent>
@@ -428,33 +384,12 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
                     <span className="block text-sm font-medium text-neutral-900">{option.label}</span>
                     <span className="block text-xs text-neutral-500">{option.description}</span>
                   </span>
-                  <span className="shrink-0 text-xs font-medium text-neutral-700">
-                    +{formatCurrency(option.priceDelta)}
-                  </span>
                 </button>
               );
             })}
           </div>
         </div>
       )}
-
-      {/* 7. Live price display */}
-      <div className="rounded-2xl bg-black p-5 text-white">
-        <div className="flex items-baseline justify-between">
-          <span className="text-xs uppercase tracking-wider text-neutral-400">Unit Price</span>
-          <span className="font-serif text-2xl">{formatCurrency(price.unitPrice)}</span>
-        </div>
-        <div className="mt-3 flex items-baseline justify-between border-t border-white/10 pt-3">
-          <span className="text-xs uppercase tracking-wider text-neutral-400">
-            Total for {quantity} pcs (incl. VAT)
-          </span>
-          <span className="text-xl font-semibold">{formatCurrency(grandTotal)}</span>
-        </div>
-        <p className="mt-1.5 text-[11px] text-neutral-500">
-          Subtotal {formatCurrency(price.totalPrice)} + VAT (5%) {formatCurrency(price.vatAmount ?? price.gstAmount)}
-          {enhancementFee > 0 && ` + Resolution Enhancement ${formatCurrency(enhancementFee)}`}
-        </p>
-      </div>
 
       {/* 8. How do you want to start? */}
       <div>
@@ -513,7 +448,7 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
               {attachedDesign.resolutionEnhancement && (
                 <p className="mt-1 flex items-center gap-1 text-xs font-medium text-amber-700">
                   <Sparkles className="h-3 w-3" />
-                  Resolution Enhancement requested (+{formatCurrency(RESOLUTION_ENHANCEMENT_PRICE)})
+                  Resolution Enhancement requested
                 </p>
               )}
             </div>
@@ -542,7 +477,7 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
         </span>
         <span className="flex items-center gap-1.5">
           <TrendingDown className="h-3.5 w-3.5" />
-          Lower Bulk Pricing
+          Bulk Order Discounts
         </span>
         <span className="flex items-center gap-1.5">
           <MessageCircle className="h-3.5 w-3.5" />

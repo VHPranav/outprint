@@ -24,6 +24,7 @@ export function SameDayPrinting() {
 
   return (
     <SectionCarousel
+      id="same-day"
       title="Same Day Printing"
       subtitle="Get your prints ready the same day — fast and reliable across the UAE."
       ariaLabel="Same day printing products"

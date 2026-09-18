@@ -21,8 +21,8 @@ import {
 const howToOrderSteps = [
   {
     icon: Palette,
-    title: "Configure & get instant pricing",
-    description: "Pick shape, size, quantity and material — the price updates live, no quote needed.",
+    title: "Configure your order",
+    description: "Pick shape, size, quantity and material for your product.",
   },
   {
     icon: UploadCloud,

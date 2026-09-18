@@ -4,7 +4,6 @@
 // count and any future cart page all read/write this same storage key.
 
 import * as React from "react";
-import { getQuantityMultiplier, round2 } from "@/data/pricing";
 
 const CART_STORAGE_KEY = "outprint_cart";
 const CART_UPDATED_EVENT = "outprint:cart-updated";
@@ -24,8 +23,6 @@ export interface CartItem {
   productName: string;
   image: string;
   quantity: number;
-  unitPrice: number;
-  totalPrice: number;
   selections: CartItemSelections;
   designFileUrl?: string;
 }
@@ -71,11 +68,7 @@ export function clearCart(): void {
 }
 
 /**
- * Adjusts a line's quantity by `delta` and rescales its unit price along the
- * same bulk-discount curve used at add-to-cart time (see data/pricing.ts) —
- * dividing out the multiplier baked in at the old quantity and reapplying it
- * at the new one, so a jump from 25 to 100 units reflects the same discount
- * the product page would have shown.
+ * Adjusts a line's quantity by `delta`.
  *
  * Takes a delta (not an absolute target) and re-reads the current quantity
  * from storage on every call, rather than trusting a quantity value the
@@ -87,9 +80,7 @@ export function adjustCartItemQuantity(id: string, delta: number): void {
   const items = getCart().map((item) => {
     if (item.id !== id) return item;
     const safeQuantity = Math.max(1, item.quantity + delta);
-    const baseUnitPrice = item.unitPrice / getQuantityMultiplier(item.quantity);
-    const unitPrice = round2(baseUnitPrice * getQuantityMultiplier(safeQuantity));
-    return { ...item, quantity: safeQuantity, unitPrice, totalPrice: round2(unitPrice * safeQuantity) };
+    return { ...item, quantity: safeQuantity };
   });
   saveCart(items);
 }

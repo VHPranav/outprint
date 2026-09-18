@@ -1,6 +1,6 @@
-// Length-unit conversion for the custom-size configurator input. The
-// pricing engine only understands inches (see data/pricing.ts), so any
-// mm/cm entry gets converted before it reaches calculatePrice.
+// Length-unit conversion for the custom-size configurator input. Design
+// sizing only understands inches, so any mm/cm entry gets converted before
+// it's used to resolve a design canvas or run a resolution check.
 
 export type LengthUnit = "in" | "mm" | "cm";
 

@@ -229,7 +229,7 @@ export function HeroSection({ onOpenProof, onRequestSample }: HeroSectionProps) 
       </div>
 
       {/* Promo carousel + same-day banner */}
-      <div className="pb-6 sm:pb-8">
+      <div className="hidden pb-6 sm:block sm:pb-8">
       <div className="mx-auto grid w-[90%] max-w-[1600px] grid-cols-1 gap-4 sm:gap-5 lg:grid-cols-[2fr_1fr]">
         {/* Large promo carousel */}
         <div

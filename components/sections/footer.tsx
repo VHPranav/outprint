@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { MessageCircle, Mail, MapPin } from "lucide-react";
 import { getCategoryTree } from "@/lib/catalog";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
@@ -42,9 +43,15 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16 sm:px-8">
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-4">
           <div className="col-span-2 sm:col-span-1">
-            <span className="font-logo font-bold text-4xl leading-none text-black">
-              Outprint
-            </span>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/logo.png"
+                alt="Outprint"
+                width={142}
+                height={40}
+                className="h-8 w-auto object-contain sm:h-9"
+              />
+            </Link>
             <p className="mt-3 max-w-[220px] text-sm leading-relaxed text-neutral-500">
               Bespoke print & packaging, engineered for the modern digital era.
             </p>

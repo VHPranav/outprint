@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ShoppingBag, MessageCircle, Menu, X } from "lucide-react";
 import { getMegaMenuGroups } from "@/lib/nav-menu";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
@@ -30,9 +31,14 @@ export function Navbar() {
       <header className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:px-8">
         <div className="flex min-w-0 items-center gap-8">
           <Link href="/" className="flex shrink-0 items-center">
-            <span className="font-logo font-bold text-3xl leading-none text-black sm:text-4xl">
-              Outprint
-            </span>
+            <Image
+              src="/logo.png"
+              alt="Outprint"
+              width={142}
+              height={40}
+              priority
+              className="h-7 w-auto object-contain sm:h-8"
+            />
           </Link>
 
           <MegaMenu groups={menuGroups} />

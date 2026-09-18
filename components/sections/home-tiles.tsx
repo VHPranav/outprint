@@ -4,7 +4,7 @@ import Image from "next/image";
 import type { Category } from "@/data/categories";
 import type { Product } from "@/data/products";
 import { categories } from "@/data/categories";
-import { getMinQuantity, getCategoryImage } from "@/lib/catalog";
+import { getCategoryImage } from "@/lib/catalog";
 
 export const TILE_GRID_CLASS =
   "grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4 lg:gap-6";
@@ -109,9 +109,7 @@ export function ProductTile({ product, variant = "plain" }: ProductTileProps) {
           <h3 className="line-clamp-2 text-sm font-medium leading-snug text-neutral-900">
             {product.name}
           </h3>
-          <p className="mt-1 text-xs text-neutral-500">
-            MOQ <span className="font-medium text-neutral-900">{getMinQuantity(product)}</span> pcs
-          </p>
+          {category && <p className="mt-1 text-xs text-neutral-500">{category.name}</p>}
         </div>
       </Link>
     );

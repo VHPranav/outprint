@@ -26,7 +26,7 @@ export function InspirationBanner() {
         </p>
         <Link
           href="/hire-a-designer"
-          className="mt-7 inline-flex h-11 items-center rounded-lg bg-black px-7 text-sm font-medium text-white transition-colors hover:bg-neutral-800"
+          className="mt-7 inline-flex h-11 items-center rounded-lg bg-white px-7 text-sm font-medium text-neutral-950 transition-colors hover:bg-neutral-200"
         >
           Hire a Designer
         </Link>

@@ -2,7 +2,7 @@
 // import from @/data directly or re-implement lookup/tree-building logic.
 
 import { categories, type Category } from "@/data/categories";
-import { products, type Product, type QuantityOptionGroup } from "@/data/products";
+import { products, type Product } from "@/data/products";
 
 export interface CategoryNode extends Category {
   children: CategoryNode[];
@@ -116,14 +116,6 @@ export function getProductsByCategory(
 
   const categoryIds = collectCategoryIds(category.id);
   return products.filter((product) => categoryIds.has(product.categoryId));
-}
-
-/** Smallest orderable quantity (MOQ) for a product, or 1 if it has no quantity tiers. */
-export function getMinQuantity(product: Product): number {
-  const quantityGroup = product.optionGroups.find(
-    (group): group is QuantityOptionGroup => group.type === "quantity"
-  );
-  return quantityGroup ? Math.min(...quantityGroup.tiers) : 1;
 }
 
 /** Case-insensitive substring search over product name/description. Empty query returns no results. */

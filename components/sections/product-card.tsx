@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/data/products";
 import { categories } from "@/data/categories";
-import { getMinQuantity } from "@/lib/catalog";
 
 interface ProductCardProps {
   product: Product;
@@ -28,7 +27,6 @@ export function ProductCard({
   theme = "light",
 }: ProductCardProps) {
   const category = categories.find((c) => c.id === product.categoryId);
-  const minQuantity = getMinQuantity(product);
   const isDark = theme === "dark";
 
   // Clean borderless style matching reference screenshot
@@ -83,13 +81,6 @@ export function ProductCard({
           >
             {truncate(product.description, 70)}
           </p>
-          <p
-            className={`mt-2 text-xs sm:text-sm ${
-              isDark ? "text-neutral-300" : "text-neutral-600"
-            }`}
-          >
-            MOQ <span className={`font-medium ${isDark ? "text-white" : "text-black"}`}>{minQuantity}</span> pcs
-          </p>
         </div>
       </Link>
     );
@@ -129,9 +120,6 @@ export function ProductCard({
         </h3>
         <p className="mt-1 text-xs leading-relaxed text-neutral-500">
           {truncate(product.description, 70)}
-        </p>
-        <p className="mt-auto pt-4 text-sm text-neutral-600">
-          MOQ <span className="font-medium text-black">{minQuantity}</span> pcs
         </p>
       </div>
     </Link>

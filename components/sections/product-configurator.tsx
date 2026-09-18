@@ -211,7 +211,6 @@ export function ProductConfigurator({ product }: ProductConfiguratorProps) {
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-neutral-600">{product.description}</p>
         <div className="mt-4 flex flex-wrap gap-2">
-          <Badge variant="secondary">MOQ {minQuantity} pcs</Badge>
           <Badge variant="secondary">Ships in 5–7 days</Badge>
         </div>
       </div>

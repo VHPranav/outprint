@@ -58,11 +58,6 @@ const faqs = [
       "Yes — every order includes a free digital proof. Production only starts after you approve it over WhatsApp.",
   },
   {
-    question: "Can I order below the minimum quantity?",
-    answer:
-      "Our tiers start at the smallest listed quantity for this product. Message us on WhatsApp if you need a smaller custom run.",
-  },
-  {
     question: "How long does production take?",
     answer:
       "Most orders ship in 5-7 business days after proof approval. Rush production is available as an add-on where offered.",

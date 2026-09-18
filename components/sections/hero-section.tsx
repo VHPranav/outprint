@@ -31,7 +31,7 @@ export function HeroSection() {
             own artwork. Every order is confirmed by a real person on WhatsApp.
           </p>
           <Link
-            href="#popular-categories"
+            href="/design-studio"
             className="group mt-8 inline-flex h-12 items-center gap-2 rounded-lg bg-black px-7 text-sm font-medium text-white transition-colors hover:bg-neutral-800"
           >
             Design &amp; Print Instantly

@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Generated image staging/review output (duplicates of public/images/products)
+scripts/product-image-samples/
+scripts/product-image-review/

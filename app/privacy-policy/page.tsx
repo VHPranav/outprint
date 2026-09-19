@@ -85,7 +85,7 @@ export default function PrivacyPolicyPage() {
       </LegalP>
 
       <LegalH2>Contact us</LegalH2>
-      <LegalP>Questions about this policy? Reach us at hello@outprint.co or via the WhatsApp button on this site.</LegalP>
+      <LegalP>Questions about this policy? Reach us at bd@outriftmedia.com or via the WhatsApp button on this site.</LegalP>
     </LegalPageLayout>
   );
 }

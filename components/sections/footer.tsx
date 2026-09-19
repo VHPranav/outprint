@@ -4,13 +4,12 @@ import Image from "next/image";
 import { MessageCircle, Mail, MapPin } from "lucide-react";
 import { getCategoryTree } from "@/lib/catalog";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
-import { InstagramIcon, XIcon, LinkedinIcon, FacebookIcon } from "@/components/ui/brand-icons";
+import { InstagramIcon, ThreadsIcon, FacebookIcon } from "@/components/ui/brand-icons";
 
 const socialLinks = [
-  { label: "Instagram", href: "#", Icon: InstagramIcon },
-  { label: "X", href: "#", Icon: XIcon },
-  { label: "LinkedIn", href: "#", Icon: LinkedinIcon },
-  { label: "Facebook", href: "#", Icon: FacebookIcon },
+  { label: "Instagram", href: "https://www.instagram.com/outprint.ae/", Icon: InstagramIcon },
+  { label: "Threads", href: "https://www.threads.com/@outprint.ae", Icon: ThreadsIcon },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61594255807019", Icon: FacebookIcon },
 ];
 
 const companyLinks = [
@@ -60,6 +59,8 @@ export function Footer() {
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="flex h-8 w-8 items-center justify-center rounded-full border border-black/20 text-neutral-800 transition-colors hover:border-black hover:text-black"
                 >
@@ -117,7 +118,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2.5">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-neutral-700" />
-                <span>hello@outprint.co</span>
+                <span>bd@outriftmedia.com</span>
               </li>
             </ul>
             {whatsappHref ? (

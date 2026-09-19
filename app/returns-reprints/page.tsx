@@ -61,7 +61,7 @@ export default function ReturnsReprintsPage() {
       </LegalP>
 
       <LegalH2>Contact us</LegalH2>
-      <LegalP>To start a claim, message us on WhatsApp or email hello@outprint.co with your order details.</LegalP>
+      <LegalP>To start a claim, message us on WhatsApp or email bd@outriftmedia.com with your order details.</LegalP>
     </LegalPageLayout>
   );
 }

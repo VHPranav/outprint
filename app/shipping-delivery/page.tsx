@@ -60,7 +60,7 @@ export default function ShippingDeliveryPage() {
       <LegalH2>Contact us</LegalH2>
       <LegalP>
         For a shipping estimate before you order, or an update on an order in progress, message us on
-        WhatsApp or email hello@outprint.co.
+        WhatsApp or email bd@outriftmedia.com.
       </LegalP>
     </LegalPageLayout>
   );

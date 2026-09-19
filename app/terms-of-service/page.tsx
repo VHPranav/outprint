@@ -79,7 +79,7 @@ export default function TermsOfServicePage() {
       </LegalP>
 
       <LegalH2>Contact us</LegalH2>
-      <LegalP>Questions about these terms? Reach us at hello@outprint.co or via the WhatsApp button on this site.</LegalP>
+      <LegalP>Questions about these terms? Reach us at bd@outriftmedia.com or via the WhatsApp button on this site.</LegalP>
     </LegalPageLayout>
   );
 }

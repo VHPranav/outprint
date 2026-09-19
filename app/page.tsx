@@ -10,6 +10,7 @@ import {
   InspirationBanner,
   RecentlyViewed,
   HandpickedForYou,
+  FoodPackaging,
   SupportBanner,
   Footer,
 } from "@/components/sections";
@@ -26,6 +27,7 @@ export default function Home() {
         <BusinessEssentials />
         <BestSellers />
         <ExploreCategories />
+        <FoodPackaging />
         <Testimonials />
         <InspirationBanner />
         <RecentlyViewed />

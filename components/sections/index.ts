@@ -16,6 +16,7 @@ export * from "./quote-banner";
 export * from "./hire-designer-banner";
 export * from "./recently-viewed";
 export * from "./handpicked-for-you";
+export * from "./food-packaging";
 export * from "./support-banner";
 export * from "./footer";
 export * from "./record-product-view";

@@ -1,109 +1,86 @@
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { ArrowRight, Type, ImageIcon, Shapes, Upload, Layers } from "lucide-react";
+import { ArrowRight, BadgeCheck, MessageCircle, Truck } from "lucide-react";
+import { products } from "@/data/products";
 import { getProductBySlug } from "@/lib/catalog";
+import { HeroShowcase, type ShowcaseItem } from "./hero-showcase";
 
-const EDITOR_TOOLS = [Type, ImageIcon, Shapes, Upload, Layers];
+// Lifestyle photography shown in the rotating showcase, in order.
+const SHOWCASE_SLUGS = [
+  "gold-foil-black-cards",
+  "standard-letterheads",
+  "c5-custom-envelopes",
+  "premium-certificates",
+  "letterpress-cotton-business-cards",
+  "pre-ink-stamp",
+];
+
+const TRUST_POINTS = [
+  { icon: BadgeCheck, label: "Free digital proof before print" },
+  { icon: MessageCircle, label: "Every order confirmed on WhatsApp" },
+  { icon: Truck, label: "Delivery across all 7 Emirates" },
+];
 
 export function HeroSection() {
-  const canvasProduct = getProductBySlug("premium-suede-business-cards");
-  const floatProduct = getProductBySlug("unisex-heavy-weight-t-shirt");
+  const showcase: ShowcaseItem[] = SHOWCASE_SLUGS.map(getProductBySlug)
+    .filter((p): p is NonNullable<typeof p> => Boolean(p))
+    .map((p) => ({ slug: p.slug, name: p.name, image: p.images[0] }));
+  const productCount = Math.floor(products.length / 10) * 10;
 
   return (
-    <section className="relative overflow-hidden bg-brand-blue pt-16 text-neutral-950">
+    <section className="relative flex min-h-screen overflow-hidden bg-gradient-to-b from-brand-blue/60 via-brand-blue/20 to-white pt-16 text-neutral-950">
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-white/40"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-32 left-1/3 h-80 w-80 rounded-full bg-white/30"
+        className="pointer-events-none absolute -right-40 top-10 h-[520px] w-[520px] rounded-full bg-white/60 blur-3xl"
       />
 
-      <div className="relative mx-auto grid w-[90%] max-w-[1400px] items-center gap-10 py-14 sm:py-16 lg:grid-cols-2 lg:gap-14 lg:py-20">
-        <div>
-          <h1 className="text-4xl font-medium leading-[1.1] tracking-tight text-neutral-950 sm:text-5xl lg:text-[3.5rem]">
-            Outprint : Print &amp; Packaging, Your Way
+      <div className="relative mx-auto grid w-[90%] max-w-[1400px] items-center gap-12 py-14 sm:py-20 lg:grid-cols-[1fr_1.05fr] lg:gap-16 my-auto">
+        {/* Copy */}
+        <div className="animate-fade-in">
+          <span className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-3.5 py-1.5 text-xs font-medium text-neutral-700 backdrop-blur-sm">
+            <span className="h-1.5 w-1.5 rounded-full bg-neutral-900" />
+            Print &amp; packaging studio · UAE
+          </span>
+
+          <h1 className="mt-6 text-[2.6rem] font-medium leading-[1.05] tracking-[-0.03em] text-neutral-950 sm:text-6xl lg:text-[4.25rem]">
+            Print that makes your brand look{" "}
+premium.
           </h1>
-          <p className="mt-5 max-w-lg text-base leading-relaxed text-neutral-700 sm:text-lg">
-            130+ print products in one place — browse templates, design online or upload your
-            own artwork. Every order is confirmed by a real person on WhatsApp.
+
+          <p className="mt-6 max-w-md text-base leading-relaxed text-neutral-600 sm:text-lg">
+            Business cards, stationery and packaging finished to a standard your customers notice.
+            Design online, use a template or upload your own artwork.
           </p>
-          <Link
-            href="/design-studio"
-            className="group mt-8 inline-flex h-12 items-center gap-2 rounded-lg bg-black px-7 text-sm font-medium text-white transition-colors hover:bg-neutral-800"
-          >
-            Design &amp; Print Instantly
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </Link>
-        </div>
 
-        {/* Design-studio preview */}
-        <div className="relative mx-auto w-full max-w-[560px] lg:max-w-none">
-          <div className="overflow-hidden rounded-2xl bg-white shadow-elevated ring-1 ring-black/5">
-            <div className="flex items-center gap-3 border-b border-neutral-200 bg-neutral-50 px-4 py-2.5">
-              <span className="flex gap-1.5">
-                <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" />
-                <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" />
-                <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" />
-              </span>
-              <span className="text-xs font-medium text-neutral-500">Design Studio</span>
-              <span className="ml-auto rounded-md bg-black px-3 py-1 text-[11px] font-medium text-white">
-                Export
-              </span>
-            </div>
-
-            <div className="flex">
-              <div className="flex w-12 shrink-0 flex-col items-center gap-3 border-r border-neutral-200 bg-white py-4 sm:w-14">
-                {EDITOR_TOOLS.map((Icon, i) => (
-                  <span
-                    key={i}
-                    className={`flex h-8 w-8 items-center justify-center rounded-lg ${
-                      i === 0 ? "bg-brand-blue text-neutral-900" : "text-neutral-400"
-                    }`}
-                  >
-                    <Icon className="h-4 w-4" />
-                  </span>
-                ))}
-              </div>
-
-              <div className="flex-1 bg-brand-blue/40 p-4 sm:p-6">
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-white shadow-card ring-1 ring-black/5">
-                  {canvasProduct && (
-                    <Image
-                      src={canvasProduct.images[0]}
-                      alt={canvasProduct.name}
-                      fill
-                      priority
-                      sizes="(min-width: 1024px) 40vw, 80vw"
-                      className="object-cover"
-                    />
-                  )}
-                  <div className="absolute inset-0 flex items-end justify-end bg-gradient-to-t from-black/55 via-black/10 to-transparent p-4 sm:p-5">
-                    <p className="text-right text-2xl font-medium leading-tight text-white sm:text-3xl">
-                      Do it
-                      <br />
-                      your way
-                    </p>
-                  </div>
-                  <span className="absolute inset-3 rounded-lg border border-dashed border-white/70" />
-                </div>
-              </div>
-            </div>
+          <div className="mt-9 flex flex-wrap items-center gap-3">
+            <Link
+              href="/design-studio"
+              className="group inline-flex h-12 items-center gap-2 rounded-full bg-black px-7 text-sm font-medium text-white transition-colors hover:bg-neutral-800"
+            >
+              Start designing
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </Link>
+            <Link
+              href="#popular-categories"
+              className="inline-flex h-12 items-center rounded-full border border-black/15 bg-white/70 px-7 text-sm font-medium text-neutral-900 backdrop-blur-sm transition-colors hover:border-black/40 hover:bg-white"
+            >
+              Browse {productCount}+ products
+            </Link>
           </div>
 
-          {floatProduct && (
-            <div className="absolute -bottom-6 -left-3 hidden h-28 w-28 -rotate-6 overflow-hidden rounded-2xl border-4 border-white shadow-elevated sm:block lg:-left-8 lg:h-36 lg:w-36">
-              <Image
-                src={floatProduct.images[0]}
-                alt=""
-                fill
-                sizes="144px"
-                className="object-cover"
-              />
-            </div>
-          )}
+          <ul className="mt-10 grid gap-3 border-t border-black/10 pt-6 text-sm text-neutral-700 sm:grid-cols-3 sm:gap-4">
+            {TRUST_POINTS.map(({ icon: Icon, label }) => (
+              <li key={label} className="flex items-start gap-2.5">
+                <Icon className="mt-0.5 h-4 w-4 shrink-0 text-neutral-900" strokeWidth={1.75} />
+                <span className="leading-snug">{label}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Rotating product showcase */}
+        <div className="animate-fade-in">
+          <HeroShowcase items={showcase} />
         </div>
       </div>
     </section>

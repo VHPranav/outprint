@@ -501,9 +501,7 @@ export const products: Product[] = [
     description:
       "Everyday 14pt matte business cards — smudge-resistant, quick turnaround, and priced for ordering in volume.",
     useCases: ["Corporate & Office"],
-    images: [
-      "/images/products/standard-matte-business-cards.webp",
-    ],
+    images: ["/images/products/standard-matte-business-cards.webp", "/images/products/standard-matte-business-cards-2.webp", "/images/products/standard-matte-business-cards-3.webp"],
     seo: {
       title: "Standard Matte Business Cards | Outprint",
       description:
@@ -542,9 +540,7 @@ export const products: Product[] = [
     description:
       "32pt ultra-thick cards laminated in a soft-touch suede finish, with a colored edge for a tactile first impression.",
     useCases: ["Corporate & Office", "Fashion & Apparel"],
-    images: [
-      "/images/products/premium-suede-business-cards.webp",
-    ],
+    images: ["/images/products/premium-suede-business-cards.webp", "/images/products/premium-suede-business-cards-2.webp", "/images/products/premium-suede-business-cards-3.webp"],
     seo: {
       title: "Premium Suede Business Cards | Outprint",
       description:
@@ -586,9 +582,7 @@ export const products: Product[] = [
     description:
       "600gsm cotton stock, deep-impression letterpress or blind deboss — the same archival cotton used for our stationery line.",
     useCases: ["Corporate & Office", "Events & Weddings"],
-    images: [
-      "/images/products/letterpress-cotton-business-cards.webp",
-    ],
+    images: ["/images/products/letterpress-cotton-business-cards.webp", "/images/products/letterpress-cotton-business-cards-2.webp", "/images/products/letterpress-cotton-business-cards-3.webp"],
     seo: {
       title: "Letterpress Cotton Business Cards | Outprint",
       description:
@@ -764,9 +758,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/standard-business-cards.webp",
-    ],
+    images: ["/images/products/standard-business-cards.webp", "/images/products/standard-business-cards-2.webp", "/images/products/standard-business-cards-3.webp"],
     seo: {
       title: "Standard Business Cards | Outprint",
       description: "Everyday 14pt cards in matte or gloss — smudge-resistant, quick turnaround, and priced for ordering in volume. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -844,84 +836,6 @@ export const products: Product[] = [
     basePricePerUnit: 0.16,
   },
   {
-    id: "prod-express-business-cards",
-    slug: "express-business-cards",
-    name: "Express Business Cards",
-    categoryId: "cat-bp-business-cards",
-    description: "Same-day proofing and 24-hour production on our core matte and gloss stocks, for launches that can't wait.",
-    useCases: [
-      "Corporate & Office",
-    ],
-    images: [
-      "/images/products/express-business-cards.webp",
-    ],
-    seo: {
-      title: "Express Business Cards | Outprint",
-      description: "Same-day proofing and 24-hour production on our core matte and gloss stocks, for launches that can't wait. Bulk order discounts from 100 to 5000 cards, free digital proof.",
-    },
-    optionGroups: [
-      {
-        type: "shape",
-        options: [
-          "Standard Rectangle",
-          "Rounded Corners",
-        ],
-      },
-      {
-        type: "size",
-        presets: [
-          {
-            label: "90mm x 50mm (3.5\" x 2\") Standard",
-            valueInInches: 3.5,
-          },
-        ],
-        allowCustomSize: true,
-      },
-      {
-        type: "quantity",
-        tiers: [
-          100,
-          250,
-          500,
-          1000,
-          2500,
-          5000,
-        ],
-      },
-      {
-        type: "material",
-        options: [
-          {
-            label: "14pt Matte — 24hr",
-            image: "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=200&q=80",
-            priceMultiplier: 1,
-          },
-          {
-            label: "14pt Gloss — 24hr",
-            image: "https://images.unsplash.com/photo-1616628188506-4ad99d65640e?auto=format&fit=crop&w=200&q=80",
-            priceMultiplier: 1.05,
-          },
-        ],
-      },
-      {
-        type: "addons",
-        options: [
-          {
-            label: "Rounded Corners",
-            description: "Rounds all four corners to a 1/8in radius.",
-            priceDelta: 0.04,
-          },
-          {
-            label: "Rush Production",
-            description: "Moves your order to the front of the press queue.",
-            priceDelta: 0.2,
-          },
-        ],
-      },
-    ],
-    basePricePerUnit: 0.24,
-  },
-  {
     id: "prod-velvet-laminated-cards",
     slug: "velvet-laminated-cards",
     name: "Velvet Laminated Cards",
@@ -930,9 +844,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/velvet-laminated-cards.webp",
-    ],
+    images: ["/images/products/velvet-laminated-cards.webp", "/images/products/velvet-laminated-cards-2.webp", "/images/products/velvet-laminated-cards-3.webp"],
     seo: {
       title: "Velvet Laminated Cards | Outprint",
       description: "16pt stock laminated in a soft-touch velvet film — a tactile, fingerprint-resistant finish that reads premium instantly. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1013,9 +925,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/textured-business-cards.webp",
-    ],
+    images: ["/images/products/textured-business-cards.webp", "/images/products/textured-business-cards-2.webp", "/images/products/textured-business-cards-3.webp"],
     seo: {
       title: "Textured Business Cards | Outprint",
       description: "Linen, cotton or hammer-textured stock adds a tactile finish you can feel before you read a word. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1096,9 +1006,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/pearl-shimmer-cards.webp",
-    ],
+    images: ["/images/products/pearl-shimmer-cards.webp", "/images/products/pearl-shimmer-cards-2.webp", "/images/products/pearl-shimmer-cards-3.webp"],
     seo: {
       title: "Pearl Shimmer Cards | Outprint",
       description: "Pearlescent shimmer stock that catches the light at an angle — a subtle upgrade over flat matte or gloss. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1179,9 +1087,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/smooth-white-business-cards.webp",
-    ],
+    images: ["/images/products/smooth-white-business-cards.webp", "/images/products/smooth-white-business-cards-2.webp", "/images/products/smooth-white-business-cards-3.webp"],
     seo: {
       title: "Smooth White Business Cards | Outprint",
       description: "Uncoated smooth white stock that takes pen ink cleanly — popular for cards meant to be written on. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1257,9 +1163,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/brown-kraft-business-cards.webp",
-    ],
+    images: ["/images/products/brown-kraft-business-cards.webp", "/images/products/brown-kraft-business-cards-2.webp", "/images/products/brown-kraft-business-cards-3.webp"],
     seo: {
       title: "Brown Kraft Business Cards | Outprint",
       description: "Uncoated kraft stock with visible natural fibers — an earthy, eco-forward look for craft and hospitality brands. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1335,9 +1239,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/waterproof-cards.webp",
-    ],
+    images: ["/images/products/waterproof-cards.webp", "/images/products/waterproof-cards-2.webp", "/images/products/waterproof-cards-3.webp"],
     seo: {
       title: "Waterproof Cards | Outprint",
       description: "Synthetic polypropylene stock that survives a spill, a pool day, or a stint in a wallet through the wash. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1413,9 +1315,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/eco-friendly-cards.webp",
-    ],
+    images: ["/images/products/eco-friendly-cards.webp", "/images/products/eco-friendly-cards-2.webp", "/images/products/eco-friendly-cards-3.webp"],
     seo: {
       title: "Eco-Friendly Cards | Outprint",
       description: "100% recycled matte stock, or plantable seed paper that grows into wildflowers once the card's done its job. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1486,9 +1386,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/spot-uv-business-cards.webp",
-    ],
+    images: ["/images/products/spot-uv-business-cards.webp", "/images/products/spot-uv-business-cards-2.webp", "/images/products/spot-uv-business-cards-3.webp"],
     seo: {
       title: "Spot UV Business Cards | Outprint",
       description: "Matte or silk base stock with a glossy raised coating over your logo or type for contrast without color. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1564,9 +1462,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/white-ink-black-cards.webp",
-    ],
+    images: ["/images/products/white-ink-black-cards.webp", "/images/products/white-ink-black-cards-2.webp", "/images/products/white-ink-black-cards-3.webp"],
     seo: {
       title: "White Ink Black Cards | Outprint",
       description: "Solid black stock printed with opaque white ink — a stark, high-contrast look that stands out in any card holder. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1637,9 +1533,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/gold-foil-black-cards.webp",
-    ],
+    images: ["/images/products/gold-foil-black-cards.webp", "/images/products/gold-foil-black-cards-2.webp", "/images/products/gold-foil-black-cards-3.webp"],
     seo: {
       title: "Gold Foil Black Cards | Outprint",
       description: "Black stock finished with a metallic foil stamp — gold, rose gold or silver — for a luxury first impression. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1715,9 +1609,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/double-pasted-cards.webp",
-    ],
+    images: ["/images/products/double-pasted-cards.webp", "/images/products/double-pasted-cards-2.webp", "/images/products/double-pasted-cards-3.webp"],
     seo: {
       title: "Double Pasted Cards | Outprint",
       description: "Two sheets glued face-to-face for extra rigidity and heft, without the cost of a full triplex build. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1793,9 +1685,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/triplex-business-cards.webp",
-    ],
+    images: ["/images/products/triplex-business-cards.webp", "/images/products/triplex-business-cards-2.webp", "/images/products/triplex-business-cards-3.webp"],
     seo: {
       title: "Triplex Business Cards | Outprint",
       description: "Three laminated layers with a bold colored core visible at the edge — our thickest, most substantial card build. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1871,9 +1761,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/square-business-cards.webp",
-    ],
+    images: ["/images/products/square-business-cards.webp", "/images/products/square-business-cards-2.webp", "/images/products/square-business-cards-3.webp"],
     seo: {
       title: "Square Business Cards | Outprint",
       description: "A square die-cut card that stands out in a stack of standard rectangles, on the same 14pt-16pt stocks. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1942,9 +1830,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/circle-business-cards.webp",
-    ],
+    images: ["/images/products/circle-business-cards.webp", "/images/products/circle-business-cards-2.webp", "/images/products/circle-business-cards-3.webp"],
     seo: {
       title: "Circle Business Cards | Outprint",
       description: "A fully round die-cut card — a distinctive shape for logos and brands built around a circular mark. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -2013,9 +1899,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/oval-shaped-business-cards.webp",
-    ],
+    images: ["/images/products/oval-shaped-business-cards.webp", "/images/products/oval-shaped-business-cards-2.webp", "/images/products/oval-shaped-business-cards-3.webp"],
     seo: {
       title: "Oval Shaped Business Cards | Outprint",
       description: "A softened oval die-cut for a card that still reads as familiar but never gets lost in a card holder. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -2084,9 +1968,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/any-shape-die-cut-business-cards.webp",
-    ],
+    images: ["/images/products/any-shape-die-cut-business-cards.webp", "/images/products/any-shape-die-cut-business-cards-2.webp", "/images/products/any-shape-die-cut-business-cards-3.webp"],
     seo: {
       title: "Any Shape (Die-cut) Business Cards | Outprint",
       description: "Fully custom die-cut business cards in any outline. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -2164,9 +2046,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/standard-letterheads.webp",
-    ],
+    images: ["/images/products/standard-letterheads.webp", "/images/products/standard-letterheads-2.webp", "/images/products/standard-letterheads-3.webp"],
     seo: {
       title: "Standard Letterheads | Outprint",
       description: "80gsm-100gsm bond paper letterheads, single or full-color printed to your template. Bulk order discounts from 100 to 2500 sheets.",
@@ -2239,9 +2119,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/express-letterheads.webp",
-    ],
+    images: ["/images/products/express-letterheads.webp", "/images/products/express-letterheads-2.webp", "/images/products/express-letterheads-3.webp"],
     seo: {
       title: "Express Letterheads | Outprint",
       description: "Same bond-paper letterheads with a 24-hour turnaround for urgent print runs. Bulk order discounts from 100 to 2500 sheets.",
@@ -2314,9 +2192,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/executive-letterheads.webp",
-    ],
+    images: ["/images/products/executive-letterheads.webp", "/images/products/executive-letterheads-2.webp", "/images/products/executive-letterheads-3.webp"],
     seo: {
       title: "Executive Letterheads | Outprint",
       description: "120gsm-160gsm premium uncoated stock, built for foil or embossed letterhead headers. Bulk order discounts from 100 to 2500 sheets.",
@@ -2389,9 +2265,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/dl-custom-envelopes.webp",
-    ],
+    images: ["/images/products/dl-custom-envelopes.webp", "/images/products/dl-custom-envelopes-2.webp", "/images/products/dl-custom-envelopes-3.webp"],
     seo: {
       title: "DL Custom Envelopes | Outprint",
       description: "110mm x 220mm DL envelopes, the standard size for a folded A4 letter. Optional window cut, full-color print, bulk order discounts from 100 units.",
@@ -2464,9 +2338,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/c5-custom-envelopes.webp",
-    ],
+    images: ["/images/products/c5-custom-envelopes.webp", "/images/products/c5-custom-envelopes-2.webp", "/images/products/c5-custom-envelopes-3.webp"],
     seo: {
       title: "C5 Custom Envelopes | Outprint",
       description: "162mm x 229mm C5 envelopes, sized for an A4 sheet folded once. Optional window cut, full-color print, bulk order discounts from 100 units.",
@@ -2539,9 +2411,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/c4-custom-envelopes.webp",
-    ],
+    images: ["/images/products/c4-custom-envelopes.webp", "/images/products/c4-custom-envelopes-2.webp", "/images/products/c4-custom-envelopes-3.webp"],
     seo: {
       title: "C4 Custom Envelopes | Outprint",
       description: "229mm x 324mm C4 envelopes, sized for an unfolded A4 sheet. Optional window cut, full-color print, bulk order discounts from 100 units.",
@@ -2614,9 +2484,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/a5-notepads.webp",
-    ],
+    images: ["/images/products/a5-notepads.webp", "/images/products/a5-notepads-2.webp", "/images/products/a5-notepads-3.webp"],
     seo: {
       title: "A5 Notepads | Outprint",
       description: "50-sheet A5 notepads, glue-bound at the top, with your logo and ruled or grid layout printed on every sheet. Bulk order discounts from 25 to 500 notepads.",
@@ -2684,9 +2552,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/a5-wire-o-notebooks.webp",
-    ],
+    images: ["/images/products/a5-wire-o-notebooks.webp", "/images/products/a5-wire-o-notebooks-2.webp", "/images/products/a5-wire-o-notebooks-3.webp"],
     seo: {
       title: "A5 Wire-o Notebooks | Outprint",
       description: "Wire-o bound A5 notebooks with a printed soft or hard cover — lies flat for writing, and holds up to daily use. Bulk order discounts from 25 to 500 notepads.",
@@ -2754,9 +2620,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/standard-certificates.webp",
-    ],
+    images: ["/images/products/standard-certificates.webp", "/images/products/standard-certificates-2.webp", "/images/products/standard-certificates-3.webp"],
     seo: {
       title: "Standard Certificates | Outprint",
       description: "160gsm-220gsm cardstock certificates with a decorative border, printed in full color. Bulk order discounts from 25 to 1000 certificates.",
@@ -2824,9 +2688,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/premium-certificates.webp",
-    ],
+    images: ["/images/products/premium-certificates.webp", "/images/products/premium-certificates-2.webp", "/images/products/premium-certificates-3.webp"],
     seo: {
       title: "Premium Certificates | Outprint",
       description: "Textured cover-weight stock with a gold or silver foil seal for award and achievement certificates. Bulk order discounts from 25 to 1000 certificates.",
@@ -9378,9 +9240,7 @@ export const products: Product[] = [
       "Corporate & Office",
       "Food & Beverage",
     ],
-    images: [
-      "/images/products/custom-receipt-books.webp",
-    ],
+    images: ["/images/products/custom-receipt-books.webp", "/images/products/custom-receipt-books-2.webp", "/images/products/custom-receipt-books-3.webp"],
     seo: {
       title: "Custom Receipt Books | Outprint",
       description: "Custom carbonless duplicate receipt books, numbered and perforated. Bulk order discounts from 10 to 250 books.",
@@ -9448,9 +9308,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/a6-custom-ncr-bill-books.webp",
-    ],
+    images: ["/images/products/a6-custom-ncr-bill-books.webp", "/images/products/a6-custom-ncr-bill-books-2.webp", "/images/products/a6-custom-ncr-bill-books-3.webp"],
     seo: {
       title: "A6 Custom NCR Bill Books | Outprint",
       description: "Custom A6 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
@@ -9518,9 +9376,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/a5-custom-ncr-bill-books.webp",
-    ],
+    images: ["/images/products/a5-custom-ncr-bill-books.webp", "/images/products/a5-custom-ncr-bill-books-2.webp", "/images/products/a5-custom-ncr-bill-books-3.webp"],
     seo: {
       title: "A5 Custom NCR Bill Books | Outprint",
       description: "Custom A5 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
@@ -9588,9 +9444,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/a4-custom-ncr-bill-books.webp",
-    ],
+    images: ["/images/products/a4-custom-ncr-bill-books.webp", "/images/products/a4-custom-ncr-bill-books-2.webp", "/images/products/a4-custom-ncr-bill-books-3.webp"],
     seo: {
       title: "A4 Custom NCR Bill Books | Outprint",
       description: "Custom A4 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
@@ -9658,12 +9512,91 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: [
-      "/images/products/self-ink-stamp.webp",
-    ],
+    images: ["/images/products/self-ink-stamp.webp", "/images/products/self-ink-stamp-2.webp"],
     seo: {
       title: "Self-Ink Stamp | Outprint",
       description: "Custom self-ink business stamps in multiple sizes and ink colors. Bulk order discounts from 1 to 50 stamps.",
+    },
+    optionGroups: [
+      {
+        type: "size",
+        presets: [
+          {
+            label: "38mm x 14mm Small",
+            valueInInches: 1.5,
+          },
+          {
+            label: "47mm x 18mm Medium",
+            valueInInches: 1.85,
+          },
+          {
+            label: "58mm x 22mm Large",
+            valueInInches: 2.3,
+          },
+        ],
+        allowCustomSize: false,
+      },
+      {
+        type: "quantity",
+        tiers: [
+          1,
+          5,
+          10,
+          25,
+          50,
+        ],
+      },
+      {
+        type: "material",
+        options: [
+          {
+            label: "Black Ink",
+            image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "Blue Ink",
+            image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+          {
+            label: "Red Ink",
+            image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=200&q=80",
+            priceMultiplier: 1,
+          },
+        ],
+      },
+      {
+        type: "addons",
+        options: [
+          {
+            label: "Extra Ink Refill",
+            description: "Includes a spare bottle of ink for re-inking the pad.",
+            priceDelta: 8,
+          },
+          {
+            label: "Rush Production",
+            description: "Moves your order to the front of the press queue.",
+            priceDelta: 15,
+          },
+        ],
+      },
+    ],
+    basePricePerUnit: 45,
+  },
+  {
+    id: "prod-pre-ink-stamp",
+    slug: "pre-ink-stamp",
+    name: "Pre-Ink Stamp",
+    categoryId: "cat-bp-stamps",
+    description: "A pre-inked flash stamp with the ink held inside the rubber for crisp, sharp impressions of your logo, address or signature — thousands of stamps before a refill.",
+    useCases: [
+      "Corporate & Office",
+    ],
+    images: ["/images/products/pre-ink-stamp.webp", "/images/products/pre-ink-stamp-2.webp"],
+    seo: {
+      title: "Pre-Ink Stamp | Outprint",
+      description: "Custom pre-ink (flash) stamps for logos, addresses and signatures, in multiple sizes and ink colors.",
     },
     optionGroups: [
       {

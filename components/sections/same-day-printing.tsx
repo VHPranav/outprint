@@ -8,7 +8,6 @@ import { ProductCard } from "./product-card";
 // Fast-turnaround products — express variants plus naturally quick items
 // (stamps, roll-up banners, simple stickers) that don't need a long lead time.
 const SAME_DAY_SLUGS = [
-  "express-business-cards",
   "express-flyers",
   "express-letterheads",
   "self-ink-stamp",

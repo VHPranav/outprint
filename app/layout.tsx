@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Poppins, Inter, Fraunces, Qwitcher_Grypen } from "next/font/google";
 import { Toaster } from "@/components/ui/toast";
 import { WhatsAppFab } from "@/components/ui/whatsapp-fab";
@@ -78,6 +79,19 @@ export default function RootLayout({
     <html lang="en" className={`${poppins.variable} ${inter.variable} ${fraunces.variable} ${qwitcherGrypen.variable}`}>
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/tas3jji.css" />
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GD3MKPNCSY"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GD3MKPNCSY');
+          `}
+        </Script>
       </head>
       <body className="min-h-screen bg-white text-[#111111] antialiased selection:bg-black/10 selection:text-black">
         <script

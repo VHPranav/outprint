@@ -38,3 +38,7 @@ next-env.d.ts
 # Generated image staging/review output (duplicates of public/images/products)
 scripts/product-image-samples/
 scripts/product-image-review/
+
+# Keep downloads/documents out of the public folder
+public/**/*.zip
+public/**/*.docx

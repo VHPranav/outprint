@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Hire a Designer | Outprint",
   description:
     "Don't have artwork ready? Hire an Outprint designer — a real person turns your brief into print-ready art, reviewed entirely over WhatsApp.",
+  alternates: { canonical: "/hire-a-designer" },
 };
 
 interface HireDesignerPageProps {

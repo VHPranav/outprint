@@ -6,6 +6,7 @@ import { RequestForm } from "@/components/hire-designer/request-form";
 
 export const metadata: Metadata = {
   title: "Start Your Design Request | Outprint",
+  robots: { index: false, follow: true },
 };
 
 interface RequestPageProps {

@@ -10,6 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Privacy Policy | Outprint",
   description: "How Outprint collects, uses and protects your information.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

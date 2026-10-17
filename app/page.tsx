@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {
   Navbar,
   HeroSection,
@@ -14,6 +15,10 @@ import {
   SupportBanner,
   Footer,
 } from "@/components/sections";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (

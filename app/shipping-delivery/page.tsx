@@ -10,6 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Shipping & Delivery | Outprint",
   description: "Production timelines, shipping coverage and tracking for Outprint orders.",
+  alternates: { canonical: "/shipping-delivery" },
 };
 
 export default function ShippingDeliveryPage() {

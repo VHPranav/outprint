@@ -10,6 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Returns & Refund Policy | Outprint",
   description: "How Outprint handles defects, damage, and reprints on custom print orders.",
+  alternates: { canonical: "/returns-reprints" },
 };
 
 export default function ReturnsReprintsPage() {

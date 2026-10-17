@@ -18,7 +18,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: UploadPageProps): Promise<Metadata> {
   const product = getProductBySlug(params.slug);
   if (!product) return {};
-  return { title: `Upload Artwork — ${product.name} | Outprint` };
+  return { title: `Upload Artwork — ${product.name} | Outprint`, robots: { index: false, follow: true } };
 }
 
 export default function UploadPage({ params }: UploadPageProps) {

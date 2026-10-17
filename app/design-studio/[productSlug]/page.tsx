@@ -15,7 +15,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: DesignStudioPageProps): Promise<Metadata> {
   const product = getProductBySlug(params.productSlug);
   if (!product) return {};
-  return { title: `Design Studio — ${product.name} | Outprint` };
+  return { title: `Design Studio — ${product.name} | Outprint`, robots: { index: false, follow: true } };
 }
 
 export default function DesignStudioPage({ params }: DesignStudioPageProps) {

@@ -10,6 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Terms of Service | Outprint",
   description: "The terms that govern using Outprint and ordering custom print & packaging.",
+  alternates: { canonical: "/terms-of-service" },
 };
 
 export default function TermsOfServicePage() {

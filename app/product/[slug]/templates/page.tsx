@@ -18,7 +18,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: TemplatesPageProps): Promise<Metadata> {
   const product = getProductBySlug(params.slug);
   if (!product) return {};
-  return { title: `Templates — ${product.name} | Outprint` };
+  return { title: `Templates — ${product.name} | Outprint`, robots: { index: false, follow: true } };
 }
 
 export default function TemplatesPage({ params }: TemplatesPageProps) {

@@ -758,7 +758,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/standard-business-cards.webp", "/images/products/standard-business-cards-2.webp", "/images/products/standard-business-cards-3.webp"],
+    images: ["/images/products/businessCards.png", "/images/products/businessCards2.png", "/images/products/standard-business-cards-3.webp"],
     seo: {
       title: "Standard Business Cards | Outprint",
       description: "Everyday 14pt cards in matte or gloss — smudge-resistant, quick turnaround, and priced for ordering in volume. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -844,7 +844,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/velvet-laminated-cards.webp", "/images/products/velvet-laminated-cards-2.webp", "/images/products/velvet-laminated-cards-3.webp"],
+    images: ["/images/products/valvet.png", "/images/products/valvet1.png", "/images/products/velvet-laminated-cards-3.webp"],
     seo: {
       title: "Velvet Laminated Cards | Outprint",
       description: "16pt stock laminated in a soft-touch velvet film — a tactile, fingerprint-resistant finish that reads premium instantly. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -925,7 +925,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/textured-business-cards.webp", "/images/products/textured-business-cards-2.webp", "/images/products/textured-business-cards-3.webp"],
+    images: ["/images/products/textured.png", "/images/products/texture1.png", "/images/products/textured-business-cards-3.webp"],
     seo: {
       title: "Textured Business Cards | Outprint",
       description: "Linen, cotton or hammer-textured stock adds a tactile finish you can feel before you read a word. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1006,7 +1006,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/pearl-shimmer-cards.webp", "/images/products/pearl-shimmer-cards-2.webp", "/images/products/pearl-shimmer-cards-3.webp"],
+    images: ["/images/products/pearl.png", "/images/products/pearl2.png", "/images/products/pearl1.png"],
     seo: {
       title: "Pearl Shimmer Cards | Outprint",
       description: "Pearlescent shimmer stock that catches the light at an angle — a subtle upgrade over flat matte or gloss. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1087,7 +1087,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/smooth-white-business-cards.webp", "/images/products/smooth-white-business-cards-2.webp", "/images/products/smooth-white-business-cards-3.webp"],
+    images: ["/images/products/smooth.png", "/images/products/smooth1.png", "/images/products/smooth-white-business-cards-3.webp"],
     seo: {
       title: "Smooth White Business Cards | Outprint",
       description: "Uncoated smooth white stock that takes pen ink cleanly — popular for cards meant to be written on. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1163,7 +1163,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/brown-kraft-business-cards.webp", "/images/products/brown-kraft-business-cards-2.webp", "/images/products/brown-kraft-business-cards-3.webp"],
+    images: ["/images/products/brown.png", "/images/products/brown1.png", "/images/products/brown-kraft-business-cards-3.webp"],
     seo: {
       title: "Brown Kraft Business Cards | Outprint",
       description: "Uncoated kraft stock with visible natural fibers — an earthy, eco-forward look for craft and hospitality brands. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1239,7 +1239,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/waterproof-cards.webp", "/images/products/waterproof-cards-2.webp", "/images/products/waterproof-cards-3.webp"],
+    images: ["/images/products/waterproof.png", "/images/products/waterproof-cards-2.webp", "/images/products/waterproof-cards-3.webp"],
     seo: {
       title: "Waterproof Cards | Outprint",
       description: "Synthetic polypropylene stock that survives a spill, a pool day, or a stint in a wallet through the wash. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1315,7 +1315,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/eco-friendly-cards.webp", "/images/products/eco-friendly-cards-2.webp", "/images/products/eco-friendly-cards-3.webp"],
+    images: ["/images/products/eco.png", "/images/products/eco-friendly-cards-2.webp", "/images/products/eco-friendly-cards-3.webp"],
     seo: {
       title: "Eco-Friendly Cards | Outprint",
       description: "100% recycled matte stock, or plantable seed paper that grows into wildflowers once the card's done its job. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1386,7 +1386,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/spot-uv-business-cards.webp", "/images/products/spot-uv-business-cards-2.webp", "/images/products/spot-uv-business-cards-3.webp"],
+    images: [ "/images/products/spot-uv-business-cards-2.webp", "/images/products/sport.png", "/images/products/spot-uv-business-cards-3.webp"],
     seo: {
       title: "Spot UV Business Cards | Outprint",
       description: "Matte or silk base stock with a glossy raised coating over your logo or type for contrast without color. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1462,7 +1462,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/white-ink-black-cards.webp", "/images/products/white-ink-black-cards-2.webp", "/images/products/white-ink-black-cards-3.webp"],
+    images: [ "/images/products/white-ink-black-cards-2.webp", "/images/products/whiteInk.png", "/images/products/white-ink-black-cards-3.webp"],
     seo: {
       title: "White Ink Black Cards | Outprint",
       description: "Solid black stock printed with opaque white ink — a stark, high-contrast look that stands out in any card holder. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1533,7 +1533,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/gold-foil-black-cards.webp", "/images/products/gold-foil-black-cards-2.webp", "/images/products/gold-foil-black-cards-3.webp"],
+    images: ["/images/products/gold-foil-black-cards-2.webp", "/images/products/gold.png", "/images/products/gold-foil-black-cards-3.webp"],
     seo: {
       title: "Gold Foil Black Cards | Outprint",
       description: "Black stock finished with a metallic foil stamp — gold, rose gold or silver — for a luxury first impression. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1609,7 +1609,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/double-pasted-cards.webp", "/images/products/double-pasted-cards-2.webp", "/images/products/double-pasted-cards-3.webp"],
+    images: ["/images/products/double.png", "/images/products/double1.png", "/images/products/double-pasted-cards-3.webp"],
     seo: {
       title: "Double Pasted Cards | Outprint",
       description: "Two sheets glued face-to-face for extra rigidity and heft, without the cost of a full triplex build. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1685,7 +1685,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/triplex-business-cards.webp", "/images/products/triplex-business-cards-2.webp", "/images/products/triplex-business-cards-3.webp"],
+    images: ["/images/products/triplex.png", "/images/products/triplex1.png", "/images/products/triplex-business-cards-3.webp"],
     seo: {
       title: "Triplex Business Cards | Outprint",
       description: "Three laminated layers with a bold colored core visible at the edge — our thickest, most substantial card build. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1761,7 +1761,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/square-business-cards.webp", "/images/products/square-business-cards-2.webp", "/images/products/square-business-cards-3.webp"],
+    images: ["/images/products/squarex.png", "/images/products/square1.png", "/images/products/square-business-cards-3.webp"],
     seo: {
       title: "Square Business Cards | Outprint",
       description: "A square die-cut card that stands out in a stack of standard rectangles, on the same 14pt-16pt stocks. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -1830,7 +1830,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/circle-business-cards.webp", "/images/products/circle-business-cards-2.webp", "/images/products/circle-business-cards-3.webp"],
+    images: ["/images/products/circle.png", "/images/products/circle1.png", "/images/products/circle-business-cards-3.webp"],
     seo: {
       title: "Circle Business Cards | Outprint",
       description: "A fully round die-cut card — a distinctive shape for logos and brands built around a circular mark. Bulk order discounts from 100 to 5000 cards, free digital proof.",
@@ -2046,7 +2046,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/standard-letterheads.webp", "/images/products/standard-letterheads-2.webp", "/images/products/standard-letterheads-3.webp"],
+    images: ["/images/products/standard.png", "/images/products/standard-letterheads-2.webp", "/images/products/standard-letterheads-3.webp"],
     seo: {
       title: "Standard Letterheads | Outprint",
       description: "80gsm-100gsm bond paper letterheads, single or full-color printed to your template. Bulk order discounts from 100 to 2500 sheets.",
@@ -2192,7 +2192,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/executive-letterheads.webp", "/images/products/executive-letterheads-2.webp", "/images/products/executive-letterheads-3.webp"],
+    images: ["/images/products/executive.png", "/images/products/executive1.png", "/images/products/executive-letterheads-3.webp"],
     seo: {
       title: "Executive Letterheads | Outprint",
       description: "120gsm-160gsm premium uncoated stock, built for foil or embossed letterhead headers. Bulk order discounts from 100 to 2500 sheets.",
@@ -2265,7 +2265,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/dl-custom-envelopes.webp", "/images/products/dl-custom-envelopes-2.webp", "/images/products/dl-custom-envelopes-3.webp"],
+    images: ["/images/products/dl.png", "/images/products/dl1.png", "/images/products/dl2.png"],
     seo: {
       title: "DL Custom Envelopes | Outprint",
       description: "110mm x 220mm DL envelopes, the standard size for a folded A4 letter. Optional window cut, full-color print, bulk order discounts from 100 units.",
@@ -2338,7 +2338,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/c5-custom-envelopes.webp", "/images/products/c5-custom-envelopes-2.webp", "/images/products/c5-custom-envelopes-3.webp"],
+    images: ["/images/products/c5.png", "/images/products/c51.png", "/images/products/c52.png"],
     seo: {
       title: "C5 Custom Envelopes | Outprint",
       description: "162mm x 229mm C5 envelopes, sized for an A4 sheet folded once. Optional window cut, full-color print, bulk order discounts from 100 units.",
@@ -2411,7 +2411,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/c4-custom-envelopes.webp", "/images/products/c4-custom-envelopes-2.webp", "/images/products/c4-custom-envelopes-3.webp"],
+    images: ["/images/products/c4.png", "/images/products/c4-custom-envelopes-2.webp", "/images/products/c4-custom-envelopes-3.webp"],
     seo: {
       title: "C4 Custom Envelopes | Outprint",
       description: "229mm x 324mm C4 envelopes, sized for an unfolded A4 sheet. Optional window cut, full-color print, bulk order discounts from 100 units.",
@@ -2484,7 +2484,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/a5-notepads.webp", "/images/products/a5-notepads-2.webp", "/images/products/a5-notepads-3.webp"],
+    images: ["/images/products/a5.png", "/images/products/a52.png", "/images/products/a5-notepads-3.webp"],
     seo: {
       title: "A5 Notepads | Outprint",
       description: "50-sheet A5 notepads, glue-bound at the top, with your logo and ruled or grid layout printed on every sheet. Bulk order discounts from 25 to 500 notepads.",
@@ -2552,7 +2552,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/a5-wire-o-notebooks.webp", "/images/products/a5-wire-o-notebooks-2.webp", "/images/products/a5-wire-o-notebooks-3.webp"],
+    images: ["/images/products/a5wire.png", "/images/products/a5wire1.png", "/images/products/a5-wire-o-notebooks-3.webp"],
     seo: {
       title: "A5 Wire-o Notebooks | Outprint",
       description: "Wire-o bound A5 notebooks with a printed soft or hard cover — lies flat for writing, and holds up to daily use. Bulk order discounts from 25 to 500 notepads.",
@@ -2620,7 +2620,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/standard-certificates.webp", "/images/products/standard-certificates-2.webp", "/images/products/standard-certificates-3.webp"],
+    images: ["/images/products/standcert.png", "/images/products/standcert2.png", "/images/products/standard-certificates-3.webp"],
     seo: {
       title: "Standard Certificates | Outprint",
       description: "160gsm-220gsm cardstock certificates with a decorative border, printed in full color. Bulk order discounts from 25 to 1000 certificates.",
@@ -2688,7 +2688,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/premium-certificates.webp", "/images/products/premium-certificates-2.webp", "/images/products/premium-certificates-3.webp"],
+    images: ["/images/products/precert.png", "/images/products/precert1.png", "/images/products/precert2.png"],
     seo: {
       title: "Premium Certificates | Outprint",
       description: "Textured cover-weight stock with a gold or silver foil seal for award and achievement certificates. Bulk order discounts from 25 to 1000 certificates.",
@@ -2762,7 +2762,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/a4-2-pocket-folders.webp",
+      "/images/products/pocket.png", "/images/products/pocket1.png",
     ],
     seo: {
       title: "A4 2-Pocket Folders | Outprint",
@@ -2838,7 +2838,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/custom-shape-folders.webp",
+      "/images/products/custom.png", "/images/products/custom1.png",
     ],
     seo: {
       title: "Custom Shape Folders | Outprint",
@@ -2924,7 +2924,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/standard-flyers.webp",
+      "/images/products/standfly.png", "/images/products/standfly1.png", "/images/products/standfly2.png",
     ],
     seo: {
       title: "Standard Flyers | Outprint",
@@ -3083,7 +3083,9 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/gloss-laminated-flyers.webp",
+      "/images/products/glofly.png",
+      "/images/products/glofly1.png",
+      "/images/products/glofly2.png",
     ],
     seo: {
       title: "Gloss Laminated Flyers | Outprint",
@@ -3160,7 +3162,9 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/square-flyers.webp",
+      "/images/products/squarefly.png",
+      "/images/products/squarefly1.png",
+      "/images/products/squarefly2.png",
     ],
     seo: {
       title: "Square Flyers | Outprint",
@@ -3237,7 +3241,9 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/brown-kraft-flyers.webp",
+      "/images/products/brownfly.png",
+      "/images/products/brownfly1.png",
+      "/images/products/brownfly2.png",
     ],
     seo: {
       title: "Brown Kraft Flyers | Outprint",
@@ -3314,7 +3320,9 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/waterproof-flyers.webp",
+      "/images/products/waterfly.png",
+      "/images/products/waterfly1.png",
+      "/images/products/waterfly2.png",
     ],
     seo: {
       title: "Waterproof Flyers | Outprint",
@@ -3389,7 +3397,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/desktop-calendars.webp",
+      "/images/products/deskcalender.png", "/images/products/deskcalender1.png", "/images/products/deskcalender2.png",
     ],
     seo: {
       title: "Desktop Calendars | Outprint",
@@ -3455,7 +3463,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/wall-calendars.webp",
+      "/images/products/wallcalender.png", "/images/products/wallcalender1.png",
     ],
     seo: {
       title: "Wall Calendars | Outprint",
@@ -3521,7 +3529,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/poster-calendars.webp",
+      "/images/products/postercalender.png", "/images/products/postercalender1.png",
     ],
     seo: {
       title: "Poster Calendars | Outprint",
@@ -3588,7 +3596,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/standard-postcards.webp",
+      "/images/products/stdpostcards.png", "/images/products/stdpostcards1.png",
     ],
     seo: {
       title: "Standard Postcards | Outprint",
@@ -3655,7 +3663,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/photo-postcards.webp",
+      "/images/products/photopostcards.png", "/images/products/photopostcards1.png",
     ],
     seo: {
       title: "Photo Postcards | Outprint",
@@ -3722,7 +3730,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/square-postcards.webp",
+      "/images/products/squarepostcards.png", "/images/products/squarepostcards1.png",
     ],
     seo: {
       title: "Square Postcards | Outprint",
@@ -3789,7 +3797,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/standard-greeting-cards.webp",
+      "/images/products/greetingcards.png", "/images/products/greetingcards1.png", "/images/products/greetingcards2.png",
     ],
     seo: {
       title: "Standard Greeting Cards | Outprint",
@@ -3866,7 +3874,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/trifold-menus.webp",
+      "/images/products/trifoldmenus.png", "/images/products/trifoldmenus1.png"
     ],
     seo: {
       title: "Trifold Menus | Outprint",
@@ -3938,7 +3946,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/trifold-pamphlets.webp",
+      "/images/products/trifoldpham.png", "/images/products/trfoldpham1.png"
     ],
     seo: {
       title: "Trifold Pamphlets | Outprint",
@@ -4010,7 +4018,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/standard-booklets.webp",
+      "/images/products/stdbooklets.png", "/images/products/stdbooklets1.png"
     ],
     seo: {
       title: "Standard Booklets | Outprint",
@@ -4082,7 +4090,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/standard-catalogues.webp",
+      "/images/products/stdcat.png", "/images/products/stdcat1.png", "/images/products/stdcat2.png", "/images/products/stdcat3.png",
     ],
     seo: {
       title: "Standard Catalogues | Outprint",
@@ -4153,7 +4161,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/standard-brochures.webp",
+      "/images/products/stdbroch.png", "/images/products/stdbroch1.png",
     ],
     seo: {
       title: "Standard Brochures | Outprint",
@@ -4225,7 +4233,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/company-profiles.webp",
+      "/images/products/cmpnypro.png", "/images/products/companypro1.png",
     ],
     seo: {
       title: "Company Profiles | Outprint",
@@ -4295,7 +4303,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/door-hangers.webp",
+      "/images/products/doorhang.png", "/images/products/doorhang1.png"
     ],
     seo: {
       title: "Door Hangers | Outprint",
@@ -4372,7 +4380,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/round-stickers.webp",
+      "/images/products/roundsticker.png", "/images/products/roundsticker1.png"
     ],
     seo: {
       title: "Round Stickers | Outprint",
@@ -4448,7 +4456,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/square-stickers.webp",
+      "/images/products/squaresticker.png", "/images/products/squaresticker1.png","/images/products/squaresticker2.png"
     ],
     seo: {
       title: "Square Stickers | Outprint",
@@ -4524,7 +4532,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/any-shape-kiss-cut-stickers.webp",
+      "/images/products/anyshape.png", "/images/products/anyshape1.png"
     ],
     seo: {
       title: "Any Shape (Kiss-cut) Stickers | Outprint",
@@ -4619,7 +4627,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/paper-stickers.webp",
+      "/images/products/papersticker.png", "/images/products/papersticker1.png"
     ],
     seo: {
       title: "Paper Stickers | Outprint",
@@ -4708,7 +4716,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/standard-posters.webp",
+      "/images/products/posters.png", "/images/products/posters1.png",
     ],
     seo: {
       title: "Standard Posters | Outprint",
@@ -4797,7 +4805,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/standard-coasters.webp",
+      "/images/products/sharedcoasters.png", "/images/products/sharedcoasters1.png", "/images/products/sharedcoasters2.png"
     ],
     seo: {
       title: "Standard Coasters | Outprint",
@@ -4880,7 +4888,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/brown-kraft-coasters.webp",
+      "/images/products/browncoasters.png", "/images/products/browncoasters1.png",
     ],
     seo: {
       title: "Brown Kraft Coasters | Outprint",
@@ -4962,7 +4970,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/standard-placemats.webp",
+      "/images/products/stdplace.png", "/images/products/stdplace1.png", "/images/products/stdplace2.png"
     ],
     seo: {
       title: "Standard Placemats | Outprint",
@@ -5027,7 +5035,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/food-wrappers.webp",
+      "/images/products/foodwrapper.png", "/images/products/foodwrapper1.png"
     ],
     seo: {
       title: "Food Wrappers | Outprint",
@@ -5097,7 +5105,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/table-tents.webp",
+      "/images/products/tablemenu.png", "/images/products/tablemenu1.png"
     ],
     seo: {
       title: "Table Tents | Outprint",
@@ -5173,7 +5181,7 @@ export const products: Product[] = [
       "E-commerce & DTC",
     ],
     images: [
-      "/images/products/standard-hang-tags.webp",
+      "/images/products/stdhangtag.png", "/images/products/stdhangtag1.png", "/images/products/stdhangtag2.png"
     ],
     seo: {
       title: "Standard Hang Tags | Outprint",
@@ -5249,7 +5257,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/standard-bookmarks.webp",
+      "/images/products/stdbookmark.png", "/images/products/stdbookmark1.png"
     ],
     seo: {
       title: "Standard Bookmarks | Outprint",
@@ -5316,7 +5324,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/premium-bookmarks.webp",
+      "/images/products/premiumbookmark.png", "/images/products/premiumbookmark1.png"
     ],
     seo: {
       title: "Premium Bookmarks | Outprint",
@@ -5388,7 +5396,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/standard-tickets-vouchers.webp",
+      "/images/products/stdticket.png", "/images/products/stdticket1.png"
     ],
     seo: {
       title: "Standard Tickets/Vouchers | Outprint",
@@ -9240,7 +9248,7 @@ export const products: Product[] = [
       "Corporate & Office",
       "Food & Beverage",
     ],
-    images: ["/images/products/custom-receipt-books.webp", "/images/products/custom-receipt-books-2.webp", "/images/products/custom-receipt-books-3.webp"],
+    images: ["/images/products/crb.png", "/images/products/custom-receipt-books-2.webp", "/images/products/custom-receipt-books-3.webp"],
     seo: {
       title: "Custom Receipt Books | Outprint",
       description: "Custom carbonless duplicate receipt books, numbered and perforated. Bulk order discounts from 10 to 250 books.",
@@ -9308,7 +9316,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/a6-custom-ncr-bill-books.webp", "/images/products/a6-custom-ncr-bill-books-2.webp", "/images/products/a6-custom-ncr-bill-books-3.webp"],
+    images: ["/images/products/a6c.png", "/images/products/a6-custom-ncr-bill-books-2.webp", "/images/products/a6-custom-ncr-bill-books-3.webp"],
     seo: {
       title: "A6 Custom NCR Bill Books | Outprint",
       description: "Custom A6 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
@@ -9376,7 +9384,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/a5-custom-ncr-bill-books.webp", "/images/products/a5-custom-ncr-bill-books-2.webp", "/images/products/a5-custom-ncr-bill-books-3.webp"],
+    images: ["/images/products/a5c.png", "/images/products/a5c1.png", "/images/products/a5-custom-ncr-bill-books-3.webp"],
     seo: {
       title: "A5 Custom NCR Bill Books | Outprint",
       description: "Custom A5 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
@@ -9444,7 +9452,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/a4-custom-ncr-bill-books.webp", "/images/products/a4-custom-ncr-bill-books-2.webp", "/images/products/a4-custom-ncr-bill-books-3.webp"],
+    images: ["/images/products/a4c.png", "/images/products/a4c1.png", "/images/products/a4c2.png"],
     seo: {
       title: "A4 Custom NCR Bill Books | Outprint",
       description: "Custom A4 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
@@ -9512,7 +9520,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/self-ink-stamp.webp", "/images/products/self-ink-stamp-2.webp"],
+    images: ["/images/products/selfink.png", "/images/products/selfink1.png"],
     seo: {
       title: "Self-Ink Stamp | Outprint",
       description: "Custom self-ink business stamps in multiple sizes and ink colors. Bulk order discounts from 1 to 50 stamps.",
@@ -9593,7 +9601,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/pre-ink-stamp.webp", "/images/products/pre-ink-stamp-2.webp"],
+    images: ["/images/products/preink.png", "/images/products/preink1.png"],
     seo: {
       title: "Pre-Ink Stamp | Outprint",
       description: "Custom pre-ink (flash) stamps for logos, addresses and signatures, in multiple sizes and ink colors.",
@@ -9675,7 +9683,8 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/custom-paper-cups.webp",
+      "/images/products/papercup.png",
+      "/images/products/papercup1.png",
     ],
     seo: {
       title: "Custom Paper Cups | Outprint",

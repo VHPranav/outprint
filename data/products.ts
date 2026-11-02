@@ -2046,7 +2046,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/standard.png", "/images/products/standard-letterheads-2.webp", "/images/products/standard-letterheads-3.webp"],
+    images: ["/images/products/standard-Letterheads3.webp", "/images/products/standard-Letterheads 1.webp", "/images/products/standard-Letterheads 2.webp"],
     seo: {
       title: "Standard Letterheads | Outprint",
       description: "80gsm-100gsm bond paper letterheads, single or full-color printed to your template. Bulk order discounts from 100 to 2500 sheets.",
@@ -2192,7 +2192,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/executive.png", "/images/products/executive1.png", "/images/products/executive-letterheads-3.webp"],
+    images: ["/images/products/Executive Letterheads.webp", "/images/products/Executive Letterheads1.webp", "/images/products/Executive Letterheads 2.webp"],
     seo: {
       title: "Executive Letterheads | Outprint",
       description: "120gsm-160gsm premium uncoated stock, built for foil or embossed letterhead headers. Bulk order discounts from 100 to 2500 sheets.",
@@ -2265,7 +2265,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/dl.png", "/images/products/dl1.png", "/images/products/dl2.png"],
+    images: ["/images/products/DL Custom Envelopes.webp", "/images/products/DL Custom Envelopes 1.webp", "/images/products/DL Custom Envelopes 3.webp"],
     seo: {
       title: "DL Custom Envelopes | Outprint",
       description: "110mm x 220mm DL envelopes, the standard size for a folded A4 letter. Optional window cut, full-color print, bulk order discounts from 100 units.",
@@ -2338,7 +2338,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/c5.png", "/images/products/c51.png", "/images/products/c52.png"],
+    images: ["/images/products/C5 Custom Envelopes.webp", "/images/products/C5 Custom Envelopes 1.webp", "/images/products/C5 Custom Envelopes 2.webp"],
     seo: {
       title: "C5 Custom Envelopes | Outprint",
       description: "162mm x 229mm C5 envelopes, sized for an A4 sheet folded once. Optional window cut, full-color print, bulk order discounts from 100 units.",
@@ -2411,7 +2411,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/c4.png", "/images/products/c4-custom-envelopes-2.webp", "/images/products/c4-custom-envelopes-3.webp"],
+    images: ["/images/products/C4 Custom Envelopes.webp", "/images/products/C4 Custom Envelopes 1.webp", "/images/products/C4 Custom Envelopes 2.webp"],
     seo: {
       title: "C4 Custom Envelopes | Outprint",
       description: "229mm x 324mm C4 envelopes, sized for an unfolded A4 sheet. Optional window cut, full-color print, bulk order discounts from 100 units.",
@@ -2484,7 +2484,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/a5.png", "/images/products/a52.png", "/images/products/a5-notepads-3.webp"],
+    images: ["/images/products/A5 Notepads.webp", "/images/products/A5 Notepads 1.webp", "/images/products/A5 Notepads 2.webp"],
     seo: {
       title: "A5 Notepads | Outprint",
       description: "50-sheet A5 notepads, glue-bound at the top, with your logo and ruled or grid layout printed on every sheet. Bulk order discounts from 25 to 500 notepads.",
@@ -2552,7 +2552,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/a5wire.png", "/images/products/a5wire1.png", "/images/products/a5-wire-o-notebooks-3.webp"],
+    images: ["/images/products/A5 Wire-o Notebooks.webp", "/images/products/A5 Wire-o Notebooks 1.webp", "/images/products/A5 Wire-o Notebooks 2.webp"],
     seo: {
       title: "A5 Wire-o Notebooks | Outprint",
       description: "Wire-o bound A5 notebooks with a printed soft or hard cover — lies flat for writing, and holds up to daily use. Bulk order discounts from 25 to 500 notepads.",
@@ -2620,7 +2620,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/standcert.png", "/images/products/standcert2.png", "/images/products/standard-certificates-3.webp"],
+    images: ["/images/products/Standard Certificates.webp", "/images/products/Standard Certificates 1.webp", "/images/products/Standard Certificates 2.webp"],
     seo: {
       title: "Standard Certificates | Outprint",
       description: "160gsm-220gsm cardstock certificates with a decorative border, printed in full color. Bulk order discounts from 25 to 1000 certificates.",
@@ -2688,7 +2688,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/precert.png", "/images/products/precert1.png", "/images/products/precert2.png"],
+    images: ["/images/products/Premium Certificates.webp", "/images/products/Premium Certificates 1.webp", "/images/products/Premium Certificates 2.webp"],
     seo: {
       title: "Premium Certificates | Outprint",
       description: "Textured cover-weight stock with a gold or silver foil seal for award and achievement certificates. Bulk order discounts from 25 to 1000 certificates.",
@@ -2762,7 +2762,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/pocket.png", "/images/products/pocket1.png",
+      "/images/products/A4 2-Pocket Folders.webp", "/images/products/A4 2-Pocket Folders 1.webp", "/images/products/A4 2-Pocket Folders 2.webp"
     ],
     seo: {
       title: "A4 2-Pocket Folders | Outprint",
@@ -2838,7 +2838,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/custom.png", "/images/products/custom1.png",
+      "/images/products/Custom Shape Folders.webp", "/images/products/Custom Shape Folders 1.webp", "/images/products/Custom Shape Folders 2.webp"
     ],
     seo: {
       title: "Custom Shape Folders | Outprint",
@@ -2924,7 +2924,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/standfly.png", "/images/products/standfly1.png", "/images/products/standfly2.png",
+      "/images/products/Standard Flyers.webp", "/images/products/Standard Flyers 1.webp", "/images/products/Standard Flyers 2.webp", "/images/products/Standard Flyers 3.webp"
     ],
     seo: {
       title: "Standard Flyers | Outprint",
@@ -3083,9 +3083,10 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/glofly.png",
-      "/images/products/glofly1.png",
-      "/images/products/glofly2.png",
+      "/images/products/Gloss Laminated Flyers.webp",
+      "/images/products/Gloss Laminated Flyers 1.webp",
+      "/images/products/Gloss Laminated Flyers 2.webp",
+      "/images/products/Gloss Laminated Flyers 3.webp",
     ],
     seo: {
       title: "Gloss Laminated Flyers | Outprint",
@@ -3596,7 +3597,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/stdpostcards.png", "/images/products/stdpostcards1.png",
+      "/images/products/Standard Postcards.webp", "/images/products/Standard Postcards 1.webp",
     ],
     seo: {
       title: "Standard Postcards | Outprint",
@@ -3663,7 +3664,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/photopostcards.png", "/images/products/photopostcards1.png",
+      "/images/products/Photo Postcards.webp", "/images/products/Photo Postcards 1.webp",
     ],
     seo: {
       title: "Photo Postcards | Outprint",
@@ -3730,7 +3731,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/squarepostcards.png", "/images/products/squarepostcards1.png",
+      "/images/products/Square Postcards.webp", "/images/products/Square Postcards 1.webp", "/images/products/Square Postcards 2.webp",
     ],
     seo: {
       title: "Square Postcards | Outprint",
@@ -3797,7 +3798,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/greetingcards.png", "/images/products/greetingcards1.png", "/images/products/greetingcards2.png",
+      "/images/products/Standard Greeting Cards.webp", "/images/products/Standard Greeting Cards 1.webp", "/images/products/Standard Greeting Cards 2.webp",
     ],
     seo: {
       title: "Standard Greeting Cards | Outprint",
@@ -3874,7 +3875,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/trifoldmenus.png", "/images/products/trifoldmenus1.png"
+      "/images/products/Trifold Menus.webp", "/images/products/Trifold Menus 1.webp", "/images/products/Trifold Menus 2.webp"
     ],
     seo: {
       title: "Trifold Menus | Outprint",
@@ -3946,7 +3947,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/trifoldpham.png", "/images/products/trfoldpham1.png"
+      "/images/products/Trifold Pamphlets.webp", "/images/products/Trifold Pamphlets 1.webp", "/images/products/Trifold Pamphlets 2.webp"
     ],
     seo: {
       title: "Trifold Pamphlets | Outprint",
@@ -4018,7 +4019,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/stdbooklets.png", "/images/products/stdbooklets1.png"
+      "/images/products/Standard Booklets.webp", "/images/products/Standard Booklets 1.webp", "/images/products/Standard Booklets 2.webp"
     ],
     seo: {
       title: "Standard Booklets | Outprint",
@@ -4090,7 +4091,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/stdcat.png", "/images/products/stdcat1.png", "/images/products/stdcat2.png", "/images/products/stdcat3.png",
+      "/images/products/Standard Catalogues.webp", "/images/products/Standard Catalogues 1.webp", "/images/products/Standard Catalogues 2.webp", 
     ],
     seo: {
       title: "Standard Catalogues | Outprint",
@@ -4161,7 +4162,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/stdbroch.png", "/images/products/stdbroch1.png",
+      "/images/products/Standard Brochures.webp", "/images/products/Standard Brochures 1.webp", "/images/products/Standard Brochures 2.webp",
     ],
     seo: {
       title: "Standard Brochures | Outprint",
@@ -4233,7 +4234,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/cmpnypro.png", "/images/products/companypro1.png",
+      "/images/products/Company Profiles.webp", "/images/products/Company Profiles 1.webp", "/images/products/Company Profiles 2.webp",
     ],
     seo: {
       title: "Company Profiles | Outprint",
@@ -4303,7 +4304,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/doorhang.png", "/images/products/doorhang1.png"
+      "/images/products/Door Hangers.webp", "/images/products/Door Hangers 1.webp"
     ],
     seo: {
       title: "Door Hangers | Outprint",
@@ -4380,7 +4381,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/roundsticker.png", "/images/products/roundsticker1.png"
+      "/images/products/Round Stickers.webp", "/images/products/Round Stickers 1.webp", "/images/products/Round Stickers 2.webp"
     ],
     seo: {
       title: "Round Stickers | Outprint",
@@ -4456,7 +4457,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/squaresticker.png", "/images/products/squaresticker1.png","/images/products/squaresticker2.png"
+      "/images/products/Square Stickers.webp", "/images/products/Square Stickers 1.webp", "/images/products/Square Stickers 2.webp"
     ],
     seo: {
       title: "Square Stickers | Outprint",
@@ -4532,7 +4533,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/anyshape.png", "/images/products/anyshape1.png"
+      "/images/products/Any Shape (Kiss-cut) Stickers.webp", "/images/products/Any Shape (Kiss-cut) Stickers 1.webp", "/images/products/Any Shape (Kiss-cut) Stickers 2.webp"
     ],
     seo: {
       title: "Any Shape (Kiss-cut) Stickers | Outprint",
@@ -4627,7 +4628,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/papersticker.png", "/images/products/papersticker1.png"
+      "/images/products/Paper Stickers.webp", "/images/products/Paper Stickers 1.webp", "/images/products/Paper Stickers 2.webp"
     ],
     seo: {
       title: "Paper Stickers | Outprint",
@@ -4716,7 +4717,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/posters.png", "/images/products/posters1.png",
+      "/images/products/Standard Posters.webp", "/images/products/Standard Posters 1.webp",
     ],
     seo: {
       title: "Standard Posters | Outprint",
@@ -4805,7 +4806,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/sharedcoasters.png", "/images/products/sharedcoasters1.png", "/images/products/sharedcoasters2.png"
+      "/images/products/Standard Coasters.webp", "/images/products/Standard Coasters 1.webp", "/images/products/Standard Coasters 2.webp"
     ],
     seo: {
       title: "Standard Coasters | Outprint",
@@ -4888,7 +4889,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/browncoasters.png", "/images/products/browncoasters1.png",
+      "/images/products/Brown Kraft Coasters.webp", "/images/products/Brown Kraft Coasters 1.webp", "/images/products/Brown Kraft Coasters 2.webp"
     ],
     seo: {
       title: "Brown Kraft Coasters | Outprint",
@@ -4970,7 +4971,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/stdplace.png", "/images/products/stdplace1.png", "/images/products/stdplace2.png"
+      "/images/products/Standard Placemats.webp", "/images/products/Standard Placemats 1.webp", "/images/products/Standard Placemats 2.webp"
     ],
     seo: {
       title: "Standard Placemats | Outprint",
@@ -5035,7 +5036,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/foodwrapper.png", "/images/products/foodwrapper1.png"
+      "/images/products/Food Wrappers.webp", "/images/products/Food Wrappers 1.webp", "/images/products/Food Wrappers 2.webp"
     ],
     seo: {
       title: "Food Wrappers | Outprint",
@@ -5105,7 +5106,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/tablemenu.png", "/images/products/tablemenu1.png"
+      "/images/products/Table Tents.webp", "/images/products/Table Tents 1.webp", "/images/products/Table Tents 12.webp"
     ],
     seo: {
       title: "Table Tents | Outprint",
@@ -5181,7 +5182,7 @@ export const products: Product[] = [
       "E-commerce & DTC",
     ],
     images: [
-      "/images/products/stdhangtag.png", "/images/products/stdhangtag1.png", "/images/products/stdhangtag2.png"
+      "/images/products/Standard Hang Tags.webp", "/images/products/Standard Hang Tags 1.webp", "/images/products/Standard Hang Tags 2.webp"
     ],
     seo: {
       title: "Standard Hang Tags | Outprint",
@@ -5257,7 +5258,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/stdbookmark.png", "/images/products/stdbookmark1.png"
+      "/images/products/Standard Bookmarks.webp", "/images/products/Standard Bookmarks 1.webp", "/images/products/Standard Bookmarks 2.webp"
     ],
     seo: {
       title: "Standard Bookmarks | Outprint",
@@ -5324,7 +5325,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/premiumbookmark.png", "/images/products/premiumbookmark1.png"
+      "/images/products/Premium Bookmarks.webp", "/images/products/Premium Bookmarks 1.webp", "/images/products/Premium Bookmarks 2.webp"
     ],
     seo: {
       title: "Premium Bookmarks | Outprint",
@@ -5396,7 +5397,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/stdticket.png", "/images/products/stdticket1.png"
+      "/images/products/Standard Tickets Vouchers.webp", "/images/products/Standard Tickets  Vouchers 1.webp"
     ],
     seo: {
       title: "Standard Tickets/Vouchers | Outprint",
@@ -9248,7 +9249,7 @@ export const products: Product[] = [
       "Corporate & Office",
       "Food & Beverage",
     ],
-    images: ["/images/products/crb.png", "/images/products/custom-receipt-books-2.webp", "/images/products/custom-receipt-books-3.webp"],
+    images: ["/images/products/Custom Receipt Books.webp", "/images/products/Custom Receipt Books 1.webp", "/images/products/Custom Receipt Books 2.webp"],
     seo: {
       title: "Custom Receipt Books | Outprint",
       description: "Custom carbonless duplicate receipt books, numbered and perforated. Bulk order discounts from 10 to 250 books.",
@@ -9316,7 +9317,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/a6c.png", "/images/products/a6-custom-ncr-bill-books-2.webp", "/images/products/a6-custom-ncr-bill-books-3.webp"],
+    images: ["/images/products/A6 Custom NCR Bill Books.webp", "/images/products/A6 Custom NCR Bill Books 1.webp", "/images/products/A6 Custom NCR Bill Books 2.webp"],
     seo: {
       title: "A6 Custom NCR Bill Books | Outprint",
       description: "Custom A6 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
@@ -9384,7 +9385,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/a5c.png", "/images/products/a5c1.png", "/images/products/a5-custom-ncr-bill-books-3.webp"],
+    images: ["/images/products/A5 Custom NCR Bill Books.webp", "/images/products/A5 Custom NCR Bill Books 1.webp", "/images/products/A5 Custom NCR Bill Books 2.webp"],
     seo: {
       title: "A5 Custom NCR Bill Books | Outprint",
       description: "Custom A5 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
@@ -9452,7 +9453,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/a4c.png", "/images/products/a4c1.png", "/images/products/a4c2.png"],
+    images: ["/images/products/A4 Custom NCR Bill Books.webp", "/images/products/A4 Custom NCR Bill Books 1.webp", "/images/products/A4 Custom NCR Bill Books 2.webp"],
     seo: {
       title: "A4 Custom NCR Bill Books | Outprint",
       description: "Custom A4 NCR carbonless bill books, numbered and bound. Bulk order discounts from 10 to 250 books.",
@@ -9520,7 +9521,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/selfink.png", "/images/products/selfink1.png"],
+    images: ["/images/products/Self-Ink Stamp.webp", "/images/products/Self-Ink Stamp 1.webp"],
     seo: {
       title: "Self-Ink Stamp | Outprint",
       description: "Custom self-ink business stamps in multiple sizes and ink colors. Bulk order discounts from 1 to 50 stamps.",
@@ -9601,7 +9602,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/preink.png", "/images/products/preink1.png"],
+    images: ["/images/products/Pre Ink Stamp.webp", "/images/products/Pre Ink Stamp 1.webp"],
     seo: {
       title: "Pre-Ink Stamp | Outprint",
       description: "Custom pre-ink (flash) stamps for logos, addresses and signatures, in multiple sizes and ink colors.",

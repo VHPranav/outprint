@@ -2046,7 +2046,8 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/standard-Letterheads3.webp", "/images/products/standard-Letterheads 1.webp", "/images/products/standard-Letterheads 2.webp"],
+    // images: ["/images/products/standard-Letterheads3.webp", "/images/products/standard-Letterheads 1.webp", "/images/products/standard-Letterheads 2.webp"],
+    images: ["/images/products/standard-letterheads.webp", "/images/products/standard-letterheads-2.webp", "/images/products/standard-letterheads-3.webp"],
     seo: {
       title: "Standard Letterheads | Outprint",
       description: "80gsm-100gsm bond paper letterheads, single or full-color printed to your template. Bulk order discounts from 100 to 2500 sheets.",
@@ -2119,7 +2120,8 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/express-letterheads.webp", "/images/products/express-letterheads-2.webp", "/images/products/express-letterheads-3.webp"],
+    //images: ["/images/products/express-letterheads.webp", "/images/products/express-letterheads-2.webp", "/images/products/express-letterheads-3.webp"],
+    images: ["/images/products/express-flyers.webp",],
     seo: {
       title: "Express Letterheads | Outprint",
       description: "Same bond-paper letterheads with a 24-hour turnaround for urgent print runs. Bulk order discounts from 100 to 2500 sheets.",
@@ -2484,7 +2486,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/A5 Notepads.webp", "/images/products/A5 Notepads 1.webp", "/images/products/A5 Notepads 2.webp"],
+    images: [ "/images/products/A5 Notepads 1.webp", "/images/products/A5 Notepads.webp", "/images/products/A5 Notepads 2.webp"],
     seo: {
       title: "A5 Notepads | Outprint",
       description: "50-sheet A5 notepads, glue-bound at the top, with your logo and ruled or grid layout printed on every sheet. Bulk order discounts from 25 to 500 notepads.",
@@ -2688,7 +2690,7 @@ export const products: Product[] = [
     useCases: [
       "Corporate & Office",
     ],
-    images: ["/images/products/Premium Certificates.webp", "/images/products/Premium Certificates 1.webp", "/images/products/Premium Certificates 2.webp"],
+    images: ["/images/products/Premium Certificates 1.webp", "/images/products/Premium Certificates.webp", "/images/products/Premium Certificates 2.webp"],
     seo: {
       title: "Premium Certificates | Outprint",
       description: "Textured cover-weight stock with a gold or silver foil seal for award and achievement certificates. Bulk order discounts from 25 to 1000 certificates.",
@@ -9249,7 +9251,7 @@ export const products: Product[] = [
       "Corporate & Office",
       "Food & Beverage",
     ],
-    images: ["/images/products/Custom Receipt Books.webp", "/images/products/Custom Receipt Books 1.webp", "/images/products/Custom Receipt Books 2.webp"],
+    images: ["/images/products/Custom Receipt Books 1.webp", "/images/products/Custom Receipt Books.webp", "/images/products/Custom Receipt Books 2.webp"],
     seo: {
       title: "Custom Receipt Books | Outprint",
       description: "Custom carbonless duplicate receipt books, numbered and perforated. Bulk order discounts from 10 to 250 books.",

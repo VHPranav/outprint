@@ -94,7 +94,7 @@ export const products: Product[] = [
       "Weatherproof vinyl stickers cut precisely to your artwork's outline. UV-laminated for 5+ years of outdoor durability, dishwasher and scratch safe.",
     useCases: ["E-commerce & DTC", "Events & Weddings"],
     images: [
-      "/images/products/vinyl-die-cut-stickers.webp",
+      "/images/products/Custom Vinyl Die-Cut Stickers.webp", "/images/products/Custom Vinyl Die-Cut Stickers 1.webp", "/images/products/Custom Vinyl Die-Cut Stickers 2.webp",
     ],
     seo: {
       title: "Custom Vinyl Die-Cut Stickers | Outprint",
@@ -143,7 +143,7 @@ export const products: Product[] = [
       "Prismatic rainbow-refraction stickers with a 100% opaque spot-white backing so colors stay vivid against any surface.",
     useCases: ["E-commerce & DTC", "Events & Weddings"],
     images: [
-      "/images/products/holographic-die-cut-stickers.webp",
+      "/images/products/Holographic Die-Cut Stickers.webp", "/images/products/Holographic Die-Cut Stickers 1.webp", "/images/products/Holographic Die-Cut Stickers 2.webp",
     ],
     seo: {
       title: "Holographic Die-Cut Stickers | Outprint",
@@ -189,7 +189,7 @@ export const products: Product[] = [
       "Multiple designs kiss-cut onto a single sheet — perfect for sticker packs, product inserts, and con merch.",
     useCases: ["E-commerce & DTC", "Events & Weddings"],
     images: [
-      "/images/products/custom-sticker-sheets.webp",
+      "/images/products/Custom Sticker Sheets.webp", "/images/products/Custom Sticker Sheets 1.webp", "/images/products/Custom Sticker Sheets 2.webp",
     ],
     seo: {
       title: "Custom Sticker Sheets | Outprint",
@@ -233,7 +233,7 @@ export const products: Product[] = [
       "Clean matte-finish labels for candles, cosmetics, and packaged goods. Available on rolls or sheets.",
     useCases: ["Beauty & Cosmetics", "Food & Beverage"],
     images: [
-      "/images/products/matte-product-labels.webp",
+      "/images/products/Matte Product Labels.webp", "/images/products/Matte Product Labels 1.webp", "/images/products/Matte Product Labels 2.webp",
     ],
     seo: {
       title: "Matte Product Labels | Outprint",
@@ -280,7 +280,7 @@ export const products: Product[] = [
       "Waterproof, UV-stable vinyl labels built for bottles, outdoor gear, and anything that lives outside a climate-controlled shelf.",
     useCases: ["Beauty & Cosmetics", "Food & Beverage"],
     images: [
-      "/images/products/weatherproof-vinyl-labels.webp",
+      "/images/products/Weatherproof Vinyl Labels.webp", "/images/products/Weatherproof Vinyl Labels 1.webp", "/images/products/Weatherproof Vinyl Labels 2.webp",
     ],
     seo: {
       title: "Weatherproof Vinyl Labels | Outprint",
@@ -324,7 +324,7 @@ export const products: Product[] = [
       "Branded closure and shipping labels sized for mailers, pouches and retail boxes.",
     useCases: ["E-commerce & DTC", "Food & Beverage"],
     images: [
-      "/images/products/custom-packaging-labels.webp",
+      "/images/products/Custom Packaging Labels.webp", "/images/products/Custom Packaging Labels 1.webp", "/images/products/Custom Packaging Labels 2.webp",
     ],
     seo: {
       title: "Custom Packaging Labels | Outprint",
@@ -3165,9 +3165,9 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/squarefly.png",
-      "/images/products/squarefly1.png",
-      "/images/products/squarefly2.png",
+      "/images/products/Square Flyers 1.webp",
+      "/images/products/Square Flyers.webp",
+      "/images/products/Square Flyers (1).webp",
     ],
     seo: {
       title: "Square Flyers | Outprint",
@@ -3244,9 +3244,9 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/brownfly.png",
-      "/images/products/brownfly1.png",
-      "/images/products/brownfly2.png",
+      "/images/products/Brown Kraft Flyers.webp",
+      "/images/products/Brown Kraft Flyers 1.webp",
+      "/images/products/Brown Kraft Flyers 3.webp",
     ],
     seo: {
       title: "Brown Kraft Flyers | Outprint",
@@ -3323,9 +3323,9 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/waterfly.png",
-      "/images/products/waterfly1.png",
-      "/images/products/waterfly2.png",
+      "/images/products/Waterproof Flyers.webp",
+      "/images/products/Waterproof Flyers 1.webp",
+      "/images/products/Waterproof Flyers (1).webp",
     ],
     seo: {
       title: "Waterproof Flyers | Outprint",
@@ -3400,7 +3400,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/deskcalender.png", "/images/products/deskcalender1.png", "/images/products/deskcalender2.png",
+      "/images/products/Desktop Calendars.webp", "/images/products/Desktop Calendars 1.webp", "/images/products/Desktop Calendars 2.webp",
     ],
     seo: {
       title: "Desktop Calendars | Outprint",
@@ -3466,7 +3466,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/wallcalender.png", "/images/products/wallcalender1.png",
+      "/images/products/Wall Calendars.webp", "/images/products/Wall Calendars 1.webp", "/images/products/Wall Calendars 2.webp",
     ],
     seo: {
       title: "Wall Calendars | Outprint",
@@ -3532,7 +3532,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/postercalender.png", "/images/products/postercalender1.png",
+      "/images/products/poster calendar.webp", "/images/products/poster calendar 1.webp", "/images/products/poster calendar 2.webp",
     ],
     seo: {
       title: "Poster Calendars | Outprint",
@@ -3599,7 +3599,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/Standard Postcards.webp", "/images/products/Standard Postcards 1.webp",
+      "/images/products/Standard Postcards (1).webp", "/images/products/Standard Postcards 1 (1).webp",
     ],
     seo: {
       title: "Standard Postcards | Outprint",
@@ -3666,7 +3666,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/Photo Postcards.webp", "/images/products/Photo Postcards 1.webp",
+      "/images/products/Photo Postcards 1 (1).webp", "/images/products/Photo Postcards (1).webp",
     ],
     seo: {
       title: "Photo Postcards | Outprint",
@@ -3877,7 +3877,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/Trifold Menus.webp", "/images/products/Trifold Menus 1.webp", "/images/products/Trifold Menus 2.webp"
+      "/images/products/Trifold Menus (1).webp", "/images/products/Trifold Menus 1 (1).webp", "/images/products/Trifold Menus 1 (1) (1).webp"
     ],
     seo: {
       title: "Trifold Menus | Outprint",
@@ -4164,7 +4164,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/Standard Brochures.webp", "/images/products/Standard Brochures 1.webp", "/images/products/Standard Brochures 2.webp",
+      "/images/products/Standard Brochures (1).webp", "/images/products/Standard Brochures 1 (1).webp", "/images/products/Standard Brochures 2 (1).webp",
     ],
     seo: {
       title: "Standard Brochures | Outprint",
@@ -4535,7 +4535,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/Any Shape (Kiss-cut) Stickers.webp", "/images/products/Any Shape (Kiss-cut) Stickers 1.webp", "/images/products/Any Shape (Kiss-cut) Stickers 2.webp"
+      "/images/products/Any Shape (Kiss-cut) Stickers (1).webp", "/images/products/Any Shape (Kiss-cut) Stickers 1 (1).webp", "/images/products/Any Shape (Kiss-cut) Stickers 2 (1).webp"
     ],
     seo: {
       title: "Any Shape (Kiss-cut) Stickers | Outprint",
@@ -4630,7 +4630,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/Paper Stickers.webp", "/images/products/Paper Stickers 1.webp", "/images/products/Paper Stickers 2.webp"
+      "/images/products/Paper Stickers (1).webp", "/images/products/Paper Stickers 1 (1).webp", "/images/products/Paper Stickers 2 (1).webp"
     ],
     seo: {
       title: "Paper Stickers | Outprint",
@@ -4719,7 +4719,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/Standard Posters.webp", "/images/products/Standard Posters 1.webp",
+      "/images/products/Standard Posters (1).webp", "/images/products/Standard Posters 1 (1).webp",
     ],
     seo: {
       title: "Standard Posters | Outprint",
@@ -4973,7 +4973,7 @@ export const products: Product[] = [
       "Food & Beverage",
     ],
     images: [
-      "/images/products/Standard Placemats.webp", "/images/products/Standard Placemats 1.webp", "/images/products/Standard Placemats 2.webp"
+      "/images/products/Standard Placemats (1).webp", "/images/products/Standard Placemats 1 (1).webp", "/images/products/Standard Placemats 2 (1).webp"
     ],
     seo: {
       title: "Standard Placemats | Outprint",
@@ -5260,7 +5260,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/Standard Bookmarks.webp", "/images/products/Standard Bookmarks 1.webp", "/images/products/Standard Bookmarks 2.webp"
+      "/images/products/Standard Bookmarks 1 (1).webp", "/images/products/Standard Bookmarks 2 (1).webp", "/images/products/Standard Bookmarks (1).webp",
     ],
     seo: {
       title: "Standard Bookmarks | Outprint",
@@ -5327,7 +5327,7 @@ export const products: Product[] = [
       "Events & Weddings",
     ],
     images: [
-      "/images/products/Premium Bookmarks.webp", "/images/products/Premium Bookmarks 1.webp", "/images/products/Premium Bookmarks 2.webp"
+      "/images/products/Premium Bookmarks (1).webp", "/images/products/Premium Bookmarks 1 (1).webp", "/images/products/Premium Bookmarks 2 (1).webp"
     ],
     seo: {
       title: "Premium Bookmarks | Outprint",
@@ -5399,7 +5399,7 @@ export const products: Product[] = [
       "Corporate & Office",
     ],
     images: [
-      "/images/products/Standard Tickets Vouchers.webp", "/images/products/Standard Tickets  Vouchers 1.webp"
+      "/images/products/Standard Tickets Vouchers (1).webp", "/images/products/Standard Tickets Vouchers 1 (1).webp"
     ],
     seo: {
       title: "Standard Tickets/Vouchers | Outprint",
@@ -9688,6 +9688,7 @@ export const products: Product[] = [
     images: [
       "/images/products/papercup.png",
       "/images/products/papercup1.png",
+      "/images/products/Custom Paper Cups 2.webp",
     ],
     seo: {
       title: "Custom Paper Cups | Outprint",
